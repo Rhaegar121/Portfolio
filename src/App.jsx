@@ -8,8 +8,8 @@ function App() {
   return (
     <BrowserRouter>
       <div className='relative z-0'>
-        <Navbar />
         <StarsCanvas />
+        <Navbar />
       </div>
     </BrowserRouter>
   )

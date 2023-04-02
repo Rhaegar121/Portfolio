@@ -40,7 +40,7 @@ const StarsCanvas = () => {
   }, []);
 
   return (
-    <div className='w-full h-auto absolute inset-0 z-[-1]'>
+    <div className='starCanvas'>
       <Canvas 
       camera={{ position: [0, 0, 1] }}
       gl={{ antialias: true, alpha: true, preserveDrawingBuffer: true, powerPreference: "high-performance" }}
