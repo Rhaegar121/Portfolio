@@ -1,4 +1,4 @@
-import { useState, useRef, Suspense } from "react";
+import { useState, useRef, useEffect, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
@@ -17,7 +17,8 @@ const Stars = (props) => {
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
-          color='#f272c8'
+          // color='#f272c8'
+          color='#ec9292'
           size={0.002}
           sizeAttenuation={true}
           depthWrite={false}
@@ -28,12 +29,24 @@ const Stars = (props) => {
 };
 
 const StarsCanvas = () => {
+  const [aspectRatio, setAspectRatio] = useState(1);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setAspectRatio(window.innerWidth / window.innerHeight);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <div className='w-full h-auto absolute inset-0 z-[-1]'>
       <Canvas 
       camera={{ position: [0, 0, 1] }}
       gl={{ antialias: true, alpha: true, preserveDrawingBuffer: true, powerPreference: "high-performance" }}
-      style={{ aspectRatio: '16/9' }}
+      style={{ width: '100vw', height: '100vh' }}
+      pixelRatio={window.devicePixelRatio}
+      aspectRatio={aspectRatio}
       >
         <Suspense fallback={null}>
           <Stars />
