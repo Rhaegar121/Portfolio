@@ -13,6 +13,11 @@
   color-scheme: dark;
 }
 
+:root {
+  --bg-color: rgb(5 8 22 / 1);
+  --logo-color: #00aaff;
+}
+
 ::-webkit-scrollbar {
   width: 8.5px;
   height: 0px;
@@ -20,6 +25,10 @@
 ::-webkit-scrollbar-thumb {
   background-color: #191a2c;
   border-radius: 8px;
+}
+
+.bg-primary {
+  background-color: var(--bg-color);
 }
 
 .starCanvas {
