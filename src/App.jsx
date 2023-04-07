@@ -11,12 +11,12 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className='z-0'>
-        <Navbar />
+      <div className='relative w-screen h-screen'>
+        <Home />
         <StarsCanvas />
       </div>
-      <div className='relative z-1'>
-        <Home />
+      <div className='relative text-cyan-400 z-0'>
+        <Navbar />
         <About />
         <Work />
         <Testimonial />

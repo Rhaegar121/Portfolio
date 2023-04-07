@@ -16,8 +16,7 @@ const Stars = (props) => {
     <group rotation={[0, 0, Math.PI / 4]}>
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
         <PointMaterial
-          transparent
-          // color='#f272c8'
+          // transparent
           color='#ec9292'
           size={0.002}
           sizeAttenuation={true}
@@ -40,13 +39,14 @@ const StarsCanvas = () => {
   }, []);
 
   return (
-    <div className='starCanvas'>
+    <div className='absolute left-0 top-0 z-[-1]'>
       <Canvas 
       camera={{ position: [0, 0, 1] }}
       gl={{ antialias: true, alpha: true, preserveDrawingBuffer: true, powerPreference: "high-performance" }}
       style={{ width: '100vw', height: '100vh' }}
       pixelRatio={window.devicePixelRatio}
       aspectRatio={aspectRatio}
+      className='bg-primary'
       >
         <Suspense fallback={null}>
           <Stars />

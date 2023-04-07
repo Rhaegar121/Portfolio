@@ -11,11 +11,11 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
-  background-color: var(--bg-color);
+  
 }
 
 :root {
-  --bg-color: rgb(3, 9, 37);
+  --bg-color: #030b25;
   --logo-color: #00aaff;
 }
 
@@ -27,8 +27,3 @@
   background-color: #191a2c;
   border-radius: 8px;
 }
-
-/* .starCanvas {
-  position: absolute;
-  z-index: 0;
-} */
