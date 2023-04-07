@@ -20,3 +20,8 @@
 .name {
     font-family: 'Bungee Inline', cursive;
 }
+
+.desc {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}

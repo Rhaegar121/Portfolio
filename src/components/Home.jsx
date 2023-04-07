@@ -6,7 +6,7 @@ const Home = () => {
     <div className={style.container}>
       <p className={`${style.intro} text-white`}>Hi, I'm <span className={`${style.name} text-cyan`}>Kaung Myat Kyaw</span></p>
       <p className={`${style.intro} text-white`}>But you can call me <span className={`${style.name} text-cyan`}>Barry</span></p>
-      <p>I am a full-stack web developer</p>
+      <p className={`${style.desc} text-grey`}>I am a full-stack web developer</p>
       <button>Check out my work</button>
     </div>
   )
