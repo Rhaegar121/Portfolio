@@ -11,7 +11,7 @@
 
 .intro {
    font-family: 'Bungee Outline', cursive;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     line-height: 2.8rem;
@@ -24,4 +24,11 @@
 .desc {
     font-size: 1.3rem;
     margin-bottom: 20px;
+}
+
+.btn {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border: 1px solid #00aaff;
+    border-radius: 3px;
 }
