@@ -11,12 +11,6 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
-  
-}
-
-:root {
-  --bg-color: #030b25;
-  --logo-color: #00aaff;
 }
 
 ::-webkit-scrollbar {
