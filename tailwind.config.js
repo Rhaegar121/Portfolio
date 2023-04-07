@@ -11,6 +11,7 @@ module.exports = {
         // cyan: '#22d3ee',
         cyan: '#00aaff',
         white: '#e6f1ff',
+        grey: '#a8b2d1',
       },
     },
   },
