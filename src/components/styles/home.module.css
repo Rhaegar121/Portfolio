@@ -1,0 +1,22 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    z-index: 0;
+}
+
+.intro {
+   font-family: 'Bungee Outline', cursive;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    line-height: 2.8rem;
+}
+
+.name {
+    font-family: 'Bungee Inline', cursive;
+}

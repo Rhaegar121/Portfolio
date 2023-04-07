@@ -1,10 +1,11 @@
 import React from 'react'
+import style from './styles/home.module.css'
 
 const Home = () => {
   return (
-    <div className='w-screen h-screen flex flex-col items-center justify-center z-0 bg-transparent'>
-      <p className='uppercase secondary text-2xl text-white'>Hi, I'm <span className='secondary text-cyan'>Kaung Myat Kyaw</span></p>
-      <p className='uppercase secondary text-2xl text-white'>But you can call me <span className='secondary text-cyan'>Barry</span></p>
+    <div className={style.container}>
+      <p className={`${style.intro} text-white`}>Hi, I'm <span className={`${style.name} text-cyan`}>Kaung Myat Kyaw</span></p>
+      <p className={`${style.intro} text-white`}>But you can call me <span className={`${style.name} text-cyan`}>Barry</span></p>
       <p>I am a full-stack web developer</p>
       <button>Check out my work</button>
     </div>
