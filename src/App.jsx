@@ -11,9 +11,11 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
-        <StarsCanvas />
+      <div className='z-0'>
         <Navbar />
+        <StarsCanvas />
+      </div>
+      <div className='relative z-1'>
         <Home />
         <About />
         <Work />
