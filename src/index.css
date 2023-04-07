@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -17,7 +17,17 @@
   width: 8.5px;
   height: 0px;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: #191a2c;
   border-radius: 8px;
+}
+
+.secondary-font {
+  font-family: 'Bungee Outline', cursive;
+}
+
+.test {
+  color: #22d3ee;
+
 }
