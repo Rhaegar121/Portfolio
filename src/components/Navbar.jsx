@@ -15,7 +15,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset;
-      if (scrollTop > 600) {
+      if (scrollTop > 840) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -33,6 +33,8 @@ const Navbar = () => {
       <Link onClick={() => { window.scrollTo(0, 0); }} >
         <img src={logo} alt='logo' className={style.logo} />
       </Link>
+
+      {/* desktop navlink */}
       <ul className={style.navlink}>
         <li 
           key="about"
@@ -66,14 +68,17 @@ const Navbar = () => {
           <a href={`#resume`}>Resume</a>
         </li>
       </ul>
+
+      {/* hamburger menu */}
       <ul className={style.hamburger} onClick={handleMenuClick}>
         <li className={`${style.line} ${isOpen ? style.open : ""}`}></li>
         <li className={`${style.line} ${isOpen ? style.open : ""}`}></li>
         <li className={`${style.line} ${isOpen ? style.open : ""}`}></li>
       </ul>
-    </nav>
-    <ul 
-      className={`${style.mobilemenu} ${isOpen ? style.openMenu : style.closeMenu}`}
+
+      {/* mobile menu */}
+      <ul 
+      className={`${style.mobilemenu} ${isOpen ? "h-80" : "h-0"}`}
     >
         <li 
           key="about"
@@ -107,6 +112,7 @@ const Navbar = () => {
           <a href={`#resume`}>Resume</a>
         </li>
       </ul>
+    </nav>
     </div>
   )
 }
