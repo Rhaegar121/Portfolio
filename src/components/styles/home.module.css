@@ -32,12 +32,14 @@
 }
 
 .desc {
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 1.3rem;
     margin-bottom: 20px;
     color: var(--grey);
 }
 
 .btn {
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 1.1rem;
     padding: 10px 15px;
     border: 1px solid var(--grey);
@@ -54,7 +56,7 @@
 
 .btn:hover,
 .btn:focus {
-    box-shadow: inset -6em 0 0 0 var(--cyan), inset 6em 0 0 0 var(--cyan); 
+    box-shadow: inset -7em 0 0 0 var(--cyan), inset 7em 0 0 0 var(--cyan); 
     color: var(--white);
     border: 1px solid var(--cyan);
 }
