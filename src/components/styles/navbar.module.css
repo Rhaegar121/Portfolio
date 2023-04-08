@@ -9,6 +9,9 @@
 .navbar {
     padding: 18px 60px 18px 50px;
     display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     justify-content: space-between;
     align-items: center;
     backdrop-filter: blur(20px);
