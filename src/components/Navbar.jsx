@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../assets/logo-no-background.png';
 import style from './styles/navbar.module.css';
+import { SectionWrapper } from '../hoc';
 
 const Navbar = () => {
   return (
@@ -19,4 +20,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default SectionWrapper(Navbar)
