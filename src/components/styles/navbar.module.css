@@ -6,17 +6,21 @@
 }
 
 .navbar {
+    padding: 15px 60px 15px 50px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 1px 3px #000311;
 }
 
 .logo {
     width: 70px;
     height: auto;
-    /* border: 1px solid red; */
 }
 
 .navlink {
     display: flex;
-    gap: 15px;
+    gap: 35px;
+    color: var(--grey);
 }
