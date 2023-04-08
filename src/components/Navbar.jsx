@@ -68,13 +68,7 @@ const Navbar = () => {
         >
         <a href={`#contact`}>Contact</a>
         </li>
-        <li 
-          key="resume"
-          className={`${
-          active === "Resume" ? "text-cyan" : "text-grey"
-          } ${style.font}`}
-          onClick={() => setActive("Resume")}
-        >
+        <li className={`${style.resume} ${style.font}`}>
         <a href={`#resume`}>Resume</a>
         </li>
       </ul>

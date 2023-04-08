@@ -3,6 +3,7 @@
     --cyan: #22abfa;
     --white: #e6f1ff;
     --grey: #b1bcdc;
+    --light-grey: #6172a1;
 }
 
 .navbar {
@@ -22,6 +23,7 @@
 .navlink {
     font-size: 14px;
     display: flex;
+    align-items: center;
     gap: 35px;
     color: var(--grey);
 }
@@ -31,5 +33,18 @@
 }
 
 .font:hover {
-    cursor: pointer;
+    color: var(--cyan);
+}
+
+.resume {
+    color: var(--cyan);
+    border: 1px solid var(--cyan);
+    border-radius: 3px;
+    padding: 8px 10px;
+    transition: 0.25s;
+}
+
+.resume:hover,
+.resume:focus {
+    box-shadow: inset -4em 0 0 0 var(--light-grey), inset 4em 0 0 0 var(--light-grey); 
 }
