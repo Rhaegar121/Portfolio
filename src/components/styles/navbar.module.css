@@ -1,5 +1,22 @@
+:root {
+    --navy: #030b25;
+    --cyan: #22abfa;
+    --white: #e6f1ff;
+    --grey: #b1bcdc;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
 .logo {
     width: 70px;
     height: auto;
     /* border: 1px solid red; */
+}
+
+.navlink {
+    display: flex;
+    gap: 15px;
 }

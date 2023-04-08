@@ -4,10 +4,17 @@ import style from './styles/navbar.module.css';
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className={style.navbar}>
       <div>
         <img src={logo} alt='logo' className={style.logo} />
       </div>
+      <ul className={style.navlink}>
+        <li>About</li>
+        <li>Work</li>
+        <li>Testimonials</li>
+        <li>Contact</li>
+        <li>Resume</li>
+      </ul>
     </nav>
   )
 }
