@@ -14,8 +14,8 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
+      const scrollTop = window.pageYOffset;
+      if (scrollTop > 600) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <div className="relative">
-    <nav className={style.navbar}>
+    <nav className={`${style.navbar} ${scrolled ? style.fixed : ''}`}>
       <Link onClick={() => { window.scrollTo(0, 0); }} >
         <img src={logo} alt='logo' className={style.logo} />
       </Link>

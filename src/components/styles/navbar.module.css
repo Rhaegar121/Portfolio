@@ -9,13 +9,18 @@
 .navbar {
     padding: 18px 60px 18px 50px;
     display: flex;
-    position: -webkit-sticky;
-    position: sticky;
+    /* position: absolute; */
+    width: 100%;
     top: 0;
     justify-content: space-between;
     align-items: center;
     backdrop-filter: blur(20px);
     box-shadow: 0px 1px 3px #000311;
+    z-index: 1;
+}
+
+.fixed {
+    position: fixed;
 }
 
 .logo {
