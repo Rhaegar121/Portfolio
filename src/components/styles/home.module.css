@@ -36,13 +36,14 @@
 .btn {
     font-size: 1.1rem;
     padding: 10px 15px;
-    border: 1px solid #22abfa;
+    border: 1px solid var(--grey);
     border-radius: 2.5px;
     transition: 0.25s;
 }
 
 .btn:hover,
 .btn:focus {
-    box-shadow: inset -6em 0 0 0 #22abfa, inset 6em 0 0 0 #22abfa; 
+    box-shadow: inset -6em 0 0 0 var(--cyan), inset 6em 0 0 0 var(--cyan); 
     color: var(--white);
+    border: 1px solid var(--cyan);
 }
