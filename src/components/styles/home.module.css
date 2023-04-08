@@ -22,23 +22,34 @@
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     line-height: 2.8rem;
+    color: var(--cyan);
+    text-align: center;
 }
 
 .name {
     font-family: 'Bungee', cursive;
+    color: var(--grey);
 }
 
 .desc {
     font-size: 1.3rem;
     margin-bottom: 20px;
+    color: var(--grey);
 }
 
 .btn {
     font-size: 1.1rem;
     padding: 10px 15px;
     border: 1px solid var(--grey);
-    border-radius: 2.5px;
     transition: 0.25s;
+    color: var(--grey);
+}
+
+.arrow {
+    margin-left: 7px;
+    font-size: 17px;
+    display: inline;
+    transition: transform 0.3s ease-in-out;
 }
 
 .btn:hover,
@@ -47,3 +58,52 @@
     color: var(--white);
     border: 1px solid var(--cyan);
 }
+
+.btn:hover .arrow {
+    transform: rotate(90deg);
+}
+
+@media screen and (max-width: 426px) {
+    .intro {
+        font-size: 1.3rem;
+        letter-spacing: 0.1rem;
+        line-height: 1.7rem;
+    }
+
+    .desc {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        padding: 7px 10px;
+    }
+
+    .arrow {
+        margin-left: 5px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .intro {
+        font-size: 1.05rem;
+        line-height: 1.4rem;
+    }
+
+    .desc {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        font-size: 0.7rem;
+        padding: 7px 6px 7px 8px;
+    }
+
+    .arrow {
+        margin-left: 4px;
+        font-size: 13px;
+    }
+}
+
