@@ -15,7 +15,7 @@ function App() {
         <Home />
         <StarsCanvas />
       </div>
-      <div className='relative text-cyan-400 z-0 bg-primary'>
+      <div className='relative z-0 bg-navy'>
         <Navbar />
         <About />
         <Work />

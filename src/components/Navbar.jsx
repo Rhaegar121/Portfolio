@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import logo from '../assets/logo-no-background.png';
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <nav>
+      <div>
+        <img src={logo} alt='logo' className='logo' />
+      </div>
+    </nav>
   )
 }
 
