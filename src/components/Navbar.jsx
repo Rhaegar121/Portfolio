@@ -28,6 +28,7 @@ const Navbar = () => {
   }, []);
 
   return (
+    <div className="relative">
     <nav className={style.navbar}>
       <Link onClick={() => { window.scrollTo(0, 0); }} >
         <img src={logo} alt='logo' className={style.logo} />
@@ -71,6 +72,42 @@ const Navbar = () => {
         <li className={`${style.line} ${isOpen ? style.open : ""}`}></li>
       </ul>
     </nav>
+    <ul 
+      className={`${style.mobilemenu} ${isOpen ? style.openMenu : style.closeMenu}`}
+    >
+        <li 
+          key="about"
+          className={`${ active === "About" ? "text-cyan" : "text-grey" } ${style.font}`}
+          onClick={() => setActive("About")}
+        >
+          <a href={`#about`}>About</a>
+        </li>
+        <li 
+          key="work"
+          className={`${ active === "Work" ? "text-cyan" : "text-grey" } ${style.font}`}
+          onClick={() => setActive("Work")}
+        >
+          <a href={`#work`}>Work</a>
+        </li>
+        <li 
+          key="testimonials"
+          className={`${ active === "Testimonials" ? "text-cyan" : "text-grey" } ${style.font}`}
+          onClick={() => setActive("Testimonials")}
+        >
+          <a href={`#testimonials`}>Testimonials</a>
+        </li>
+        <li 
+          key="contact"
+          className={`${ active === "Contact" ? "text-cyan" : "text-grey" } ${style.font}`}
+          onClick={() => setActive("Contact")}
+        >
+          <a href={`#contact`}>Contact</a>
+        </li>
+        <li className={`${style.resume} ${style.font}`}>
+          <a href={`#resume`}>Resume</a>
+        </li>
+      </ul>
+    </div>
   )
 }
 
