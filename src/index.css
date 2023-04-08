@@ -13,6 +13,10 @@
   color-scheme: dark;
 }
 
+:root {
+  --navy-color: #030b25;
+}
+
 ::-webkit-scrollbar {
   width: 8.5px;
   height: 0px;

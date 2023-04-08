@@ -1,3 +1,10 @@
+:root {
+    --navy: #030b25;
+    --cyan: #22abfa;
+    --white: #e6f1ff;
+    --grey: #b1bcdc;
+}
+
 .container {
     width: 100vw;
     height: 100vh;
@@ -29,6 +36,13 @@
 .btn {
     font-size: 1.1rem;
     padding: 10px 15px;
-    border: 1px solid #00aaff;
-    border-radius: 3px;
+    border: 1px solid #22abfa;
+    border-radius: 2.5px;
+    transition: 0.25s;
+}
+
+.btn:hover,
+.btn:focus {
+    box-shadow: inset -6em 0 0 0 #22abfa, inset 6em 0 0 0 #22abfa; 
+    color: var(--white);
 }
