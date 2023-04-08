@@ -55,8 +55,7 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.btn:hover,
-.btn:focus {
+.btn:hover {
     box-shadow: inset -7em 0 0 0 var(--cyan), inset 7em 0 0 0 var(--cyan); 
     color: var(--white);
     border: 1px solid var(--cyan);

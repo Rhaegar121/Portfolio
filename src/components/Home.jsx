@@ -8,7 +8,15 @@ const Home = () => {
       <p className={style.intro}>Hi, I'm <span className={style.name}>Kaung Myat Kyaw</span></p>
       <p className={style.intro}>But you can call me <span className={style.name}>Barry</span></p>
       <p className={style.desc}>I am a full-stack web developer</p>
-      <button className={style.btn}>
+      <button
+        className={style.btn}
+        onClick={() => {
+          window.scrollTo({
+            top: window.innerHeight,
+            behavior: 'smooth'
+          });
+        }}
+      >
         Check out my work
         <MdOutlineArrowForwardIos 
         className={style.arrow}
