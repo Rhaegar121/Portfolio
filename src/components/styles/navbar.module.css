@@ -20,8 +20,12 @@
 }
 
 .navlink {
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 14px;
     display: flex;
     gap: 35px;
     color: var(--grey);
+}
+
+.font {
+    font-family: 'Montserrat Alternates', sans-serif;
 }

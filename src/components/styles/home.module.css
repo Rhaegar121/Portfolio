@@ -33,14 +33,15 @@
 
 .desc {
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    word-spacing: 0.15rem;
     margin-bottom: 20px;
     color: var(--grey);
 }
 
 .btn {
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 10px 15px;
     border: 1px solid var(--grey);
     transition: 0.25s;
@@ -73,12 +74,12 @@
     }
 
     .desc {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         margin-bottom: 15px;
     }
 
     .btn {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         padding: 7px 10px;
     }
 
@@ -95,11 +96,11 @@
     }
 
     .desc {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .btn {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         padding: 7px 6px 7px 8px;
     }
 
