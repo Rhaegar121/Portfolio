@@ -38,34 +38,34 @@ const Navbar = () => {
       <ul className={style.navlink}>
         <li 
           key="about"
-          className={`${ active === "About" ? "text-cyan" : "text-grey" } ${style.font}`}
+          className={ active === "About" ? "text-cyan" : "text-grey" }
           onClick={() => setActive("About")}
         >
-          <a href={`#about`}>About</a>
+          <a href={`#about`} className={style.font}>About</a>
         </li>
         <li 
           key="work"
-          className={`${ active === "Work" ? "text-cyan" : "text-grey" } ${style.font}`}
+          className={ active === "Work" ? "text-cyan" : "text-grey" }
           onClick={() => setActive("Work")}
         >
-          <a href={`#work`}>Work</a>
+          <a href={`#work`} className={style.font}>Work</a>
         </li>
         <li 
           key="testimonials"
-          className={`${ active === "Testimonials" ? "text-cyan" : "text-grey" } ${style.font}`}
+          className={ active === "Testimonials" ? "text-cyan" : "text-grey" }
           onClick={() => setActive("Testimonials")}
         >
-          <a href={`#testimonials`}>Testimonials</a>
+          <a href={`#testimonials`} className={style.font}>Testimonials</a>
         </li>
         <li 
           key="contact"
-          className={`${ active === "Contact" ? "text-cyan" : "text-grey" } ${style.font}`}
+          className={ active === "Contact" ? "text-cyan" : "text-grey" }
           onClick={() => setActive("Contact")}
         >
-          <a href={`#contact`}>Contact</a>
+          <a href={`#contact`} className={style.font}>Contact</a>
         </li>
-        <li className={`${style.resume} ${style.font}`}>
-          <a href={`#resume`}>Resume</a>
+        <li className={style.resume}>
+          <a href={`#resume`} className={style.font}>Resume</a>
         </li>
       </ul>
 
@@ -82,34 +82,34 @@ const Navbar = () => {
     >
         <li 
           key="about"
-          className={`${ active === "About" ? "text-cyan" : "text-grey" } ${style.font}`}
+          className={ active === "About" ? "text-cyan" : "text-grey" }
           onClick={() => setActive("About")}
         >
-          <a href={`#about`}>About</a>
+          <a href={`#about`} className={style.font}>About</a>
         </li>
         <li 
           key="work"
-          className={`${ active === "Work" ? "text-cyan" : "text-grey" } ${style.font}`}
+          className={ active === "Work" ? "text-cyan" : "text-grey" }
           onClick={() => setActive("Work")}
         >
-          <a href={`#work`}>Work</a>
+          <a href={`#work`} className={style.font}>Work</a>
         </li>
         <li 
           key="testimonials"
-          className={`${ active === "Testimonials" ? "text-cyan" : "text-grey" } ${style.font}`}
+          className={ active === "Testimonials" ? "text-cyan" : "text-grey" }
           onClick={() => setActive("Testimonials")}
         >
-          <a href={`#testimonials`}>Testimonials</a>
+          <a href={`#testimonials`} className={style.font}>Testimonials</a>
         </li>
         <li 
           key="contact"
-          className={`${ active === "Contact" ? "text-cyan" : "text-grey" } ${style.font}`}
+          className={ active === "Contact" ? "text-cyan" : "text-grey" }
           onClick={() => setActive("Contact")}
         >
-          <a href={`#contact`}>Contact</a>
+          <a href={`#contact`} className={style.font}>Contact</a>
         </li>
-        <li className={`${style.resume} ${style.font}`}>
-          <a href={`#resume`}>Resume</a>
+        <li className={style.resume}>
+          <a href={`#resume`} className={style.font}>Resume</a>
         </li>
       </ul>
     </nav>
