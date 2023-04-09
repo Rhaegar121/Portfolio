@@ -15,7 +15,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset;
-      if (scrollTop > 810) {
+      if (scrollTop > 780) {
         setScrolled(true);
       } else {
         setScrolled(false);
