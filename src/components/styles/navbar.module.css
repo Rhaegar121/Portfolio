@@ -11,16 +11,17 @@
     display: flex;
     width: 100%;
     position: sticky;
-    top: 0;
+    top: 0px;
     justify-content: space-between;
     align-items: center;
     backdrop-filter: blur(20px);
+    background-color: var(--navy);
     box-shadow: 0px 1px 3px #000311;
     z-index: 1;
 }
 
 .fixed {
-    /* position: fixed; */
+    position: fixed;
 }
 
 .logo {
