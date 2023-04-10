@@ -1,12 +1,5 @@
-:root {
-    --navy: #030b25;
-    --cyan: #22abfa;
-    --white: #e6f1ff;
-    --grey: #b1bcdc;
-}
-
 .title {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     text-align: center;
     position: relative;
     padding: 10px 0;
@@ -17,7 +10,7 @@
 .title::after {
     content: "";
     background-color: var(--white);
-    width: 100px;
+    width: 80px;
     height: 3px;
     display: inline-block;
     position: absolute;

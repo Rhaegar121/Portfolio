@@ -1,11 +1,3 @@
-:root {
-    --navy: #030b25;
-    --cyan: #22abfa;
-    --white: #e6f1ff;
-    --grey: #b1bcdc;
-    --light-grey: #2e3b60;
-}
-
 .navbar {
     padding: 18px 60px 18px 50px;
     display: flex;
