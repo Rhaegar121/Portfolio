@@ -80,32 +80,33 @@ const Navbar = () => {
 
       {/* mobile menu */}
       <ul 
-      className={`${style.mobilemenu} ${isOpen ? "h-80" : "h-0"}`}
+      className={`${style.mobilemenu} ${isOpen ? "h-screen" : "h-0"}`}
     >
         <li 
           key="about"
-          className={ active === "About" ? "text-cyan" : "text-grey" }
+          className='mt-20'
+          // className={`${ active === "About" ? "text-cyan" : "text-grey" } mt-20`}
           onClick={() => setActive("About")}
         >
           <a href={`#about`} className={style.font}>About</a>
         </li>
         <li 
           key="work"
-          className={ active === "Work" ? "text-cyan" : "text-grey" }
+          // className={ active === "Work" ? "text-cyan" : "text-grey" }
           onClick={() => setActive("Work")}
         >
           <a href={`#work`} className={style.font}>Work</a>
         </li>
         <li 
           key="testimonials"
-          className={ active === "Testimonials" ? "text-cyan" : "text-grey" }
+          // className={ active === "Testimonials" ? "text-cyan" : "text-grey" }
           onClick={() => setActive("Testimonials")}
         >
           <a href={`#testimonials`} className={style.font}>Testimonials</a>
         </li>
         <li 
           key="contact"
-          className={ active === "Contact" ? "text-cyan" : "text-grey" }
+          // className={ active === "Contact" ? "text-cyan" : "text-grey" }
           onClick={() => setActive("Contact")}
         >
           <a href={`#contact`} className={style.font}>Contact</a>
