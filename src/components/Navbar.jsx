@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
     <div className="relative">
-    <nav className={`${style.navbar} ${scrolled ? style.fixed : ''}`}>
+    <nav className={`${style.navbar} ${scrolled ? 'fixed' : ''}`}>
       <Link onClick={() => { window.scrollTo(0, 0); }} >
         <img src={logo} alt='logo' className={style.logo} />
       </Link>

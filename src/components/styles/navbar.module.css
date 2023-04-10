@@ -10,7 +10,7 @@
     padding: 18px 60px 18px 50px;
     display: flex;
     width: 100%;
-    position: sticky;
+    position: absolute;
     top: 0;
     justify-content: space-between;
     align-items: center;
