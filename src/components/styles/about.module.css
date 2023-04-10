@@ -40,3 +40,22 @@
     padding: 0px 20px;
     margin: 40px auto;
 }
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .title::after {
+        width: 60px;
+    }
+
+    .para {
+        width: 93%;
+        font-size: 15.5px;
+    }
+
+    .ball_container {
+        gap: 20px;
+    }
+}
