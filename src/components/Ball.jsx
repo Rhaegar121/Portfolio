@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   Decal,
@@ -8,13 +8,13 @@ import {
   useTexture,
 } from "@react-three/drei";
 
-const Ball = (props) => {
-  const [decal] = useTexture([props.imgUrl]);
+const Ball = ({imgUrl, isMobile}) => {
+  const [decal] = useTexture([imgUrl]);
 
   return (
     <Float speed={0.2} rotationIntensity={0.5} floatIntensity={1.5}>
       <ambientLight intensity={0.6} />
-      <mesh castShadow receiveShadow scale={2.5} >
+      <mesh castShadow receiveShadow scale={isMobile ? 2.2 : 2.5} >
         <sphereGeometry args={[1, 32.8, 32.8]} />
         <meshStandardMaterial
           color='#e6f1ff'
@@ -35,6 +35,24 @@ const Ball = (props) => {
 };
 
 const BallCanvas = ({ icon }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 426px)");
+
+    setIsMobile(mediaQuery.matches);
+
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
   return (
     <Canvas
       frameloop='demand'
@@ -43,7 +61,7 @@ const BallCanvas = ({ icon }) => {
     >
       <Suspense fallback={null}>
         <OrbitControls enableZoom={false} />
-        <Ball imgUrl={icon} />
+        <Ball imgUrl={icon} isMobile={isMobile} />
       </Suspense>
 
       <Preload all />
