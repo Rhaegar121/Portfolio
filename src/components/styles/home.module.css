@@ -3,6 +3,7 @@
     --cyan: #22abfa;
     --white: #e6f1ff;
     --grey: #b1bcdc;
+    --light-grey: #2e3b60;
 }
 
 .container {
@@ -45,7 +46,7 @@
     font-size: 1rem;
     padding: 10px 15px;
     border: 1px solid var(--grey);
-    transition: 0.25s;
+    transition: 0.4s;
     color: var(--grey);
 }
 
@@ -57,8 +58,8 @@
 }
 
 .btn:hover {
-    box-shadow: inset -7em 0 0 0 var(--cyan), inset 7em 0 0 0 var(--cyan); 
-    color: var(--white);
+    box-shadow: inset -7em 0 0 0 var(--light-grey), inset 7em 0 0 0 var(--light-grey); 
+    color: var(--cyan);
     border: 1px solid var(--cyan);
 }
 
