@@ -59,6 +59,27 @@
     transform: rotate(90deg);
 }
 
+@media screen and (max-width: 768px) {
+    .intro {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+
+    .desc {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 13px;
+    }
+
+    .arrow {
+        margin-left: 6px;
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 426px) {
     .intro {
         font-size: 1.3rem;
