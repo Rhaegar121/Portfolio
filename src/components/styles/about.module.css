@@ -34,3 +34,10 @@
     color: var(--grey);
     margin: 20px auto;
 }
+
+.ball_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 55px;
+    justify-content: center;
+}
