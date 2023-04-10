@@ -41,6 +41,11 @@
     margin: 40px auto;
 }
 
+.ball {
+    width: 112px;
+    height: 112px;
+}
+
 @media screen and (max-width: 768px) {
     .title {
         font-size: 1.8rem;
@@ -77,5 +82,32 @@
     .ball_container {
         padding: 0;
         gap: 10px;
+    }
+}
+
+@media screen and (max-width: 376px) { 
+    .ball_container {
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .title::after {
+        width: 50px;
+    }
+
+    .para {
+        width: 89%;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .ball {
+        width: 90px;
+        height: 90px;
     }
 }

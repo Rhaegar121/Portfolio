@@ -14,7 +14,7 @@ const About = () => {
       <motion.p variants={fadeIn("", "", 0.15, 1)} className={style.para}>Here are a few technologies I`ve been working with recently:</motion.p>
       <motion.div variants={fadeIn("", "", 0.5, 1)} className={style.ball_container}>
       {technologies.map((technology) => (
-        <div className='w-28 h-28' key={technology.name}>
+        <div className={style.ball} key={technology.name}>
           <BallCanvas icon={technology.icon} />
         </div>
       ))}
