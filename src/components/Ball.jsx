@@ -12,11 +12,10 @@ const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
 
   return (
-    <Float speed={0.25} rotationIntensity={1} floatIntensity={2}>
-      <ambientLight intensity={0.25} />
-      <directionalLight position={[0, 0, 0.05]} />
+    <Float speed={0.2} rotationIntensity={0.5} floatIntensity={1.5}>
+      <ambientLight intensity={0.6} />
       <mesh castShadow receiveShadow scale={2.5} >
-        <sphereGeometry args={[1, 32, 32]} />
+        <sphereGeometry args={[1, 32.8, 32.8]} />
         <meshStandardMaterial
           color='#e6f1ff'
           polygonOffset
@@ -26,7 +25,7 @@ const Ball = (props) => {
         <Decal
           position={[0, 0, 1.3]}
           rotation={[0, 0, 0]}
-          scale={[1, 1, 1]}
+          scale={[0.95, 0.95, 0.95]}
           map={decal}
           flatShading
         />
