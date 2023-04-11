@@ -5,18 +5,18 @@ import { projects } from './constants'
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from '../utils/motion';
 
-const ProjectCard = ({ project, index }) => {
+const ProjectCard = ({ index, img, name, tech }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.5)} className={style.card}>
-      <img className={style.img} src={project.img} alt="project sample" />
+      <img className={style.img} src={img} alt="project sample" />
           <div className={style.card_overlay}>
             <div className={style.card_text}>
               <div className={style.text}>
-                <h2 className={style.name}>{project.name}</h2>
+                <h2 className={style.name}>{name}</h2>
                 <p className={style.tech}>
-                  <span className={style.tech_list}>{`#${project.tech[0]}`}</span>
-                  <span className={style.tech_list}>{`#${project.tech[1]}`}</span>
-                  <span className={style.tech_list}>{`#${project.tech[2]}`}</span>
+                  {tech.map((i) => (
+                    <span className={style.tech_list}>{`#${i}`}</span>
+                  ))}
                 </p>
               </div>
             <button className={style.btn}>Learn More</button>
@@ -32,7 +32,7 @@ const Work = () => {
       <motion.h1 variants={textVariant()} className={style.title}>My Recent Works</motion.h1>
       <div className={style.project_container}>
         {projects.map((project, index) => (
-          <ProjectCard key={project.name} index={index} project={project} />
+          <ProjectCard key={project.name} index={index} {...project} />
         ))}
       </div>
     </div>
