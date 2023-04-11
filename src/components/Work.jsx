@@ -3,7 +3,7 @@ import style from './styles/work.module.css'
 import { SectionWrapper } from '../hoc'
 import { projects } from './constants'
 import { motion } from "framer-motion";
-import { fadeIn } from '../utils/motion';
+import { fadeIn, textVariant } from '../utils/motion';
 
 const ProjectCard = ({ project, index }) => {
   return (
@@ -29,7 +29,7 @@ const ProjectCard = ({ project, index }) => {
 const Work = () => {
   return (
     <div>
-      <h1 className={style.title}>My Recent Works</h1>
+      <motion.h1 variants={textVariant()} className={style.title}>My Recent Works</motion.h1>
       <div className={style.project_container}>
         {projects.map((project, index) => (
           <ProjectCard key={project.name} index={index} project={project} />
