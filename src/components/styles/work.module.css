@@ -30,7 +30,7 @@
     position: relative;
     width: 30%;
     height: 300px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .img {
@@ -60,7 +60,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 90px;
+    gap: 80px;
 }
 
 .card:hover .card_text {
@@ -115,8 +115,23 @@
 }
 
 .tech_list {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-family: 'Montserrat Alternates', sans-serif;
+    color: var(--grey);
+}
+
+.btn {
+    color: var(--grey);
+    border: 1px solid var(--grey);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    box-shadow: inset -5em 0 0 0 var(--light-grey), inset 5em 0 0 0 var(--light-grey);
+    color: var(--cyan);
+    border: 1px solid var(--cyan);
 }
 
 .card:hover .btn {
