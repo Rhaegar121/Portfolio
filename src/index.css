@@ -11,6 +11,7 @@
   font-family: 'Merriweather Sans', sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
+  color: var(--white);
 }
 
 :root {

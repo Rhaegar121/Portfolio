@@ -7,7 +7,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 
 const ProjectCard = ({ index, img, name, tech }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.5)} className={style.card}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.4, 0.5)} className={style.card}>
       <img className={style.img} src={img} alt="project sample" />
           <div className={style.card_overlay}>
             <div className={style.card_text}>

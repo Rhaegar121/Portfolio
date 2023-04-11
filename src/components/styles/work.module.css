@@ -3,8 +3,8 @@
     text-align: center;
     position: relative;
     padding: 10px 0;
-    margin-top: 110px;
-    margin-bottom: 40px;
+    margin-top: 80px;
+    margin-bottom: 60px;
 }
 
 .title::after {
@@ -20,17 +20,14 @@
 }
 
 .project_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: 270px;
+    grid-gap: 15px;
 }
 
 .card {
     position: relative;
-    width: 27%;
-    height: 280px;
 }
 
 .img {
@@ -60,7 +57,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: 60px;
 }
 
 .card:hover .card_text {
@@ -109,7 +106,6 @@
 
 .name {
     font-family: 'Bungee', cursive;
-    color: var(--white);
     font-size: 1.4rem;
     margin-bottom: 10px;
 }
@@ -152,5 +148,86 @@
     to {
         transform: translate(0);
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .title::after {
+        width: 60px;
+    }
+
+    .project_container {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .title::after {
+        width: 50px;
+    }
+
+    .project_container {
+        grid-auto-rows: 150px;
+        grid-gap: 10px;
+    }
+
+    .card_text {
+        gap: 30px;
+    }
+
+    .name {
+        font-size: 0.8rem;
+        margin-bottom: 0px;
+    }
+
+    .tech_list {
+        font-size: 0.6rem;
+    }
+
+    .btn {
+        font-size: 0.6rem;
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .title::after {
+        width: 50px;
+    }
+
+    .project_container {
+        grid-template-columns: auto;
+        grid-auto-rows: 270px;
+        grid-gap: 15px;
+    }
+
+    .card_text {
+        gap: 70px;
+    }
+
+    .name {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .tech_list {
+        font-size: 0.6rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        padding: 10px 20px;
     }
 }
