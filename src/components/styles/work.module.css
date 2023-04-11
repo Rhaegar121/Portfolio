@@ -59,4 +59,37 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 90px;
+}
+
+.card:hover .text {
+    animation: slide-down 0.5s ease-out;
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-150%);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.card:hover .btn {
+    animation: slide-up 0.5s ease-out;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(150%);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
 }
