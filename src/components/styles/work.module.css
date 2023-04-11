@@ -38,6 +38,7 @@
     height: 100%;
     object-fit: cover;
     position: absolute;
+    opacity: 1;
 }
 
 .card_overlay {
@@ -62,8 +63,30 @@
     gap: 90px;
 }
 
+.card:hover .card_text {
+    animation: fade-in 0.3s ease-in-out;
+}
+
+@keyframes fade-in {
+    0% {
+        background-color: rgba(3, 11, 37, 0.1);
+    }
+    25% {
+        background-color: rgba(3, 11, 37, 0.25);
+    }
+    50% {
+        background-color: rgba(3, 11, 37, 0.5);
+    }
+    75% {
+        background-color: rgba(3, 11, 37, 0.75);
+    }
+    100% {
+        background-color: rgba(3, 11, 37, 1);
+    }
+}
+
 .card:hover .text {
-    animation: slide-down 0.5s ease-out;
+    animation: slide-down 0.3s ease-out;
 }
 
 @keyframes slide-down {
@@ -79,7 +102,7 @@
 }
 
 .card:hover .btn {
-    animation: slide-up 0.5s ease-out;
+    animation: slide-up 0.3s ease-out;
 }
 
 @keyframes slide-up {
