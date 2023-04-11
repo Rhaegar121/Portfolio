@@ -87,6 +87,7 @@
 
 .card:hover .text {
     animation: slide-down 0.3s ease-out;
+    text-align: center;
 }
 
 @keyframes slide-down {
@@ -99,6 +100,23 @@
         transform: translate(0);
         opacity: 1;
     }
+}
+
+.name {
+    font-family: 'Bungee', cursive;
+    color: var(--white);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.tech {
+    display: flex;
+    gap: 10px;
+}
+
+.tech_list {
+    font-size: 0.8rem;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .card:hover .btn {

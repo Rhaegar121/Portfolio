@@ -14,11 +14,11 @@ const Work = () => {
             <div className={style.card_overlay}>
               <div className={style.card_text}>
               <div className={style.text}>
-                <p>{project.name}</p>
-                <p>
-                  <span>{project.tech[0]}</span>
-                  <span>{project.tech[1]}</span>
-                  <span>{project.tech[2]}</span>
+                <h2 className={style.name}>{project.name}</h2>
+                <p className={style.tech}>
+                  <span className={style.tech_list}>{`#${project.tech[0]}`}</span>
+                  <span className={style.tech_list}>{`#${project.tech[1]}`}</span>
+                  <span className={style.tech_list}>{`#${project.tech[2]}`}</span>
                 </p>
               </div>
               <button className={style.btn}>Learn More</button>
