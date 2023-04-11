@@ -53,4 +53,31 @@ const technologies = [
     },
   ];
 
-export default technologies;
+const projects = [
+  {
+    name: "TV Shows Box",
+    desc: "dfodsfosdfnosdjfsdfisd",
+    tech: ["HTML", "CSS", "JavaScript"],
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
+    source_link: "",
+    live_link: "",
+  },
+  {
+    name: "TV Shows Box",
+    desc: "dfodsfosdfnosdjfsdfisd",
+    tech: ["HTML", "CSS", "JavaScript"],
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
+    source_link: "",
+    live_link: "",
+  },
+  {
+    name: "TV Shows Box",
+    desc: "dfodsfosdfnosdjfsdfisd",
+    tech: ["HTML", "CSS", "JavaScript"],
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
+    source_link: "",
+    live_link: "",
+  },
+];
+
+export { technologies, projects };
