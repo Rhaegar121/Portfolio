@@ -23,7 +23,8 @@
     display: grid;
     grid-template-columns: auto auto auto;
     grid-auto-rows: 270px;
-    grid-gap: 15px;
+    grid-gap: 10px;
+    padding: 20px 40px;
 }
 
 .card {
