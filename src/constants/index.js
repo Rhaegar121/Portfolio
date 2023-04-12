@@ -1,3 +1,5 @@
+import { awesomebook, tvshowbox } from '../assets';
+
 const technologies = [
     {
       name: "HTML 5",
@@ -58,7 +60,7 @@ const projects = [
     name: "TV Shows Box",
     desc: "TVshows Box is a web application showing multiple TV shows with the help of TVmaze API which contains both mobile and desktop versions. The webapp have 3 interfaces: - A home page, a popup window, and a contact page.",
     tech: ["JavaScript", "TVmaze API"],
-    img: "https://picsum.photos/id/32/300/250",
+    img: tvshowbox,
     source_link: "https://github.com/Rhaegar121/TVshows_Box",
     live_link: "https://rhaegar121.github.io/TVshows_Box/dist/",
   },
@@ -90,7 +92,7 @@ const projects = [
     name: "Awesome Books",
     desc: "Awesome Books Project is a simple website that displays a list of books and allows you to add and remove books from that list. Mainly built with javascript in Microverse Module 2.",
     tech: ["HTML", "CSS", "JavaScript"],
-    img: "https://picsum.photos/id/37/300/250",
+    img: awesomebook,
     source_link: "https://github.com/Rhaegar121/Awesome-Books-ES6",
     live_link: "https://rhaegar121.github.io/Awesome-Books-ES6/",
   },
