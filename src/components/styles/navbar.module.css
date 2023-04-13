@@ -1,5 +1,5 @@
 .navbar {
-    padding: 18px 60px 18px 50px;
+    padding: 18px 35px 18px 20px;
     display: flex;
     width: 100%;
     position: absolute;
@@ -16,15 +16,15 @@
 }
 
 .logo {
-    width: 70px;
+    width: 60px;
     height: auto;
 }
 
 .navlink {
-    font-size: 14px;
-    display: flex;
+    font-size: 13px;
+    display: none;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
     color: var(--grey);
 }
 
@@ -40,7 +40,7 @@
     color: var(--cyan);
     border: 1px solid var(--cyan);
     border-radius: 3px;
-    padding: 8px 10px;
+    padding: 6px 8px;
     transition: 0.25s;
 }
 
@@ -72,7 +72,7 @@
     height: 22px;
     position: relative;
     cursor: pointer;
-    display: none;
+    display: inline-block;
 }
 
 .line {
@@ -118,20 +118,35 @@
     top: 9px;
   }
 
-@media screen and (max-width: 426px) {
+@media screen and (min-width: 768px) {
     .navbar {
-        padding: 18px 35px 18px 20px;
+        padding: 18px 45px 18px 30px;
     }
 
     .logo {
-        width: 60px;
+        width: 70px;
     }
 
     .navlink {
-        display: none;
+        display: flex;
     }
 
     .hamburger {
-        display: inline-block;
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar {
+        padding: 18px 60px 18px 40px;
+    }
+
+    .navlink {
+        font-size: 15px;
+        gap: 40px;
+    }
+
+    .resume {
+        padding: 8px 10px;
     }
 }
