@@ -1,5 +1,5 @@
 .navbar {
-    padding: 18px 35px 18px 20px;
+    padding: 18px 30px 18px 15px;
     display: flex;
     width: 100%;
     position: absolute;
@@ -118,7 +118,7 @@
     top: 9px;
   }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .navbar {
         padding: 18px 45px 18px 30px;
     }
