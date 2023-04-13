@@ -1,17 +1,17 @@
 .title {
-    font-size: 2.3rem;
+    font-size: 1.4rem;
     text-align: center;
     position: relative;
-    padding: 10px 0;
-    margin-top: 80px;
+    padding: 8px 0;
+    margin-top: 70px;
     margin-bottom: 60px;
 }
 
 .title::after {
     content: "";
     background-color: var(--white);
-    width: 80px;
-    height: 3px;
+    width: 60px;
+    height: 2.5px;
     display: inline-block;
     position: absolute;
     bottom: 0;
@@ -21,10 +21,10 @@
 
 .project_container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-auto-rows: 270px;
-    grid-gap: 10px;
-    padding: 20px 40px;
+    grid-template-columns: auto;
+    grid-auto-rows: 200px;
+    grid-gap: 20px;
+    padding: 0px 10px;
 }
 
 .card {
@@ -58,7 +58,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 40px;
 }
 
 .card:hover .card_text {
@@ -107,8 +107,8 @@
 
 .name {
     font-family: 'Bungee', cursive;
-    font-size: 1.4rem;
-    margin-bottom: 10px;
+    font-size: 1rem;
+    margin-bottom: 5px;
 }
 
 .tech {
@@ -117,15 +117,16 @@
 }
 
 .tech_list {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-family: 'Montserrat Alternates', sans-serif;
     color: var(--grey);
 }
 
 .btn {
+    font-size: 0.8rem;
     color: var(--grey);
     border: 1px solid var(--grey);
-    padding: 10px 20px;
+    padding: 8px 12px;
     text-transform: uppercase;
     transition: 0.4s;
 }
@@ -152,93 +153,73 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    .title {
-        font-size: 1.8rem;
-    }
-
-    .title::after {
-        width: 60px;
-    }
-
-    .project_container {
-        grid-template-columns: auto auto;
-    }
-}
-
-@media screen and (max-width: 426px) {
-    .title {
-        font-size: 1.6rem;
-    }
-
-    .project_container {
-        grid-auto-rows: 150px;
-        grid-gap: 10px;
-    }
-
-    .card_text {
-        gap: 30px;
-    }
-
-    .name {
-        font-size: 0.8rem;
-        margin-bottom: 0px;
-    }
-
-    .tech_list {
-        font-size: 0.6rem;
-    }
-
-    .btn {
-        font-size: 0.6rem;
-        padding: 5px 10px;
-    }
-}
-
-@media screen and (max-width: 376px) {
+@media screen and (min-width: 480px) {
     .title {
         font-size: 1.6rem;
     }
 
     .title::after {
-        width: 50px;
+        width: 70px;
     }
 
     .project_container {
         grid-template-columns: auto;
-        grid-auto-rows: 270px;
-        grid-gap: 15px;
+        grid-auto-rows: 260px;
     }
 
     .card_text {
-        gap: 70px;
+        gap: 50px;
     }
 
     .name {
-        font-size: 1.1rem;
-        margin-bottom: 10px;
+        font-size: 1.15rem;
+        margin-bottom: 5px;
     }
 
     .tech_list {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
     .btn {
-        font-size: 0.8rem;
-        padding: 10px 20px;
+        font-size: 0.87rem;
+        padding: 8px 15px;
     }
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (min-width: 768px) {
     .title {
-        font-size: 1.3rem;
+        font-size: 1.7rem;
     }
 
     .project_container {
-        grid-auto-rows: 210px;
+        grid-template-columns: auto auto;
+        grid-auto-rows: 220px;
+        grid-gap: 4px;
+        padding: 0;
     }
 
-    .card_text {
-        gap: 40px;
+    .name {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.83rem;
+        padding: 8px 14px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .title {
+        font-size: 2.3rem;
+        margin-top: 110px;
+    }
+
+    .title::after {
+        width: 80px;
+    }
+
+    .project_container {
+        grid-template-columns: auto auto auto;
+        grid-auto-rows: 230px;
     }
 }
