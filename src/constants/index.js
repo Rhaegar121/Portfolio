@@ -1,4 +1,4 @@
-import { awesomebook, tvshowbox, todolist } from '../assets';
+import { awesomebook, tvshowbox, todolist, wdetsummit, guesstheword, tictactoe, mathmagician, metricwebapp } from '../assets';
 
 const technologies = [
     {
@@ -76,7 +76,7 @@ const projects = [
     name: "Metrics Webapp",
     desc: "Metrics Webapp is a mobile web application showing the current weather data of the cities using the Openweather API. It has two interfaces - city page and detail page based on the design of Nelson Sakwa on Behance. Built during the Microverse Module 3 React Captone Project.",
     tech: ["React", "Openweather API"],
-    img: tvshowbox,
+    img: metricwebapp,
     source_link: "https://github.com/Rhaegar121/Metrics-Webapp",
     live_link: "",
   },
@@ -100,9 +100,33 @@ const projects = [
     name: "WDET Summit",
     desc: "This project is the World Economy & Technology summit website based on the design of Cindy Shin in Behance which contains both mobile and desktop versions and consists of two pages (home and about pages). Built with HTML, CSS, and Javascript in Microverse Module 1.",
     tech: ["HTML", "CSS", "JavaScript"],
-    img: awesomebook,
+    img: wdetsummit,
     source_link: "https://github.com/Rhaegar121/WDET-Summit",
     live_link: "https://rhaegar121.github.io/WDET-Summit/",
+  },
+  {
+    name: "Tic Tac Toe",
+    desc: "Tic Tac Toe is a simple and classic game that is played on a 3x3 grid. The game is typically played with two players, one using “X” and the other using “O”. Mainly built with JavaScript.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    img: tictactoe,
+    source_link: "https://github.com/Rhaegar121/Tic-Tac-Toe",
+    live_link: "https://rhaegar121.github.io/Tic-Tac-Toe/",
+  },
+  {
+    name: "Guess the word",
+    desc: "Guess The Word is a fun letter puzzle game where the player have to guess the hidden word using the clues that the game gives. The game ends if the player guesses the correct word or if he chooses the wrong letter 8 times. Mainly built with Javascript.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    img: guesstheword,
+    source_link: "https://github.com/Rhaegar121/Guess-the-word",
+    live_link: "https://rhaegar121.github.io/Guess-the-word/",
+  },
+  {
+    name: "Math Magicians",
+    desc: "Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: 1) Make simple calculations. 2) Read a random math-related quote.",
+    tech: ["React"],
+    img: mathmagician,
+    source_link: "https://github.com/Rhaegar121/Math-Magicians",
+    live_link: "https://math-magicians-0dr6.onrender.com/",
   },
 ];
 
