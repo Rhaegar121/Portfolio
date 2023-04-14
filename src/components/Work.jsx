@@ -21,7 +21,7 @@ const Work = () => {
   };
 
   return (
-    <div>
+    <div className="relative">
       <motion.h1 variants={textVariant()} className={style.title}>
         My Recent Works
       </motion.h1>
@@ -29,8 +29,8 @@ const Work = () => {
         {/* Projects Card */}
         {projects.map((project, index) => (
           <motion.div
-            key={project.name}
-            variants={fadeIn("up", "spring", index * 0.4, 0.75)}
+            key={project.id}
+            variants={fadeIn("up", "", index * 0.4, 0.5)}
             index={index}
             className={style.card}
           >

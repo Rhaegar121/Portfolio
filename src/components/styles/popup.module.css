@@ -1,0 +1,63 @@
+.overlay {
+    position: fixed;
+    top: 12%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.container {
+    background-color: var(--light-grey);
+    width: 85%;
+    margin: 0px auto;
+}
+
+.close_btn {
+    width: 100%;
+    text-align: right;
+}
+
+.img {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.name {
+    font-family: 'Bungee', cursive;
+    font-size: 1.2rem;
+}
+
+.tech {
+    display: flex;
+    gap: 10px;
+}
+
+.tech_list {
+    color: var(--cyan);
+    font-size: 0.7rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.description {
+    font-size: 0.8rem;
+    margin: 10px auto;
+}
+
+.link {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.btn {
+    padding: 8px 10px;
+    border: 1px solid var(--grey);
+    font-size: 0.9rem;
+}

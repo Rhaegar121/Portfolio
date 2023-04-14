@@ -44,8 +44,8 @@ const StarsCanvas = () => {
       camera={{ position: [0, 0, 1] }}
       gl={{ antialias: true, alpha: true, preserveDrawingBuffer: true, powerPreference: "high-performance" }}
       style={{ width: '100vw', height: '100vh' }}
-      pixelRatio={window.devicePixelRatio}
-      aspectRatio={aspectRatio}
+      pixelratio={window.devicePixelRatio}
+      aspectratio={aspectRatio}
       className='bg-navy'
       >
         <Suspense fallback={null}>
