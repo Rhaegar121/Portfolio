@@ -1,4 +1,4 @@
-import { awesomebook, tvshowbox } from '../assets';
+import { awesomebook, tvshowbox, todolist } from '../assets';
 
 const technologies = [
     {
@@ -84,7 +84,7 @@ const projects = [
     name: "To Do List",
     desc: "To Do List Project is a tool that helps to organize your day with light and dark theme. It simply lists the things that you need to do and allows you to mark them as complete. Mainly built with javascript in Microverse Module 2.",
     tech: ["HTML", "CSS", "JavaScript"],
-    img: awesomebook,
+    img: todolist,
     source_link: "https://github.com/Rhaegar121/To-Do-list",
     live_link: "https://rhaegar121.github.io/To-Do-list/dist/",
   },

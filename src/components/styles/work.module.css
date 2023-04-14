@@ -225,8 +225,13 @@
 }
 
 @media screen and (min-width: 1400px) {
+    .project_container {
+        grid-auto-rows: 300px;
+        padding: 0px 40px;
+    }
+
     .card_text {
-        gap: 50px;
+        gap: 60px;
     }
 
     .name {
@@ -239,7 +244,7 @@
     }
 
     .btn {
-        font-size: 1rem;
+        font-size: 0.95rem;
         padding: 10px 15px;
     }
 }
