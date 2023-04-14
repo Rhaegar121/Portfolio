@@ -1,4 +1,4 @@
-import { awesomebook, tvshowbox, todolist, wdetsummit, guesstheword, tictactoe, mathmagician, metricwebapp } from '../assets';
+import { awesomebook, tvshowbox, todolist, wdetsummit, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers } from '../assets';
 
 const technologies = [
     {
@@ -76,7 +76,7 @@ const projects = [
     name: "Space Travelers' Hub",
     desc: "Space Travelers' Hub is a web application that provides commercial and scientific space travel services using the real live data from the SpaceX API. The application will allow users to book rockets and join selected space missions.",
     tech: ["React", "SpaceX API"],
-    img: tvshowbox,
+    img: spacetravelers,
     source_link: "https://github.com/Rhaegar121/React-Group-Project",
     live_link: "",
   },
