@@ -61,3 +61,9 @@
     border: 1px solid var(--grey);
     font-size: 0.9rem;
 }
+
+.btn:hover {
+    box-shadow: inset -5em 0 0 0 var(--light-grey), inset 5em 0 0 0 var(--light-grey);
+    color: var(--cyan);
+    border: 1px solid var(--cyan);
+}
