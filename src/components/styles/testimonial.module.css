@@ -1,6 +1,7 @@
 .container {
     background-color: var(--light-grey);
-    border-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     position: relative;
     padding-bottom: 200px;
 }
@@ -55,5 +56,5 @@
 .card {
     background-color: var(--dark-blue);
     border-radius: 20px;
-    /* width: 100%; */
+    padding: 20px;
 }
