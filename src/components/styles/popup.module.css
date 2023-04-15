@@ -12,16 +12,21 @@
     background-color: var(--light-grey);
     width: 85%;
     margin: 0px auto;
+    position: relative;
 }
 
 .close_btn {
-    width: 100%;
-    text-align: right;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    font-size: 1.25rem;
+    color: var(--grey);
 }
 
 .img {
     width: 90%;
-    margin: 20px auto;
+    margin: 0px auto 20px auto;
+    padding-top: 40px;
 }
 
 .content {
