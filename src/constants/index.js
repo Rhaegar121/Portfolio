@@ -72,7 +72,7 @@ const projects = [
     tech: ["React", "Openweather API"],
     img: metricwebapp,
     source_link: "https://github.com/Rhaegar121/Metrics-Webapp",
-    live_link: "",
+    live_link: "https://metrics-webapp121.netlify.app/",
   },
   {
     id: 3,
