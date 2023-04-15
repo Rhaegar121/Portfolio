@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from '../hoc';
 import { BsPersonCircle } from 'react-icons/bs';
+import { FaQuoteLeft } from 'react-icons/fa';
 import style from './styles/testimonial.module.css';
 
 const Testimonial = () => {
@@ -14,7 +15,7 @@ const Testimonial = () => {
       <p className={style.subtitle}>What other people say about me</p>
       <div className={style.card_container}>
         <div className={style.card}>
-          <span className={style.openquote}></span>
+          <FaQuoteLeft className={style.openquote} />
           <p className={style.para}></p>
           <div className={style.label}>
             <h2 className={style.name}></h2>
@@ -22,7 +23,7 @@ const Testimonial = () => {
           </div>
         </div>
         <div className={style.card}>
-          <span className={style.openquote}></span>
+          <FaQuoteLeft className={style.openquote} />
           <p className={style.para}></p>
           <div className={style.label}>
             <h2 className={style.name}></h2>
@@ -30,7 +31,7 @@ const Testimonial = () => {
           </div>
         </div>
         <div className={style.card}>
-          <span className={style.openquote}></span>
+          <FaQuoteLeft className={style.openquote} />
           <p className={style.para}></p>
           <div className={style.label}>
             <h2 className={style.name}></h2>
