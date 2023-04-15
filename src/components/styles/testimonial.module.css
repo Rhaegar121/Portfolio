@@ -50,11 +50,38 @@
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
     padding: 1px;
     border-radius: 20px;
-    width: 80%;
+    width: 85%;
 }
 
 .card {
     background-color: var(--dark-blue);
     border-radius: 20px;
     padding: 20px;
+}
+
+.openquote {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.para {
+    font-size: 0.8rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: var(--white);
+}
+
+.label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.icon {
+    font-size: 1.2rem;
+}
+
+.icon:hover {
+    color: var(--cyan);
 }
