@@ -12,7 +12,7 @@ const Testimonial = () => {
       <motion.h1 variants={textVariant()} className={style.title}>
         Testimonials
       </motion.h1>
-      <p className={style.subtitle}>What other people say about me</p>
+      <p className={style.subtitle}>What my coding partners say about me -</p>
       <div className={style.card_container}>
         <div className={style.card_shadow}>
           <div className={style.card}>
