@@ -23,6 +23,10 @@
     color: var(--grey);
 }
 
+.close_btn:hover {
+    color: var(--cyan);
+}
+
 .img {
     width: 90%;
     margin: 0px auto 20px auto;
