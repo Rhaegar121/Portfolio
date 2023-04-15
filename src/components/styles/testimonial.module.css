@@ -9,7 +9,7 @@
     position: relative;
     padding: 40px 0 8px 0;
     margin-top: 150px;
-    margin-bottom: 60px;
+    margin-bottom: 25px;
 }
 
 .title::after {
@@ -22,4 +22,12 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+}
+
+
+.subtitle {
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: var(--grey);
 }
