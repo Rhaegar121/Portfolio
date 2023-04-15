@@ -81,7 +81,7 @@ const projects = [
     tech: ["React", "SpaceX API"],
     img: spacetravelers,
     source_link: "https://github.com/Rhaegar121/React-Group-Project",
-    live_link: "",
+    live_link: "https://space-travelers-hub121.netlify.app/",
   },
   {
     id: 4,
