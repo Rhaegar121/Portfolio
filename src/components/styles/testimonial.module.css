@@ -1,0 +1,25 @@
+.container {
+    background-color: var(--light-grey);
+    border-radius: 20px;
+}
+
+.title {
+    font-size: 1.4rem;
+    text-align: center;
+    position: relative;
+    padding: 40px 0 8px 0;
+    margin-top: 150px;
+    margin-bottom: 60px;
+}
+
+.title::after {
+    content: "";
+    background-color: var(--white);
+    width: 60px;
+    height: 2.5px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
