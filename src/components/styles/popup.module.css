@@ -25,6 +25,7 @@
 
 .close_btn:hover {
     color: var(--cyan);
+    cursor: pointer;
 }
 
 .img {
@@ -70,10 +71,11 @@
     padding: 8px 10px;
     border: 1px solid var(--grey);
     font-size: 0.9rem;
+    transition: 0.35s;
 }
 
 .btn:hover {
-    box-shadow: inset -5em 0 0 0 var(--light-grey), inset 5em 0 0 0 var(--light-grey);
+    box-shadow: inset -4rem 0 0 0 var(--navy), inset 4rem 0 0 0 var(--navy);
     color: var(--cyan);
     border: 1px solid var(--cyan);
 }
