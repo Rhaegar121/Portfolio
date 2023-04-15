@@ -1,9 +1,6 @@
 .container {
     background-color: var(--light-grey);
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    position: relative;
-    padding-bottom: 200px;
+    border-radius: 20px;
 }
 
 .title {
@@ -36,12 +33,11 @@
 }
 
 .card_container {
-    position: absolute;
-    top: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
+    padding: 50px 0;
 }
 
 .card_shadow {
@@ -60,13 +56,13 @@
 }
 
 .openquote {
-    margin: 15px 0;
+    margin: 15px 0 25px 0;
     font-size: 1.2rem;
     color: var(--white);
 }
 
 .para {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-family: 'Montserrat Alternates', sans-serif;
     color: var(--white);
 }
@@ -84,4 +80,10 @@
 
 .icon:hover {
     color: var(--cyan);
+}
+
+@media screen and (min-width: 480px) {
+    .card_shadow {
+        width: 70%;
+    }
 }
