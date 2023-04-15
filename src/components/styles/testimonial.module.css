@@ -83,10 +83,12 @@
 
 .icon {
     font-size: 1.2rem;
+    color: var(--cyan);
+    transition: transform 0.5 ease-in-out;
 }
 
 .icon:hover {
-    color: var(--cyan);
+    transform: translateY(-15%);
     cursor: pointer;
 }
 
