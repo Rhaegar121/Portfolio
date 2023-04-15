@@ -1,6 +1,8 @@
 .container {
     background-color: var(--light-grey);
     border-radius: 20px;
+    position: relative;
+    padding-bottom: 200px;
 }
 
 .title {
@@ -30,4 +32,28 @@
     font-size: 1rem;
     font-family: 'Montserrat Alternates', sans-serif;
     color: var(--grey);
+}
+
+.card_container {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.card_shadow {
+    background: "#00cea8";
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+    padding: 1px;
+    border-radius: 20px;
+    width: 80%;
+}
+
+.card {
+    background-color: var(--dark-blue);
+    border-radius: 20px;
+    /* width: 100%; */
 }
