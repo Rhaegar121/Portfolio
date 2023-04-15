@@ -3,22 +3,38 @@ import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from '../hoc';
 import { BsPersonCircle } from 'react-icons/bs';
-// import style from './styles/testimonial.module.css';
+import style from './styles/testimonial.module.css';
 
 const Testimonial = () => {
   return (
-    <div>
-      <motion.h1 variants={textVariant()}>
+    <div className={style.container}>
+      <motion.h1 variants={textVariant()} className={style.title}>
         Testimonials
       </motion.h1>
-      <p>What other people say about me</p>
-      <div>
-        <div>
-          <span></span>
-          <p></p>
-          <div>
-            <h2></h2>
-            <BsPersonCircle />
+      <p className={style.subtitle}>What other people say about me</p>
+      <div className={style.card_container}>
+        <div className={style.card}>
+          <span className={style.openquote}></span>
+          <p className={style.para}></p>
+          <div className={style.label}>
+            <h2 className={style.name}></h2>
+            <BsPersonCircle className={style.icon} />
+          </div>
+        </div>
+        <div className={style.card}>
+          <span className={style.openquote}></span>
+          <p className={style.para}></p>
+          <div className={style.label}>
+            <h2 className={style.name}></h2>
+            <BsPersonCircle className={style.icon} />
+          </div>
+        </div>
+        <div className={style.card}>
+          <span className={style.openquote}></span>
+          <p className={style.para}></p>
+          <div className={style.label}>
+            <h2 className={style.name}></h2>
+            <BsPersonCircle className={style.icon} />
           </div>
         </div>
       </div>
