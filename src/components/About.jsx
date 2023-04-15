@@ -18,7 +18,7 @@ const About = () => {
           <img className={style.img} src={mypicture} alt="my picture" />
         </motion.div>
       </div>
-      <motion.p variants={fadeIn("", "", 0.15, 1)} className={`${style.subtitle} ${style.para}`}>Here are a few technologies I`ve been working with recently:</motion.p>
+      <motion.p variants={fadeIn("", "", 0.15, 1)} className={style.subtitle}>Here are a few technologies I`ve been working with recently:</motion.p>
       <motion.div variants={fadeIn("", "", 0.5, 1)} className={style.ball_container}>
       {technologies.map((technology) => (
         <div className={style.ball} key={technology.name}>

@@ -114,6 +114,11 @@
         width: 93%;
         font-size: 15px;
     }
+
+    .subtitle {
+        width: 93%;
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -121,13 +126,25 @@
         font-size: 1.7rem;
     }
 
+    .content {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+
     .para {
-        width: 96%;
+        width: 47%;
         font-size: 16px;
+        margin: 0;
     }
 
     .img_container {
-        width: 40%;
+        width: 30%;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        text-align: center;
     }
 }
 
@@ -143,7 +160,7 @@
 
     .para {
         font-size: 17px;
-        text-align: center;
+        text-align: space-between;
     }
 
     .ball_container {
