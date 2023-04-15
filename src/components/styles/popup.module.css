@@ -1,6 +1,6 @@
 .overlay {
     position: fixed;
-    top: 12%;
+    top: 73.5px;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -29,6 +29,7 @@
 
 .img {
     width: 90%;
+    height: 100%;
     margin: 0px auto 20px auto;
     padding-top: 40px;
 }
@@ -62,7 +63,7 @@
 .link {
     display: flex;
     justify-content: space-between;
-    padding: 15px 0;
+    padding: 15px 0 25px 0;
 }
 
 .btn {
@@ -75,4 +76,38 @@
     box-shadow: inset -5em 0 0 0 var(--light-grey), inset 5em 0 0 0 var(--light-grey);
     color: var(--cyan);
     border: 1px solid var(--cyan);
+}
+
+@media screen and (min-width: 768px) {
+    .close_btn {
+        font-size: 1.8rem;
+        right: 26px;
+    }
+
+    .img {
+        padding-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .name {
+        font-size: 1.8rem;
+    }
+
+    .tech {
+        gap: 15px;
+    }
+
+    .tech_list {
+        font-size: 0.9rem;
+    }
+
+    .description {
+        font-size: 1.1rem;
+        margin: 20px auto;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        padding: 10px 14px;
+    }
 }
