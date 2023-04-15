@@ -143,6 +143,14 @@
 }
 
 @media screen and (min-width: 1400px) {
+    .card_container {
+        gap: 40px;
+    }
+
+    .card_shadow {
+        width: 28.5%;
+    }
+
     .para {
         height: 220px;
     }
