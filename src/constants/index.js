@@ -108,7 +108,7 @@ const projects = [
     tech: ["React"],
     img: mathmagician,
     source_link: "https://github.com/Rhaegar121/Math-Magicians",
-    live_link: "https://math-magicians-0dr6.onrender.com/",
+    live_link: "https://math-magicians121.netlify.app/",
   },
   {
     id: 7,
