@@ -81,6 +81,7 @@
 
 .icon:hover {
     color: var(--cyan);
+    cursor: pointer;
 }
 
 @media screen and (min-width: 480px) {
@@ -118,26 +119,31 @@
 
     .card_shadow {
         width: 30%;
-        height: 400px;
-    }
-
-    .card {
-        height: 398px;
     }
 
     .name {
         font-size: 1.05rem;
     }
 
-    .firstlabel {
-        margin-top: 58px;
-    }
-
-    .lastlabel {
-        margin-top: 80px;
+    .para {
+        height: 260px;
     }
 
     .icon {
         font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .para {
+        height: 220px;
+    }
+
+    .name {
+        font-size: 1.1rem;
+    }
+
+    .icon {
+        font-size: 1.4rem;
     }
 }
