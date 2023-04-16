@@ -19,7 +19,7 @@ function App() {
         <Navbar />
         <About />
         <Work />
-        <Testimonial />
+        <div className='bg-light_grey mt-40'><Testimonial /></div>
         <Contact />
       </div>
     </BrowserRouter>

@@ -1,14 +1,8 @@
-.container {
-    background-color: var(--light-grey);
-    border-radius: 20px;
-}
-
 .title {
     font-size: 1.4rem;
     text-align: center;
     position: relative;
     padding: 40px 0 8px 0;
-    margin-top: 150px;
     margin-bottom: 25px;
 }
 
@@ -115,6 +109,7 @@
 @media screen and (min-width: 1200px) {
     .title {
         font-size: 2.3rem;
+        padding-top: 100px;
     }
 
     .title::after {
@@ -123,6 +118,7 @@
 
     .card_container {
         flex-direction: row;
+        padding-bottom: 80px;
     }
 
     .card_shadow {

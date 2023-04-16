@@ -8,11 +8,11 @@ module.exports = {
     extend: {
       colors: {
         navy: '#030b25',
-        // cyan: '#22d3ee',
-        // cyan: '#00aaff',
         cyan: '#22abfa',
         white: '#e6f1ff',
         grey: '#b1bcdc',
+        light_grey: '#1b243f',
+        dark_blue: '#100d25',
       },
     },
   },
