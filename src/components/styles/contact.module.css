@@ -18,3 +18,10 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+.subtitle {
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: var(--white);
+}
