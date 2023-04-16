@@ -3,8 +3,7 @@
     text-align: center;
     position: relative;
     padding: 8px 0;
-    margin-top: 70px;
-    margin-bottom: 60px;
+    margin: 60px auto;
 }
 
 .title::after {

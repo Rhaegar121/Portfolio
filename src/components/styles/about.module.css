@@ -3,7 +3,6 @@
     text-align: center;
     position: relative;
     padding: 8px 0;
-    margin-top: 70px;
     margin-bottom: 40px;
 }
 
@@ -43,7 +42,6 @@
     color: var(--cyan);
     position: relative;
     padding-bottom: 1.5px;
-    transition: 0.25s;
 }
 
 .link::after {

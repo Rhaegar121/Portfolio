@@ -12,7 +12,7 @@ const SectionWrapper = (Component, idName) =>
         viewport={{ once: true, amount: 0.25 }}
         className={style.container}
       >
-        <span className='hash-span' id={idName}>
+        <span id={idName}>
           &nbsp;
         </span>
 
