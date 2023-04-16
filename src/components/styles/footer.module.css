@@ -1,0 +1,21 @@
+.icon_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.overlay {
+    background: "#00cea8";
+    background: linear-gradient(90.13deg, #0086ce 1.9%, #bf61ff 97.5%);
+    background: -webkit-linear-gradient(-90.13deg, #0086ce 1.9%, #bf61ff 97.5%);
+    padding: 1px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    padding: 7px;
+    color: var(--grey);
+    background-color: var(--navy);
+}
