@@ -33,7 +33,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    gap: 10px;
+    gap: 7px;
 }
 
 .input {
@@ -43,10 +43,10 @@
     font-size: 0.9rem;
     font-weight: 300;
     color: var(--cyan);
-    background-color: var(--dark-blue);
+    background-color: var(--light-grey);
 }
 
-.input:placeholder-shown {
+.input::placeholder {
     color: var(--white);
 }
 
@@ -59,7 +59,7 @@
     border: 1px solid var(--cyan);
     border-radius: 3px;
     padding: 10px 12px;
-    transition: 0.25s;
+    transition: 0.35s;
 }
 
 .btn:hover,
