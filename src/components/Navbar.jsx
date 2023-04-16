@@ -67,7 +67,7 @@ const Navbar = () => {
           <a href={`#contact`} className={style.font}>Contact</a>
         </li>
         <li className={style.resume}>
-          <a href={`#resume`} className={style.font}>Resume</a>
+          <a href='https://drive.google.com/file/d/12IxQRP5r8ODJ8Tv_aUZ4tCljZ85Z2--j/view?usp=sharing' target=" blank" className={style.font}>Resume</a>
         </li>
       </ul>
 
@@ -124,7 +124,7 @@ const Navbar = () => {
           <a href={`#contact`} className={style.font}>Contact</a>
         </li>
         <li className={style.resume}>
-          <a href={`#resume`} className={style.font}>Resume</a>
+          <a href='https://drive.google.com/file/d/12IxQRP5r8ODJ8Tv_aUZ4tCljZ85Z2--j/view?usp=sharing' target=" blank" className={style.font}>Resume</a>
         </li>
       </ul>
     </nav>
