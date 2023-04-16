@@ -109,7 +109,6 @@
 @media screen and (min-width: 1200px) {
     .title {
         font-size: 2.3rem;
-        padding-top: 100px;
     }
 
     .title::after {

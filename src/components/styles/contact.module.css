@@ -34,7 +34,6 @@
     justify-content: center;
     align-items: flex-end;
     gap: 10px;
-    /* border: 1px solid red; */
 }
 
 .input {
@@ -70,4 +69,30 @@
 
 .error {
     display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        width: 540px;
+        margin: 0 auto;
+    }
+
+    .form {
+        width: 495px;
+        margin: 50px auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .title {
+        font-size: 2.3rem;
+    }
+
+    .title::after {
+        width: 80px;
+    }
 }
