@@ -76,13 +76,29 @@
 
 .icon {
     font-size: 1.2rem;
+    padding-bottom: 2px;
+    position: relative;
     color: var(--cyan);
-    transition: transform 0.5 ease-in-out;
+}
+
+.icon::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    display: inline-block;
+    left: 0;
+    bottom: 0;
+    background-color: var(--cyan);
+    transition: 0.3s;
 }
 
 .icon:hover {
-    transform: translateY(-15%);
     cursor: pointer;
+}
+
+.icon:hover::after {
+    width: 100%;
 }
 
 @media screen and (min-width: 480px) {
@@ -158,6 +174,6 @@
     }
 
     .icon {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 }
