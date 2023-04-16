@@ -2,20 +2,87 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    position: absolute;
+    left: 50%;
+    top: -10%;
+    transform: translateX(-50%);
 }
 
 .overlay {
-    background: "#00cea8";
-    background: linear-gradient(90.13deg, #0086ce 1.9%, #bf61ff 97.5%);
-    background: -webkit-linear-gradient(-90.13deg, #0086ce 1.9%, #bf61ff 97.5%);
-    padding: 1px;
+    position: relative;
+    overflow: hidden;
+    color: var(--grey);
+    background-color: var(--navy);
+    border: 1px solid var(--grey);
+}
+
+.overlay:hover {
+    cursor: pointer;
+}
+
+.overlay:hover .icon {
+    opacity: 0;
+    transform: translate(100%,0);
+}
+
+.overlay:hover .icon_hover {
+    opacity: 1;
+    transform: translate(0,0);
 }
 
 .icon {
     width: 40px;
     height: 40px;
-    font-size: 1.2rem;
-    padding: 7px;
+    font-size: 1.1rem;
+    padding: 9px;
+    transition: all .3s ease-in-out;
+}
+
+.icon_hover {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.1rem;
+    opacity: 0;
+    padding: 9px;
+    transform: translate(-100%,0);
+    transition: all .3s ease-in-out;
+}
+
+.p {
+    padding: 90px 0;
+    text-align: center;
+}
+
+.a {
+    font-size: 0.8rem;
     color: var(--grey);
-    background-color: var(--navy);
+}
+
+.a:hover {
+    color: var(--cyan);
+}
+
+.span {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+@media screen and (min-width: 1200px) {
+    .icon_container {
+        gap: 40px;
+    }
+
+    .icon {
+        width: 45px;
+        height: 45px;
+        padding: 10px;
+    }
+
+    .icon_hover {
+        width: 45px;
+        height: 45px;
+        padding: 10px;
+    }
 }

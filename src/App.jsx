@@ -22,7 +22,7 @@ function App() {
         <Work />
         <div className='bg-light_grey mt-24'><Testimonial /></div>
         <Contact />
-        <Footer />
+        <div className='bg-dark_blue mt-36 relative'><Footer /></div>
       </div>
     </BrowserRouter>
   )

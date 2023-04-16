@@ -19,7 +19,7 @@
   --white: #d5e0f1;
   --grey: #b1bcdc;
   --light-grey: #1b243f;
-  --dark-blue: #100d25;
+  --dark-blue: #02091d;
 }
 
 ::-webkit-scrollbar {
@@ -49,5 +49,5 @@
 }
 
 .test {
-  color: #ffffff;
+  color: #02091d;
 }

@@ -42,7 +42,7 @@
     font-size: 0.9rem;
     font-weight: 300;
     color: var(--cyan);
-    background-color: var(--light-grey);
+    background-color: var(--dark-blue);
 }
 
 .input::placeholder {
