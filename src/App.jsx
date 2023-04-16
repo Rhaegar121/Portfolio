@@ -5,6 +5,7 @@ import About from "./components/About";
 import Work from "./components/Work";
 import Testimonial from "./components/Testimonial";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import StarsCanvas from './components/Stars';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Work />
         <div className='bg-light_grey mt-24'><Testimonial /></div>
         <Contact />
+        <Footer />
       </div>
     </BrowserRouter>
   )
