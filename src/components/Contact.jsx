@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { SectionWrapper } from '../hoc';
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn, textVariant, zoomIn } from "../utils/motion";
 import style from './styles/contact.module.css';
 
 const Contact = () => {
@@ -44,7 +44,13 @@ const Contact = () => {
       <motion.p variants={fadeIn("", "", 0.15, 1)} className={style.subtitle}>
         I'm always excited to hear about new opportunities and collaborations. Don't hesitate to reach out and let's make something great.
       </motion.p>
-      <motion.form onSubmit={handleSubmit} action="https://formspree.io/f/mgeqgkdd" method="post" className={style.form}>
+      <motion.form
+        variants={zoomIn(0.15, 0.75)}
+        onSubmit={handleSubmit}
+        action="https://formspree.io/f/mgeqgkdd"
+        method="post"
+        className={style.form}
+      >
           <input
             type="text"
             placeholder="Name"
