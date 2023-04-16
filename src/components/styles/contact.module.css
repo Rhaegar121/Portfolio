@@ -25,3 +25,49 @@
     font-family: 'Montserrat Alternates', sans-serif;
     color: var(--white);
 }
+
+.form {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    /* border: 1px solid red; */
+}
+
+.input {
+    width: 100%;
+    padding: 8px 12px;
+    outline: none;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--cyan);
+    background-color: var(--dark-blue);
+}
+
+.input:placeholder-shown {
+    color: var(--white);
+}
+
+.textarea {
+    height: 180px;
+}
+
+.btn {
+    color: var(--cyan);
+    border: 1px solid var(--cyan);
+    border-radius: 3px;
+    padding: 10px 12px;
+    transition: 0.25s;
+}
+
+.btn:hover,
+.btn:focus {
+    box-shadow: inset -4em 0 0 0 var(--light-grey), inset 4em 0 0 0 var(--light-grey); 
+}
+
+.error {
+    display: none;
+}

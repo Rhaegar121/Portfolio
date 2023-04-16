@@ -13,30 +13,33 @@ const Contact = () => {
       <motion.p variants={fadeIn("", "", 0.15, 1)} className={style.subtitle}>
         I'm always excited to hear about new opportunities and collaborations. Don't hesitate to reach out and let's make something great.
       </motion.p>
-      <motion.form action="https://formspree.io/f/mgeqgkdd" method="post">
+      <motion.form action="https://formspree.io/f/mgeqgkdd" method="post" className={style.form}>
           <input
             type="text"
-            placeholder="Full name"
+            placeholder="Name"
             required
-            maxlength="30"
+            maxLength="30"
             name="name"
+            className={style.input}
           />
           <input
             type="email"
-            placeholder="Email address"
+            placeholder="Email"
             required
             name="email"
+            className={style.input}
           />
-          <span></span>
+          <span className={style.error}></span>
           <textarea
             cols="30"
             rows="10"
             placeholder="Say something"
             required
-            maxlength="500"
+            maxLength="500"
             name="message"
+            className={`${style.input} ${style.textarea}`}
           ></textarea>
-          <button type="submit">Get in touch</button>
+          <button type="submit" className={style.btn}>Get in touch</button>
       </motion.form>
     </div>
   )
