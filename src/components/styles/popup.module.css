@@ -1,6 +1,6 @@
 .overlay {
     position: fixed;
-    top: 73.5px;
+    top: 65.5px;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -81,6 +81,10 @@
 }
 
 @media screen and (min-width: 768px) {
+    .overlay {
+        top: 73.5px;
+    }
+    
     .container {
         width: 652px;
     }
@@ -121,7 +125,7 @@
 @media screen and (min-width: 1200px) {
     .overlay {
         top: 0;
-        z-index: 999;
+        z-index: 3;
     }
 
     .container {

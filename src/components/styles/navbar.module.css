@@ -119,7 +119,7 @@
     top: 9px;
   }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .navbar {
         padding: 18px 45px 18px 30px;
     }
