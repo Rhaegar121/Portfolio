@@ -1,13 +1,15 @@
 import React from "react";
 import style from "./styles/popup.module.css";
 import { AiOutlineClose } from 'react-icons/ai';
+import Carousel from "./Carousel";
 
 const Popup = ({ handleClose, project }) => {
   return (
     <div className={style.overlay}>
       <div className={style.container}>
         <AiOutlineClose className={style.close_btn} onClick={handleClose} />
-        <img className={style.img} src={project.img} alt="project sample" />
+        <Carousel />
+        {/* <img className={style.img} src={project.img} alt="project sample" /> */}
         <div className={style.content}>
             <h2 className={style.name}>{project.name}</h2>
             <p className={style.tech}>
