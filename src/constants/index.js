@@ -1,4 +1,4 @@
-import { awesomebook, tvshowbox, todolist, wdetsummit, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, awesomebook1 } from '../assets';
+import { awesomebook, tvshowbox, todolist, wdetsummit, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, awesomebook1, awesomebook2, awesomebook3 } from '../assets';
 
 const technologies = [
     {
@@ -62,6 +62,7 @@ const projects = [
     desc: "TVshows Box is a web application showing multiple TV shows with the help of TVmaze API which contains both mobile and desktop versions. The webapp have 3 interfaces: - A home page, a popup window, and a contact page.",
     tech: ["JavaScript", "TVmaze API"],
     img: tvshowbox,
+    carousel: [awesomebook1, awesomebook2, awesomebook3],
     source_link: "https://github.com/Rhaegar121/TVshows_Box",
     live_link: "https://rhaegar121.github.io/TVshows_Box/dist/",
   },
@@ -71,6 +72,7 @@ const projects = [
     desc: "Metrics Webapp is a mobile web application showing the current weather data of the cities using the Openweather API. It has two interfaces - city page and detail page based on the design of Nelson Sakwa on Behance. Built during the Microverse Module 3 React Captone Project.",
     tech: ["React", "Openweather API"],
     img: metricwebapp,
+    carousel: [awesomebook1, awesomebook2, awesomebook3],
     source_link: "https://github.com/Rhaegar121/Metrics-Webapp",
     live_link: "https://metrics-webapp121.netlify.app/",
   },
@@ -80,6 +82,7 @@ const projects = [
     desc: "Space Travelers' Hub is a web application that provides commercial and scientific space travel services using the real live data from the SpaceX API. The application will allow users to book rockets and join selected space missions.",
     tech: ["React", "SpaceX API"],
     img: spacetravelers,
+    carousel: [awesomebook1, awesomebook2, awesomebook3],
     source_link: "https://github.com/Rhaegar121/React-Group-Project",
     live_link: "https://space-travelers-hub121.netlify.app/",
   },
@@ -89,6 +92,7 @@ const projects = [
     desc: "To Do List Project is a tool that helps to organize your day with light and dark theme. It simply lists the things that you need to do and allows you to mark them as complete. Mainly built with javascript in Microverse Module 2.",
     tech: ["HTML", "CSS", "JavaScript"],
     img: todolist,
+    carousel: [awesomebook1, awesomebook2, awesomebook3],
     source_link: "https://github.com/Rhaegar121/To-Do-list",
     live_link: "https://rhaegar121.github.io/To-Do-list/dist/",
   },
@@ -98,6 +102,7 @@ const projects = [
     desc: "This project is the World Economy & Technology summit website based on the design of Cindy Shin in Behance which contains both mobile and desktop versions and consists of two pages (home and about pages). Built with HTML, CSS, and Javascript in Microverse Module 1.",
     tech: ["HTML", "CSS", "JavaScript"],
     img: wdetsummit,
+    carousel: [awesomebook1, awesomebook2, awesomebook3],
     source_link: "https://github.com/Rhaegar121/WDET-Summit",
     live_link: "https://rhaegar121.github.io/WDET-Summit/",
   },
@@ -107,6 +112,7 @@ const projects = [
     desc: "Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: 1) Make simple calculations. 2) Read a random math-related quote.",
     tech: ["React"],
     img: mathmagician,
+    carousel: [awesomebook1, awesomebook2, awesomebook3],
     source_link: "https://github.com/Rhaegar121/Math-Magicians",
     live_link: "https://math-magicians121.netlify.app/",
   },
@@ -116,6 +122,7 @@ const projects = [
     desc: "Tic Tac Toe is a simple and classic game that is played on a 3x3 grid. The game is typically played with two players, one using “X” and the other using “O”. Mainly built with JavaScript.",
     tech: ["HTML", "CSS", "JavaScript"],
     img: tictactoe,
+    carousel: [awesomebook1, awesomebook2, awesomebook3],
     source_link: "https://github.com/Rhaegar121/Tic-Tac-Toe",
     live_link: "https://rhaegar121.github.io/Tic-Tac-Toe/",
   },
@@ -125,7 +132,7 @@ const projects = [
     desc: "Awesome Books Project is a simple website that displays a list of books and allows you to add and remove books from that list. Mainly built with javascript in Microverse Module 2.",
     tech: ["HTML", "CSS", "JavaScript"],
     img: awesomebook,
-    carousel: [awesomebook1],
+    carousel: [awesomebook1, awesomebook2, awesomebook3],
     source_link: "https://github.com/Rhaegar121/Awesome-Books-ES6",
     live_link: "https://rhaegar121.github.io/Awesome-Books-ES6/",
   },
@@ -135,6 +142,7 @@ const projects = [
     desc: "Guess The Word is a fun letter puzzle game where the player have to guess the hidden word using the clues that the game gives. The game ends if the player guesses the correct word or if he chooses the wrong letter 8 times. Mainly built with Javascript.",
     tech: ["HTML", "CSS", "JavaScript"],
     img: guesstheword,
+    carousel: [awesomebook1, awesomebook2, awesomebook3],
     source_link: "https://github.com/Rhaegar121/Guess-the-word",
     live_link: "https://rhaegar121.github.io/Guess-the-word/",
   },

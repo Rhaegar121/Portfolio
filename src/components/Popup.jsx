@@ -8,7 +8,7 @@ const Popup = ({ handleClose, project }) => {
     <div className={style.overlay}>
       <div className={style.container}>
         <AiOutlineClose className={style.close_btn} onClick={handleClose} />
-        <Carousel />
+        <Carousel project={project}/>
         {/* <img className={style.img} src={project.img} alt="project sample" /> */}
         <div className={style.content}>
             <h2 className={style.name}>{project.name}</h2>

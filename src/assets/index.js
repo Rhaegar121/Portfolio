@@ -9,5 +9,7 @@ import mathmagician from './projects/mathmagician.png'
 import metricwebapp from './projects/metricwebapp.png'
 import spacetravelers from './projects/spacetravelers.png'
 import awesomebook1 from './carousels/awesome book screenshot 1.jpg';
+import awesomebook2 from './carousels/awesome book screenshot 2.jpg';
+import awesomebook3 from './carousels/awesome book screenshot 3.jpg';
 
-export { logo, awesomebook , tvshowbox, todolist, wdetsummit, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, awesomebook1 };
+export { logo, awesomebook , tvshowbox, todolist, wdetsummit, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, awesomebook1, awesomebook2, awesomebook3 };
