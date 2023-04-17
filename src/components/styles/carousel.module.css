@@ -11,3 +11,21 @@
     object-fit: cover;
     margin: 0 auto;
 }
+
+@media screen and (min-width: 480px) {
+    .img {
+        height: 180px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .img {
+        height: 290px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .img {
+        height: 260px;
+    }
+}
