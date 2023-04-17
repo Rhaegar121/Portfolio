@@ -20,7 +20,7 @@ const Carousel = () => {
         <img src={projects[0].img} className={style.img} />
       </div>
       <div>
-      <img src={projects[1].img} className={style.img} />
+      <img src={projects[7].carousel[0]} className={style.img} />
       </div>
     </Slider>
   );

@@ -8,5 +8,6 @@ import tictactoe from './projects/tictactoe.jpg'
 import mathmagician from './projects/mathmagician.png'
 import metricwebapp from './projects/metricwebapp.png'
 import spacetravelers from './projects/spacetravelers.png'
+import awesomebook1 from './carousels/awesome book screenshot 1.jpg';
 
-export { logo, awesomebook , tvshowbox, todolist, wdetsummit, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers };
+export { logo, awesomebook , tvshowbox, todolist, wdetsummit, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, awesomebook1 };

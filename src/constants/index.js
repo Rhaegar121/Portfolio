@@ -1,4 +1,4 @@
-import { awesomebook, tvshowbox, todolist, wdetsummit, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers } from '../assets';
+import { awesomebook, tvshowbox, todolist, wdetsummit, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, awesomebook1 } from '../assets';
 
 const technologies = [
     {
@@ -125,6 +125,7 @@ const projects = [
     desc: "Awesome Books Project is a simple website that displays a list of books and allows you to add and remove books from that list. Mainly built with javascript in Microverse Module 2.",
     tech: ["HTML", "CSS", "JavaScript"],
     img: awesomebook,
+    carousel: [awesomebook1],
     source_link: "https://github.com/Rhaegar121/Awesome-Books-ES6",
     live_link: "https://rhaegar121.github.io/Awesome-Books-ES6/",
   },
