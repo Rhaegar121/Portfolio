@@ -39,7 +39,7 @@ const Contact = () => {
   return (
     <div>
       <motion.h1 variants={textVariant()} className={style.title}>
-        Contact
+        Get in Touch!
       </motion.h1>
       <motion.p variants={fadeIn("", "", 0.15, 1)} className={style.subtitle}>
         I'm always excited to hear about new opportunities and collaborations. Don't hesitate to reach out and let's make something great.
