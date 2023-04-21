@@ -60,10 +60,24 @@
     font-size: 0.8rem;
     color: var(--grey);
     font-family: 'Montserrat Alternates', sans-serif;
+    position: relative;
+    padding-bottom: 1.8px;
 }
 
-.a:hover {
-    color: var(--cyan);
+.a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    display: inline-block;
+    left: 0;
+    bottom: 0;
+    background-color: var(--grey);
+    transition: 0.3s;
+}
+
+.a:hover::after {
+    width: 100%;
 }
 
 .span {
