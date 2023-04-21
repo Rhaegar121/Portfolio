@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
         </div>
         <div className={style.p}>
-        <a href='https://github.com/Rhaegar121/Portfolio' target='_blank'  className={style.a}>Brought into being by <span className={style.span}>@ Kaung Myat Kyaw</span></a>
+        <a href='https://github.com/Rhaegar121/Portfolio' target='_blank'  className={style.a}>Brought into being by <span className={style.span}>©</span> Kaung Myat Kyaw</a>
         </div>
     </div>
   )

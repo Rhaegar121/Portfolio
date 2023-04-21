@@ -59,6 +59,7 @@
 .a {
     font-size: 0.8rem;
     color: var(--grey);
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .a:hover {
@@ -66,7 +67,7 @@
 }
 
 .span {
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 0.95rem;
 }
 
 @media screen and (min-width: 1200px) {
