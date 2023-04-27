@@ -8,7 +8,7 @@ import { FiGithub } from 'react-icons/fi';
 
 const Footer = () => {
     return (
-        <div className={style.footer}>
+        <>
             <div className={style.icon_container}>
                 <a href='https://www.linkedin.com/in/kaungmyatkyaw/' target='_blank' className={style.overlay}>
                     <FiLinkedin className={style.icon_hover} />
@@ -34,7 +34,7 @@ const Footer = () => {
             <div className={style.p}>
                 <a href='https://github.com/Rhaegar121/Portfolio' target='_blank' className={style.a}>Brought into being by <span className={style.span}>©</span> Kaung Myat Kyaw</a>
             </div>
-        </div>
+        </>
     )
 }
 
