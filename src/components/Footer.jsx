@@ -22,7 +22,7 @@ const Footer = () => {
                     <FiInstagram className={style.icon_hover} />
                     <FiInstagram className={style.icon} />
                 </a>
-                <a href='https://twitter.com/kmk194056' target='_blank' className={style.overlay}>
+                <a href='https://twitter.com/Rhaegar121' target='_blank' className={style.overlay}>
                     <FiTwitter className={style.icon_hover} />
                     <FiTwitter className={style.icon} />
                 </a>
