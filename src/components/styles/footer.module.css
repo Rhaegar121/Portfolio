@@ -64,20 +64,36 @@
     padding-bottom: 1.8px;
 }
 
+.a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    display: inline-block;
+    left: 50%;
+    bottom: 0;
+    background-color: var(--grey);
+    transition: 0.3s;
+}
+
 .a::after {
     content: "";
     position: absolute;
     width: 0;
     height: 1px;
     display: inline-block;
-    left: 0;
+    right: 50%;
     bottom: 0;
     background-color: var(--grey);
     transition: 0.3s;
 }
 
 .a:hover::after {
-    width: 100%;
+    width: 50%;
+}
+
+.a:hover::before {
+    width: 50%;
 }
 
 .span {
