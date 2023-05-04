@@ -46,7 +46,7 @@ const StarsCanvas = () => {
       style={{ width: '100vw', height: '100vh' }}
       pixelratio={window.devicePixelRatio}
       aspectratio={aspectRatio}
-      className='bg-navy'
+      className='bg-dark_blue'
       >
         <Suspense fallback={null}>
           <Stars />

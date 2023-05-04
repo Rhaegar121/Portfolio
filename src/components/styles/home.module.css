@@ -30,7 +30,7 @@
     font-size: 0.75rem;
     word-spacing: 0.15rem;
     margin-bottom: 15px;
-    color: var(--grey);
+    color: var(--white);
 }
 
 .btn {
@@ -39,7 +39,7 @@
     padding: 7px 10px;
     border: 1px solid var(--grey);
     transition: 0.4s;
-    color: var(--grey);
+    color: var(--white);
 }
 
 .arrow {
@@ -121,25 +121,3 @@
         font-size: 19px;
     }
 }
-
-/* @media screen and (max-width: 321px) {
-    .intro {
-        font-size: 1.05rem;
-        line-height: 1.4rem;
-    }
-
-    .desc {
-        font-size: 0.7rem;
-    }
-
-    .btn {
-        font-size: 0.6rem;
-        padding: 7px 6px 7px 8px;
-    }
-
-    .arrow {
-        margin-left: 4px;
-        font-size: 13px;
-    }
-} */
-
