@@ -14,7 +14,7 @@ const Ball = ({imgUrl, isMobile}) => {
   return (
     <Float speed={1} rotationIntensity={0.5} floatIntensity={1.5} position-y={0} rotation-y={0}>
       <ambientLight intensity={0.6} />
-      <mesh castShadow receiveShadow scale={isMobile ? 2.5 : 2.2} >
+      <mesh castShadow receiveShadow scale={isMobile ? 2.5 : 2.3} >
         <sphereGeometry args={[1, 32.8, 32.8]} />
         <meshStandardMaterial
           // color='#e6f1ff'
@@ -70,7 +70,7 @@ const BallCanvas = ({ icon }) => {
       <Suspense fallback={null}>
         <OrbitControls
           autoRotate
-          autoRotateSpeed={3}
+          autoRotateSpeed={8}
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
