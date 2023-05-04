@@ -18,7 +18,7 @@ const Ball = ({imgUrl, isMobile}) => {
         <sphereGeometry args={[1, 32.8, 32.8]} />
         <meshStandardMaterial
           // color='#e6f1ff'
-          color='#b1bcdc'
+          color='#d5e0f1'
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading
