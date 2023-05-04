@@ -63,8 +63,8 @@
     transition: height 0.3s ease-out;
     width: 100%;
     z-index: 1;
-    color: var(--cyan);
-    background-color: var(--light-grey);
+    /* color: var(--cyan); */
+    background-color: var(--dark-blue);
     backdrop-filter: blur(20px);
 }
 

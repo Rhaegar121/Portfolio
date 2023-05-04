@@ -84,8 +84,8 @@ const Navbar = () => {
     >
         <li 
           key="about"
-          className='mt-20'
-          // className={`${ active === "About" ? "text-cyan" : "text-grey" } mt-20`}
+          // className='mt-20'
+          className={`${ active === "About" ? "text-cyan" : "text-grey" } mt-20`}
           onClick={() => {
             setActive("About");
             handleMenuClick();
@@ -95,7 +95,7 @@ const Navbar = () => {
         </li>
         <li 
           key="work"
-          // className={ active === "Work" ? "text-cyan" : "text-grey" }
+          className={ active === "Work" ? "text-cyan" : "text-grey" }
           onClick={() => {
             setActive("Work");
             handleMenuClick();
@@ -105,7 +105,7 @@ const Navbar = () => {
         </li>
         <li 
           key="testimonials"
-          // className={ active === "Testimonials" ? "text-cyan" : "text-grey" }
+          className={ active === "Testimonials" ? "text-cyan" : "text-grey" }
           onClick={() => {
             setActive("Testimonials");
             handleMenuClick();
@@ -115,7 +115,7 @@ const Navbar = () => {
         </li>
         <li 
           key="contact"
-          // className={ active === "Contact" ? "text-cyan" : "text-grey" }
+          className={ active === "Contact" ? "text-cyan" : "text-grey" }
           onClick={() => {
             setActive("Contact");
             handleMenuClick();
