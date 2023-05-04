@@ -12,12 +12,13 @@ const Ball = ({imgUrl, isMobile}) => {
   const [decal] = useTexture([imgUrl]);
 
   return (
-    <Float speed={0.75} rotationIntensity={0.5} floatIntensity={1.5}>
+    <Float speed={1} rotationIntensity={0.5} floatIntensity={1.5} position-y={0} rotation-y={0}>
       <ambientLight intensity={0.6} />
       <mesh castShadow receiveShadow scale={isMobile ? 2.5 : 2.2} >
         <sphereGeometry args={[1, 32.8, 32.8]} />
         <meshStandardMaterial
-          color='#e6f1ff'
+          // color='#e6f1ff'
+          color='#b1bcdc'
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading
@@ -25,6 +26,13 @@ const Ball = ({imgUrl, isMobile}) => {
         <Decal
           position={[0, 0, 1.3]}
           rotation={[0, 0, 0]}
+          scale={[0.95, 0.95, 0.95]}
+          map={decal}
+          flatShading
+        />
+        <Decal
+          position={[0, 0, -1.3]}
+          rotation={[0, Math.PI, 0]}
           scale={[0.95, 0.95, 0.95]}
           map={decal}
           flatShading
@@ -60,7 +68,13 @@ const BallCanvas = ({ icon }) => {
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={null}>
-        <OrbitControls enableZoom={false} />
+        <OrbitControls
+          autoRotate
+          autoRotateSpeed={3}
+          enableZoom={false}
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
+        />
         <Ball imgUrl={icon} isMobile={isMobile} />
       </Suspense>
 
