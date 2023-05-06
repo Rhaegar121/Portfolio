@@ -65,17 +65,11 @@
     width: 70%;
     position: relative;
     background-color: var(--cyan);
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
-
-/* .overlay {
-    box-shadow: inset 0 0 0 10rem rgba(34, 171, 250, 0.7);
-    background-color: transparent;
-    z-index: 9;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: 0.3s;
-} */
 
 .img_container:hover {
     animation: pulse 0.5s;
@@ -87,9 +81,11 @@
     filter: none;
 }
 
-/* .img_container:hover .overlay {
-    box-shadow: inset 0 0 0 0 transparent;
-} */
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 13px); }
+    100%   { transform: translate(0, -0px); }   
+}
 
 @keyframes pulse {
     0% { box-shadow: 0 0 0 0 var(--cyan); }
