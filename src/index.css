@@ -25,10 +25,11 @@
 ::-webkit-scrollbar {
   width: 8.5px;
   height: 0px;
+  background-color: var(--dark-blue);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #191a2c;
+  background-color: var(--light-grey);
   border-radius: 8px;
 }
 
