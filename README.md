@@ -26,6 +26,14 @@
 
 # 📖 [Portfolio] <a name="about-project"></a>
 
+<div align="center">
+  <img src="src/assets/portfolio.png" alt="project sample" width="700"  height="auto" />
+  <br/>
+
+  <h3><b>Portfolio</b></h3>
+
+</div>
+
 **Portfolio** is a react based project.
 
 ## 🛠 Built With <a name="built-with"></a>
