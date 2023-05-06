@@ -35,7 +35,7 @@
     height: 40px;
     font-size: 1.1rem;
     padding: 9px;
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-out;
 }
 
 .icon_hover {
@@ -48,7 +48,7 @@
     opacity: 0;
     padding: 9px;
     transform: translate(-100%,0);
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-out;
 }
 
 .p {
