@@ -67,7 +67,7 @@ const Navbar = () => {
           <a href={`#contact`} className={style.font}>Contact</a>
         </li>
         <li className={style.resume}>
-          <a href='https://drive.google.com/file/d/1UVvFt4U-wwZlF26ksAST3gvgUsw4IZXu/view?usp=sharing' target=" blank" className={style.font}>Resume</a>
+          <a href='https://drive.google.com/file/d/1w-Qh-WPwZaPmIoMspMVUA6D-xUd-nkyK/view?usp=share_link' target=" blank" className={style.font}>Resume</a>
         </li>
       </ul>
 
@@ -124,7 +124,7 @@ const Navbar = () => {
           <a href={`#contact`} className={style.font}>Contact</a>
         </li>
         <li className={style.resume}>
-          <a href='https://drive.google.com/file/d/1UVvFt4U-wwZlF26ksAST3gvgUsw4IZXu/view?usp=sharing' target=" blank" className={style.font}>Resume</a>
+          <a href='https://drive.google.com/file/d/1w-Qh-WPwZaPmIoMspMVUA6D-xUd-nkyK/view?usp=share_link' target=" blank" className={style.font}>Resume</a>
         </li>
       </ul>
     </nav>
