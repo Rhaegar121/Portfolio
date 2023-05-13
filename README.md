@@ -40,7 +40,7 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> React, TailwindCSS
+> React, ThreeJS, TailwindCSS
 
 <details>
   <summary>Client</summary>
