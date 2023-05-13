@@ -64,15 +64,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://rhaegar121.netlify.app/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- VideoDEMO -->
-
-## 🚀 Video Demo <a name="live-demo"></a>
-
-- [Project Description Video Link]()
+- [Live Demo Link](https://barry121.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
