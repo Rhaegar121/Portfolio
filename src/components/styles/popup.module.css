@@ -19,7 +19,7 @@
 .close_btn {
     position: absolute;
     right: 12px;
-    top: -12px;
+    top: 12px;
     font-size: 1.25rem;
     color: var(--grey);
 }
