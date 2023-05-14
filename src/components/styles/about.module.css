@@ -123,6 +123,12 @@
     height: 112px;
 }
 
+@media screen and (min-width: 387px) {
+    .ball_container {
+        width: 80%;
+    }
+}
+
 @media screen and (min-width: 480px) {
     .title {
         font-size: 1.9rem;
@@ -140,6 +146,10 @@
 
     .img_container {
         width: 300px;
+    }
+
+    .ball_container {
+        width: 90%;
     }
 }
 
