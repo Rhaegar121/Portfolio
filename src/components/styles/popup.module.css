@@ -12,13 +12,14 @@
     background-color: var(--light-grey);
     width: 85%;
     margin: 0px auto;
+    padding-top: 40px;
     position: relative;
 }
 
 .close_btn {
     position: absolute;
     right: 12px;
-    top: 12px;
+    top: -12px;
     font-size: 1.25rem;
     color: var(--grey);
 }
@@ -32,7 +33,6 @@
     width: 90%;
     height: 100%;
     margin: 0px auto 20px auto;
-    padding-top: 40px;
 }
 
 .content {
