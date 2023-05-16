@@ -64,7 +64,7 @@ const projects = [
     img: tvshowbox,
     carousel: [tvshow1, tvshow2, tvshow3],
     source_link: "https://github.com/Rhaegar121/TVshows_Box",
-    live_link: "https://rhaegar121.github.io/TVshows_Box/dist/",
+    live_link: "https://tvshowbox.netlify.app/",
   },
   {
     id: 2,
