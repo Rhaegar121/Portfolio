@@ -1,5 +1,10 @@
 .container {
     max-width: 92%;
-    margin: 30px auto 0 auto;
+    margin: 30px auto;
     /* border: 1px solid red; */
+}
+
+.contact {
+    max-width: 92%;
+    margin: 0 auto;
 }

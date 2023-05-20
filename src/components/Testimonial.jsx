@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
-import { SectionWrapper } from '../hoc';
+import { ContactWrapper } from '../hoc';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaQuoteLeft } from 'react-icons/fa';
 import { testimonials  } from '../constants';
@@ -19,21 +19,21 @@ const Testimonial = () => {
         {testimonials.map((testimonial, index) => (
           <motion.div 
           key={testimonial.id}
-          variants={fadeIn("right", "", index * 0.8, 0.5)} 
+          variants={fadeIn("right", "tween", index * 0.8, 0.5)} 
           className={style.card_shadow}>
-          <div className={style.card}>
-          <FaQuoteLeft className={style.openquote} />
-          <p className={style.para}>{testimonial.text}</p>
-          <div className={`${style.label} ${style.firstlabel}`}>
-            <h2 className={style.name}>{testimonial.name} <span className={style.country}>({testimonial.country})</span></h2>
-            <a href={testimonial.linkedIn} target='_blank' className={style.icon}><FaLinkedinIn /></a>
-          </div>
-          </div>
-        </motion.div>
+            <div className={style.card}>
+            <FaQuoteLeft className={style.openquote} />
+            <p className={style.para}>{testimonial.text}</p>
+            <div className={`${style.label} ${style.firstlabel}`}>
+              <h2 className={style.name}>{testimonial.name} <span className={style.country}>({testimonial.country})</span></h2>
+              <a href={testimonial.linkedIn} target='_blank' className={style.icon}><FaLinkedinIn /></a>
+            </div>
+            </div>
+          </motion.div>
         ))}
       </div>
     </div>
   )
 }
 
-export default SectionWrapper(Testimonial, "testimonials");
+export default ContactWrapper(Testimonial, "testimonials");

@@ -63,4 +63,4 @@ const Work = () => {
   );
 };
 
-export default SectionWrapper(Work, "work");
+export default SectionWrapper(Work, "work", true);
