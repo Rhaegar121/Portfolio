@@ -7,13 +7,15 @@ import {
   Preload,
   useTexture,
 } from "@react-three/drei";
+import Loader from "./Loader";
 
 const Ball = ({imgUrl, isMobile}) => {
   const [decal] = useTexture([imgUrl]);
 
   return (
-    <Float speed={1} rotationIntensity={0.5} floatIntensity={1.5} position-y={0} rotation-y={0}>
-      <ambientLight intensity={0.6} />
+    <Float speed={3} rotationIntensity={1} floatIntensity={2} position-y={0} rotation-y={0}>
+      <ambientLight intensity={0.3} />
+      <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={isMobile ? 2.5 : 2.3} >
         <sphereGeometry args={[1, 32.8, 32.8]} />
         <meshStandardMaterial
@@ -63,11 +65,11 @@ const BallCanvas = ({ icon }) => {
 
   return (
     <Canvas
-      frameloop='demand'
+      frameloop='always'
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
     >
-      <Suspense fallback={null}>
+      <Suspense fallback={<Loader />}>
         <OrbitControls
           enableZoom={false}
           // autoRotate
