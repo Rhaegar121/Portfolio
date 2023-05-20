@@ -43,6 +43,7 @@
     padding: 1px;
     border-radius: 20px;
     width: 85%;
+    box-shadow: 5px 5px 20px 10px var(--dark-blue);
 }
 
 .card_shadow:hover {
