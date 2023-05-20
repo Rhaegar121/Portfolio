@@ -49,6 +49,15 @@
   );
 }
 
+.contact {
+  width: 100%;
+  background-image: url('/src/assets/hole-background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 60px;
+}
+
 .test {
   color: #e6f1ff;
   color: #d5e0f1;

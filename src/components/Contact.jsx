@@ -37,7 +37,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <>
       <motion.h1 variants={textVariant()} className={style.title}>
         Get in Touch!
       </motion.h1>
@@ -83,7 +83,7 @@ const Contact = () => {
           ></textarea>
           <button type="submit" className={style.btn}>Get in touch</button>
       </motion.form>
-    </div>
+    </>
   )
 }
 
