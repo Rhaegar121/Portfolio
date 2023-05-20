@@ -49,6 +49,17 @@
   );
 }
 
+/* .color-block {
+  position: absolute;
+  height: 100%;
+  width: 200%;
+  transform: rotate(50deg);
+  right: -50%;
+  bottom: -30%;
+  background-color: var(--grey);
+  z-index: -1;
+} */
+
 .contact {
   width: 100%;
   background-image: url('/src/assets/hole-background.png');
@@ -58,7 +69,26 @@
   padding-bottom: 60px;
 }
 
-.test {
-  color: #e6f1ff;
-  color: #d5e0f1;
+/* @media screen and (min-width: 480px) {
+  .color-block {
+    transform: rotate(-45deg);
+    right: -150%;
+    bottom: -53%;
+  }
 }
+
+@media screen and (min-width: 768px) {
+  .color-block {
+    transform: rotate(-26deg);
+    right: -50%;
+    bottom: -55%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .color-block {
+    transform: rotate(-33deg);
+    right: -50%;
+    bottom: -59%;
+  }
+} */
