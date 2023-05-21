@@ -20,7 +20,7 @@ function App() {
         <Navbar />
         <About />
         <Work />
-        <div className='relative z-0 bg-light_grey mt-24 pb-12'><Testimonial /></div>
+        <div className='relative z-0 grey-gradient mt-24 pb-12'><Testimonial /></div>
         <div className="contact"><Contact /></div>
         <div className='bg-dark_blue relative'><Footer /></div>
       </div>

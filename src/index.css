@@ -39,26 +39,15 @@
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
 
-.violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+.grey-gradient {
+  background: #4d5c8f;
+  background: linear-gradient(-90deg, #4d5c8f 0%, rgba(51, 53, 80, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #804dee 0%,
-    rgba(60, 51, 80, 0) 100%
+    #4d5c8f 0%,
+    rgba(51, 53, 80, 0) 100%
   );
 }
-
-/* .color-block {
-  position: absolute;
-  height: 100%;
-  width: 200%;
-  transform: rotate(50deg);
-  right: -50%;
-  bottom: -30%;
-  background-color: var(--grey);
-  z-index: -1;
-} */
 
 .contact {
   width: 100%;
@@ -68,27 +57,3 @@
   background-size: cover;
   padding-bottom: 60px;
 }
-
-/* @media screen and (min-width: 480px) {
-  .color-block {
-    transform: rotate(-45deg);
-    right: -150%;
-    bottom: -53%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .color-block {
-    transform: rotate(-26deg);
-    right: -50%;
-    bottom: -55%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .color-block {
-    transform: rotate(-33deg);
-    right: -50%;
-    bottom: -59%;
-  }
-} */
