@@ -32,6 +32,7 @@ const Testimonial = () => {
           </motion.div>
         ))}
       </div>
+      <div className={style.recommendationsLink}><a href='https://www.linkedin.com/in/kaungmyatkyaw/details/recommendations/?detailScreenTabIndex=0' target='_blank' className={style.a}>More recommendations here</a></div>
     </div>
   )
 }
