@@ -30,6 +30,14 @@
     transform: translate(0,0);
 }
 
+.overlay:active {
+    border: 1px solid var(--cyan);
+}
+
+.overlay:active .icon_hover {
+    color: var(--cyan);
+}
+
 .icon {
     width: 40px;
     height: 40px;
@@ -94,6 +102,10 @@
 
 .a:hover::before {
     width: 50%;
+}
+
+.a:active {
+    color: var(--cyan);
 }
 
 .span {

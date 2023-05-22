@@ -9,7 +9,7 @@ const SectionWrapper = (Component, idName, boolean, margin) =>
         initial='hidden'
         whileInView='show'
         viewport={{ once: boolean, amount: 0.25 }}
-        className={`max-w-[90%] mx-auto border border-red-700 ${margin}`}
+        className={`max-w-[90%] mx-auto ${margin}`}
       >
         <span id={idName}>
           &nbsp;

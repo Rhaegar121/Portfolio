@@ -112,7 +112,6 @@
 
 .recommendationsLink {
     text-align: center;
-    margin-bottom: 10px;
     animation-name: floating;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
@@ -165,6 +164,10 @@
 
 .a:hover::before {
     width: 50%;
+}
+
+.a:active {
+    color: var(--cyan);
 }
 
 @media screen and (min-width: 480px) {
