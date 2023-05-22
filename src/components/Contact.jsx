@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ContactWrapper } from '../hoc';
+import { SectionWrapper } from '../hoc';
 import { motion } from "framer-motion";
 import { fadeIn, textVariant, zoomIn } from "../utils/motion";
 import style from './styles/contact.module.css';
@@ -87,4 +87,4 @@ const Contact = () => {
   )
 }
 
-export default ContactWrapper(Contact, "contact");
+export default SectionWrapper(Contact, "contact", false, "my-0");

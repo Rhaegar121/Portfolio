@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
-import { ContactWrapper } from '../hoc';
+import { SectionWrapper } from '../hoc';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaQuoteLeft } from 'react-icons/fa';
 import { testimonials  } from '../constants';
@@ -39,4 +39,4 @@ const Testimonial = () => {
   )
 }
 
-export default ContactWrapper(Testimonial, "testimonials");
+export default SectionWrapper(Testimonial, "testimonials", false, "my-0");
