@@ -1,4 +1,4 @@
-import { awesomebook, tvshowbox, todolist, wdetsummit, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, awesomebook1, awesomebook2, awesomebook3, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, wdetsummit1, wdetsummit2 } from '../assets';
+import { awesomebook, tvshowbox, todolist, wdetsummit, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, awesomebook1, awesomebook2, awesomebook3, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, wdetsummit1, wdetsummit2, metricswebapp1, metricswebapp2 } from '../assets';
 
 const technologies = [
     {
@@ -72,7 +72,7 @@ const projects = [
     desc: "Metrics Webapp is a mobile web application showing the current weather data of the cities using the Openweather API. It has two interfaces - city page and detail page based on the design of Nelson Sakwa on Behance. Built during the Microverse Module 3 React Captone Project.",
     tech: ["React", "Openweather API"],
     img: metricwebapp,
-    carousel: [metricwebapp],
+    carousel: [metricwebapp, metricswebapp1, metricswebapp2],
     source_link: "https://github.com/Rhaegar121/Metrics-Webapp",
     live_link: "https://metrics-webapp121.netlify.app/",
   },

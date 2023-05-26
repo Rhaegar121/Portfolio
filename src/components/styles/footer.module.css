@@ -38,7 +38,7 @@
     color: var(--cyan);
 }
 
-.icon {
+.icon, .icon_hover {
     width: 40px;
     height: 40px;
     font-size: 1.1rem;
@@ -47,16 +47,11 @@
 }
 
 .icon_hover {
-    width: 40px;
-    height: 40px;
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 1.1rem;
     opacity: 0;
-    padding: 9px;
     transform: translate(-100%,0);
-    transition: all .2s ease-out;
 }
 
 .p {

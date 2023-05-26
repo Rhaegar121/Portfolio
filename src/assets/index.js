@@ -6,7 +6,7 @@ import wdetsummit from './projects/wdetsummit.png'
 import guesstheword from './projects/guesstheword.jpg'
 import tictactoe from './projects/tictactoe.jpg'
 import mathmagician from './projects/mathmagician.png'
-import metricwebapp from './projects/metricwebapp.png'
+import metricwebapp from './projects/metricswebapp.png'
 import spacetravelers from './projects/spacetravelers.png'
 
 // carousel img
@@ -27,5 +27,7 @@ import tvshow2 from './carousels/tvshow screenshot 2.jpg';
 import tvshow3 from './carousels/tvshow screenshot 3.jpg';
 import wdetsummit1 from './carousels/wdet summit screenshot 1.png';
 import wdetsummit2 from './carousels/wdet summit screenshot 2.png';
+import metricswebapp1 from './carousels/metrics webapp screenshot 1.png';
+import metricswebapp2 from './carousels/metrics webapp screenshot 2.png';
 
-export { logo, awesomebook , tvshowbox, todolist, wdetsummit, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, awesomebook1, awesomebook2, awesomebook3, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, wdetsummit1, wdetsummit2 };
+export { logo, awesomebook , tvshowbox, todolist, wdetsummit, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, awesomebook1, awesomebook2, awesomebook3, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, wdetsummit1, wdetsummit2, metricswebapp1, metricswebapp2 };
