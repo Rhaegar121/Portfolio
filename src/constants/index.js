@@ -103,8 +103,8 @@ const projects = [
     tech: ["Ruby", "Rails", "Postgresql"],
     img: recipeapp,
     carousel: [recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6],
-    source_link: "https://recipe-app-aaa9.onrender.com/",
-    live_link: "https://github.com/Rhaegar121/Recipe-App",
+    source_link: "https://github.com/Rhaegar121/Recipe-App",
+    live_link: "https://recipe-app-aaa9.onrender.com/",
   },
   {
     id: 6,
