@@ -1,4 +1,4 @@
-import { awesomebook, tvshowbox, todolist, wdetsummit, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, awesomebook1, awesomebook2, awesomebook3, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, wdetsummit1, wdetsummit2, metricswebapp1, metricswebapp2 } from '../assets';
+import { awesomebook, tvshowbox, todolist, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, awesomebook1, awesomebook2, awesomebook3, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6 } from '../assets';
 
 const technologies = [
     {
@@ -98,13 +98,13 @@ const projects = [
   },
   {
     id: 5,
-    name: "WDET Summit",
-    desc: "This project is the World Economy & Technology summit website based on the design of Cindy Shin in Behance which contains both mobile and desktop versions and consists of two pages (home and about pages). Built with HTML, CSS, and Javascript in Microverse Module 1.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    img: wdetsummit,
-    carousel: [wdetsummit1, wdetsummit2],
-    source_link: "https://github.com/Rhaegar121/WDET-Summit",
-    live_link: "https://rhaegar121.github.io/WDET-Summit/",
+    name: "Recipe App",
+    desc: "The Recipe app keeps track of all your foods, recipes, and ingredients. It allows you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking, the app allows you to make them public so anyone can access them.",
+    tech: ["Ruby", "Rails", "Postgresql"],
+    img: recipeapp,
+    carousel: [recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6],
+    source_link: "https://recipe-app-aaa9.onrender.com/",
+    live_link: "https://github.com/Rhaegar121/Recipe-App",
   },
   {
     id: 6,
