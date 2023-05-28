@@ -109,7 +109,7 @@ const projects = [
   {
     id: 6,
     name: "Math Magicians",
-    desc: "Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: 1) Make simple calculations. 2) Read a random math-related quote.",
+    desc: "Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote.",
     tech: ["React"],
     img: mathmagician,
     carousel: [mathmagician],
