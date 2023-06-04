@@ -45,6 +45,8 @@
     font-weight: 300;
     color: var(--cyan);
     background-color: var(--dark-blue);
+    border: 1px solid var(--grey);
+    border-radius: 3px;
 }
 
 .input::placeholder {

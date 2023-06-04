@@ -40,11 +40,11 @@
 }
 
 .grey-gradient {
-  background: #4d5c8f;
-  background: linear-gradient(-90deg, #4d5c8f 0%, rgba(51, 53, 80, 0) 100%);
+  background: #3f4e85;
+  background: linear-gradient(-90deg, #3f4e85 0%, rgba(51, 53, 80, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #4d5c8f 0%,
+    #3f4e85 0%,
     rgba(51, 53, 80, 0) 100%
   );
 }
