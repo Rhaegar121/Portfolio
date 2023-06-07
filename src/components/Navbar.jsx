@@ -33,7 +33,7 @@ const Navbar = () => {
     <div className="relative h-16">
     <nav className={`${style.navbar} ${scrolled ? 'fixed' : ''}`}>
       <Link onClick={() => { window.scrollTo(0, 0); }} >
-        <img src={logo} alt='Rhaegar121' className={style.logo} />
+        <img src={logo} alt='Barry121' className={style.logo} />
       </Link>
 
       {/* desktop navlink */}
@@ -84,7 +84,6 @@ const Navbar = () => {
     >
         <li 
           key="about"
-          // className='mt-20'
           className={`${ active === "About" ? "text-cyan" : "text-grey" } mt-20`}
           onClick={() => {
             setActive("About");

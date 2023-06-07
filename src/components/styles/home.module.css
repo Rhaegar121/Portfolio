@@ -12,7 +12,7 @@
 
 .intro {
    font-family: 'Bungee Outline', cursive;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -36,8 +36,8 @@
 
 .btn {
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 0.7rem;
-    padding: 7px 10px;
+    font-size: 0.9rem;
+    padding: 10px 13px;
     border: 1px solid var(--grey);
     transition: 0.4s;
     color: var(--white);
@@ -45,7 +45,7 @@
 
 .arrow {
     margin-left: 5px;
-    font-size: 14px;
+    font-size: 17px;
     display: inline;
     transition: transform 0.3s ease-in-out;
 }

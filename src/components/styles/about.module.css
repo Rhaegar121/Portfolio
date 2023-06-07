@@ -35,7 +35,7 @@
     font-size: 14.5px;
     word-spacing: 0.13rem;
     text-align: left;
-    color: var(--grey);
+    color: var(--white);
     margin-bottom: 8px;
 }
 
@@ -65,10 +65,10 @@
     width: 70%;
     position: relative;
     background-color: var(--cyan);
-    animation-name: floating;
+    /* animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; */
 }
 
 .img_container:hover {
@@ -105,7 +105,7 @@
     font-size: 14.5px;
     word-spacing: 0.13rem;
     text-align: left;
-    color: var(--grey);
+    color: var(--white);
     margin: 50px auto;
 }
 
