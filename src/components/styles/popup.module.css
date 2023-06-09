@@ -21,11 +21,12 @@
   right: 12px;
   top: 12px;
   font-size: 1.25rem;
-  color: var(--grey);
+  color: var(--white);
 }
 
 .close_btn:hover {
-  color: var(--cyan);
+  transform: scale(1.2);
+  color: #ec008c;
   cursor: pointer;
 }
 

@@ -22,6 +22,10 @@ const technologies = [
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     },
     {
+      name: "Ruby on Rails",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain.svg",
+    },
+    {
       name: "Redux Toolkit",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
     },

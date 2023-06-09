@@ -23,6 +23,7 @@
 
 .navlink {
     font-size: 13px;
+    font-weight: 500;
     display: none;
     align-items: center;
     gap: 30px;

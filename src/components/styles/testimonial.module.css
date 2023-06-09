@@ -65,6 +65,7 @@
 
 .para {
     font-size: 0.9rem;
+    font-weight: 500;
     font-family: 'Montserrat Alternates', sans-serif;
     color: var(--white);
 }
