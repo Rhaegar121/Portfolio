@@ -11,9 +11,9 @@
 .overlay {
     position: relative;
     overflow: hidden;
-    color: var(--grey);
+    color: var(--white);
     background-color: var(--navy);
-    border: 1px solid var(--grey);
+    border: 1px solid var(--white);
 }
 
 .overlay:hover {
