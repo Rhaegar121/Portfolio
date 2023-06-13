@@ -8,6 +8,7 @@ import mathmagician from './projects/mathmagician.png'
 import metricwebapp from './projects/metricswebapp.png'
 import spacetravelers from './projects/spacetravelers.png'
 import recipeapp from './projects/recipeapp.png'
+import trackbudget from './projects/trackbudget.png'
 
 // carousel img
 import awesomebook1 from './carousels/awesome book screenshot 1.jpg';
@@ -33,5 +34,10 @@ import recipeapp3 from './carousels/recipe app screenshot 3.png';
 import recipeapp4 from './carousels/recipe app screenshot 4.png';
 import recipeapp5 from './carousels/recipe app screenshot 5.png';
 import recipeapp6 from './carousels/recipe app screenshot 6.png';
+import trackbuget1 from './carousels/track budget screenshot 1.png';
+import trackbuget2 from './carousels/track budget screenshot 2.png';
+import trackbuget3 from './carousels/track budget screenshot 3.png';
+import trackbuget4 from './carousels/track budget screenshot 4.png';
+import trackbuget5 from './carousels/track budget screenshot 5.png';
 
-export { logo, awesomebook , tvshowbox, todolist, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, awesomebook1, awesomebook2, awesomebook3, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6 };
+export { logo, awesomebook , tvshowbox, todolist, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, awesomebook1, awesomebook2, awesomebook3, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6, trackbudget, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5 };
