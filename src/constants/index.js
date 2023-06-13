@@ -1,4 +1,4 @@
-import { awesomebook, tvshowbox, todolist, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, awesomebook1, awesomebook2, awesomebook3, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6 } from '../assets';
+import { awesomebook, tvshowbox, todolist, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, awesomebook1, awesomebook2, awesomebook3, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6, trackbudget, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5 } from '../assets';
 
 const technologies = [
     {
@@ -102,13 +102,13 @@ const projects = [
   },
   {
     id: 5,
-    name: "Recipe App",
-    desc: "The Recipe app keeps track of all your foods, recipes, and ingredients. It allows you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking, the app allows you to make them public so anyone can access them.",
+    name: "Track Budget App",
+    desc: "Track Budget is a mobile web application where you can manage your budget: you have a list of purchases associated with a category, so that you can see how much money you spent and on what category.",
     tech: ["Ruby", "Rails", "Postgresql"],
-    img: recipeapp,
-    carousel: [recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6],
-    source_link: "https://github.com/Rhaegar121/Recipe-App",
-    live_link: "https://recipe-app-aaa9.onrender.com/",
+    img: trackbudget,
+    carousel: [trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5],
+    source_link: "https://github.com/Rhaegar121/Track-Budget",
+    live_link: "https://track-budget.onrender.com/",
   },
   {
     id: 6,
