@@ -106,7 +106,7 @@ const projects = [
     desc: "Track Budget is a mobile web application where you can manage your budget: you have a list of purchases associated with a category, so that you can see how much money you spent and on what category.",
     tech: ["Ruby", "Rails", "Postgresql"],
     img: trackbudget,
-    carousel: [trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5],
+    carousel: [trackbudget, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5],
     source_link: "https://github.com/Rhaegar121/Track-Budget",
     live_link: "https://track-budget.onrender.com/",
   },
