@@ -34,7 +34,7 @@
 
 </div>
 
-**Portfolio** is a react based project.
+> This is my personal portfolio mainly built with ReactJS, ThreeJS, and TailwindCSS. This is a responsive website with mobile-first approach. The website is hosted on Vercel and Netlify.
 
 ## 🛠 Built With <a name="built-with"></a>
 
