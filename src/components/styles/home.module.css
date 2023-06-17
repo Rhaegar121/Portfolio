@@ -17,7 +17,7 @@
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     line-height: 1.7rem;
-    color: var(--cyan);
+    color: #22abfacb;
     text-align: center;
 }
 
@@ -103,23 +103,23 @@
 
 @media screen and (min-width: 1200px) {
     .intro {
-        font-size: 1.8rem;
+        font-size: 2rem;
         letter-spacing: 0.2rem;
         line-height: 2.4rem;
     }
 
     .desc {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         margin-bottom: 20px;
     }
 
     .btn {
-        font-size: 1.09rem;
+        font-size: 1.1rem;
         padding: 12px 17px;
     }
 
     .arrow {
-        margin-left: 7px;
-        font-size: 19px;
+        margin-left: 8px;
+        font-size: 1.4rem;
     }
 }
