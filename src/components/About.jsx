@@ -44,4 +44,4 @@ const About = () => {
   )
 }
 
-export default SectionWrapper(About, "about", false, "my-8");
+export default SectionWrapper(About, "about", "my-8");

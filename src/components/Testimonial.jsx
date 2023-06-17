@@ -39,4 +39,4 @@ const Testimonial = () => {
   )
 }
 
-export default SectionWrapper(Testimonial, "testimonials", false, "my-0");
+export default SectionWrapper(Testimonial, "testimonials", "my-0");
