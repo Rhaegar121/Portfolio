@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { BallContainer, Pagination } from './Ball';
+import { technologies } from '../constants';
 
 const TechStack = () => {
   return (

@@ -38,7 +38,7 @@
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 0.9rem;
     padding: 10px 13px;
-    border: 1px solid var(--grey);
+    border: 2px solid var(--grey);
     transition: 0.4s;
     color: var(--white);
 }
@@ -51,9 +51,10 @@
 }
 
 .btn:hover {
-    box-shadow: inset -7em 0 0 0 var(--light-grey), inset 7em 0 0 0 var(--light-grey); 
-    color: var(--cyan);
-    border: 1px solid var(--cyan);
+    /* box-shadow: inset -7em 0 0 0 var(--light-grey), inset 7em 0 0 0 var(--light-grey);  */
+    background-color: var(--cyan);
+    color: #fff;
+    border-color: var(--cyan);
 }
 
 .btn:hover .arrow {
@@ -113,8 +114,8 @@
     }
 
     .btn {
-        font-size: 1.03rem;
-        padding: 10px 15px;
+        font-size: 1.09rem;
+        padding: 12px 17px;
     }
 
     .arrow {
