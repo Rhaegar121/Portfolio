@@ -8,9 +8,9 @@ const Home = () => {
   return (
     <motion.section
       variants={staggerContainer()}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
+      // initial="hidden"
+      // whileInView="show"
+      // viewport={{ once: true, amount: 0.25 }}
     >
       <div className={style.container}>
         <p className={style.intro}>

@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SectionWrapper } from '../hoc';
 import style from './styles/about.module.css';
-import BallCanvas from './Ball';
+import { BallContainer, Pagination } from './Ball';
 import { technologies } from '../constants';
 import { motion } from "framer-motion";
 import { textVariant, fadeIn, slideIn } from '../utils/motion';
 import mypicture from '../assets/mypicture.jpg';
 
 const About = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  const ItemsPerPage = 4;
+
   return (
     <div>
       <motion.h1 variants={textVariant()} className={style.title}>About Me</motion.h1>
@@ -24,12 +32,14 @@ const About = () => {
       </div>
       <motion.p variants={fadeIn("", "", 0.15, 1)} className={style.subtitle}>Here are a few technologies I`ve been working with recently:</motion.p>
       <motion.div variants={fadeIn("", "", 0.25, 1)} className={style.ball_container}>
-      {technologies.map((technology) => (
-        <div className={style.ball} key={technology.name}>
-          <BallCanvas icon={technology.icon} />
-        </div>
-      ))}
-      </motion.div>
+      <BallContainer technologies={technologies} currentPage={currentPage} />
+      <Pagination
+        totalItems={technologies.length}
+        itemsPerPage={ItemsPerPage}
+        currentPage={currentPage}
+        onPageChange={handlePageChange}
+      />
+    </motion.div>
     </div>
   )
 }
