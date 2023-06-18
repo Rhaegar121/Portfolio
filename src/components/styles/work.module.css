@@ -29,6 +29,7 @@
 
 .card {
   position: relative;
+  overflow: hidden;
 }
 
 .img {
@@ -37,6 +38,7 @@
   object-fit: cover;
   position: absolute;
   opacity: 1;
+  transition: transform 0.25s ease-out;
 }
 
 .card_overlay {
@@ -44,6 +46,10 @@
   height: 100%;
   position: absolute;
   opacity: 0;
+}
+
+.card:hover .img {
+  transform: scale(1.15);
 }
 
 .card:hover .card_overlay {
