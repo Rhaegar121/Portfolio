@@ -2,58 +2,72 @@ import { awesomebook, tvshowbox, todolist, guesstheword, tictactoe, mathmagician
 
 const technologies = [
     {
+      stack: "languages",
       name: "HTML 5",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg",
     },
     {
+      stack: "languages",
       name: "CSS 3",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" ,
     },
     {
+      stack: "languages",
       name: "JavaScript",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
     },
     {
+      stack: "languages",
       name: "Ruby",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain.svg",
     },
     {
+      stack: "frameworks",
       name: "React JS",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     },
     {
+      stack: "frameworks",
       name: "Ruby on Rails",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain.svg",
     },
     {
+      stack: "frameworks",
       name: "Redux Toolkit",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
     },
     {
+      stack: "frameworks",
       name: "Bootstrap",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg",
     },
     {
+      stack: "frameworks",
       name: "Tailwind CSS",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
     },
     {
+      stack: "tools",
       name: "PostgreSQL",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg",
     },
     {
+      stack: "tools",
       name: "git",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg",
     },
     {
+      stack: "tools",
       name: "GitHub",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
     },
     {
+      stack: "tools",
       name: "Webpack",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-plain.svg",
     },
     {
+      stack: "tools",
       name: "Npm",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
     },

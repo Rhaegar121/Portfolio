@@ -85,17 +85,12 @@ const BallCanvas = ({ icon }) => {
   );
 };
 
-const ItemsPerPage = 4; // Define the number of items to display per page
-
-const BallContainer = ({ technologies, currentPage }) => {
-  const start = (currentPage - 1) * ItemsPerPage;
-  const end = currentPage * ItemsPerPage;
-
-  const visibleTechnologies = technologies.slice(start, end);
+const BallContainer = ({ technologies, stack }) => {
+  const filteredTechnologies = technologies.filter((technology) => technology.stack === stack);
 
   return (
     <>
-      {visibleTechnologies.map((technology) => (
+      {filteredTechnologies.map((technology) => (
         <div key={technology.name}>
           <BallCanvas icon={technology.icon} />
         </div>
@@ -104,23 +99,4 @@ const BallContainer = ({ technologies, currentPage }) => {
   );
 };
 
-const Pagination = ({ totalItems, itemsPerPage, currentPage, onPageChange }) => {
-  const totalPages = Math.ceil(totalItems / itemsPerPage);
-  const pageNumbers = Array.from({ length: totalPages }, (_, index) => index + 1);
-
-  return (
-    <div className="pagination">
-      {pageNumbers.map((pageNumber) => (
-        <button
-          key={pageNumber}
-          className={pageNumber === currentPage ? "active" : ""}
-          onClick={() => onPageChange(pageNumber)}
-        >
-          {pageNumber}
-        </button>
-      ))}
-    </div>
-  );
-};
-
-export { BallContainer, Pagination };
+export default BallContainer;
