@@ -18,13 +18,14 @@ const TechStack = () => {
     <div>
       <motion.p variants={fadeIn("", "", 0.15, 1)} className={style.title}>Here are a few technologies I`ve been working with recently:</motion.p>
       <motion.div variants={fadeIn("", "", 0.2, 1)} className={style.btn_container}>
-        {stacks.map((stack) => (
+        {stacks.map((currentStack) => (
           <button
-            key={stack}
-            className={stack === stack ? style.btn_active : style.btn}
-            onClick={() => handlePageChange(stack)}
+            key={currentStack.name}
+            type='button'
+            className={currentStack === stack ? style.btn_active : style.btn}
+            onClick={() => handlePageChange(currentStack)}
           >
-            {stack}
+            {currentStack}
           </button>
         ))}
       </motion.div>

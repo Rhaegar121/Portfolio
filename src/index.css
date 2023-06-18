@@ -35,18 +35,18 @@
 
 .green-pink-gradient {
   background: "#00cea8";
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
 
 .grey-gradient {
   background: #3f4e85;
-  background: linear-gradient(-90deg, #3f4e85 0%, rgba(51, 53, 80, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
     #3f4e85 0%,
     rgba(51, 53, 80, 0) 100%
-  );
+    );
+  background: linear-gradient(-90deg, #3f4e85 0%, rgba(51, 53, 80, 0) 100%);
 }
 
 .contact {

@@ -7,6 +7,27 @@
     margin: 50px auto;
 }
 
+.btn_container {
+    width: 89%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0 auto 25px auto;
+    color: var(--white);
+}
+
+.btn_container button {
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 5px 0;
+}
+
+.btn_active {
+    color: #fff;
+    text-transform: capitalize;
+    background-color: var(--cyan) !important;
+}
+
 .tech_container {
     display: flex;
     flex-wrap: wrap;
