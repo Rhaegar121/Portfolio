@@ -1,6 +1,6 @@
 import logo from './logo.png';
 import awesomebook from './projects/awesomebook.png'
-import tvshowbox from './projects/tvshowbox.png'
+import tvshowbox from './projects/tvshow.png'
 import todolist from './projects/todolist.png'
 import guesstheword from './projects/guesstheword.jpg'
 import tictactoe from './projects/tictactoe.jpg'
