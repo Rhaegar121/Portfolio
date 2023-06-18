@@ -1,7 +1,8 @@
 import React from 'react';
 import { SectionWrapper } from '../hoc';
 import style from './styles/about.module.css';
-import TechStack from './TechStack';
+// import TechStack from './TechStack';
+import { technologies } from '../constants';
 import { motion } from "framer-motion";
 import { textVariant, fadeIn, slideIn } from '../utils/motion';
 import mypicture from '../assets/mypicture.jpg';
@@ -22,9 +23,16 @@ const About = () => {
         </motion.div>
       </div>
       <motion.p variants={fadeIn("", "", 0.15, 1)} className={style.subtitle}>Here are a few technologies I`ve been working with recently:</motion.p>
-      <motion.div variants={fadeIn("", "", 0.25, 1)} className={style.ball_container}>
-        <TechStack />
+      <motion.div variants={fadeIn("", "", 0.25, 1)} className={style.tech_container}>
+        {technologies.map((technology) => (
+          <div key={technology.name} className={style.tech} >
+            <img className={style.tech_img} src={technology.icon} alt={technology.name} />
+          </div>
+          ))}
       </motion.div>
+      {/* <motion.div variants={fadeIn("", "", 0.25, 1)} className={style.ball_container}>
+        <TechStack />
+      </motion.div> */}
     </div>
   )
 }

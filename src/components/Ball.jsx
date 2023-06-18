@@ -45,7 +45,9 @@ const Ball = ({imgUrl, isMobile}) => {
 };
 
 const BallCanvas = ({ icon }) => {
+  // const { gl } = useThree();
   const [isMobile, setIsMobile] = useState(false);
+  // const canvasRef = useRef(null);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(min-width: 768px)");
@@ -63,11 +65,30 @@ const BallCanvas = ({ icon }) => {
     };
   }, []);
 
+  // useEffect(() => {
+  //   const canvas = canvasRef.current;
+
+  //   const handleContextLost = (event) => {
+  //     console.warn("WebGL context lost.", event);
+  //   };
+
+  //   canvas.addEventListener("webglcontextlost", handleContextLost);
+
+  //   return () => {
+  //     canvas.removeEventListener("webglcontextlost", handleContextLost);
+  //   };
+  // }, []);
+
   return (
     <Canvas
       frameloop='always'
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
+      // onClean={() => {
+      //   // Release WebGL resources here
+      //   const renderer = gl.getContext().renderer;
+      //   renderer.dispose();
+      // }}
     >
       <Suspense fallback={<Loader />}>
         <OrbitControls
