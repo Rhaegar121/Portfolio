@@ -82,3 +82,62 @@
     object-fit: cover;
     object-position: center;
 }
+
+@media screen and (min-width: 480px) {
+    .title {
+        width: 93%;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 545px) {
+    .tech_container {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .title {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .btn_container button {
+        font-size: 0.9rem;
+        padding: 7px 0;
+    }
+
+    .tech {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .title {
+        font-size: 17px;
+    }
+
+    .btn_container {
+        width: 80%;
+    }
+
+    .btn_container button {
+        font-size: 0.95rem;
+    }
+
+    .tech_container {
+        width: 75%;
+        gap: 10px 20px;
+    }
+
+    .tech {
+        width: 110px;
+        height: 110px;
+    }
+
+    .tech_img {
+        width: 65%;
+        height: 65%;
+    }
+}
