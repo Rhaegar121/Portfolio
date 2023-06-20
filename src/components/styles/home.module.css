@@ -34,13 +34,27 @@
     color: var(--white);
 }
 
-.btn {
+.btn_container {
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 0.9rem;
+    position: relative;
+    overflow: hidden;
     padding: 10px 13px;
-    border: 2px solid var(--grey);
-    transition: 0.4s;
+    transition: 0.2s;
     color: var(--white);
+    border: 2px solid var(--grey);
+}
+
+.btn_hover, .btn {
+    transition: all 0.2s ease-out;
+}
+
+.btn_hover {
+    position: absolute;
+    top: 10px;
+    left: 13px;
+    opacity: 0;
+    transform: translate(0, -100%);
 }
 
 .arrow {
@@ -50,14 +64,22 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.btn:hover {
-    /* box-shadow: inset -7em 0 0 0 var(--light-grey), inset 7em 0 0 0 var(--light-grey);  */
-    background-color: var(--cyan);
-    color: #fff;
+.btn_container:hover {
+    color: var(--cyan);
     border-color: var(--cyan);
 }
 
-.btn:hover .arrow {
+.btn_container:hover .btn {
+    opacity: 0;
+    transform: translate(0, 100%);
+}
+
+.btn_container:hover .btn_hover {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.btn_container:hover .arrow {
     transform: rotate(90deg);
 }
 
@@ -71,9 +93,13 @@
         font-size: 1rem;
     }
 
-    .btn {
+    .btn_container {
         font-size: 0.9rem;
         padding: 8px 13px;
+    }
+
+    .btn_hover {
+        top: 8px;
     }
 
     .arrow {
@@ -92,7 +118,7 @@
         font-size: 1.03rem;
     }
 
-    .btn {
+    .btn_container {
         font-size: 0.95rem;
     }
 
@@ -113,9 +139,14 @@
         margin-bottom: 20px;
     }
 
-    .btn {
+    .btn_container {
         font-size: 1.1rem;
         padding: 12px 17px;
+    }
+
+    .btn_hover {
+        top: 12px;
+        left: 17px;
     }
 
     .arrow {

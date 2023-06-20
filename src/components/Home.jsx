@@ -30,7 +30,7 @@ const Home = () => {
         </motion.p>
         <motion.button
           variants={fadeIn("", "", 0.6, 1)}
-          className={style.btn}
+          className={style.btn_container}
           onClick={() => {
             window.scrollTo({
               top: window.innerHeight,
@@ -38,7 +38,12 @@ const Home = () => {
             });
           }}
         >
-          Check out my work
+          <span className={style.btn_hover}>
+            Check out my work
+          </span>
+          <span className={style.btn}>
+            Check out my work
+          </span>
           <MdOutlineArrowForwardIos className={style.arrow} />
         </motion.button>
       </div>
