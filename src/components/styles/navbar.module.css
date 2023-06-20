@@ -38,17 +38,43 @@
     color: var(--cyan);
 }
 
-.resume {
-    color: var(--cyan);
-    border: 1px solid var(--cyan);
-    border-radius: 3px;
-    padding: 6px 8px;
-    transition: 0.4s;
+.resume_container {
+    color: var(--grey);
+    border: 1px solid var(--grey);
+    padding: 8px 12px;
+    transition: 0.2s;
+    position: relative;
+    overflow: hidden;
 }
 
-.resume:hover,
-.resume:focus {
-    box-shadow: inset -3.5em 0 0 0 var(--light-grey), inset 3em 0 0 0 var(--light-grey); 
+.resume, .resume_hover {
+    transition: all 0.2s ease-out;
+}
+
+.resume_hover {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    opacity: 0;
+    transform: translate(0, -100%);
+}
+
+.resume_container:hover,
+.resume_container:focus {
+    color: var(--cyan);
+    border-color: var(--cyan);
+}
+
+.resume_container:hover .resume,
+.resume_container:focus .resume {
+    opacity: 0;
+    transform: translate(0, 100%);
+}
+
+.resume_container:hover .resume_hover,
+.resume_container:focus .resume_hover {
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 .mobilemenu {
@@ -147,7 +173,12 @@
         gap: 40px;
     }
 
-    .resume {
-        padding: 8px 10px;
+    .resume_container {
+        padding: 9px 14px;
+    }
+
+    .resume_hover {
+        top: 9px;
+        left: 14px;
     }
 }

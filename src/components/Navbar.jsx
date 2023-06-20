@@ -66,8 +66,11 @@ const Navbar = () => {
         >
           <a href={`#contact`} className={style.font}>Contact</a>
         </li>
-        <li className={style.resume}>
-          <a href='https://drive.google.com/file/d/1w-Qh-WPwZaPmIoMspMVUA6D-xUd-nkyK/view?usp=share_link' target=" blank" className={style.font}>Resume</a>
+        <li>
+          <a href='https://drive.google.com/file/d/1w-Qh-WPwZaPmIoMspMVUA6D-xUd-nkyK/view?usp=share_link' target=" blank" className={style.resume_container}>
+            <span className={style.resume_hover}>Resume</span>
+            <span className={style.resume}>Resume</span>
+          </a>
         </li>
       </ul>
 
@@ -122,8 +125,11 @@ const Navbar = () => {
         >
           <a href={`#contact`} className={style.font}>Contact</a>
         </li>
-        <li className={style.resume}>
-          <a href='https://drive.google.com/file/d/1w-Qh-WPwZaPmIoMspMVUA6D-xUd-nkyK/view?usp=share_link' target=" blank" className={style.font}>Resume</a>
+        <li>
+          <a href='https://drive.google.com/file/d/1w-Qh-WPwZaPmIoMspMVUA6D-xUd-nkyK/view?usp=share_link' target=" blank" className={style.resume_container}>
+            <span className={style.resume_hover}>Resume</span>
+            <span className={style.resume}>Resume</span>
+          </a>
         </li>
       </ul>
     </nav>

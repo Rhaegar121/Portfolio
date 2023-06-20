@@ -64,22 +64,26 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.btn_container:hover {
+.btn_container:hover,
+.btn_container:focus {
     color: var(--cyan);
     border-color: var(--cyan);
 }
 
-.btn_container:hover .btn {
+.btn_container:hover .btn,
+.btn_container:focus .btn {
     opacity: 0;
     transform: translate(0, 100%);
 }
 
-.btn_container:hover .btn_hover {
+.btn_container:hover .btn_hover,
+.btn_container:focus .btn_hover {
     opacity: 1;
     transform: translate(0, 0);
 }
 
-.btn_container:hover .arrow {
+.btn_container:hover .arrow,
+.btn_container:focus .arrow {
     transform: rotate(90deg);
 }
 
