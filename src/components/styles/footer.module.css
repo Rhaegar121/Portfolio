@@ -18,6 +18,8 @@
 
 .overlay:hover {
     cursor: pointer;
+    color: var(--cyan);
+    border-color: var(--cyan);
 }
 
 .overlay:hover .icon {
