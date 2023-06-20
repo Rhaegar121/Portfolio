@@ -100,17 +100,44 @@
   padding: 15px 0 25px 0;
 }
 
-.btn {
+.btn_container {
   padding: 8px 10px;
-  border: 1px solid var(--grey);
+  border: 2px solid var(--grey);
   font-size: 0.9rem;
-  transition: 0.35s;
+  transition: 0.2s;
+  position: relative;
+  overflow: hidden;
 }
 
-.btn:hover {
-  box-shadow: inset -4rem 0 0 0 var(--navy), inset 4rem 0 0 0 var(--navy);
+.btn_hover,
+.btn {
+  transition: all 0.2s ease-out;
+}
+
+.btn_hover {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  opacity: 0;
+  transform: translate(0, -100%);
+}
+
+.btn_container:hover,
+.btn_container:focus {
   color: var(--cyan);
-  border: 1px solid var(--cyan);
+  border-color: var(--cyan);
+}
+
+.btn_container:hover .btn,
+.btn_container:focus .btn {
+  opacity: 0;
+  transform: translate(0, 100%);
+}
+
+.btn_container:hover .btn_hover,
+.btn_container:focus .btn_hover {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 @media screen and (min-width: 768px) {
@@ -150,9 +177,14 @@
     margin: 20px auto;
   }
 
-  .btn {
+  .btn_container {
     font-size: 1.1rem;
     padding: 10px 14px;
+  }
+
+  .btn_hover {
+    top: 10px;
+    left: 14px;
   }
 }
 
@@ -194,8 +226,13 @@
     margin: 10px auto;
   }
 
-  .btn {
+  .btn_container {
     font-size: 1rem;
     padding: 8px 14px;
+  }
+
+  .btn_hover {
+    top: 8px;
+    left: 14px;
   }
 }

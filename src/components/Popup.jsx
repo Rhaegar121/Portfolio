@@ -18,8 +18,14 @@ const Popup = ({ handleClose, project }) => {
             </p>
             <p className={style.description}>{project.desc}</p>
         <div className={style.link}>
-            <a href={project.live_link} target="_blank" className={`${style.live_link} ${style.btn}`}>View Live</a>
-            <a href={project.source_link} target="_blank" className={`${style.source_link} ${style.btn}`}>View Source</a>
+            <a href={project.live_link} target="_blank" className={`${style.live_link} ${style.btn_container}`}>
+              <span className={style.btn_hover}>View Live</span>
+              <span className={style.btn}>View Live</span>
+            </a>
+            <a href={project.source_link} target="_blank" className={`${style.source_link} ${style.btn_container}`}>
+              <span className={style.btn_hover}>View Source</span>
+              <span className={style.btn}>View Source</span>
+            </a>
         </div>
         </div>
       </div>
