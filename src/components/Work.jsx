@@ -45,8 +45,9 @@ const Work = () => {
                     ))}
                   </p>
                 </div>
-                <button className={style.btn} onClick={() => handlePopupClick(project)}>
-                  Learn More
+                <button className={style.btn_container} onClick={() => handlePopupClick(project)}>
+                  <span className={style.btn_hover}>Learn more</span>
+                  <span className={style.btn}>Learn more</span>
                 </button>
               </div>
             </div>

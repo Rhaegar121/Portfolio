@@ -163,23 +163,48 @@
   -webkit-text-fill-color: transparent;
 }
 
-.btn {
+.btn_container {
   font-size: 0.8rem;
   color: var(--white);
   border: 1px solid var(--grey);
   padding: 8px 12px;
   text-transform: uppercase;
-  transition: 0.4s;
+  transition: 0.2s;
+  position: relative;
+  overflow: hidden;
 }
 
-.btn:hover {
-  box-shadow: inset -5em 0 0 0 var(--light-grey),
-    inset 5em 0 0 0 var(--light-grey);
-  color: var(--cyan);
-  border: 1px solid var(--cyan);
+.btn_hover, .btn {
+  transition: all 0.2s ease-out;
 }
 
-.card:hover .btn {
+.btn_hover {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  opacity: 0;
+  transform: translate(0, -100%);
+}
+
+.btn_container:hover,
+.btn_container:focus {
+    color: var(--cyan);
+    border-color: var(--cyan);
+}
+
+.btn_container:hover .btn,
+.btn_container:focus .btn {
+    opacity: 0;
+    transform: translate(0, 100%);
+}
+
+.btn_container:hover .btn_hover,
+.btn_container:focus .btn_hover {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.card:hover .btn_container {
   animation: slide-up 0.3s ease-out;
 }
 
@@ -222,9 +247,14 @@
     font-size: 0.7rem;
   }
 
-  .btn {
+  .btn_container {
     font-size: 0.87rem;
     padding: 8px 15px;
+  }
+
+  .btn_hover {
+    top: 8px;
+    left: 15px;
   }
 }
 
@@ -244,9 +274,14 @@
     font-size: 1rem;
   }
 
-  .btn {
+  .btn_container {
     font-size: 0.83rem;
     padding: 8px 14px;
+  }
+
+  .btn_hover {
+    top: 8px;
+    left: 14px;
   }
 }
 
@@ -285,8 +320,13 @@
     font-size: 0.8rem;
   }
 
-  .btn {
+  .btn_container {
     font-size: 0.95rem;
     padding: 10px 15px;
+  }
+
+  .btn_hover {
+    top: 10px;
+    left: 15px;
   }
 }
