@@ -81,7 +81,10 @@ const Contact = () => {
             onChange={handleChange}
             className={`${style.input} ${style.textarea}`}
           ></textarea>
-          <button type="submit" className={style.btn}>Get in touch</button>
+          <button type="submit" className={style.btn_container}>
+            <span className={style.btn_hover}>Get in touch</span>
+            <span className={style.btn}>Get in touch</span>
+          </button>
       </motion.form>
     </>
   )
