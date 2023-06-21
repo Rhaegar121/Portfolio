@@ -22,8 +22,8 @@
   top: 0;
   padding: 5px;
   z-index: 9;
-  color: var(--navy);
-  background-color: var(--white);
+  color: var(--white);
+  background-color: var(--light-grey);
   font-size: 1.7rem;
 }
 
@@ -199,7 +199,8 @@
   }
 
   .close_btn {
-    font-size: 2rem;
+    font-size: 2.1rem;
+    padding: 7px;
   }
 
   .img {
