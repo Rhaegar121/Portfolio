@@ -4,9 +4,9 @@
 }
 
 .slick_dots li button::before {
-    font-size: 0.4rem;
-    opacity: 1;
-    color: var(--cyan);
+    font-size: 0.4rem !important;
+    opacity: 1 !important;
+    color: var(--cyan) !important;
 }
 
 .img {
