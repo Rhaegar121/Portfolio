@@ -18,9 +18,9 @@
 
 .close_btn {
   position: absolute;
-  right: 12px;
-  top: 12px;
-  font-size: 1.25rem;
+  right: 10px;
+  top: 10px;
+  font-size: 1.6rem;
   color: var(--white);
 }
 
@@ -151,8 +151,8 @@
   }
 
   .close_btn {
-    font-size: 1.8rem;
-    right: 26px;
+    font-size: 2rem;
+    right: 22px;
     top: 22px;
   }
 
@@ -200,8 +200,8 @@
   }
 
   .close_btn {
-    font-size: 1.7rem;
-    right: 26px;
+    font-size: 2rem;
+    right: 12px;
     top: 10px;
   }
 

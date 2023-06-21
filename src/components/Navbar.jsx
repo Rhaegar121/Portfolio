@@ -30,10 +30,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="relative h-16">
+    <div className={style.navbar_container}>
     <nav className={`${style.navbar} ${scrolled ? 'fixed' : ''}`}>
       <Link onClick={() => { window.scrollTo(0, 0); }} >
-        <img src={logo} alt='Barry121' className={style.logo} />
+        <img src={logo} alt='My logo' className={style.logo} />
       </Link>
 
       {/* desktop navlink */}

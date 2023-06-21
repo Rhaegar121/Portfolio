@@ -1,3 +1,8 @@
+.navbar_container {
+    position: relative;
+    height: 86px;
+}
+
 .navbar {
     padding: 14px 30px 14px 15px;
     display: flex;
