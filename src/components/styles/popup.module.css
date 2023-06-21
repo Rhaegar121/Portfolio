@@ -6,26 +6,29 @@
   height: 100vh;
   background-color: transparent;
   backdrop-filter: blur(10px);
+  z-index: 999;
 }
 
 .container {
   background-color: var(--light-grey);
-  width: 85%;
+  width: 90%;
   margin: 0px auto;
-  padding-top: 40px;
   position: relative;
 }
 
 .close_btn {
   position: absolute;
-  right: 10px;
-  top: 10px;
-  font-size: 1.6rem;
-  color: var(--white);
+  right: 0;
+  top: 0;
+  padding: 5px;
+  z-index: 9;
+  color: var(--navy);
+  background-color: var(--white);
+  font-size: 1.7rem;
 }
 
-.close_btn:hover {
-  transform: scale(1.2);
+.close_btn:hover,
+.close_btn:focus {
   color: #ec008c;
   cursor: pointer;
 }
@@ -38,7 +41,7 @@
 
 .content {
   width: 90%;
-  margin: 0 auto;
+  margin: 20px auto 0px auto;
 }
 
 .name {
@@ -147,7 +150,7 @@
 
   .container {
     width: 652px;
-    padding-top: 60px;
+    /* padding-top: 60px; */
   }
 
   .close_btn {
@@ -196,7 +199,7 @@
 
   .container {
     width: 600px;
-    padding-top: 50px;
+    /* padding-top: 50px; */
   }
 
   .close_btn {

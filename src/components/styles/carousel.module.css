@@ -1,12 +1,22 @@
 .slider {
-    width: 82%;
-    margin: 0px auto;
+    width: 100%;
     margin-bottom: 30px;
+}
+
+.slick_dots li button::before {
+    font-size: 0.4rem;
+    opacity: 1;
+    color: var(--cyan);
+}
+
+.slick_dots li.active-dot button::before {
+    opacity: 1;
+    color: #fff;
 }
 
 .img {
     width: 100%;
-    height: 170px;
+    height: 190px;
     margin: 0 auto;
 }
 

@@ -1,13 +1,13 @@
 import React from "react";
 import style from "./styles/popup.module.css";
-import { AiOutlineClose } from 'react-icons/ai';
+import { TfiClose } from 'react-icons/tfi';
 import Carousel from "./Carousel";
 
 const Popup = ({ handleClose, project }) => {
   return (
     <div className={style.overlay}>
       <div className={style.container}>
-        <AiOutlineClose className={style.close_btn} onClick={handleClose} />
+        <TfiClose className={style.close_btn} onClick={handleClose} />
         <Carousel carousel={project.carousel} />
         <div className={style.content}>
             <h2 className={style.name}>{project.name}</h2>
