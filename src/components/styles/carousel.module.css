@@ -3,15 +3,6 @@
     margin-bottom: 30px;
 }
 
-.slick_dots li button::before {
-    font-size: 0.4rem !important;
-    opacity: 1 !important;
-}
-
-.slick_dots li.slick-active button::before {
-    color: var(--cyan) !important;
-}
-
 .img {
     width: 100%;
     height: 190px;

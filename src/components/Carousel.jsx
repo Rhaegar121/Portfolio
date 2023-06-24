@@ -9,7 +9,7 @@ const Carousel = ({ carousel }) => {
     dots: true,
     appendDots: (dots) => (
       <div>
-        <ul className={style.slick_dots}>{dots}</ul>
+        <ul>{dots}</ul>
       </div>
     ),
     infinite: true,

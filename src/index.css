@@ -49,6 +49,16 @@
   background: linear-gradient(-90deg, #3f4e85 0%, rgba(51, 53, 80, 0) 100%);
 }
 
+.slick-dots li button::before {
+  font-size: 0.4rem;
+  opacity: 1;
+  color: var(--white);
+}
+
+.slick-dots li.slick-active button::before {
+  color: var(--cyan);
+}
+
 .contact {
   width: 100%;
   background-image: url('/src/assets/hole-background.png');
