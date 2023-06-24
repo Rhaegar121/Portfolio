@@ -90,12 +90,13 @@ const Contact = () => {
           </button>
       </motion.form>
       <div className={style.mapContainer}>
-        <MapContainer center={[16.839148, 96.173453]} zoom={13} scrollWheelZoom={false}>
+        <MapContainer center={[16.799355, 96.154826]} zoom={13} scrollWheelZoom={false}>
           <TileLayer
-            url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
+            url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner-background/{z}/{x}/{y}{r}.png"
+            // url="https://1.night.maps.ls.hereapi.com/maptile/2.1/maptile/newest/normal.night/{z}/{x}/{y}/256/png8?apiKey=zWQWYygjaW8L62Q7WOQJuaFZsFpBUHqat9ntB5NaKAY"
             attribution="© OpenStreetMap contributors"
           />
-          <Marker position={[16.839148, 96.173453]}>
+          <Marker position={[16.799355, 96.154826]}>
             <Popup>
               Wanna have a virtual coffee? <br /> Send me a message.
             </Popup>
