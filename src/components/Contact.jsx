@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { SectionWrapper } from '../hoc';
 import { motion } from "framer-motion";
-import { fadeIn, textVariant, zoomIn } from "../utils/motion";
+import { fadeIn, textVariant, slideIn } from "../utils/motion";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import style from './styles/contact.module.css';
 import 'leaflet/dist/leaflet.css';
@@ -47,13 +47,13 @@ const Contact = () => {
         I'm always excited to hear about new opportunities and collaborations. Don't hesitate to reach out and let's make something great.
       </motion.p>
       <div className={style.container}>
-      <motion.form
-        // variants={zoomIn(0.15, 0.75)}
-        onSubmit={handleSubmit}
-        action="https://formspree.io/f/mgeqgkdd"
-        method="post"
-        className={style.form}
-      >
+        <motion.form
+          variants={slideIn("left", "", 0, 1)}
+          onSubmit={handleSubmit}
+          action="https://formspree.io/f/mgeqgkdd"
+          method="post"
+          className={style.form}
+        >
           <input
             type="text"
             placeholder="Name"
@@ -88,25 +88,25 @@ const Contact = () => {
             <span className={style.btn_hover}>Get in touch</span>
             <span className={style.btn}>Get in touch</span>
           </button>
-      </motion.form>
-      <div className={style.mapContainer}>
-        <MapContainer center={[16.799355, 96.154826]} zoom={13} scrollWheelZoom={false}>
-          <TileLayer
-            url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner-background/{z}/{x}/{y}{r}.png"
-            // url="https://1.night.maps.ls.hereapi.com/maptile/2.1/maptile/newest/normal.night/{z}/{x}/{y}/256/png8?apiKey=zWQWYygjaW8L62Q7WOQJuaFZsFpBUHqat9ntB5NaKAY"
-            attribution="© OpenStreetMap contributors"
-          />
-          <Marker position={[16.799355, 96.154826]}>
-            <Popup>
-              Wanna have a virtual coffee? <br /> Send me a message.
-            </Popup>
-          </Marker>
-          <div className={style.info}>
-            <p>Kaung Myat Kyaw</p>
-            <p>Yangon, Myanmar</p>
-          </div>
-        </MapContainer>
-      </div>
+        </motion.form>
+        <motion.div variants={slideIn("right", "", 0, 1)} className={style.mapContainer}>
+          <MapContainer center={[16.799355, 96.154826]} zoom={13} scrollWheelZoom={false}>
+            <TileLayer
+              url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner-background/{z}/{x}/{y}{r}.png"
+              // url="https://1.night.maps.ls.hereapi.com/maptile/2.1/maptile/newest/normal.night/{z}/{x}/{y}/256/png8?apiKey=zWQWYygjaW8L62Q7WOQJuaFZsFpBUHqat9ntB5NaKAY"
+              attribution="© OpenStreetMap contributors"
+            />
+            <Marker position={[16.799355, 96.154826]}>
+              <Popup>
+                Wanna have a virtual coffee? <br /> Send me a message.
+              </Popup>
+            </Marker>
+            <div className={style.info}>
+              <p>Kaung Myat Kyaw</p>
+              <p>Yangon, Myanmar</p>
+            </div>
+          </MapContainer>
+        </motion.div>
       </div>
     </>
   )
