@@ -114,11 +114,32 @@
   height: 352.6px;
   margin: 0 auto;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 3px;
   border: 2px solid var(--white);
   background-color: var(--dark-blue);
 }
 
+.info {
+  position: absolute;
+  top: 56.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 6px 8px;
+  border-radius: 3px;
+  color: var(--white);
+  background-color: var(--dark-blue);
+  z-index: 999;
+}
+
+.info p {
+  /* text-align: center; */
+  font-size: 0.7rem;
+}
+
+.info p:first-child {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
 
 @media screen and (min-width: 768px) {
   .title {

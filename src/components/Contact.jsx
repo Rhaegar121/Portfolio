@@ -90,16 +90,20 @@ const Contact = () => {
           </button>
       </motion.form>
       <div className={style.mapContainer}>
-        <MapContainer center={[16.747431, 96.266959]} zoom={13} scrollWheelZoom={false}>
+        <MapContainer center={[16.839148, 96.173453]} zoom={13} scrollWheelZoom={false}>
           <TileLayer
             url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
             attribution="© OpenStreetMap contributors"
           />
-          <Marker position={[16.747431, 96.266959]}>
+          <Marker position={[16.839148, 96.173453]}>
             <Popup>
-              Wanna have a virtual coffee? <br /> Send me an email.
+              Wanna have a virtual coffee? <br /> Send me a message.
             </Popup>
           </Marker>
+          <div className={style.info}>
+            <p>Kaung Myat Kyaw</p>
+            <p>Yangon, Myanmar</p>
+          </div>
         </MapContainer>
       </div>
       </div>
