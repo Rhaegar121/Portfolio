@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { SectionWrapper } from '../hoc';
 import { motion } from "framer-motion";
 import { fadeIn, textVariant, zoomIn } from "../utils/motion";
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import style from './styles/contact.module.css';
+import 'leaflet/dist/leaflet.css';
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -44,8 +46,9 @@ const Contact = () => {
       <motion.p variants={fadeIn("", "", 0.15, 1)} className={style.subtitle}>
         I'm always excited to hear about new opportunities and collaborations. Don't hesitate to reach out and let's make something great.
       </motion.p>
+      <div className={style.container}>
       <motion.form
-        variants={zoomIn(0.15, 0.75)}
+        // variants={zoomIn(0.15, 0.75)}
         onSubmit={handleSubmit}
         action="https://formspree.io/f/mgeqgkdd"
         method="post"
@@ -86,6 +89,20 @@ const Contact = () => {
             <span className={style.btn}>Get in touch</span>
           </button>
       </motion.form>
+      <div className={style.mapContainer}>
+        <MapContainer center={[16.747431, 96.266959]} zoom={13} scrollWheelZoom={false}>
+          <TileLayer
+            url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
+            attribution="© OpenStreetMap contributors"
+          />
+          <Marker position={[16.747431, 96.266959]}>
+            <Popup>
+              Wanna have a virtual coffee? <br /> Send me an email.
+            </Popup>
+          </Marker>
+        </MapContainer>
+      </div>
+      </div>
     </>
   )
 }

@@ -6,7 +6,6 @@
 .slick_dots li button::before {
     font-size: 0.4rem !important;
     opacity: 1 !important;
-    /* color: var(--white) !important; */
 }
 
 .slick_dots li.slick-active button::before {
