@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion";
+import { Tilt } from "react-tilt";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from '../hoc';
 import { FaLinkedinIn } from 'react-icons/fa';
@@ -17,19 +18,27 @@ const Testimonial = () => {
       <div className={style.card_container}>
         {/* Testimonials card */}
         {testimonials.map((testimonial, index) => (
-          <motion.div
-            key={testimonial.id}
-            variants={fadeIn("right", "tween", index * 0.8, 0.5)}
-            className={style.card_shadow}>
-            <div className={style.card}>
-              <FaQuoteLeft className={style.openquote} />
-              <p className={style.para}>{testimonial.text}</p>
-              <div className={`${style.label} ${style.firstlabel}`}>
-                <h2 className={style.name}>{testimonial.name} <span className={style.country}>({testimonial.country})</span></h2>
-                <a href={testimonial.linkedIn} target='_blank' className={style.icon}><FaLinkedinIn /></a>
+          <Tilt className={style.tilt}>
+            <motion.div
+              key={testimonial.id}
+              variants={fadeIn("right", "tween", index * 0.8, 0.5)}
+              className={style.card_shadow}>
+              <div
+                className={style.card}
+                options={{
+                  max: 15,
+                  scale: 0.5,
+                  speed: 450,
+                }}>
+                <FaQuoteLeft className={style.openquote} />
+                <p className={style.para}>{testimonial.text}</p>
+                <div className={`${style.label} ${style.firstlabel}`}>
+                  <h2 className={style.name}>{testimonial.name} <span className={style.country}>({testimonial.country})</span></h2>
+                  <a href={testimonial.linkedIn} target='_blank' className={style.icon}><FaLinkedinIn /></a>
+                </div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </Tilt>
         ))}
       </div>
       <motion.div variants={fadeIn("", "", 0.15, 1)} className={style.recommendationsLink}>

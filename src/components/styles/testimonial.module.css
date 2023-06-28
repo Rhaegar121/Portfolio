@@ -36,12 +36,16 @@
     padding: 50px 0;
 }
 
+.tilt {
+    width: 85%;
+}
+
 .card_shadow {
     background: "#00cea8";
     background: -webkit-linear-gradient(-90.13deg, #00e7ad 1.9%, #464dff 97.5%);
     background: linear-gradient(90.13deg, #00e7ad 1.9%, #464dff 97.5%);
     padding: 1px;
-    width: 85%;
+    width: 100%;
     border-radius: 10px 60px;
 }
 
@@ -175,7 +179,7 @@
         font-size: 1.9rem;
     }
 
-    .card_shadow {
+    .tilt {
         width: 70%;
     }
 }
@@ -185,7 +189,7 @@
         font-size: 2rem;
     }
 
-    .card_shadow {
+    .tilt {
         width: 50%;
     }
 }
@@ -204,7 +208,7 @@
         padding-bottom: 60px;
     }
 
-    .card_shadow {
+    .tilt {
         width: 30%;
     }
 
@@ -226,7 +230,7 @@
         gap: 40px;
     }
 
-    .card_shadow {
+    .tilt {
         width: 28.5%;
     }
 
