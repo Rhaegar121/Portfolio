@@ -1,7 +1,5 @@
 import logo from './logo.png';
-import awesomebook from './projects/awesomebook.png'
 import tvshowbox from './projects/tvshow.png'
-import todolist from './projects/todolist.png'
 import guesstheword from './projects/guesstheword.jpg'
 import tictactoe from './projects/tictactoe.jpg'
 import mathmagician from './projects/mathmagician.png'
@@ -9,11 +7,9 @@ import metricwebapp from './projects/metricswebapp.png'
 import spacetravelers from './projects/spacetravelers.png'
 import recipeapp from './projects/recipeapp.png'
 import trackbudget from './projects/trackbudget.png'
+import carrental from './projects/carrentalapp.png'
 
 // carousel img
-import awesomebook1 from './carousels/awesome book screenshot 1.jpg';
-import awesomebook2 from './carousels/awesome book screenshot 2.jpg';
-import awesomebook3 from './carousels/awesome book screenshot 3.jpg';
 import guesstheword1 from './carousels/guess the word screenshot 1.jpg';
 import guesstheword2 from './carousels/guess the word screenshot 2.jpg';
 import guesstheword3 from './carousels/guess the word screenshot 3.jpg';
@@ -39,5 +35,12 @@ import trackbuget2 from './carousels/track budget screenshot 2.png';
 import trackbuget3 from './carousels/track budget screenshot 3.png';
 import trackbuget4 from './carousels/track budget screenshot 4.png';
 import trackbuget5 from './carousels/track budget screenshot 5.png';
+import carrental1 from './carousels/car rental screenshot 1.png';
+import carrental2 from './carousels/car rental screenshot 2.png';
+import carrental3 from './carousels/car rental screenshot 3.png';
+import carrental4 from './carousels/car rental screenshot 4.png';
+import carrental5 from './carousels/car rental screenshot 5.png';
+import carrental6 from './carousels/car rental screenshot 6.png';
+import carrental7 from './carousels/car rental screenshot 7.png';
 
-export { logo, awesomebook , tvshowbox, todolist, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, awesomebook1, awesomebook2, awesomebook3, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6, trackbudget, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5 };
+export { logo, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5, carrental1, carrental2, carrental3, carrental4, carrental5, carrental6, carrental7 };

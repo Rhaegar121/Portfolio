@@ -1,4 +1,4 @@
-import { awesomebook, tvshowbox, todolist, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, awesomebook1, awesomebook2, awesomebook3, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6, trackbudget, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5 } from '../assets';
+import { tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5, carrental1, carrental2, carrental3, carrental4, carrental5, carrental6, carrental7 } from '../assets';
 
 const technologies = [
     {
@@ -111,19 +111,19 @@ const projects = [
   },
   {
     id: 4,
-    name: "To Do List",
-    desc: "To Do List Project is a tool that helps to organize your day with light and dark theme. It simply lists the things that you need to do and allows you to mark them as complete. Mainly built with javascript in Microverse Module 2.",
-    tech: ["HTML5", "CSS3", "JavaScript"],
-    img: todolist,
-    carousel: [todolist],
-    source_link: "https://github.com/Rhaegar121/To-Do-list",
-    live_link: "https://rhaegar121.github.io/To-Do-list/dist/",
+    name: "Recipe App",
+    desc: "The Recipe app keeps track of all your foods, recipes, and ingredients. It allows you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Since sharing recipes is an important part, it allows you to make them public so anyone can access them.",
+    tech: ["Ruby", "Ruby on Rails", "PostgreSQL"],
+    img: recipeapp,
+    carousel: [recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5],
+    source_link: "https://github.com/Rhaegar121/Recipe-App",
+    live_link: "https://recipe-app-aaa9.onrender.com/",
   },
   {
     id: 5,
     name: "Track Budget App",
     desc: "Track Budget is a mobile web application where you can manage your budget: you have a list of purchases associated with a category, so that you can see how much money you spent and on what category.",
-    tech: ["Ruby", "Ruby on Rails", "Postgresql"],
+    tech: ["Ruby", "Ruby on Rails", "PostgreSQL"],
     img: trackbudget,
     carousel: [trackbudget, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5],
     source_link: "https://github.com/Rhaegar121/Track-Budget",
@@ -151,13 +151,13 @@ const projects = [
   },
   {
     id: 8,
-    name: "Awesome Books",
-    desc: "Awesome Books Project is a simple website that displays a list of books and allows you to add and remove books from that list. Mainly built with javascript in Microverse Module 2.",
-    tech: ["HTML5", "CSS3", "JavaScript"],
-    img: awesomebook,
-    carousel: [awesomebook1, awesomebook2, awesomebook3],
-    source_link: "https://github.com/Rhaegar121/Awesome-Books-ES6",
-    live_link: "https://rhaegar121.github.io/Awesome-Books-ES6/",
+    name: "Car Rental App",
+    desc: "The Car Rental App is a full-stack app we built using React as Front-end and Ruby on Rails as the Back-end API endpoint with custom authentication. The users can see a list of cars to rent and add to their favorites. The users can also add a car to the list and delete a car from the list.",
+    tech: ["React", "Redux", "Ruby on Rails", "PostgreSQL"],
+    img: carrental,
+    carousel: [carrental1, carrental2, carrental3, carrental4, carrental5, carrental6, carrental7],
+    source_link: "https://github.com/Rhaegar121/Car-Rental-Front-end-",
+    live_link: "https://car-rental-capstone.netlify.app/",
   },
   {
     id: 9,
