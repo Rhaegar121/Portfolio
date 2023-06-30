@@ -7,7 +7,7 @@ import metricwebapp from './projects/metricswebapp.png'
 import spacetravelers from './projects/spacetravelers.png'
 import recipeapp from './projects/recipeapp.png'
 import trackbudget from './projects/trackbudget.png'
-import carrental from './projects/carrentalapp.png'
+import carrental from './projects/carrental.png'
 
 // carousel img
 import guesstheword1 from './carousels/guess the word screenshot 1.jpg';

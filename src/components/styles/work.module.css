@@ -265,7 +265,7 @@
 
   .project_container {
     grid-template-columns: auto auto;
-    grid-auto-rows: 260px;
+    grid-auto-rows: 270px;
     padding: 0;
   }
 
@@ -296,7 +296,7 @@
 
   .project_container {
     grid-template-columns: auto auto auto;
-    grid-auto-rows: 275px;
+    grid-auto-rows: 285px;
   }
 
   .name {
@@ -316,7 +316,7 @@
 
 @media screen and (min-width: 1400px) {
   .project_container {
-    grid-auto-rows: 325px;
+    grid-auto-rows: 340px;
     padding: 0px 40px;
   }
 
