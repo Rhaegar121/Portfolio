@@ -125,9 +125,9 @@ const projects = [
     desc: "The Recipe app keeps track of all your foods, recipes, and ingredients. It allows you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Since sharing recipes is an important part, it allows you to make them public so anyone can access them.",
     tech: ["Ruby", "Ruby on Rails", "PostgreSQL"],
     img: recipeapp,
-    carousel: [recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5],
+    carousel: [recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6],
     source_link: "https://github.com/Rhaegar121/Recipe-App",
-    live_link: "https://recipe-app-aaa9.onrender.com/",
+    live_link: "https://recipe-app121-b8888e20687b.herokuapp.com/",
   },
   {
     id: 6,
