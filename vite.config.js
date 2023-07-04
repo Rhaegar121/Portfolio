@@ -1,15 +1,9 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import { createVuePlugin } from 'vite-plugin-react';
 
 export default defineConfig({
   base: '/',
-  plugins: [react(), createVuePlugin()],
-  css: {
-    order: {
-      after: ['slick-carousel/slick/slick.css', 'slick-carousel/slick/slick-theme.css'],
-    },
-  },
+  plugins: [react()],
   build: {
     rollupOptions: {
       output: {
@@ -19,6 +13,12 @@ export default defineConfig({
           }
         },
       },
+    },
+  },
+  css: {
+    order: {
+      before: ['@import'],
+      after: ['slick-carousel/slick/slick.css', 'slick-carousel/slick/slick-theme.css'],
     },
   },
 });
