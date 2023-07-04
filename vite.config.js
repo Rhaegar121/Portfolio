@@ -15,10 +15,4 @@ export default defineConfig({
       },
     },
   },
-  css: {
-    include: [
-      '/assets/slick-carousel-3b0bd9d2.css',
-      '/assets/index-0846ee65.css',
-    ],
-  },
 });

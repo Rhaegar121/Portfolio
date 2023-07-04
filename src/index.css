@@ -68,36 +68,35 @@
 }
 
 .slick-dots li button::before {
-  font-size: 0.4rem;
-  opacity: 1;
+  font-size: 0.4rem !important;
+  opacity: 1 !important;
   color: var(--white);
 }
 
 .slick-dots li.slick-active button::before {
-  color: var(--cyan);
+  color: var(--cyan) !important;
 }
 
 .slick-arrow {
-  position: absolute;
-  top: 100%;
+  top: 100% !important;
   z-index: 9;
 }
 
 .slick-prev {
-  left: 0;
+  left: 0 !important;
 }
 
 .slick-next {
-  right: 0;
+  right: 0 !important;
 }
 
 .slick-prev::before,
 .slick-next::before {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif !important;
   position: absolute;
-  opacity: 1;
+  opacity: 1 !important;
   padding: 8px 10px 12px 10px;
-  top: -36px;
+  top: -36px !important;
   background-color: #1b243fd5;
 }
 
@@ -127,17 +126,17 @@
 @media screen and (min-width: 768px) {
   .slick-prev::before,
   .slick-next::before {
-    font-size: 1.8rem;
-    top: -45px;
+    font-size: 1.8rem !important;
+    top: -45px !important;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .slick-prev::before,
   .slick-next::before {
-    font-size: 2rem;
+    font-size: 2rem !important;
     padding: 10px 12px 14px 12px;
-    top: -52px;
+    top: -52px !important;
   }
 }
   
