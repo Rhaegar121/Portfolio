@@ -49,6 +49,24 @@
   background: linear-gradient(-90deg, #3f4e85 0%, rgba(51, 53, 80, 0) 100%);
 }
 
+.slick-slider {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.carousel-img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.carousel-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  
+}
+
 .slick-dots li button::before {
   font-size: 0.4rem;
   opacity: 1;
@@ -57,6 +75,38 @@
 
 .slick-dots li.slick-active button::before {
   color: var(--cyan);
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 100%;
+  z-index: 9;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-family: "Montserrat Alternates", sans-serif;
+  position: absolute;
+  opacity: 1;
+  padding: 8px 10px 12px 10px;
+  top: -36px;
+  background-color: #1b243fd5;
+}
+
+.slick-prev::before {
+  left: 0;
+}
+
+.slick-next::before {
+  right: 0;
 }
 
 .contact {
@@ -73,3 +123,21 @@
   width: 100%;
   height: 100%;
 }
+
+@media screen and (min-width: 768px) {
+  .slick-prev::before,
+  .slick-next::before {
+    font-size: 1.8rem;
+    top: -45px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slick-prev::before,
+  .slick-next::before {
+    font-size: 2rem;
+    padding: 10px 12px 14px 12px;
+    top: -52px;
+  }
+}
+  

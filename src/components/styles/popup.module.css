@@ -20,11 +20,11 @@
   position: absolute;
   right: 0;
   top: 0;
-  padding: 5px;
+  padding: 7px;
   z-index: 9;
-  color: var(--white);
-  background-color: var(--light-grey);
-  font-size: 1.7rem;
+  color: #fff;
+  background-color: #1b243fd5;
+  font-size: 1.8rem;
 }
 
 .close_btn:hover,
