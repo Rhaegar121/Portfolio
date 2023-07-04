@@ -16,9 +16,9 @@ export default defineConfig({
     },
   },
   css: {
-    order: {
-      before: ['@import'],
-      after: ['slick-carousel/slick/slick.css', 'slick-carousel/slick/slick-theme.css'],
-    },
+    include: [
+      '/assets/slick-carousel-3b0bd9d2.css',
+      '/assets/index-0846ee65.css',
+    ],
   },
 });
