@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { fadeIn } from "../utils/motion";
+import { fadeIn, staggerContainer } from "../utils/motion";
 import { logo } from '../assets'
 import style from './styles/navbar.module.css';
 import { Link } from "react-router-dom";
@@ -84,8 +84,12 @@ const Navbar = () => {
       </ul>
 
       {/* mobile menu */}
-      <ul 
-      className={`${style.mobilemenu} ${isOpen ? "h-screen" : "h-0"}`}
+      <ul
+      variants={staggerContainer()}
+      initial="hidden"
+      whileInView='show'
+      viewport={{ once: true, amount: 0.25 }}
+      className={`${style.mobilemenu} ${isOpen ? "h-screen flex" : "h-0"}`}
     >
         <li 
           key="about"
@@ -95,7 +99,13 @@ const Navbar = () => {
             handleMenuClick();
           }}
         >
-          <motion.a href={`#about`} variants={fadeIn("right", "tween", 1, 1)} className={style.mobile_font}>About</motion.a>
+          <motion.a
+          href={`#about`}
+          className={style.mobile_font}
+          variants={fadeIn("right", "", 0.15, 1)}
+          initial="hidden"
+          whileInView='show'
+          >About</motion.a>
         </li>
         <li 
           key="work"
@@ -105,7 +115,13 @@ const Navbar = () => {
             handleMenuClick();
           }}
         >
-          <a href={`#work`} className={style.mobile_font}>Work</a>
+          <motion.a
+          href={`#work`}
+          className={style.mobile_font}
+          variants={fadeIn("right", "", 0.25, 1)}
+          initial="hidden"
+          whileInView='show'
+          >Work</motion.a>
         </li>
         <li 
           key="testimonials"
@@ -115,7 +131,13 @@ const Navbar = () => {
             handleMenuClick();
           }}
         >
-          <a href={`#testimonials`} className={style.mobile_font}>Testimonials</a>
+          <motion.a
+          href={`#testimonials`}
+          className={style.mobile_font}
+          variants={fadeIn("right", "", 0.35, 1)}
+          initial="hidden"
+          whileInView='show'
+          >Testimonials</motion.a>
         </li>
         <li 
           key="contact"
@@ -125,13 +147,26 @@ const Navbar = () => {
             handleMenuClick();
           }}
         >
-          <a href={`#contact`} className={style.mobile_font}>Contact</a>
+          <motion.a
+          href={`#contact`}
+          className={style.mobile_font}
+          variants={fadeIn("right", "", 0.45, 1)}
+          initial="hidden"
+          whileInView='show'
+          >Contact</motion.a>
         </li>
         <li>
-          <a href='https://drive.google.com/file/d/1gINzceqIwshNpYO_NqCS3vSQKAL1t_Hg/view?usp=sharing' target=" blank" className={`${style.resume_container} ${style.mobile_resume_container}`}>
+          <motion.a
+          variants={fadeIn("right", "", 0.55, 1)}
+          initial="hidden"
+          whileInView='show'
+          href='https://drive.google.com/file/d/1gINzceqIwshNpYO_NqCS3vSQKAL1t_Hg/view?usp=sharing' 
+          target=" blank" 
+          className={`${style.resume_container} ${style.mobile_resume_container}`}
+          >
             <span className={`${style.resume_hover} ${style.font}`}>Resume</span>
             <span className={`${style.resume} ${style.font}`}>Resume</span>
-          </a>
+          </motion.a>
         </li>
       </ul>
     </nav>
