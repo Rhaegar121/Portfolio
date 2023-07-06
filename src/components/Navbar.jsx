@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/motion";
 import { logo } from '../assets'
 import style from './styles/navbar.module.css';
 import { Link } from "react-router-dom";
@@ -67,7 +69,7 @@ const Navbar = () => {
           <a href={`#contact`} className={style.font}>Contact</a>
         </li>
         <li>
-          <a href='https://drive.google.com/file/d/1w-Qh-WPwZaPmIoMspMVUA6D-xUd-nkyK/view?usp=share_link' target=" blank" className={style.resume_container}>
+          <a href='https://drive.google.com/file/d/1gINzceqIwshNpYO_NqCS3vSQKAL1t_Hg/view?usp=sharing' target=" blank" className={style.resume_container}>
             <span className={style.resume_hover}>Resume</span>
             <span className={style.resume}>Resume</span>
           </a>
@@ -87,48 +89,48 @@ const Navbar = () => {
     >
         <li 
           key="about"
-          className={`${ active === "About" ? "text-cyan" : "text-grey" } mt-20`}
+          className={`${ active === "About" ? style.mobile_active : "text-grey" } mt-20`}
           onClick={() => {
             setActive("About");
             handleMenuClick();
           }}
         >
-          <a href={`#about`} className={style.font}>About</a>
+          <motion.a href={`#about`} variants={fadeIn("right", "tween", 1, 1)} className={style.mobile_font}>About</motion.a>
         </li>
         <li 
           key="work"
-          className={ active === "Work" ? "text-cyan" : "text-grey" }
+          className={ active === "Work" ? style.mobile_active : "text-grey" }
           onClick={() => {
             setActive("Work");
             handleMenuClick();
           }}
         >
-          <a href={`#work`} className={style.font}>Work</a>
+          <a href={`#work`} className={style.mobile_font}>Work</a>
         </li>
         <li 
           key="testimonials"
-          className={ active === "Testimonials" ? "text-cyan" : "text-grey" }
+          className={ active === "Testimonials" ? style.mobile_active : "text-grey" }
           onClick={() => {
             setActive("Testimonials");
             handleMenuClick();
           }}
         >
-          <a href={`#testimonials`} className={style.font}>Testimonials</a>
+          <a href={`#testimonials`} className={style.mobile_font}>Testimonials</a>
         </li>
         <li 
           key="contact"
-          className={ active === "Contact" ? "text-cyan" : "text-grey" }
+          className={ active === "Contact" ? style.mobile_active : "text-grey" }
           onClick={() => {
             setActive("Contact");
             handleMenuClick();
           }}
         >
-          <a href={`#contact`} className={style.font}>Contact</a>
+          <a href={`#contact`} className={style.mobile_font}>Contact</a>
         </li>
         <li>
-          <a href='https://drive.google.com/file/d/1w-Qh-WPwZaPmIoMspMVUA6D-xUd-nkyK/view?usp=share_link' target=" blank" className={style.resume_container}>
-            <span className={style.resume_hover}>Resume</span>
-            <span className={style.resume}>Resume</span>
+          <a href='https://drive.google.com/file/d/1gINzceqIwshNpYO_NqCS3vSQKAL1t_Hg/view?usp=sharing' target=" blank" className={`${style.resume_container} ${style.mobile_resume_container}`}>
+            <span className={`${style.resume_hover} ${style.font}`}>Resume</span>
+            <span className={`${style.resume} ${style.font}`}>Resume</span>
           </a>
         </li>
       </ul>

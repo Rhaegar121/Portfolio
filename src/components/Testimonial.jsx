@@ -26,8 +26,8 @@ const Testimonial = () => {
               <div
                 className={style.card}
                 options={{
-                  max: 15,
-                  scale: 0.5,
+                  max: 45,
+                  scale: 1,
                   speed: 450,
                 }}>
                 <FaQuoteLeft className={style.openquote} />
