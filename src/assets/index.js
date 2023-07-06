@@ -1,6 +1,6 @@
 import logo from './logo.png';
 import tvshowbox from './projects/tvshow.png'
-import guesstheword from './projects/guesstheword.jpg'
+import guesstheword from './projects/guesstheword.png'
 import tictactoe from './projects/tictactoe.jpg'
 import mathmagician from './projects/mathmagician.png'
 import metricwebapp from './projects/metricswebapp.png'
@@ -10,9 +10,9 @@ import trackbudget from './projects/trackbudget.png'
 import carrental from './projects/carrental.png'
 
 // carousel img
-import guesstheword1 from './carousels/guess the word screenshot 1.jpg';
-import guesstheword2 from './carousels/guess the word screenshot 2.jpg';
-import guesstheword3 from './carousels/guess the word screenshot 3.jpg';
+import guesstheword1 from './carousels/guess the word screenshot 1.png';
+import guesstheword2 from './carousels/guess the word screenshot 2.png';
+import guesstheword3 from './carousels/guess the word screenshot 3.png';
 import spacetravelers1 from './carousels/space travelers screenshot 1.png';
 import spacetravelers2 from './carousels/space travelers screenshot 2.png';
 import spacetravelers3 from './carousels/space travelers screenshot 3.png';
