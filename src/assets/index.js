@@ -1,7 +1,7 @@
 import logo from './logo.png';
 import tvshowbox from './projects/tvshow.png'
 import guesstheword from './projects/guesstheword.png'
-import tictactoe from './projects/tictactoe.jpg'
+import tictactoe from './projects/tictactoe.png'
 import mathmagician from './projects/mathmagician.png'
 import metricwebapp from './projects/metricswebapp.png'
 import spacetravelers from './projects/spacetravelers.png'
@@ -16,9 +16,9 @@ import guesstheword3 from './carousels/guess the word screenshot 3.png';
 import spacetravelers1 from './carousels/space travelers screenshot 1.png';
 import spacetravelers2 from './carousels/space travelers screenshot 2.png';
 import spacetravelers3 from './carousels/space travelers screenshot 3.png';
-import tictactoe1 from './carousels/tic tac toe screenshot 1.jpg';
-import tictactoe2 from './carousels/tic tac toe screenshot 2.jpg';
-import tictactoe3 from './carousels/tic tac toe screenshot 3.jpg';
+import tictactoe1 from './carousels/tic tac toe screenshot 1.png';
+import tictactoe2 from './carousels/tic tac toe screenshot 2.png';
+import tictactoe3 from './carousels/tic tac toe screenshot 3.png';
 import tvshow1 from './carousels/tvshow screenshot 1.png';
 import tvshow2 from './carousels/tvshow screenshot 2.png';
 import tvshow3 from './carousels/tvshow screenshot 3.png';
