@@ -214,7 +214,11 @@
     }
 
     .name {
-        font-size: 1.05rem;
+        font-size: 1rem;
+    }
+
+    .country {
+        font-size: 0.85rem;
     }
 
     .para {
@@ -237,14 +241,6 @@
 
     .para {
         height: 220px;
-    }
-
-    .name {
-        font-size: 1.1rem;
-    }
-
-    .country {
-        font-size: 1rem;
     }
 
     .icon {
