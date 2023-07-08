@@ -33,7 +33,7 @@ const Testimonial = () => {
                 <FaQuoteLeft className={style.openquote} />
                 <p className={style.para}>{testimonial.text}</p>
                 <div className={`${style.label} ${style.firstlabel}`}>
-                  <h2 className={style.name}>{testimonial.name} <span className={style.country}>({testimonial.country})</span></h2>
+                  <p className={style.name}>{testimonial.name} <span className={style.country}>({testimonial.country})</span></p>
                   <a href={testimonial.linkedIn} target='_blank' className={style.icon}><FaLinkedinIn /></a>
                 </div>
               </div>

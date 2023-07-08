@@ -79,11 +79,12 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 15px;
+    font-size: 0.9rem;
+    font-weight: 300;
 }
 
 .country {
-    font-size: 0.9rem;
-    font-weight: 300;
+    font-size: 0.8rem;
     color: var(--white);
 }
 
