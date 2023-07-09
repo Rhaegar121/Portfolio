@@ -86,7 +86,7 @@ const projects = [
     tech: ["React", "Redux", "Ruby on Rails", "PostgreSQL"],
     img: carrental,
     carousel: [carrental1, carrental2, carrental3, carrental4, carrental5, carrental6, carrental7],
-    source_link: "https://github.com/Rhaegar121/Car-Rental-Front-end-",
+    source_link: "https://github.com/Rhaegar121/Car-Rental-front-end",
     live_link: "https://car-rental-capstone.netlify.app/",
   },
   {

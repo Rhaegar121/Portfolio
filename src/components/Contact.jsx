@@ -93,7 +93,6 @@ const Contact = () => {
           <MapContainer center={[16.799355, 96.154826]} zoom={13} scrollWheelZoom={false}>
             <TileLayer
               url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner-background/{z}/{x}/{y}{r}.png"
-              // url="https://1.night.maps.ls.hereapi.com/maptile/2.1/maptile/newest/normal.night/{z}/{x}/{y}/256/png8?apiKey=zWQWYygjaW8L62Q7WOQJuaFZsFpBUHqat9ntB5NaKAY"
               attribution="© OpenStreetMap contributors"
             />
             <Marker position={[16.799355, 96.154826]}>
