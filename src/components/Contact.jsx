@@ -3,8 +3,24 @@ import { SectionWrapper } from '../hoc';
 import { motion } from "framer-motion";
 import { fadeIn, textVariant, slideIn } from "../utils/motion";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
 import style from './styles/contact.module.css';
 import 'leaflet/dist/leaflet.css';
+import markerIcon from 'leaflet/dist/images/marker-icon.png';
+import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
+
+delete L.Icon.Default.prototype._getIconUrl;
+
+const customIcon = new L.Icon({
+  iconUrl: markerIcon,
+  iconRetinaUrl: markerIcon2x,
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  tooltipAnchor: [16, -28],
+  shadowSize: [41, 41],
+  shadowAnchor: [12, 41]
+});
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -95,7 +111,7 @@ const Contact = () => {
               url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner-background/{z}/{x}/{y}{r}.png"
               attribution="© OpenStreetMap contributors"
             />
-            <Marker position={[16.799355, 96.154826]}>
+            <Marker position={[16.799355, 96.154826]} icon={customIcon} >
               <Popup>
                 Wanna have a virtual coffee? <br /> Send me a message.
               </Popup>
