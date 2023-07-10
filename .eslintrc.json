@@ -17,6 +17,7 @@
     "rules": {
       "react/jsx-props-no-spreading": "off",
       "react/no-unknown-property": "off",
+      "no-underscore-dangle": ["error", { "allow": ["_getIconUrl"] }],
       "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
       "react/react-in-jsx-scope": "off",
       "import/no-unresolved": "off",
