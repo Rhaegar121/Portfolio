@@ -1,26 +1,26 @@
-import React, { Suspense, useEffect, useState } from "react";
-import { Canvas } from "@react-three/fiber";
+import React, { Suspense, useEffect, useState } from 'react';
+import { Canvas } from '@react-three/fiber';
 import {
   Decal,
   Float,
   OrbitControls,
   Preload,
   useTexture,
-} from "@react-three/drei";
-import Loader from "./Loader";
+} from '@react-three/drei';
+import Loader from './Loader';
 
-const Ball = ({imgUrl, isMobile}) => {
+const Ball = ({ imgUrl, isMobile }) => {
   const [decal] = useTexture([imgUrl]);
 
   return (
     <Float speed={3} rotationIntensity={1} floatIntensity={2} position-y={0} rotation-y={0}>
       <ambientLight intensity={0.3} />
       <directionalLight position={[0, 0, 0.05]} />
-      <mesh castShadow receiveShadow scale={isMobile ? 2.5 : 2.3} >
+      <mesh castShadow receiveShadow scale={isMobile ? 2.5 : 2.3}>
         <sphereGeometry args={[1, 32.8, 32.8]} />
         <meshStandardMaterial
           // color='#e6f1ff'
-          color='#d5e0f1'
+          color="#d5e0f1"
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading
@@ -50,7 +50,7 @@ const BallCanvas = ({ icon }) => {
   // const canvasRef = useRef(null);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(min-width: 768px)");
+    const mediaQuery = window.matchMedia('(min-width: 768px)');
 
     setIsMobile(mediaQuery.matches);
 
@@ -58,10 +58,10 @@ const BallCanvas = ({ icon }) => {
       setIsMobile(event.matches);
     };
 
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
+    mediaQuery.addEventListener('change', handleMediaQueryChange);
 
     return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+      mediaQuery.removeEventListener('change', handleMediaQueryChange);
     };
   }, []);
 
@@ -81,7 +81,7 @@ const BallCanvas = ({ icon }) => {
 
   return (
     <Canvas
-      frameloop='always'
+      frameloop="always"
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
       // onClean={() => {

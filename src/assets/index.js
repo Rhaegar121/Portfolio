@@ -1,13 +1,13 @@
 import logo from './logo.png';
-import tvshowbox from './projects/tvshow.png'
-import guesstheword from './projects/guesstheword.png'
-import tictactoe from './projects/tictactoe.png'
-import mathmagician from './projects/mathmagician.png'
-import metricwebapp from './projects/metricswebapp.png'
-import spacetravelers from './projects/spacetravelers.png'
-import recipeapp from './projects/recipeapp.png'
-import trackbudget from './projects/trackbudget.png'
-import carrental from './projects/carrental.png'
+import tvshowbox from './projects/tvshow.png';
+import guesstheword from './projects/guesstheword.png';
+import tictactoe from './projects/tictactoe.png';
+import mathmagician from './projects/mathmagician.png';
+import metricwebapp from './projects/metricswebapp.png';
+import spacetravelers from './projects/spacetravelers.png';
+import recipeapp from './projects/recipeapp.png';
+import trackbudget from './projects/trackbudget.png';
+import carrental from './projects/carrental.png';
 
 // carousel img
 import guesstheword1 from './carousels/guess the word screenshot 1.png';
@@ -43,4 +43,6 @@ import carrental5 from './carousels/car rental screenshot 5.png';
 import carrental6 from './carousels/car rental screenshot 6.png';
 import carrental7 from './carousels/car rental screenshot 7.png';
 
-export { logo, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5, carrental1, carrental2, carrental3, carrental4, carrental5, carrental6, carrental7 };
+export {
+  logo, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5, carrental1, carrental2, carrental3, carrental4, carrental5, carrental6, carrental7,
+};

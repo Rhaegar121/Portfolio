@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import style from "./styles/work.module.css";
-import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
-import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../utils/motion";
-import Popup from "./Popup";
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import style from './styles/work.module.css';
+import { SectionWrapper } from '../hoc';
+import { projects } from '../constants';
+import { fadeIn, textVariant } from '../utils/motion';
+import Popup from './Popup';
 
 const Work = () => {
   const [isOpen, setOpen] = useState(false);
@@ -30,7 +30,7 @@ const Work = () => {
         {projects.map((project, index) => (
           <motion.div
             key={project.id}
-            variants={fadeIn("up", "", index * 0.4, 0.5)}
+            variants={fadeIn('up', '', index * 0.4, 0.5)}
             index={index}
             className={style.card}
           >
@@ -64,4 +64,4 @@ const Work = () => {
   );
 };
 
-export default SectionWrapper(Work, "work", "my-8");
+export default SectionWrapper(Work, 'work', 'my-8');

@@ -24,11 +24,11 @@ const Carousel = ({ carousel }) => {
 
   return (
     <Slider {...settings}>
-        {carousel.map((img) => (
-            <div className="carousel-img">
-                <img src={img} alt="project sample img" />
-            </div>
-        ))}   
+      {carousel.map((img) => (
+        <div className="carousel-img">
+          <img src={img} alt="project sample img" />
+        </div>
+      ))}
     </Slider>
   );
 };
