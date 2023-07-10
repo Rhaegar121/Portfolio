@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import { fadeIn, staggerContainer } from '../utils/motion';
 import { logo } from '../assets';
 import style from './styles/navbar.module.css';
@@ -34,42 +33,71 @@ const Navbar = () => {
   return (
     <div className={style.navbar_container}>
       <nav className={`${style.navbar} ${scrolled ? 'fixed' : ''}`}>
-        <Link onClick={() => { window.scrollTo(0, 0); }}>
+        <button
+          type="button"
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+        >
           <img src={logo} alt="My logo" className={style.logo} />
-        </Link>
+        </button>
 
         {/* desktop navlink */}
         <ul className={style.navlink}>
           <li
             key="about"
             className={active === 'About' ? 'text-cyan' : 'text-grey'}
-            onClick={() => setActive('About')}
           >
-            <a href="#about" className={style.font}>About</a>
+            <a
+              href="#about"
+              className={style.font}
+              onClick={() => setActive('About')}
+            >
+              About
+            </a>
           </li>
           <li
             key="work"
             className={active === 'Work' ? 'text-cyan' : 'text-grey'}
-            onClick={() => setActive('Work')}
           >
-            <a href="#work" className={style.font}>Work</a>
+            <a
+              href="#work"
+              className={style.font}
+              onClick={() => setActive('Work')}
+            >
+              Work
+            </a>
           </li>
           <li
             key="testimonials"
             className={active === 'Testimonials' ? 'text-cyan' : 'text-grey'}
-            onClick={() => setActive('Testimonials')}
           >
-            <a href="#testimonials" className={style.font}>Testimonials</a>
+            <a
+              href="#testimonials"
+              className={style.font}
+              onClick={() => setActive('Testimonials')}
+            >
+              Testimonials
+            </a>
           </li>
           <li
             key="contact"
             className={active === 'Contact' ? 'text-cyan' : 'text-grey'}
-            onClick={() => setActive('Contact')}
           >
-            <a href="#contact" className={style.font}>Contact</a>
+            <a
+              href="#contact"
+              className={style.font}
+              onClick={() => setActive('Contact')}
+            >
+              Contact
+            </a>
           </li>
           <li>
-            <a href="https://drive.google.com/file/d/1gINzceqIwshNpYO_NqCS3vSQKAL1t_Hg/view?usp=sharing" target=" blank" className={style.resume_container}>
+            <a
+              href="https://drive.google.com/file/d/1gINzceqIwshNpYO_NqCS3vSQKAL1t_Hg/view?usp=sharing"
+              target=" blank"
+              className={style.resume_container}
+            >
               <span className={style.resume_hover}>Resume</span>
               <span className={style.resume}>Resume</span>
             </a>
@@ -77,11 +105,21 @@ const Navbar = () => {
         </ul>
 
         {/* hamburger menu */}
-        <ul className={style.hamburger} onClick={handleMenuClick}>
-          <li className={`${style.line} ${isOpen ? style.open : ''}`} />
-          <li className={`${style.line} ${isOpen ? style.open : ''}`} />
-          <li className={`${style.line} ${isOpen ? style.open : ''}`} />
-        </ul>
+        <div
+          className={style.hamburger}
+          onClick={handleMenuClick}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              handleMenuClick();
+            }
+          }}
+          role="button"
+          tabIndex={0}
+        >
+          <span className={`${style.line} ${isOpen ? style.open : ''}`} />
+          <span className={`${style.line} ${isOpen ? style.open : ''}`} />
+          <span className={`${style.line} ${isOpen ? style.open : ''}`} />
+        </div>
 
         {/* mobile menu */}
         <ul
@@ -93,11 +131,9 @@ const Navbar = () => {
         >
           <li
             key="about"
-            className={`${active === 'About' ? style.mobile_active : 'text-grey'} mt-20`}
-            onClick={() => {
-              setActive('About');
-              handleMenuClick();
-            }}
+            className={`${
+              active === 'About' ? style.mobile_active : 'text-grey'
+            } mt-20`}
           >
             <motion.a
               href="#about"
@@ -105,6 +141,10 @@ const Navbar = () => {
               variants={fadeIn('right', '', 0.15, 1)}
               initial="hidden"
               whileInView="show"
+              onClick={() => {
+                setActive('About');
+                handleMenuClick();
+              }}
             >
               About
             </motion.a>
@@ -112,10 +152,6 @@ const Navbar = () => {
           <li
             key="work"
             className={active === 'Work' ? style.mobile_active : 'text-grey'}
-            onClick={() => {
-              setActive('Work');
-              handleMenuClick();
-            }}
           >
             <motion.a
               href="#work"
@@ -123,17 +159,19 @@ const Navbar = () => {
               variants={fadeIn('right', '', 0.25, 1)}
               initial="hidden"
               whileInView="show"
+              onClick={() => {
+                setActive('Work');
+                handleMenuClick();
+              }}
             >
               Work
             </motion.a>
           </li>
           <li
             key="testimonials"
-            className={active === 'Testimonials' ? style.mobile_active : 'text-grey'}
-            onClick={() => {
-              setActive('Testimonials');
-              handleMenuClick();
-            }}
+            className={
+              active === 'Testimonials' ? style.mobile_active : 'text-grey'
+            }
           >
             <motion.a
               href="#testimonials"
@@ -141,6 +179,10 @@ const Navbar = () => {
               variants={fadeIn('right', '', 0.35, 1)}
               initial="hidden"
               whileInView="show"
+              onClick={() => {
+                setActive('Testimonials');
+                handleMenuClick();
+              }}
             >
               Testimonials
             </motion.a>
@@ -148,10 +190,6 @@ const Navbar = () => {
           <li
             key="contact"
             className={active === 'Contact' ? style.mobile_active : 'text-grey'}
-            onClick={() => {
-              setActive('Contact');
-              handleMenuClick();
-            }}
           >
             <motion.a
               href="#contact"
@@ -159,6 +197,10 @@ const Navbar = () => {
               variants={fadeIn('right', '', 0.45, 1)}
               initial="hidden"
               whileInView="show"
+              onClick={() => {
+                setActive('Contact');
+                handleMenuClick();
+              }}
             >
               Contact
             </motion.a>
@@ -172,7 +214,9 @@ const Navbar = () => {
               target=" blank"
               className={`${style.resume_container} ${style.mobile_resume_container}`}
             >
-              <span className={`${style.resume_hover} ${style.font}`}>Resume</span>
+              <span className={`${style.resume_hover} ${style.font}`}>
+                Resume
+              </span>
               <span className={`${style.resume} ${style.font}`}>Resume</span>
             </motion.a>
           </li>

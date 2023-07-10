@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { TfiClose } from 'react-icons/tfi';
 import style from './styles/popup.module.css';
 import Carousel from './Carousel';
@@ -12,7 +13,7 @@ const Popup = ({ handleClose, project }) => (
         <h2 className={style.name}>{project.name}</h2>
         <p className={style.tech}>
           {project.tech.map((i) => (
-            <span className={style.tech_list}>{`#${i}`}</span>
+            <span key={i} className={style.tech_list}>{`#${i}`}</span>
           ))}
         </p>
         <p className={style.description}>{project.desc}</p>
@@ -30,5 +31,10 @@ const Popup = ({ handleClose, project }) => (
     </div>
   </div>
 );
+
+Popup.propTypes = {
+  handleClose: PropTypes.func.isRequired,
+  project: PropTypes.objectOf(PropTypes.string).isRequired,
+};
 
 export default Popup;
