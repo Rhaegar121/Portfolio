@@ -13,6 +13,17 @@
   color-scheme: dark;
 }
 
+::-webkit-scrollbar {
+  width: 8.5px;
+  height: 0;
+  background-color: var(--dark-blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--light-grey);
+  border-radius: 8px;
+}
+
 :root {
   --navy: #030b25;
   --cyan: #22abfa;
@@ -20,17 +31,6 @@
   --grey: #b1bcdc;
   --light-grey: #1b243f;
   --dark-blue: #010612;
-}
-
-::-webkit-scrollbar {
-  width: 8.5px;
-  height: 0px;
-  background-color: var(--dark-blue);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--light-grey);
-  border-radius: 8px;
 }
 
 .green-pink-gradient {
@@ -41,10 +41,11 @@
 
 .grey-gradient {
   background: #3f4e85;
-  background: -webkit-linear-gradient(
-    -90deg,
-    #3f4e85 0%,
-    rgba(51, 53, 80, 0) 100%
+  background:
+    -webkit-linear-gradient(
+      -90deg,
+      #3f4e85 0%,
+      rgba(51, 53, 80, 0) 100%
     );
   background: linear-gradient(-90deg, #3f4e85 0%, rgba(51, 53, 80, 0) 100%);
 }
@@ -64,7 +65,7 @@
 .carousel-img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;  
+  object-fit: contain;
 }
 
 .slick-dots li button::before {
@@ -139,4 +140,3 @@
     top: -52px !important;
   }
 }
-  

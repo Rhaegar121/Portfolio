@@ -1,128 +1,129 @@
 .icon_container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    position: absolute;
-    left: 50%;
-    top: -10%;
-    transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  left: 50%;
+  top: -10%;
+  transform: translateX(-50%);
 }
 
 .overlay {
-    position: relative;
-    overflow: hidden;
-    color: var(--white);
-    background-color: var(--navy);
-    border: 1px solid var(--white);
+  position: relative;
+  overflow: hidden;
+  color: var(--white);
+  background-color: var(--navy);
+  border: 1px solid var(--white);
 }
 
 .overlay:hover {
-    cursor: pointer;
-    color: var(--cyan);
-    border-color: var(--cyan);
-}
-
-.overlay:hover .icon {
-    opacity: 0;
-    transform: translate(100%,0);
-}
-
-.overlay:hover .icon_hover {
-    opacity: 1;
-    transform: translate(0,0);
+  cursor: pointer;
+  color: var(--cyan);
+  border-color: var(--cyan);
 }
 
 .overlay:active {
-    border: 1px solid var(--cyan);
+  border: 1px solid var(--cyan);
 }
 
-.overlay:active .icon_hover {
-    color: var(--cyan);
-}
-
-.icon, .icon_hover {
-    width: 40px;
-    height: 40px;
-    font-size: 1.1rem;
-    padding: 9px;
-    transition: all .2s ease-out;
+.icon,
+.icon_hover {
+  width: 40px;
+  height: 40px;
+  font-size: 1.1rem;
+  padding: 9px;
+  transition: all 0.2s ease-out;
 }
 
 .icon_hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transform: translate(-100%,0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translate(-100%, 0);
+}
+
+.overlay:hover .icon {
+  opacity: 0;
+  transform: translate(100%, 0);
+}
+
+.overlay:hover .icon_hover {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.overlay:active .icon_hover {
+  color: var(--cyan);
 }
 
 .p {
-    padding: 90px 0;
-    text-align: center;
+  padding: 90px 0;
+  text-align: center;
 }
 
 .a {
-    font-size: 0.8rem;
-    color: var(--grey);
-    font-family: 'Montserrat Alternates', sans-serif;
-    position: relative;
-    padding-bottom: 1.8px;
+  font-size: 0.8rem;
+  color: var(--grey);
+  font-family: 'Montserrat Alternates', sans-serif;
+  position: relative;
+  padding-bottom: 1.8px;
 }
 
 .a::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 1px;
-    display: inline-block;
-    left: 50%;
-    bottom: 0;
-    background-color: var(--grey);
-    transition: 0.3s;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  display: inline-block;
+  left: 50%;
+  bottom: 0;
+  background-color: var(--grey);
+  transition: 0.3s;
 }
 
 .a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 1px;
-    display: inline-block;
-    right: 50%;
-    bottom: 0;
-    background-color: var(--grey);
-    transition: 0.3s;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  display: inline-block;
+  right: 50%;
+  bottom: 0;
+  background-color: var(--grey);
+  transition: 0.3s;
 }
 
 .a:hover::after {
-    width: 50%;
+  width: 50%;
 }
 
 .a:hover::before {
-    width: 50%;
+  width: 50%;
 }
 
 .a:active {
-    color: var(--cyan);
+  color: var(--cyan);
 }
 
 .span {
-    font-size: 0.95rem;
+  font-size: 0.95rem;
 }
 
 @media screen and (min-width: 1200px) {
-    .icon_container {
-        gap: 40px;
-    }
+  .icon_container {
+    gap: 40px;
+  }
 
-    .icon {
-        width: 45px;
-        height: 45px;
-        padding: 10px;
-    }
+  .icon {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+  }
 
-    .icon_hover {
-        width: 45px;
-        height: 45px;
-        padding: 10px;
-    }
+  .icon_hover {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+  }
 }

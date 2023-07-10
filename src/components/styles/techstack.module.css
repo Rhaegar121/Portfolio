@@ -44,19 +44,17 @@
   background-color: var(--cyan);
   position: relative;
   transition: background-color 0.3s ease-out;
+
   /* -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
+
   /* overflow: hidden; */
+
   /* border: 2px solid var(--cyan); */
 }
 
 .tech:hover {
-    cursor: pointer;
-    background-color: var(--white);
-}
-
-.tech:hover .tech_img {
-    mix-blend-mode: normal;
-    filter: none;
+  cursor: pointer;
+  background-color: var(--white);
 }
 
 /* .tech::before {
@@ -92,6 +90,11 @@
   transform: translate(-50%, -50%);
   object-fit: cover;
   object-position: center;
+}
+
+.tech:hover .tech_img {
+  mix-blend-mode: normal;
+  filter: none;
 }
 
 @media screen and (min-width: 480px) {
@@ -139,7 +142,7 @@
 
   .tech_container {
     width: 75%;
-    gap: 0px 25px;
+    gap: 0 25px;
   }
 
   .tech {

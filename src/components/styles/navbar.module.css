@@ -1,216 +1,217 @@
 .navbar_container {
-    position: relative;
-    height: 86px;
+  position: relative;
+  height: 86px;
 }
 
 .navbar {
-    padding: 14px 30px 14px 15px;
-    display: flex;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #030b25ce;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 1px 3px #000311;
-    z-index: 2;
+  padding: 14px 30px 14px 15px;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #030b25ce;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 3px #000311;
+  z-index: 2;
 }
 
 .fixed {
-    position: fixed;
+  position: fixed;
 }
 
 .logo {
-    width: 40px;
-    height: auto;
+  width: 40px;
+  height: auto;
 }
 
 .navlink {
-    font-size: 13px;
-    font-weight: 500;
-    display: none;
-    align-items: center;
-    gap: 30px;
-    color: var(--grey);
+  font-size: 13px;
+  font-weight: 500;
+  display: none;
+  align-items: center;
+  gap: 30px;
+  color: var(--grey);
 }
 
 .font {
-    font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .font:hover {
-    color: var(--cyan);
+  color: var(--cyan);
 }
 
 .resume_container {
-    color: var(--grey);
-    border: 1px solid var(--grey);
-    padding: 8px 12px;
-    transition: 0.2s;
-    position: relative;
-    overflow: hidden;
+  color: var(--grey);
+  border: 1px solid var(--grey);
+  padding: 8px 12px;
+  transition: 0.2s;
+  position: relative;
+  overflow: hidden;
 }
 
-.resume, .resume_hover {
-    transition: all 0.2s ease-out;
+.resume,
+.resume_hover {
+  transition: all 0.2s ease-out;
 }
 
 .resume_hover {
-    position: absolute;
-    top: 8px;
-    left: 12px;
-    opacity: 0;
-    transform: translate(0, -100%);
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  opacity: 0;
+  transform: translate(0, -100%);
 }
 
 .resume_container:hover,
 .resume_container:focus {
-    color: var(--cyan);
-    border-color: var(--cyan);
+  color: var(--cyan);
+  border-color: var(--cyan);
 }
 
 .resume_container:hover .resume,
 .resume_container:focus .resume {
-    opacity: 0;
-    transform: translate(0, 100%);
+  opacity: 0;
+  transform: translate(0, 100%);
 }
 
 .resume_container:hover .resume_hover,
 .resume_container:focus .resume_hover {
-    opacity: 1;
-    transform: translate(0, 0);
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .mobilemenu {
-    position: absolute;
-    top: 65.5px;
-    left: 0;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-    padding-left: 25px;
-    overflow: hidden;
-    transition: height 0.3s ease-out;
-    width: 100%;
-    z-index: 1;
-    background-color: var(--dark-blue);
+  position: absolute;
+  top: 65.5px;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  padding-left: 25px;
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+  width: 100%;
+  z-index: 1;
+  background-color: var(--dark-blue);
 }
 
 .mobile_font {
-    font-family: 'Montserrat Alternates', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.3rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3rem;
 }
 
 .mobile_resume_container {
-    padding: 10px 14px;
-    text-transform: uppercase;
-    font-size: 1.3rem;
+  padding: 10px 14px;
+  text-transform: uppercase;
+  font-size: 1.3rem;
 }
 
 .mobile_active {
-    color: var(--cyan);
-    position: relative;
+  color: var(--cyan);
+  position: relative;
 }
 
 .mobile_active::before {
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: 75%;
-    top: 50%;
-    left: -8px;
-    transform: translateY(-50%);
-    background-color: var(--cyan);
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 75%;
+  top: 50%;
+  left: -8px;
+  transform: translateY(-50%);
+  background-color: var(--cyan);
 }
 
 .hamburger {
-    width: 40px;
-    height: 22px;
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
+  width: 40px;
+  height: 22px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .line {
-    background-color: var(--cyan);
-    position: absolute;
-    border-radius: 2px;
-    transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
-    height: 3px;
-    transition-duration: 500ms;
-  }
-  
-  .line:nth-child(1) {
-    width: 100%;
-    top: 0;
-    right: 0;
-  }
-  
-  .line:nth-child(2) {
-    width: 75%;
-    top: 9.5px;
-    right: 0;
-    opacity: 1;
-  }
-  
-  .line:nth-child(3) {
-    width: 50%;
-    bottom: 0;
-    right: 0;
-  }
-  
-  .open:nth-child(1) {
-    transform: rotate(45deg);
-    top: 9px;
-  }
-  
-  .open:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .open:nth-child(3) {
-    width: 100%;
-    transform: rotate(-45deg);
-    top: 9px;
-  }
+  background-color: var(--cyan);
+  position: absolute;
+  border-radius: 2px;
+  transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  height: 3px;
+  transition-duration: 500ms;
+}
+
+.line:nth-child(1) {
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+
+.line:nth-child(2) {
+  width: 75%;
+  top: 9.5px;
+  right: 0;
+  opacity: 1;
+}
+
+.line:nth-child(3) {
+  width: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+.open:nth-child(1) {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.open:nth-child(2) {
+  opacity: 0;
+}
+
+.open:nth-child(3) {
+  width: 100%;
+  transform: rotate(-45deg);
+  top: 9px;
+}
 
 @media screen and (min-width: 768px) {
-    .navbar {
-        padding: 18px 45px 18px 30px;
-    }
+  .navbar {
+    padding: 18px 45px 18px 30px;
+  }
 
-    .logo {
-        width: 50px;
-    }
+  .logo {
+    width: 50px;
+  }
 
-    .navlink {
-        display: flex;
-    }
+  .navlink {
+    display: flex;
+  }
 
-    .hamburger {
-        display: none;
-    }
+  .hamburger {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .navbar {
-        padding: 18px 60px 18px 40px;
-    }
+  .navbar {
+    padding: 18px 60px 18px 40px;
+  }
 
-    .navlink {
-        font-size: 15px;
-        gap: 40px;
-    }
+  .navlink {
+    font-size: 15px;
+    gap: 40px;
+  }
 
-    .resume_container {
-        padding: 9px 14px;
-    }
+  .resume_container {
+    padding: 9px 14px;
+  }
 
-    .resume_hover {
-        top: 9px;
-        left: 14px;
-    }
+  .resume_hover {
+    top: 9px;
+    left: 14px;
+  }
 }
