@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Tilt } from 'react-tilt';
 import { FaLinkedinIn, FaQuoteLeft } from 'react-icons/fa';
 import { fadeIn, textVariant } from '../utils/motion';
-import { SectionWrapper } from '../hoc';
+import SectionWrapper from '../hoc';
 
 import { testimonials } from '../constants';
 import style from './styles/testimonial.module.css';

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import style from './styles/work.module.css';
-import { SectionWrapper } from '../hoc';
+import SectionWrapper from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import Popup from './Popup';

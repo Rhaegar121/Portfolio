@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { SectionWrapper } from '../hoc';
+import SectionWrapper from '../hoc';
 import style from './styles/about.module.css';
 import TechStack from './TechStack';
 import { textVariant, slideIn } from '../utils/motion';
