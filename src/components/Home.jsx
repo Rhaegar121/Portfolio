@@ -13,7 +13,7 @@ const Home = () => (
   >
     <div className={style.container}>
       <p className={style.intro}>
-        Hi, I'm
+        Hi, I&apos;m
         {' '}
         <motion.span variants={fadeIn('', '', 0.1, 1)} className={style.name}>
           Kaung Myat Kyaw

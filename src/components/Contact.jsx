@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { SectionWrapper } from '../hoc';
-import { motion } from 'framer-motion';
-import { fadeIn, textVariant, slideIn } from '../utils/motion';
+import markerIcon from 'leaflet/dist/images/marker-icon.png';
+import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
 import {
   MapContainer, TileLayer, Marker, Popup,
 } from 'react-leaflet';
 import L from 'leaflet';
+import { motion } from 'framer-motion';
+import { SectionWrapper } from '../hoc';
+import { fadeIn, textVariant, slideIn } from '../utils/motion';
 import style from './styles/contact.module.css';
 import 'leaflet/dist/leaflet.css';
-import markerIcon from 'leaflet/dist/images/marker-icon.png';
-import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
 
 delete L.Icon.Default.prototype._getIconUrl;
 
@@ -62,7 +62,7 @@ const Contact = () => {
         Get in Touch!
       </motion.h1>
       <motion.p variants={fadeIn('', '', 0.15, 1)} className={style.subtitle}>
-        I'm always excited to hear about new opportunities and collaborations. Don't hesitate to reach out and let's make something great.
+        I&apos;m always excited to hear about new opportunities and collaborations. Don&apos;t hesitate to reach out and let&apos;s make something great.
       </motion.p>
       <div className={style.container}>
         <motion.form
