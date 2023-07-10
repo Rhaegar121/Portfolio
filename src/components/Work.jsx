@@ -41,11 +41,11 @@ const Work = () => {
                   <h2 className={style.name}>{project.name}</h2>
                   <p className={style.tech}>
                     {project.tech.map((i) => (
-                      <span className={style.tech_list}>{`#${i}`}</span>
+                      <span key={i} className={style.tech_list}>{`#${i}`}</span>
                     ))}
                   </p>
                 </div>
-                <button className={style.btn_container} onClick={() => handlePopupClick(project)}>
+                <button type="button" className={style.btn_container} onClick={() => handlePopupClick(project)}>
                   <span className={style.btn_hover}>Learn more</span>
                   <span className={style.btn}>Learn more</span>
                 </button>

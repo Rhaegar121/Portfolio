@@ -17,9 +17,8 @@ const Testimonial = () => (
     <div className={style.card_container}>
       {/* Testimonials card */}
       {testimonials.map((testimonial, index) => (
-        <Tilt className={style.tilt}>
+        <Tilt key={testimonial.id} className={style.tilt}>
           <motion.div
-            key={testimonial.id}
             variants={fadeIn('right', 'tween', index * 0.8, 0.5)}
             className={style.card_shadow}
           >
@@ -43,7 +42,15 @@ const Testimonial = () => (
                     )
                   </span>
                 </p>
-                <a href={testimonial.linkedIn} target="_blank" className={style.icon} rel="noreferrer"><FaLinkedinIn /></a>
+                <a
+                  href={testimonial.linkedIn}
+                  target="_blank"
+                  className={style.icon}
+                  rel="noreferrer"
+                  aria-label="LinkedIn Profile"
+                >
+                  <FaLinkedinIn />
+                </a>
               </div>
             </div>
           </motion.div>
