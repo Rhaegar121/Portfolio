@@ -21,7 +21,6 @@
   position: relative;
   overflow: hidden;
   color: var(--white);
-  background-color: var(--navy);
   border: 1px solid var(--white);
 }
 
@@ -58,6 +57,10 @@
   transform: translate(-100%, 0);
 }
 
+.up_icon {
+  background-color: var(--dark-blue);
+}
+
 .up_icon_hover {
   transform: translate(0, 100%);
 }
@@ -71,13 +74,17 @@
   transform: translate(0, -100%);
 }
 
-.overlay:hover .icon_hover {
+.overlay:hover .icon_hover,
+.overlay:active .icon_hover {
+  color: var(--cyan);
   opacity: 1;
   transform: translate(0, 0);
 }
 
-.overlay:active .icon_hover {
-  color: var(--cyan);
+.overlay:hover .up_icon_hover,
+.overlay:active .up_icon_hover {
+  color: var(--white);
+  background-color: var(--cyan);
 }
 
 .p {
