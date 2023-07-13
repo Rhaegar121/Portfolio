@@ -42,15 +42,17 @@ const Testimonial = () => (
                     )
                   </span>
                 </p>
-                <a
-                  href={testimonial.linkedIn}
-                  target="_blank"
-                  className={style.icon}
-                  rel="noreferrer"
-                  aria-label="LinkedIn Profile"
-                >
-                  <FaLinkedinIn />
-                </a>
+                <abbr title="LinkedIn Profile">
+                  <a
+                    href={testimonial.linkedIn}
+                    target="_blank"
+                    className={style.icon}
+                    rel="noreferrer"
+                    aria-label="LinkedIn Profile"
+                  >
+                    <FaLinkedinIn />
+                  </a>
+                </abbr>
               </div>
             </div>
           </motion.div>
