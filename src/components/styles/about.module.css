@@ -65,23 +65,6 @@
 .img_container {
   width: 70%;
   position: relative;
-  background-color: var(--cyan);
-
-  /* animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out; */
-}
-
-.img_container:hover {
-  animation: pulse 0.5s;
-  box-shadow: 0 0 0.5em 1.5em transparent;
-}
-
-@keyframes floating {
-  0% { transform: translate(0, 0); }
-  50% { transform: translate(0, 13px); }
-  100% { transform: translate(0, -0); }
 }
 
 @keyframes pulse {
@@ -89,17 +72,29 @@
 }
 
 .img {
-  mix-blend-mode: multiply;
-  filter: grayscale(100%) contrast(1);
-  object-fit: cover;
+  --s: 14px;  /* size of the frame */
+  --b: 1.4px;   /* border thickness */
+  --w: 260px; /* width of the image */
+  --c: var(--cyan);
+  
   width: 100%;
-  height: 100%;
-  z-index: -1;
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding: calc(2*var(--s));
+  --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
+  background:
+    linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+    linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
+  outline: calc(var(--w)/2) solid #0009;
+  outline-offset: calc(var(--w)/-2 - 2*var(--s));
+  transition: .4s;
+  cursor: pointer;
 }
 
-.img_container:hover .img {
-  mix-blend-mode: normal;
-  filter: none;
+.img:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: calc(var(--s)/-2);
+  --_i: calc(100% - 2*var(--s));
 }
 
 @media screen and (min-width: 480px) {
