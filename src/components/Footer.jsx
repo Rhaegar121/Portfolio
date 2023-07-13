@@ -11,7 +11,7 @@ const Footer = () => (
     <div className={style.up_icon_container}>
       <button
         type="button"
-        className={style.overlay}
+        className={`${style.overlay} ${style.up_overlay}`}
         onClick={() => {
           window.scrollTo(0, 0);
         }}

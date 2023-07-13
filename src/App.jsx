@@ -19,10 +19,10 @@ function App() {
         <Navbar />
         <About />
         <Work />
-        <div className="relative z-0 mt-24 pb-28"><Testimonial /></div>
-        <div className="contact"><Contact /></div>
-        <Footer />
+        <div className="relative mt-24 pb-28"><Testimonial /></div>
+        <div className="contact mb-80"><Contact /></div>
       </div>
+      <Footer />
     </BrowserRouter>
   );
 }
