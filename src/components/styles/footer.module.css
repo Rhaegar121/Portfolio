@@ -4,19 +4,57 @@
   left: 0;
   width: 100%;
   height: 320px;
-  z-index: -1;
+  z-index: -2;
   background-color: #26517d;
 }
 
 .up_icon_container {
   width: fit-content;
-  margin: 10px auto;
+  margin: 20px auto;
+  animation-name: floating;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(0, 7px); }
+  100% { transform: translate(0, -0); }
+}
+
+.title {
+  position: relative;
+  text-align: center;
+}
+
+.text {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0 7px;
+  color: var(--white);
+  background-color: #26517d !important;
+  z-index: -1;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  top: 9px;
+  left: 0;
+  z-index: -2;
+  height: 8px;
 }
 
 .icon_container {
   display: flex;
   justify-content: center;
   gap: 15px;
+  margin-top: 30px;
 }
 
 .overlay {
@@ -33,8 +71,9 @@
 .overlay:hover,
 .overlay:active {
   cursor: pointer;
-  color: var(--cyan);
+  background-color: var(--cyan);
   border-color: var(--cyan);
+  transform: scale(0.95);
 }
 
 .icon,
@@ -44,6 +83,11 @@
   font-size: 1.1rem;
   padding: 11px;
   transition: all 0.2s ease-out;
+}
+
+.up_icon,
+.up_icon_hover {
+  padding: 8px;
 }
 
 .icon_hover {
@@ -69,7 +113,6 @@
 
 .overlay:hover .icon_hover,
 .overlay:active .icon_hover {
-  color: var(--cyan);
   opacity: 1;
   transform: translate(0, 0);
 }

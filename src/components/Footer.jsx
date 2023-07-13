@@ -20,6 +20,9 @@ const Footer = () => (
         <BsChevronDoubleUp className={`${style.icon} ${style.up_icon}`} />
       </button>
     </div>
+    <p className={style.title}>
+      <span className={style.text}>Social Networks</span>
+    </p>
     <div className={style.icon_container}>
       <a href="https://www.linkedin.com/in/kaungmyatkyaw/" target="_blank" className={style.overlay} rel="noreferrer">
         <FiLinkedin className={style.icon_hover} />
