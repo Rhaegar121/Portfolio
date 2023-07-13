@@ -32,9 +32,9 @@ const TechStack = () => {
       <motion.div variants={fadeIn('', '', 0.25, 1)} className={style.tech_container}>
         {stack === 'all' ? (
           technologies.map(({ name, icon }) => (
-            <div key={name} className={style.tech}>
+            <abbr title={name} key={name} className={style.tech}>
               <img className={style.tech_img} src={icon} alt={name} />
-            </div>
+            </abbr>
           ))
         ) : (
           filteredTechnologies.map(({ name, icon }) => (
