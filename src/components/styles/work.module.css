@@ -277,8 +277,7 @@
 
   .project_container {
     grid-template-columns: auto auto;
-    /* grid-auto-rows: 270px; */
-    padding: 0;
+    padding: 0 20px;
   }
 
   .name {
