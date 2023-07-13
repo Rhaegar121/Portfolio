@@ -1,3 +1,9 @@
+#footer {
+  position: relative;
+  background-color: #26517d;
+  height: 300px;
+}
+
 .icon_container {
   display: flex;
   justify-content: center;

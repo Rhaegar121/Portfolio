@@ -6,7 +6,7 @@ import {
 import style from './styles/footer.module.css';
 
 const Footer = () => (
-  <>
+  <div id={style.footer}>
     <div className={style.icon_container}>
       <a href="https://www.linkedin.com/in/kaungmyatkyaw/" target="_blank" className={style.overlay} rel="noreferrer">
         <FiLinkedin className={style.icon_hover} />
@@ -38,7 +38,7 @@ const Footer = () => (
         Kaung Myat Kyaw
       </a>
     </abbr>
-  </>
+  </div>
 );
 
 export default Footer;

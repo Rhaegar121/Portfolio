@@ -21,7 +21,7 @@ function App() {
         <Work />
         <div className="relative z-0 mt-24 pb-28"><Testimonial /></div>
         <div className="contact"><Contact /></div>
-        <div className="bg-dark_blue relative"><Footer /></div>
+        <Footer />
       </div>
     </BrowserRouter>
   );
