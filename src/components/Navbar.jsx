@@ -127,7 +127,7 @@ const Navbar = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.25 }}
-          className={`${style.mobilemenu} ${isOpen ? 'h-screen flex' : 'h-0'}`}
+          className={`${style.mobilemenu} ${isOpen ? 'h-screen opacity-100' : 'h-0'}`}
         >
           <li
             key="about"

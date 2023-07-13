@@ -87,7 +87,8 @@
   position: absolute;
   top: 65.5px;
   left: 0;
-  display: none;
+  opacity: 0;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;

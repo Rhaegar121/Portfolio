@@ -5,7 +5,7 @@
   width: 100%;
   height: 320px;
   z-index: -2;
-  background-color: #26517d;
+  background-color: var(--light-blue);
 }
 
 .up_icon_container {
@@ -34,7 +34,7 @@
   font-weight: 500;
   padding: 0 7px;
   color: #fff;
-  background-color: #26517d !important;
+  background-color: var(--light-blue) !important;
   z-index: -1;
 }
 
