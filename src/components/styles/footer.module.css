@@ -33,7 +33,7 @@
   text-transform: uppercase;
   font-weight: 500;
   padding: 0 7px;
-  color: var(--white);
+  color: #fff;
   background-color: #26517d !important;
   z-index: -1;
 }
@@ -76,6 +76,11 @@
   transform: scale(0.95);
 }
 
+.up_overlay:hover,
+.up_overlay:active {
+  background-color: transparent;
+}
+
 .icon,
 .icon_hover {
   width: 47px;
@@ -115,6 +120,11 @@
 .overlay:active .icon_hover {
   opacity: 1;
   transform: translate(0, 0);
+}
+
+.overlay:hover .up_icon_hover,
+.overlay:active .up_icon_hover {
+  color: var(--cyan);
 }
 
 .p {
@@ -172,20 +182,39 @@
   font-size: 0.95rem;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .icon_container {
-    gap: 40px;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    width: 850px;
+    margin: 0 auto;
   }
 
-  .icon {
-    width: 45px;
-    height: 45px;
-    padding: 10px;
+  .text {
+    font-size: 1.1rem;
   }
 
+  .title::after {
+    height: 9px;
+  }
+
+  .icon_container {
+    gap: 30px;
+  }
+
+  .icon,
   .icon_hover {
     width: 45px;
     height: 45px;
     padding: 10px;
+  }
+
+  .up_icon,
+  .up_icon_hover {
+    padding: 6px;
   }
 }
