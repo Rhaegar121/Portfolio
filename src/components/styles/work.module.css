@@ -307,7 +307,6 @@
 
   .project_container {
     grid-template-columns: auto auto auto;
-    /* grid-auto-rows: 285px; */
   }
 
   .name {
@@ -327,8 +326,7 @@
 
 @media screen and (min-width: 1400px) {
   .project_container {
-    /* grid-auto-rows: 340px; */
-    padding: 0 40px;
+    padding: 0 50px;
   }
 
   .card_text {
