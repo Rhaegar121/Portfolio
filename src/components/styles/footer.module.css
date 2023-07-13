@@ -58,6 +58,8 @@
 }
 
 .p {
+  display: block;
+  text-decoration: none;
   padding: 90px 0;
   text-align: center;
 }

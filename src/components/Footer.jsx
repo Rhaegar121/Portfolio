@@ -29,14 +29,15 @@ const Footer = () => (
         <FiGithub className={style.icon} />
       </a>
     </div>
-    <div className={style.p}>
+    <abbr title="Source Code" className={style.p}>
       <a href="https://github.com/Rhaegar121/Portfolio" target="_blank" className={style.a} rel="noreferrer">
         Brought into being by
+        {' '}
         <span className={style.span}>©</span>
         {' '}
         Kaung Myat Kyaw
       </a>
-    </div>
+    </abbr>
   </>
 );
 
