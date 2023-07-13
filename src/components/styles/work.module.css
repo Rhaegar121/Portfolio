@@ -22,7 +22,6 @@
 .project_container {
   display: grid;
   grid-template-columns: auto;
-  /* grid-auto-rows: 240px; */
   grid-gap: 1px;
   padding: 0 10px;
 }
@@ -244,8 +243,7 @@
   }
 
   .project_container {
-    grid-template-columns: auto;
-    /* grid-auto-rows: 315px; */
+    padding: 0 30px;
   }
 
   .card_text {
