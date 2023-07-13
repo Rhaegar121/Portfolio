@@ -2,11 +2,24 @@ import React from 'react';
 import {
   FiFacebook, FiLinkedin, FiInstagram, FiTwitter, FiGithub,
 } from 'react-icons/fi';
+import { BsChevronDoubleUp } from 'react-icons/bs';
 
 import style from './styles/footer.module.css';
 
 const Footer = () => (
   <div id={style.footer}>
+    <div className={style.up_icon_container}>
+      <button
+        type="button"
+        className={style.overlay}
+        onClick={() => {
+          window.scrollTo(0, 0);
+        }}
+      >
+        <BsChevronDoubleUp className={`${style.icon_hover} ${style.up_icon_hover}`} />
+        <BsChevronDoubleUp className={`${style.icon} ${style.up_icon}`} />
+      </button>
+    </div>
     <div className={style.icon_container}>
       <a href="https://www.linkedin.com/in/kaungmyatkyaw/" target="_blank" className={style.overlay} rel="noreferrer">
         <FiLinkedin className={style.icon_hover} />
