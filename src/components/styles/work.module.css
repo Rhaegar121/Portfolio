@@ -22,12 +22,13 @@
 .project_container {
   display: grid;
   grid-template-columns: auto;
-  grid-auto-rows: 240px;
+  /* grid-auto-rows: 240px; */
   grid-gap: 1px;
   padding: 0 10px;
 }
 
 .card {
+  aspect-ratio: 4 / 3;
   position: relative;
   overflow: hidden;
 }
@@ -244,7 +245,7 @@
 
   .project_container {
     grid-template-columns: auto;
-    grid-auto-rows: 315px;
+    /* grid-auto-rows: 315px; */
   }
 
   .card_text {
@@ -278,7 +279,7 @@
 
   .project_container {
     grid-template-columns: auto auto;
-    grid-auto-rows: 270px;
+    /* grid-auto-rows: 270px; */
     padding: 0;
   }
 
@@ -309,7 +310,7 @@
 
   .project_container {
     grid-template-columns: auto auto auto;
-    grid-auto-rows: 285px;
+    /* grid-auto-rows: 285px; */
   }
 
   .name {
@@ -329,7 +330,7 @@
 
 @media screen and (min-width: 1400px) {
   .project_container {
-    grid-auto-rows: 340px;
+    /* grid-auto-rows: 340px; */
     padding: 0 40px;
   }
 
