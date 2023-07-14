@@ -150,13 +150,17 @@
 
 @media screen and (min-width: 1200px) {
   .intro {
-    font-size: 2rem;
+    font-size: 1.7rem;
     letter-spacing: 0.2rem;
     line-height: 2.4rem;
   }
 
+  .name {
+    font-size: 1.7rem;
+  }
+
   .desc {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 20px;
   }
 
