@@ -93,13 +93,21 @@
 }
 
 @media screen and (min-width: 480px) {
+  .container {
+    align-items: center;
+    padding-left: 0;
+  }
+
   .intro {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
     font-size: 1.3rem;
     line-height: 2rem;
   }
 
   .desc {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .btn_container {
