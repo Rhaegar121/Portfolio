@@ -84,7 +84,7 @@
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[More_projects_card]**
+- **[Light_theme_Dark_theme]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
