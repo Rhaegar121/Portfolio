@@ -110,6 +110,13 @@
   right: 0;
 }
 
+.star {
+  background-image: url('/src/assets/space-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .contact {
   width: 100%;
   background-image: url('/src/assets/hole-background.png');

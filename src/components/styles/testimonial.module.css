@@ -46,7 +46,7 @@
   background: linear-gradient(90.13deg, #00e7ad 1.9%, #464dff 97.5%);
   padding: 1px;
   width: 100%;
-  border-radius: 10px 60px;
+  border-radius: 60px 10px;
 }
 
 .card_shadow:hover {
@@ -58,7 +58,7 @@
 .card {
   background-color: var(--dark-blue);
   padding: 20px 25px;
-  border-radius: 10px 60px;
+  border-radius: 60px 10px;
 }
 
 .openquote {
