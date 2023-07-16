@@ -65,6 +65,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 10px;
 }
 
 .img {
@@ -76,12 +77,12 @@
 
 .openquote {
   margin: 15px 0 25px 0;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   color: var(--white);
 }
 
 .para {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 500;
   font-family: 'Montserrat Alternates', sans-serif;
   color: var(--white);
