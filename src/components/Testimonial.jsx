@@ -7,6 +7,7 @@ import SectionWrapper from '../hoc';
 
 import { testimonials } from '../constants';
 import style from './styles/testimonial.module.css';
+import mypicture from '../assets/mypicture.jpg';
 
 const Testimonial = () => (
   <div className={style.container}>
@@ -30,7 +31,10 @@ const Testimonial = () => (
                 speed: 450,
               }}
             >
-              <FaQuoteLeft className={style.openquote} />
+              <div className={style.header}>
+                <FaQuoteLeft className={style.openquote} />
+                <img className={style.img} src={mypicture} alt="profile" />
+              </div>
               <p className={style.para}>{testimonial.text}</p>
               <div className={`${style.label} ${style.firstlabel}`}>
                 <p className={style.name}>
