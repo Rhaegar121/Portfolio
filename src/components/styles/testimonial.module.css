@@ -77,8 +77,8 @@
 
 .openquote {
   margin: 15px 0 25px 0;
-  font-size: 1.8rem;
-  color: var(--white);
+  font-size: 2rem;
+  color: var(--light-blue);
 }
 
 .para {
