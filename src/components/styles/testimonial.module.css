@@ -42,8 +42,8 @@
 
 .card_shadow {
   background: "#00cea8";
-  background: -webkit-linear-gradient(-90.13deg, #00e7ad 1.9%, #464dff 97.5%);
-  background: linear-gradient(90.13deg, #00e7ad 1.9%, #464dff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #ec008c 1.9%, #0086ce 97.5%);
+  background: linear-gradient(90.13deg, #ec008c 1.9%, #0086ce 97.5%);
   padding: 1px;
   width: 100%;
   border-radius: 60px 10px;
@@ -51,8 +51,8 @@
 
 .card_shadow:hover {
   background: "#00cea8";
-  background: -webkit-linear-gradient(-90.13deg, #0086ce 1.9%, #bf61ff 97.5%);
-  background: linear-gradient(90.13deg, #0086ce 1.9%, #bf61ff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #00e7ad 1.9%, #464dff 97.5%);
+  background: linear-gradient(90.13deg, #00e7ad 1.9%, #464dff 97.5%);
 }
 
 .card {
@@ -93,13 +93,17 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 15px;
+}
+
+.name {
   font-size: 0.9rem;
-  font-weight: 300;
+  font-weight: 500;
+  color: var(--white);
 }
 
 .country {
   font-size: 0.8rem;
-  color: var(--white);
+  color: var(--light-blue);
 }
 
 .icon {
