@@ -186,7 +186,7 @@ const testimonials = [
     id: 2,
     name: 'Rachel Isaac',
     image: 'https://media.licdn.com/dms/image/D4D03AQHNmKfMktAzZg/profile-displayphoto-shrink_100_100/0/1665541121272?e=1695254400&v=beta&t=uPQxD-T0QdZDM5QZbt2vMDT8HgpdPJXaILTE4T_d5UM',
-    text: "I have no doubt that Barry's exceptional technical abilities, strong work ethic, and a collaborative mindset will make them a valuable addition to any software development team. I wholeheartedly endorse Barry and would eagerly work with them again on future projects.",
+    text: "Throughout our collaboration, I was consistently impressed by Barry's professionalism, attention to detail, and ability to adapt to changing requirements. Beyond technical skills, Barry was an exceptional team player, always willing to share knowledge, provide guidance, and actively contribute to the overall success of the project.",
     country: 'United Arab Emirates',
     linkedIn: 'https://www.linkedin.com/in/racheleno/',
   },

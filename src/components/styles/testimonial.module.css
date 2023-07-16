@@ -195,17 +195,13 @@
   }
 
   .tilt {
-    width: 70%;
+    width: 400px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .title {
     font-size: 2rem;
-  }
-
-  .tilt {
-    width: 50%;
   }
 }
 
@@ -223,8 +219,8 @@
     padding-bottom: 60px;
   }
 
-  .tilt {
-    width: 30%;
+  .header {
+    margin-bottom: 15px;
   }
 
   .name {
@@ -236,7 +232,11 @@
   }
 
   .para {
-    height: 260px;
+    height: 180px;
+  }
+
+  .label {
+    margin-top: 10px;
   }
 
   .icon {
@@ -249,12 +249,8 @@
     gap: 40px;
   }
 
-  .tilt {
-    width: 28.5%;
-  }
-
   .para {
-    height: 220px;
+    font-size: 0.9rem;
   }
 
   .icon {
