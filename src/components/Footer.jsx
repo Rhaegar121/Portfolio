@@ -9,16 +9,18 @@ import style from './styles/footer.module.css';
 const Footer = () => (
   <div id={style.footer}>
     <div className={style.up_icon_container}>
-      <button
-        type="button"
-        className={`${style.overlay} ${style.up_overlay}`}
-        onClick={() => {
-          window.scrollTo(0, 0);
-        }}
-      >
-        <BsChevronDoubleUp className={`${style.icon_hover} ${style.up_icon_hover}`} />
-        <BsChevronDoubleUp className={`${style.icon} ${style.up_icon}`} />
-      </button>
+      <abbr title="back to home page">
+        <button
+          type="button"
+          className={`${style.overlay} ${style.up_overlay}`}
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+        >
+          <BsChevronDoubleUp className={`${style.icon_hover} ${style.up_icon_hover}`} />
+          <BsChevronDoubleUp className={`${style.icon} ${style.up_icon}`} />
+        </button>
+      </abbr>
     </div>
     <p className={style.title}>
       <span className={style.text}>My Social Networks</span>
