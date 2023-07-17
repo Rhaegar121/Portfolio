@@ -141,15 +141,15 @@
   .content {
     flex-direction: row;
     align-items: flex-start;
-    /* justify-content: space-evenly; */
-    justify-content: center;
-    gap: 100px;
-    width: 800px;
-    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .para {
+    width: 60%;
   }
 
   .img_container {
-    width: 310px;
+    width: 280px;
   }
 }
 
