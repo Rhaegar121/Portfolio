@@ -163,14 +163,19 @@
     width: 80px;
   }
 
+  .content {
+    width: 100%;
+    padding: 0 20px;
+  }
+
   .img_container {
     width: 320px;
   }
 }
 
 @media screen and (min-width: 1400px) {
-  .content {
+  /* .content {
     gap: 100px;
     width: 1200px;
-  }
+  } */
 }

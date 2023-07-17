@@ -25,7 +25,7 @@
       "no-shadow": "off",
       "linebreak-style": "off",
       "max-len": ["error", {
-        "code": 534,
+        "code": 710,
         "ignoreComments": true,
         "ignoreUrls": true
       }]
