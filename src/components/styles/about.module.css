@@ -124,21 +124,16 @@
     font-size: 2rem;
   }
 
-  /* .content {
-    
-  } */
+  .content {
+    align-items: center;
+  }
 
   .para {
-    width: 80%;
     margin: 0;
   }
 
   .text {
     font-size: 16px;
-  }
-
-  .img_container {
-    width: 30%;
   }
 }
 
