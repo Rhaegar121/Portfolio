@@ -20,6 +20,8 @@
 }
 
 .content {
+  width: 89%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,7 +30,6 @@
 }
 
 .para {
-  width: 89%;
   margin: 20px auto;
 }
 
@@ -105,13 +106,17 @@
     font-size: 1.9rem;
   }
 
+  .content {
+    align-items: flex-start;
+  }
+
   .para {
     width: 93%;
     font-size: 15px;
   }
 
   .img_container {
-    width: 300px;
+    width: 260px;
   }
 }
 
@@ -120,14 +125,12 @@
     font-size: 2rem;
   }
 
-  .content {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-evenly;
-  }
+  /* .content {
+    
+  } */
 
   .para {
-    width: 47%;
+    width: 80%;
     margin: 0;
   }
 
@@ -142,6 +145,9 @@
 
 @media screen and (min-width: 992px) {
   .content {
+    flex-direction: row;
+    align-items: flex-start;
+    /* justify-content: space-evenly; */
     justify-content: center;
     gap: 100px;
     width: 800px;
