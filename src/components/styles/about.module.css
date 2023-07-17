@@ -163,6 +163,10 @@
     width: 80px;
   }
 
+  .para {
+    width: 70%;
+  }
+
   .content {
     width: 100%;
     padding: 0 20px;
@@ -174,8 +178,11 @@
 }
 
 @media screen and (min-width: 1400px) {
-  /* .content {
-    gap: 100px;
-    width: 1200px;
-  } */
+  .content {
+    padding: 0 50px;
+  }
+
+  .para {
+    width: 67%;
+  }
 }
