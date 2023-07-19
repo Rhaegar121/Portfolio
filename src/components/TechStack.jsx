@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import SectionWrapper from '../hoc';
 import { technologies } from '../constants';
 import { fadeIn } from '../utils/motion';
 import style from './styles/techstack.module.css';
@@ -15,9 +16,9 @@ const TechStack = () => {
   const filteredTechnologies = technologies.filter((technology) => technology.stack === stack);
 
   return (
-    <div>
-      <motion.p variants={fadeIn('', '', 0.15, 1)} className={style.title}>Here are a few technologies I`ve been working with recently:</motion.p>
-      <motion.div variants={fadeIn('', '', 0.2, 1)} className={style.btn_container}>
+    <>
+      <motion.p variants={fadeIn('', '', 0.75, 1)} className={style.title}>Here are a few technologies I`ve been working with recently:</motion.p>
+      <motion.div variants={fadeIn('', '', 1.5, 1)} className={style.btn_container}>
         {stacks.map((currentStack) => (
           <button
             key={currentStack.name}
@@ -29,7 +30,7 @@ const TechStack = () => {
           </button>
         ))}
       </motion.div>
-      <motion.div variants={fadeIn('', '', 0.25, 1)} className={style.tech_container}>
+      <motion.div variants={fadeIn('', '', 1.75, 1)} className={style.tech_container}>
         {stack === 'all' ? (
           technologies.map(({ name, icon }) => (
             <abbr title={name} key={name} className={style.tech}>
@@ -44,8 +45,8 @@ const TechStack = () => {
           ))
         )}
       </motion.div>
-    </div>
+    </>
   );
 };
 
-export default TechStack;
+export default SectionWrapper(TechStack, '', '');

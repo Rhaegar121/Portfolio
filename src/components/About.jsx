@@ -2,12 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import SectionWrapper from '../hoc';
 import style from './styles/about.module.css';
-import TechStack from './TechStack';
 import { textVariant, slideIn } from '../utils/motion';
 import mypicture from '../assets/mypicture.jpg';
 
 const About = () => (
-  <div>
+  <>
     <motion.h1 variants={textVariant()} className={style.title}>About Me</motion.h1>
     <div className={style.content}>
       <motion.div variants={slideIn('left', '', 0, 1)} className={style.para}>
@@ -27,8 +26,7 @@ const About = () => (
         <img className={style.img} src={mypicture} alt="Kaung Myat Kyaw" />
       </motion.div>
     </div>
-    <TechStack />
-  </div>
+  </>
 );
 
-export default SectionWrapper(About, 'about', 'my-8');
+export default SectionWrapper(About, 'about', '');
