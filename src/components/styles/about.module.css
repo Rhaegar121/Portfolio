@@ -174,8 +174,8 @@
   }
 
   .content {
-    width: 100%;
-    padding: 0 20px;
+    width: 970px;
+    /* padding: 0 20px; */
   }
 
   .img_container {

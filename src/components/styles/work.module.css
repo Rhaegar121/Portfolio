@@ -314,6 +314,7 @@
   }
 
   .project_container {
+    width: 970px;
     grid-template-columns: auto auto auto;
   }
 
