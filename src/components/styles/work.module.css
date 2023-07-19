@@ -335,7 +335,7 @@
 
 @media screen and (min-width: 1400px) {
   .project_container {
-    padding: 0 50px;
+    width: 1062px;
   }
 
   .card_text {

@@ -175,7 +175,6 @@
 
   .content {
     width: 970px;
-    /* padding: 0 20px; */
   }
 
   .img_container {
@@ -185,7 +184,7 @@
 
 @media screen and (min-width: 1400px) {
   .content {
-    padding: 0 50px;
+    width: 1062px;
   }
 
   .para {

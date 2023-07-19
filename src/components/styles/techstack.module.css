@@ -176,3 +176,14 @@
     height: 60%;
   }
 }
+
+@media screen and (min-width: 1400px) {
+  .tech_container {
+    width: 1062px;
+  }
+
+  .tech {
+    width: 100px;
+    height: 103px;
+  }
+}
