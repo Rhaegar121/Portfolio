@@ -133,6 +133,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .btn_container {
+    width: 820px;
+  }
+
   .tech_container {
     width: 830px;
     gap: 0 13px;
