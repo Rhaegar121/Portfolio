@@ -157,17 +157,17 @@
   }
 
   .tech_container {
-    width: 75%;
-    gap: 0 25px;
+    width: 970px;
+    gap: 0 20px;
   }
 
   .tech {
-    width: 105px;
-    height: 110px;
+    width: 90px;
+    height: 93px;
   }
 
   .tech_img {
-    width: 65%;
-    height: 65%;
+    width: 60%;
+    height: 60%;
   }
 }
