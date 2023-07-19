@@ -135,6 +135,7 @@
 @media screen and (min-width: 1024px) {
   .tech_container {
     width: 830px;
+    gap: 0 13px;
   }
 
   .tech {

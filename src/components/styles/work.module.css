@@ -295,6 +295,14 @@
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .project_container {
+    padding: 0;
+    width: 830px;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .title {
     font-size: 2.3rem;
