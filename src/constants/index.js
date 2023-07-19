@@ -65,7 +65,7 @@ const technologies = [
   },
   {
     stack: 'tools',
-    name: 'git',
+    name: 'Git',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg',
   },
   {

@@ -39,9 +39,9 @@ const TechStack = () => {
           ))
         ) : (
           filteredTechnologies.map(({ name, icon }) => (
-            <div key={name} className={style.tech}>
+            <abbr title={name} key={name} className={style.tech}>
               <img className={style.tech_img} src={icon} alt={name} />
-            </div>
+            </abbr>
           ))
         )}
       </motion.div>
