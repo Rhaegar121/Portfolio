@@ -121,9 +121,14 @@
     padding: 7px 0;
   }
 
+  .tech_container {
+    width: 89%;
+    gap: 13px;
+  }
+
   .tech {
-    width: 95px;
-    height: 100px;
+    width: 90px;
+    height: 93px;
   }
 }
 

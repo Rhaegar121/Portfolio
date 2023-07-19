@@ -49,12 +49,12 @@ const technologies = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
   },
   {
-    stack: 'tools',
+    stack: 'frameworks',
     name: 'Jest',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg',
   },
   {
-    stack: 'tools',
+    stack: 'frameworks',
     name: 'RSpec',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rspec/rspec-original.svg',
   },
