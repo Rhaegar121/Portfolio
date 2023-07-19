@@ -132,6 +132,17 @@
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .tech_container {
+    width: 830px;
+  }
+
+  .tech {
+    width: 80px;
+    height: 83px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .title {
     font-size: 17px;
