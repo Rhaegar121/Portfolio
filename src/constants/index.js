@@ -50,6 +50,16 @@ const technologies = [
   },
   {
     stack: 'tools',
+    name: 'Jest',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg',
+  },
+  {
+    stack: 'tools',
+    name: 'RSpec',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rspec/rspec-original.svg',
+  },
+  {
+    stack: 'tools',
     name: 'PostgreSQL',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg',
   },
