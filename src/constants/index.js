@@ -1,6 +1,38 @@
 import {
+  FiFacebook, FiLinkedin, FiInstagram, FiTwitter, FiGithub,
+} from 'react-icons/fi';
+
+import {
   tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5, carrental1, carrental2, carrental3, carrental4, carrental5, carrental6, carrental7,
 } from '../assets';
+
+const social = [
+  {
+    id: 1,
+    url: 'https://www.linkedin.com/in/kaungmyatkyaw/',
+    icon: <FiLinkedin />,
+  },
+  {
+    id: 2,
+    url: 'https://www.facebook.com/linthantkhai',
+    icon: <FiFacebook />,
+  },
+  {
+    id: 3,
+    url: 'https://www.instagram.com/rhaegar_121/?hl=en',
+    icon: <FiInstagram />,
+  },
+  {
+    id: 4,
+    url: 'https://twitter.com/Rhaegar121',
+    icon: <FiTwitter />,
+  },
+  {
+    id: 5,
+    url: 'https://github.com/Rhaegar121',
+    icon: <FiGithub />,
+  },
+];
 
 const technologies = [
   {
@@ -210,4 +242,6 @@ const testimonials = [
   },
 ];
 
-export { technologies, projects, testimonials };
+export {
+  technologies, projects, testimonials, social,
+};
