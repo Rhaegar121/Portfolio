@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'Poppins', sans-serif; */
   font-family: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
@@ -112,20 +111,9 @@
   right: 0;
 }
 
-.star {
-  background-image: url('/src/assets/space-background.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 .contact {
   width: 100%;
   padding-bottom: 40px;
-  /* background-image: url('/src/assets/hole-background.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
   background-color: var(--light-grey);
   background-image: linear-gradient(335deg, var(--dark-blue) 23px, transparent 23px),
     linear-gradient(155deg, var(--dark-blue) 23px, transparent 23px),
