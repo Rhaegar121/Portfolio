@@ -1,36 +1,42 @@
 import {
-  FiFacebook, FiLinkedin, FiInstagram, FiTwitter, FiGithub,
-} from 'react-icons/fi';
-
-import {
-  tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5, carrental1, carrental2, carrental3, carrental4, carrental5, carrental6, carrental7,
+  facebook, linkedin, instagram, twitter, github, facebook1, linkedin1, instagram1, twitter1, github1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5, carrental1, carrental2, carrental3, carrental4, carrental5, carrental6, carrental7,
 } from '../assets';
 
 const social = [
   {
     id: 1,
+    name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/kaungmyatkyaw/',
-    icon: <FiLinkedin />,
+    icon: linkedin,
+    icon1: linkedin1,
   },
   {
     id: 2,
+    name: 'Facebook',
     url: 'https://www.facebook.com/linthantkhai',
-    icon: <FiFacebook />,
+    icon: facebook,
+    icon1: facebook1,
   },
   {
     id: 3,
-    url: 'https://www.instagram.com/rhaegar_121/?hl=en',
-    icon: <FiInstagram />,
+    name: 'Instagram',
+    url: 'https://www.instagram.com/rhaegar_121',
+    icon: instagram,
+    icon1: instagram1,
   },
   {
     id: 4,
+    name: 'Twitter',
     url: 'https://twitter.com/Rhaegar121',
-    icon: <FiTwitter />,
+    icon: twitter,
+    icon1: twitter1,
   },
   {
     id: 5,
+    name: 'Github',
     url: 'https://github.com/Rhaegar121',
-    icon: <FiGithub />,
+    icon: github,
+    icon1: github1,
   },
 ];
 

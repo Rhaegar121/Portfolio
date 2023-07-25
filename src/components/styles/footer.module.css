@@ -60,8 +60,6 @@
 .overlay {
   position: relative;
   overflow: hidden;
-  color: var(--white);
-  border: 1px solid var(--white);
 }
 
 .up_overlay {
@@ -71,9 +69,6 @@
 .overlay:hover,
 .overlay:active {
   cursor: pointer;
-  background-color: var(--cyan);
-  border-color: var(--cyan);
-  transform: scale(0.95);
 }
 
 .up_overlay:hover,
@@ -83,10 +78,8 @@
 
 .icon,
 .icon_hover {
-  width: 47px;
-  height: 47px;
-  font-size: 1.1rem;
-  padding: 11px;
+  width: 45px;
+  height: 45px;
   transition: all 0.2s ease-out;
 }
 
