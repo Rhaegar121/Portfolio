@@ -94,7 +94,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="https://drive.google.com/file/d/1gINzceqIwshNpYO_NqCS3vSQKAL1t_Hg/view?usp=sharing"
+              href="https://drive.google.com/file/d/1gienfnTWEgMC_R2P7t-JVSQC9L_4lLxv/view?usp=sharing"
               target=" blank"
               className={style.resume_container}
             >
@@ -210,7 +210,7 @@ const Navbar = () => {
               variants={fadeIn('right', '', 0.55, 1)}
               initial="hidden"
               whileInView="show"
-              href="https://drive.google.com/file/d/1gINzceqIwshNpYO_NqCS3vSQKAL1t_Hg/view?usp=sharing"
+              href="https://drive.google.com/file/d/1gienfnTWEgMC_R2P7t-JVSQC9L_4lLxv/view?usp=sharing"
               target=" blank"
               className={`${style.resume_container} ${style.mobile_resume_container}`}
             >
