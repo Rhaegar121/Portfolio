@@ -197,7 +197,7 @@ const projects = [
     img: tictactoe,
     carousel: [tictactoe1, tictactoe2, tictactoe3],
     source_link: 'https://github.com/Rhaegar121/Tic-Tac-Toe',
-    live_link: 'https://rhaegar121.github.io/Tic-Tac-Toe/',
+    live_link: 'https://tic-tac-toe121.netlify.app/',
   },
   {
     id: 8,
