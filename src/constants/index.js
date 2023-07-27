@@ -217,7 +217,7 @@ const projects = [
     img: guesstheword,
     carousel: [guesstheword1, guesstheword2, guesstheword3],
     source_link: 'https://github.com/Rhaegar121/Guess-the-word',
-    live_link: 'https://rhaegar121.github.io/Guess-the-word/',
+    live_link: 'https://guess-the-word121.netlify.app/',
   },
 ];
 
