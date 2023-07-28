@@ -163,9 +163,7 @@ const Navbar = () => {
           </li>
           <li
             key="service"
-            className={`${
-              active === 'Service' ? style.mobile_active : 'text-grey'
-            } mt-20`}
+            className={active === 'Service' ? style.mobile_active : 'text-grey'}
           >
             <motion.a
               href="#service"
