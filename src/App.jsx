@@ -20,8 +20,8 @@ function App() {
       <div className="relative z-0 bg-navy">
         <Navbar />
         <About />
-        <Service />
         <TechStack />
+        <Service />
         <Work />
         <div className="relative mt-24 pb-28"><Testimonial /></div>
         <div className="contact mb-80"><Contact /></div>
