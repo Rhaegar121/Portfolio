@@ -259,7 +259,7 @@ const services = [
     id: 2,
     icon: react,
     title: 'Front-end Development',
-    text: 'I can build a custom website from scratch using HTML, CSS, and JavaScript.',
+    text: 'I can build a custom website from scratch using React and Redux.',
   },
   {
     id: 3,

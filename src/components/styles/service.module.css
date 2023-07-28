@@ -58,7 +58,7 @@
 .card {
   background-color: var(--dark-blue);
   height: 360px;
-  padding: 20px 25px;
+  padding: 20px;
   border-radius: 60px 10px;
   display: flex;
   flex-direction: column;
@@ -79,8 +79,9 @@
 }
 
 .name {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
+  text-transform: uppercase;
   color: var(--cyan);
 }
 
@@ -98,6 +99,14 @@
   .tilt {
     width: 400px;
   }
+
+  .card {
+    padding: 20px 25px;
+  }
+
+  .name {
+    font-size: 1.3rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -112,6 +121,10 @@
 
   .tilt {
     width: 325px;
+  }
+
+  .name {
+    font-size: 1.2rem;
   }
 }
 
@@ -135,7 +148,7 @@
   }
 
   .card {
-    padding: 20px;
+    padding: 20px 15px;
     height: 290px;
   }
 
@@ -145,6 +158,29 @@
   }
 
   .name {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
+  }
+
+  .text {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .card_container {
+    gap: 30px;
+  }
+
+  .card {
+    height: 275px;
+  }
+
+  .name {
+    font-size: 1.05rem;
   }
 }

@@ -8,7 +8,7 @@ import style from './styles/service.module.css';
 import { services } from '../constants';
 
 const Service = () => (
-  <div>
+  <div className={style.container}>
     <motion.h1 variants={textVariant()} className={style.title}>
       My services
     </motion.h1>
