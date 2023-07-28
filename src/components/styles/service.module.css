@@ -41,18 +41,18 @@
 }
 
 .card_shadow {
-    background: "#00cea8";
-    background: -webkit-linear-gradient(-90.13deg, #ec008c 1.9%, #0086ce 97.5%);
-    background: linear-gradient(90.13deg, #ec008c 1.9%, #0086ce 97.5%);
-    padding: 1px;
-    width: 100%;
-    border-radius: 60px 10px;
-}
-
-.card_shadow:hover {
   background: "#00cea8";
   background: -webkit-linear-gradient(-90deg, #00e7ad 0%, #464dff 100%);
   background: linear-gradient(90deg, #00e7ad 0%, #464dff 100%);
+  padding: 1px;
+  width: 100%;
+  border-radius: 60px 10px;
+}
+  
+.card_shadow:hover {
+  background: "#00cea8";
+  background: -webkit-linear-gradient(-90.13deg, #ec008c 1.9%, #0086ce 97.5%);
+  background: linear-gradient(90.13deg, #ec008c 1.9%, #0086ce 97.5%);
 }
 
 .card {
@@ -177,7 +177,8 @@
   }
 
   .card {
-    height: 275px;
+    height: 280px;
+    padding: 20px;
   }
 
   .name {
