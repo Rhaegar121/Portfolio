@@ -35,3 +35,44 @@
     gap: 30px;
     padding: 50px 0;
 }
+
+.card_shadow {
+    background: "#00cea8";
+    background: -webkit-linear-gradient(-90.13deg, #ec008c 1.9%, #0086ce 97.5%);
+    background: linear-gradient(90.13deg, #ec008c 1.9%, #0086ce 97.5%);
+    padding: 1px;
+    width: 100%;
+    border-radius: 60px 10px;
+}
+
+.card_shadow:hover {
+  background: "#00cea8";
+  background: -webkit-linear-gradient(-90deg, #00e7ad 0%, #464dff 100%);
+  background: linear-gradient(90deg, #00e7ad 0%, #464dff 100%);
+}
+
+.card {
+  background-color: var(--dark-blue);
+  padding: 25px;
+  border-radius: 60px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: var(--white);
+}
+
+.img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 1.2rem;
+}
+
+.text {
+    font-size: 0.9rem;
+    text-align: center;
+}

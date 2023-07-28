@@ -22,9 +22,9 @@ const Service = () => (
                 className={style.card_shadow}
             >
                 <div className={style.card}>
-                    <img className={style.img} src={service.icon} alt="profile" />
-                    <p>{service.title}</p>
-                    <p>{service.text}</p>
+                    <img className={style.img} src={service.icon} alt={service.title} />
+                    <p className={style.name}>{service.title}</p>
+                    <p className={style.text}>{service.text}</p>
                 </div>
             </motion.div>
         ))}
