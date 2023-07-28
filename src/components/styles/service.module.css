@@ -1,0 +1,37 @@
+.title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    padding: 8px 0;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+  
+.title::after {
+  content: "";
+  background-color: var(--white);
+  width: 60px;
+  height: 2.5px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: var(--white);
+}
+
+.card_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 0;
+}

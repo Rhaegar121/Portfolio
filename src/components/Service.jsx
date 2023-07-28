@@ -22,7 +22,7 @@ const Service = () => (
                 className={style.card_shadow}
             >
                 <div className={style.card}>
-                    <img className={style.img} src={service.image} alt="profile" />
+                    <img className={style.img} src={service.icon} alt="profile" />
                     <p>{service.title}</p>
                     <p>{service.text}</p>
                 </div>
