@@ -10,7 +10,7 @@ import { services } from '../constants';
 const Service = () => (
   <div className={style.container}>
     <motion.h1 variants={textVariant()} className={style.title}>
-      My services
+      My Services
     </motion.h1>
     <motion.p variants={fadeIn('', '', 0.15, 1)} className={style.subtitle}>What I can do for you -</motion.p>
     <div className={style.card_container}>
@@ -35,4 +35,4 @@ const Service = () => (
   </div>
 );
 
-export default SectionWrapper(Service, 'services', 'my-0');
+export default SectionWrapper(Service, 'service', 'my-0');

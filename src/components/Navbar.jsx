@@ -57,6 +57,18 @@ const Navbar = () => {
             </a>
           </li>
           <li
+            key="service"
+            className={active === 'Service' ? 'text-cyan' : 'text-grey'}
+          >
+            <a
+              href="#service"
+              className={style.font}
+              onClick={() => setActive('Service')}
+            >
+              Service
+            </a>
+          </li>
+          <li
             key="work"
             className={active === 'Work' ? 'text-cyan' : 'text-grey'}
           >
@@ -150,13 +162,33 @@ const Navbar = () => {
             </motion.a>
           </li>
           <li
+            key="service"
+            className={`${
+              active === 'Service' ? style.mobile_active : 'text-grey'
+            } mt-20`}
+          >
+            <motion.a
+              href="#service"
+              className={style.mobile_font}
+              variants={fadeIn('right', '', 0.25, 1)}
+              initial="hidden"
+              whileInView="show"
+              onClick={() => {
+                setActive('Service');
+                handleMenuClick();
+              }}
+            >
+              Service
+            </motion.a>
+          </li>
+          <li
             key="work"
             className={active === 'Work' ? style.mobile_active : 'text-grey'}
           >
             <motion.a
               href="#work"
               className={style.mobile_font}
-              variants={fadeIn('right', '', 0.25, 1)}
+              variants={fadeIn('right', '', 0.35, 1)}
               initial="hidden"
               whileInView="show"
               onClick={() => {
@@ -176,7 +208,7 @@ const Navbar = () => {
             <motion.a
               href="#testimonials"
               className={style.mobile_font}
-              variants={fadeIn('right', '', 0.35, 1)}
+              variants={fadeIn('right', '', 0.45, 1)}
               initial="hidden"
               whileInView="show"
               onClick={() => {
@@ -194,7 +226,7 @@ const Navbar = () => {
             <motion.a
               href="#contact"
               className={style.mobile_font}
-              variants={fadeIn('right', '', 0.45, 1)}
+              variants={fadeIn('right', '', 0.55, 1)}
               initial="hidden"
               whileInView="show"
               onClick={() => {
@@ -207,7 +239,7 @@ const Navbar = () => {
           </li>
           <li>
             <motion.a
-              variants={fadeIn('right', '', 0.55, 1)}
+              variants={fadeIn('right', '', 0.65, 1)}
               initial="hidden"
               whileInView="show"
               href="https://drive.google.com/file/d/1gienfnTWEgMC_R2P7t-JVSQC9L_4lLxv/view?usp=sharing"

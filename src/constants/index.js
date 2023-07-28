@@ -1,5 +1,5 @@
 import {
-  facebook, linkedin, instagram, twitter, github, facebook1, linkedin1, instagram1, twitter1, github1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5, carrental1, carrental2, carrental3, carrental4, carrental5, carrental6, carrental7, responsive, react, ruby, fullstack,
+  facebook, linkedin, instagram, twitter, github, facebook1, linkedin1, instagram1, twitter1, github1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5, carrental1, carrental2, carrental3, carrental4, carrental5, carrental6, carrental7, responsive, react, fullstack,
 } from '../assets';
 
 const social = [
@@ -263,7 +263,7 @@ const services = [
   },
   {
     id: 3,
-    icon: ruby,
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain.svg',
     title: 'Back-end Development',
     text: 'I can build a custom back-end API using Ruby on Rails.',
   },
