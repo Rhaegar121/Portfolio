@@ -253,7 +253,7 @@ const services = [
     id: 1,
     icon: responsive,
     title: 'Responsive Design',
-    text: 'I can create responsive websites that work on a wide range of devices, from mobile phones to desktops.',
+    text: 'I can create responsive websites that work on a wide range of devices.',
   },
   {
     id: 2,

@@ -117,15 +117,34 @@
 
 @media screen and (min-width: 1200px) {
   .title {
-    font-size: 2rem;
+    font-size: 2.3rem;
+  }
+
+  .title::after {
+    width: 80px;
   }
 
   .card_container {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
   }
 
   .tilt {
     width: 325px;
+  }
+
+  .card {
+    padding: 20px;
+    height: 290px;
+  }
+
+  .img_container {
+    width: 110px;
+    height: 110px;
+  }
+
+  .name {
+    font-size: 1.1rem;
   }
 }
