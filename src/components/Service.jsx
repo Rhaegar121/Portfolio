@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React from 'react';
 import { motion } from 'framer-motion';
-// import { Tilt } from 'react-tilt';
+import { Tilt } from 'react-tilt';
 import { fadeIn, textVariant } from '../utils/motion';
 import SectionWrapper from '../hoc';
 import style from './styles/service.module.css';
@@ -16,17 +16,20 @@ const Service = () => (
     <div className={style.card_container}>
         {/* Services card */}
         {services.map((service, index) => (
+          <Tilt key={service.id} className={style.tilt}>
             <motion.div
-                key={service.id}
                 variants={fadeIn('right', 'tween', index * 0.8, 0.5)}
                 className={style.card_shadow}
             >
                 <div className={style.card}>
-                    <img className={style.img} src={service.icon} alt={service.title} />
+                    <div className={style.img_container}>
+                      <img className={style.img} src={service.icon} alt={service.title} />
+                    </div>
                     <p className={style.name}>{service.title}</p>
                     <p className={style.text}>{service.text}</p>
                 </div>
             </motion.div>
+          </Tilt>
         ))}
     </div>
   </div>
