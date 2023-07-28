@@ -1,5 +1,5 @@
 import {
-  facebook, linkedin, instagram, twitter, github, facebook1, linkedin1, instagram1, twitter1, github1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5, carrental1, carrental2, carrental3, carrental4, carrental5, carrental6, carrental7,
+  facebook, linkedin, instagram, twitter, github, facebook1, linkedin1, instagram1, twitter1, github1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5, carrental1, carrental2, carrental3, carrental4, carrental5, carrental6, carrental7, responsive, react, ruby, fullstack,
 } from '../assets';
 
 const social = [
@@ -251,25 +251,25 @@ const testimonials = [
 const services = [
   {
     id: 1,
-    icon: 'https://www.vectorlogo.zone/logos/figma/figma-icon.svg',
+    icon: responsive,
     title: 'Responsive Design',
     text: 'I can create responsive websites that work on a wide range of devices, from mobile phones to desktops.',
   },
   {
     id: 2,
-    icon: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg',
+    icon: react,
     title: 'Front-end Development',
     text: 'I can build a custom website from scratch using HTML, CSS, and JavaScript.',
   },
   {
     id: 3,
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain.svg',
+    icon: ruby,
     title: 'Back-end Development',
     text: 'I can build a custom back-end API using Ruby on Rails.',
   },
   {
     id: 4,
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+    icon: fullstack,
     title: 'Full-stack Development',
     text: 'I can build a full-stack web application using React and Ruby on Rails.',
   },

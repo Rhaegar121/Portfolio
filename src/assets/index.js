@@ -2,7 +2,6 @@ import logo from './logo.png';
 
 // socials
 import facebook from './socials/facebook.png';
-// import facebook1 from './socials/facebook1.gif';
 import facebook1 from './socials/facebook (1).png';
 import github from './socials/github.png';
 import github1 from './socials/github (1).png';
@@ -58,6 +57,12 @@ import carrental5 from './carousels/car rental screenshot 5.png';
 import carrental6 from './carousels/car rental screenshot 6.png';
 import carrental7 from './carousels/car rental screenshot 7.png';
 
+// services
+import responsive from './services/responsive.gif';
+import react from './services/react.gif';
+import ruby from './services/ruby.gif';
+import fullstack from './services/fullstack.gif';
+
 export {
-  logo, facebook, instagram, github, linkedin, twitter, facebook1, instagram1, github1, twitter1, linkedin1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5, carrental1, carrental2, carrental3, carrental4, carrental5, carrental6, carrental7,
+  logo, facebook, instagram, github, linkedin, twitter, facebook1, instagram1, github1, twitter1, linkedin1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5, carrental1, carrental2, carrental3, carrental4, carrental5, carrental6, carrental7, responsive, react, ruby, fullstack,
 };
