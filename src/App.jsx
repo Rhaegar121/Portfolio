@@ -2,6 +2,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
+import Service from './components/Service';
 import TechStack from './components/TechStack';
 import Work from './components/Work';
 import Testimonial from './components/Testimonial';
@@ -19,6 +20,7 @@ function App() {
       <div className="relative z-0 bg-navy">
         <Navbar />
         <About />
+        <Service />
         <TechStack />
         <Work />
         <div className="relative mt-24 pb-28"><Testimonial /></div>

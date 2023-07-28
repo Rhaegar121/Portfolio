@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import SectionWrapper from '../hoc';
 import style from './styles/service.module.css';
+import { services } from '../constants';
 
 const Service = () => (
   <div>
@@ -12,6 +13,22 @@ const Service = () => (
       My services
     </motion.h1>
     <motion.p variants={fadeIn('', '', 0.15, 1)} className={style.subtitle}>What I can do for you -</motion.p>
+    <div className={style.card_container}>
+        {/* Services card */}
+        {services.map((service, index) => (
+            <motion.div
+                key={service.id}
+                variants={fadeIn('right', 'tween', index * 0.8, 0.5)}
+                className={style.card_shadow}
+            >
+                <div className={style.card}>
+                    <img className={style.img} src={service.image} alt="profile" />
+                    <p>{service.title}</p>
+                    <p>{service.text}</p>
+                </div>
+            </motion.div>
+        ))}
+    </div>
   </div>
 );
 
