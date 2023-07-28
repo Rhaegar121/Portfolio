@@ -248,6 +248,33 @@ const testimonials = [
   },
 ];
 
+const services = [
+  {
+    id: 1,
+    icon: 'https://www.vectorlogo.zone/logos/figma/figma-icon.svg',
+    title: 'Responsive Design',
+    text: 'I can create responsive websites that work on a wide range of devices, from mobile phones to desktops.',
+  },
+  {
+    id: 2,
+    icon: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg',
+    title: 'Front-end Development',
+    text: 'I can build a custom website from scratch using HTML, CSS, and JavaScript.',
+  },
+  {
+    id: 3,
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain.svg',
+    title: 'Back-end Development',
+    text: 'I can build a custom back-end API using Ruby on Rails.',
+  },
+  {
+    id: 4,
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+    title: 'Full-stack Development',
+    text: 'I can build a full-stack web application using React and Ruby on Rails.',
+  },
+];
+
 export {
-  technologies, projects, testimonials, social,
+  technologies, projects, testimonials, social, services,
 };
