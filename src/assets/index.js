@@ -60,9 +60,8 @@ import carrental7 from './carousels/car rental screenshot 7.png';
 // services
 import responsive from './services/responsive.gif';
 import react from './services/react.gif';
-import ruby from './services/ruby.gif';
 import fullstack from './services/fullstack.gif';
 
 export {
-  logo, facebook, instagram, github, linkedin, twitter, facebook1, instagram1, github1, twitter1, linkedin1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5, carrental1, carrental2, carrental3, carrental4, carrental5, carrental6, carrental7, responsive, react, ruby, fullstack,
+  logo, facebook, instagram, github, linkedin, twitter, facebook1, instagram1, github1, twitter1, linkedin1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5, carrental1, carrental2, carrental3, carrental4, carrental5, carrental6, carrental7, responsive, react, fullstack,
 };
