@@ -39,16 +39,18 @@
 .card_shadow {
   width: 94%;
   background: "#00cea8";
-  background: linear-gradient(90.13deg, #ec008c 1.9%, #0086ce 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #ec008c 1.9%, #0086ce 97.5%);
+  background: linear-gradient(90.13deg, #b1bcdc 1.9%, #0086ce 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #b1bcdc 1.9%, #0086ce 97.5%);
+  /* background: linear-gradient(90.13deg, #ec008c 1.9%, #0086ce 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #ec008c 1.9%, #0086ce 97.5%); */
   padding: 1px;
   border-radius: 60px 10px;
 }
 
 .card_shadow:hover {
   background: "#00cea8";
-  background: linear-gradient(90.13deg, #00e7ad 1.9%, #464dff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00e7ad 1.9%, #464dff 97.5%);
+  background: linear-gradient(90.13deg, #0086ce 1.9%, #b1bcdc 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #0086ce 1.9%, #b1bcdc 97.5%);
 }
 
 .card {
@@ -74,8 +76,8 @@
 .openquote {
   margin: 15px 0 25px 0;
   font-size: 2rem;
-  color: var(--light-blue);
-  /* color: var(--cyan); */
+  /* color: var(--light-blue); */
+  color: var(--cyan);
 }
 
 .para {
@@ -101,6 +103,7 @@
 .country {
   font-size: 0.8rem;
   color: var(--cyan);
+  /* color: var(--light-blue); */
 }
 
 .icon {
@@ -108,6 +111,7 @@
   padding-bottom: 2px;
   position: relative;
   color: var(--cyan);
+  /* color: var(--light-blue); */
 }
 
 .icon::after {
