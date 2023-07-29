@@ -42,24 +42,26 @@
 
 .card_shadow {
   background: "#00cea8";
-  background: -webkit-linear-gradient(-90deg, #00e7ad 0%, #464dff 100%);
-  background: linear-gradient(90deg, #00e7ad 0%, #464dff 100%);
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #464dff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #464dff 97.5%);
   padding: 1px;
   width: 100%;
-  border-radius: 60px 10px;
+  /* border-radius: 60px 10px; */
+  border-radius: 30px;
 }
   
 .card_shadow:hover {
   background: "#00cea8";
-  background: -webkit-linear-gradient(-90.13deg, #ec008c 1.9%, #0086ce 97.5%);
   background: linear-gradient(90.13deg, #ec008c 1.9%, #0086ce 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #ec008c 1.9%, #0086ce 97.5%);
 }
 
 .card {
   background-color: var(--dark-blue);
   height: 360px;
   padding: 20px;
-  border-radius: 60px 10px;
+  /* border-radius: 60px 10px; */
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
