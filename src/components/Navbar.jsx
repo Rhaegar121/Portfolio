@@ -96,103 +96,29 @@ const Navbar = () => {
           viewport={{ once: true, amount: 0.25 }}
           className={`${style.mobilemenu} ${isOpen ? 'h-screen opacity-100' : 'h-0'}`}
         >
-          <li
-            key="about"
-            className={`${
-              active === 'About' ? style.mobile_active : 'text-grey'
-            } mt-20`}
-          >
-            <motion.a
-              href="#about"
-              className={style.mobile_font}
-              variants={fadeIn('right', '', 0.15, 1)}
-              initial="hidden"
-              whileInView="show"
-              onClick={() => {
-                setActive('About');
-                handleMenuClick();
-              }}
+          {navLinks.map((link, index) => (
+            <li
+              key={link.id}
+              className={`${active === link.name ? style.mobile_active : 'text-grey'} ${index === 0 ? 'mt-32' : ''}`}
             >
-              About
-            </motion.a>
-          </li>
-          <li
-            key="service"
-            className={active === 'Service' ? style.mobile_active : 'text-grey'}
-          >
-            <motion.a
-              href="#service"
-              className={style.mobile_font}
-              variants={fadeIn('right', '', 0.25, 1)}
-              initial="hidden"
-              whileInView="show"
-              onClick={() => {
-                setActive('Service');
-                handleMenuClick();
-              }}
-            >
-              Service
-            </motion.a>
-          </li>
-          <li
-            key="work"
-            className={active === 'Work' ? style.mobile_active : 'text-grey'}
-          >
-            <motion.a
-              href="#work"
-              className={style.mobile_font}
-              variants={fadeIn('right', '', 0.35, 1)}
-              initial="hidden"
-              whileInView="show"
-              onClick={() => {
-                setActive('Work');
-                handleMenuClick();
-              }}
-            >
-              Work
-            </motion.a>
-          </li>
-          <li
-            key="testimonials"
-            className={
-              active === 'Testimonials' ? style.mobile_active : 'text-grey'
-            }
-          >
-            <motion.a
-              href="#testimonials"
-              className={style.mobile_font}
-              variants={fadeIn('right', '', 0.45, 1)}
-              initial="hidden"
-              whileInView="show"
-              onClick={() => {
-                setActive('Testimonials');
-                handleMenuClick();
-              }}
-            >
-              Testimonials
-            </motion.a>
-          </li>
-          <li
-            key="contact"
-            className={active === 'Contact' ? style.mobile_active : 'text-grey'}
-          >
-            <motion.a
-              href="#contact"
-              className={style.mobile_font}
-              variants={fadeIn('right', '', 0.55, 1)}
-              initial="hidden"
-              whileInView="show"
-              onClick={() => {
-                setActive('Contact');
-                handleMenuClick();
-              }}
-            >
-              Contact
-            </motion.a>
-          </li>
+              <motion.a
+                href={link.url}
+                className={style.mobile_font}
+                variants={fadeIn('right', '', index * 0.2, 1)}
+                initial="hidden"
+                whileInView="show"
+                onClick={() => {
+                  setActive(link.name);
+                  handleMenuClick();
+                }}
+              >
+                {link.name}
+              </motion.a>
+            </li>
+          ))}
           <li>
             <motion.a
-              variants={fadeIn('right', '', 0.65, 1)}
+              variants={fadeIn('right', '', 1, 1)}
               initial="hidden"
               whileInView="show"
               href="https://drive.google.com/file/d/1gienfnTWEgMC_R2P7t-JVSQC9L_4lLxv/view?usp=sharing"
