@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn, staggerContainer } from '../utils/motion';
 import { logo } from '../assets';
+import { navLinks } from '../constants';
 import style from './styles/navbar.module.css';
 
 const Navbar = () => {
@@ -44,66 +45,20 @@ const Navbar = () => {
 
         {/* desktop navlink */}
         <ul className={style.navlink}>
-          <li
-            key="about"
-            className={active === 'About' ? 'text-cyan' : 'text-grey'}
-          >
-            <a
-              href="#about"
-              className={style.font}
-              onClick={() => setActive('About')}
+          {navLinks.map((link) => (
+            <li
+              key={link.id}
+              className={active === link.name ? 'text-cyan' : 'text-grey'}
             >
-              About
-            </a>
-          </li>
-          <li
-            key="service"
-            className={active === 'Service' ? 'text-cyan' : 'text-grey'}
-          >
-            <a
-              href="#service"
-              className={style.font}
-              onClick={() => setActive('Service')}
-            >
-              Service
-            </a>
-          </li>
-          <li
-            key="work"
-            className={active === 'Work' ? 'text-cyan' : 'text-grey'}
-          >
-            <a
-              href="#work"
-              className={style.font}
-              onClick={() => setActive('Work')}
-            >
-              Work
-            </a>
-          </li>
-          <li
-            key="testimonials"
-            className={active === 'Testimonials' ? 'text-cyan' : 'text-grey'}
-          >
-            <a
-              href="#testimonials"
-              className={style.font}
-              onClick={() => setActive('Testimonials')}
-            >
-              Testimonials
-            </a>
-          </li>
-          <li
-            key="contact"
-            className={active === 'Contact' ? 'text-cyan' : 'text-grey'}
-          >
-            <a
-              href="#contact"
-              className={style.font}
-              onClick={() => setActive('Contact')}
-            >
-              Contact
-            </a>
-          </li>
+              <a
+                href={link.url}
+                className={style.font}
+                onClick={() => setActive(link.name)}
+              >
+                {link.name}
+              </a>
+            </li>
+          ))}
           <li>
             <a
               href="https://drive.google.com/file/d/1gienfnTWEgMC_R2P7t-JVSQC9L_4lLxv/view?usp=sharing"
