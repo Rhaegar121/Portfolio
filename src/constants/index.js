@@ -275,6 +275,34 @@ const services = [
   },
 ];
 
+const navLinks = [
+  {
+    id: 1,
+    name: 'About',
+    url: '/#about',
+  },
+  {
+    id: 2,
+    name: 'Service',
+    url: '/#service',
+  },
+  {
+    id: 3,
+    name: 'Work',
+    url: '/#work',
+  },
+  {
+    id: 4,
+    name: 'Testimonial',
+    url: '/#testimonial',
+  },
+  {
+    id: 5,
+    name: 'Contact',
+    url: '/#contact',
+  },
+];
+
 export {
-  technologies, projects, testimonials, social, services,
+  technologies, projects, testimonials, social, services, navLinks,
 };

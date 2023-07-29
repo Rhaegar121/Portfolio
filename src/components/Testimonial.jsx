@@ -65,4 +65,4 @@ const Testimonial = () => (
   </div>
 );
 
-export default SectionWrapper(Testimonial, 'testimonials', 'my-0');
+export default SectionWrapper(Testimonial, 'testimonial', 'my-0');
