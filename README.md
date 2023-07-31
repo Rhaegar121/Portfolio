@@ -64,7 +64,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://barry121.vercel.app/)
+- [Live Demo Link](https://rhbarry.me/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
