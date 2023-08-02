@@ -271,7 +271,7 @@ const services = [
     id: 4,
     icon: fullstack,
     title: 'Full-stack Development',
-    text: 'From pixel to database, I create holistic solutions that harmonize frontend finesse with backend power, bringing your vision to life.',
+    text: 'From pixel to database, I create holistic solutions that harmonize frontend finesse with backend power.',
   },
 ];
 

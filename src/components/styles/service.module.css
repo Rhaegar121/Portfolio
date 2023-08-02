@@ -132,6 +132,10 @@
   .name {
     font-size: 1.2rem;
   }
+
+  .text {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {
