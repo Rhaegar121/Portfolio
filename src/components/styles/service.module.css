@@ -58,7 +58,8 @@
 
 .card {
   background-color: var(--dark-blue);
-  height: 360px;
+  /* height: 375px; */
+  height: auto;
   padding: 20px;
   /* border-radius: 60px 10px; */
   border-radius: 30px;
@@ -92,7 +93,7 @@
 
 .text {
   font-size: 0.85rem;
-  text-align: center;
+  text-align: justify;
   color: var(--white);
 }
 
