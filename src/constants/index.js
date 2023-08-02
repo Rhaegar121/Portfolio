@@ -253,25 +253,25 @@ const services = [
     id: 1,
     icon: responsive,
     title: 'Responsive Design',
-    text: 'I can create responsive websites that work on a wide range of devices.',
+    text: 'Enhancing user engagement through fluid and adaptable designs that seamlessly transition across devices and screen sizes.',
   },
   {
     id: 2,
     icon: react,
     title: 'Front-end Development',
-    text: 'I can build a custom website from scratch using React and Redux.',
+    text: 'Crafting captivating interfaces with cutting-edge technologies to ensure dynamic and user-friendly web experiences.',
   },
   {
     id: 3,
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain.svg',
     title: 'Back-end Development',
-    text: 'I can build a custom back-end API using Ruby on Rails.',
+    text: ' Building the engine behind your applications, enabling robust functionality, efficient data management, and seamless interactions.',
   },
   {
     id: 4,
     icon: fullstack,
     title: 'Full-stack Development',
-    text: 'I can build a full-stack web application using React and Ruby on Rails.',
+    text: 'From pixel to database, I create holistic solutions that harmonize frontend finesse with backend power, bringing your vision to life.',
   },
 ];
 
