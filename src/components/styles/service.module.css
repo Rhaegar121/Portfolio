@@ -165,7 +165,6 @@
     height: 110px;
     margin-bottom: 10px;
     align-items: flex-start;
-    border: 1px solid red;
   }
 
   .name {
@@ -189,11 +188,22 @@
   }
 
   .card {
-    height: 280px;
+    height: 290px;
     padding: 20px;
+  }
+
+  .img_container {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 0px;
   }
 
   .name {
     font-size: 1.05rem;
+  }
+
+  .text {
+    text-align: center;
+    font-size: 0.8rem;
   }
 }

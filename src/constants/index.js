@@ -265,7 +265,7 @@ const services = [
     id: 3,
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain.svg',
     title: 'Back-end Development',
-    text: ' Building the engine behind your applications, enabling robust functionality, efficient data management, and seamless interactions.',
+    text: 'Building the engine behind your applications, enabling robust functionality, and efficient data management.',
   },
   {
     id: 4,
