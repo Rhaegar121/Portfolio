@@ -23,7 +23,7 @@ const Service = () => (
             >
                 <div className={style.card}>
                     <div className={style.img_container}>
-                      <img className={`${style.img} ${index === 2 ? 'w-28 h-28 lg:w-24 lg:h-24 xl:w-20 xl:h-20' : ''}`} src={service.icon} alt={service.title} />
+                      <img className={`${style.img} ${index === 2 ? 'w-28 h-28 lg:w-24 lg:h-24 lg:mb-8 xl:w-20 xl:h-20' : ''}`} src={service.icon} alt={service.title} />
                     </div>
                     <p className={style.name}>{service.title}</p>
                     <p className={style.text}>{service.text}</p>
