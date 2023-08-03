@@ -78,8 +78,8 @@
 
 .icon,
 .icon_hover {
-  width: 45px;
-  height: 45px;
+  width: 42px;
+  height: 42px;
   border-radius: 10px;
   transition: all 0.2s ease-out;
 }
@@ -197,17 +197,6 @@
   }
 
   .icon_container {
-    gap: 30px;
-  }
-
-  .icon,
-  .icon_hover {
-    width: 48px;
-    height: 48px;
-  }
-
-  .up_icon,
-  .up_icon_hover {
-    padding: 6px;
+    gap: 25px;
   }
 }
