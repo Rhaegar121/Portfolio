@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaLinkedinIn, FaQuoteLeft } from 'react-icons/fa';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
@@ -9,7 +9,7 @@ import style from './styles/testimonial.module.css';
 
 const Testimonial = () => {
   const [number, setNumber] = useState(1);
-  const showPerPage = 1;
+  const [showPerPage, setShowPerPage] = useState(1);
   const lastNumber = number * showPerPage;
   const firstNumber = lastNumber - showPerPage;
   const filterTestimonial = testimonials.slice(firstNumber, lastNumber);
@@ -21,6 +21,26 @@ const Testimonial = () => {
   const next = () => {
     setNumber((prevNumber) => (prevNumber === testimonials.length ? 1 : prevNumber + 1));
   };
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(min-width: 1200px)');
+
+    const handleMediaQueryChange = (event) => {
+      if (event.matches) {
+        setShowPerPage(3);
+      } else {
+        setShowPerPage(1);
+      }
+    };
+
+    handleMediaQueryChange(mediaQuery);
+
+    mediaQuery.addEventListener('change', handleMediaQueryChange);
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleMediaQueryChange);
+    };
+  }, []);
 
   return (
     <div className={style.container}>
