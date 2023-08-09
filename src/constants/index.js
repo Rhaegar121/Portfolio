@@ -248,11 +248,11 @@ const testimonials = [
   },
   {
     id: 4,
-    name: 'Muhammad Talha Hanif',
-    image: 'https://media.licdn.com/dms/image/D4D03AQF6A-cET7akGQ/profile-displayphoto-shrink_100_100/0/1687861229792?e=1695254400&v=beta&t=-7YBiGiJ8f5uaSE8G3qq0UuojrTJveVznlSub3lAOR4',
-    text: "One of Barry's greatest strengths is his impressive technical expertise. He possesses a deep understanding of the latest technologies and trends in his field, allowing him to tackle complex challenges with ease. Barry's ability to analyze problems, think critically, and devise innovative solutions sets him apart as a top performer.",
-    country: 'Pakistan',
-    linkedIn: 'https://www.linkedin.com/in/muhammad-talha-hanif/',
+    name: 'Ahmed Hasan Rony',
+    image: 'https://avatars.githubusercontent.com/u/77187003?v=4',
+    text: 'Barry was my first coding partner. I remember how glad I was passing a week and spent creating a project and solving lots of programming challenges together. I really am comfortable with collaborating and coding with Barry. His ingenious ideas give me a lot of ideas solving a problem multiple ways.',
+    country: 'India',
+    linkedIn: 'https://www.linkedin.com/in/ahroniy/',
   },
 ];
 
