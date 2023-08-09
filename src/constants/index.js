@@ -254,6 +254,22 @@ const testimonials = [
     country: 'India',
     linkedIn: 'https://www.linkedin.com/in/ahroniy/',
   },
+  {
+    id: 5,
+    name: 'Innocent N.',
+    image: 'https://media.licdn.com/dms/image/D5603AQE1qYMUswBOAw/profile-displayphoto-shrink_400_400/0/1688151357954?e=1697068800&v=beta&t=gt456pj65ufvNW4tdFBjqpPXpqPPZbFxaFBCI-H3XGk',
+    text: 'Communication was another strength that Barry brought to the table. He actively listened, communicated ideas clearly, and collaborated effectively with team members. His positive attitude and willingness to offer support and guidance to others greatly contributed to the overall success of our team.',
+    country: 'Rwanda',
+    linkedIn: 'https://www.linkedin.com/in/innocent-n/',
+  },
+  {
+    id: 6,
+    name: 'Marko Kermichiev',
+    image: 'https://avatars.githubusercontent.com/u/112749658?v=4',
+    text: 'I learned too much from you and I can say that you are fantastic developer. Working with you is always a pleasure, hope that we can work on some project asap.',
+    country: 'North Macedonia',
+    linkedIn: 'https://www.linkedin.com/in/marko-kermichiev/',
+  },
 ];
 
 const services = [
