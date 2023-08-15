@@ -60,64 +60,68 @@ const Testimonial = () => {
         Testimonials
       </motion.h1>
       <motion.p variants={fadeIn('', '', 0.15, 1)} className={style.subtitle}>What my coding partners say about me -</motion.p>
-      <motion.div variants={fadeIn('', '', 0.5, 1)} className={style.card_container}>
-        <button
-          // className={number <= filterTestimonial.length ? 'opacity-0' : 'opacity-100'}
-          type="button"
-          onClick={showPerPage === 1 ? prev1 : prev2}
-        >
-          <BsArrowLeft />
-        </button>
+      <div className={style.carousel_container}>
         {/* Testimonials card */}
-        {filterTestimonial.map((testimonial) => (
-          <div
-            key={testimonial.id}
-            className={style.card_shadow}
-          >
+        <motion.div variants={fadeIn('', '', 0.5, 1)} className={style.card_container}>
+          {filterTestimonial.map((testimonial) => (
             <div
-              className={style.card}
+              key={testimonial.id}
+              className={style.card_shadow}
             >
-              <div className={style.header}>
-                <FaQuoteLeft className={style.openquote} />
-                <img className={style.img} src={testimonial.image} alt="profile" />
-              </div>
-              <p className={style.para}>{testimonial.text}</p>
-              <div className={`${style.label} ${style.firstlabel}`}>
-                <p className={style.name}>
-                  {testimonial.name}
-                  {' '}
-                  <span className={style.country}>
-                    (
-                    {testimonial.country}
-                    )
-                  </span>
-                </p>
-                <abbr title="LinkedIn Profile">
-                  <a
-                    href={testimonial.linkedIn}
-                    target="_blank"
-                    className={style.icon}
-                    rel="noreferrer"
-                    aria-label="LinkedIn Profile"
-                  >
-                    <FaLinkedinIn />
-                  </a>
-                </abbr>
+              <div
+                className={style.card}
+              >
+                <div className={style.header}>
+                  <FaQuoteLeft className={style.openquote} />
+                  <img className={style.img} src={testimonial.image} alt="profile" />
+                </div>
+                <p className={style.para}>{testimonial.text}</p>
+                <div className={`${style.label} ${style.firstlabel}`}>
+                  <p className={style.name}>
+                    {testimonial.name}
+                    {' '}
+                    <span className={style.country}>
+                      (
+                      {testimonial.country}
+                      )
+                    </span>
+                  </p>
+                  <abbr title="LinkedIn Profile">
+                    <a
+                      href={testimonial.linkedIn}
+                      target="_blank"
+                      className={style.icon}
+                      rel="noreferrer"
+                      aria-label="LinkedIn Profile"
+                    >
+                      <FaLinkedinIn />
+                    </a>
+                  </abbr>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-        <button
-          // className={number > 1 ? 'opacity-0' : 'opacity-100'}
-          type="button"
-          onClick={showPerPage === 1 ? next1 : next2}
-        >
-          <BsArrowRight />
-        </button>
-      </motion.div>
-      <motion.div variants={fadeIn('', '', 0.15, 1)} className={style.recommendationsLink}>
+          ))}
+        </motion.div>
+        <div className={style.btn_container}>
+          <button
+            className={`${style.button} ${style.prev}`}
+            type="button"
+            onClick={showPerPage === 1 ? prev1 : prev2}
+          >
+            <BsArrowLeft />
+          </button>
+          <button
+            className={`${style.button} ${style.next}`}
+            type="button"
+            onClick={showPerPage === 1 ? next1 : next2}
+          >
+            <BsArrowRight />
+          </button>
+        </div>
+      </div>
+      {/* <motion.div variants={fadeIn('', '', 0.15, 1)} className={style.recommendationsLink}>
         <a href="https://www.linkedin.com/in/kaungmyatkyaw/details/recommendations/?detailScreenTabIndex=0" target="_blank" className={style.a} rel="noreferrer">More recommendations here</a>
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };

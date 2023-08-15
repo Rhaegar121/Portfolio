@@ -27,13 +27,54 @@
   color: var(--white);
 }
 
+.carousel_container {
+  position: relative;
+}
+
+.btn_container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.button {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.prev {
+  animation-name: prev;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes prev {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(5px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+.next {
+  animation-name: next;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes next {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(-5px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
 .card_container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  padding: 50px 0;
+  padding: 50px 0 20px 0;
 }
 
 .card_shadow {
@@ -132,20 +173,6 @@
 
 .icon:hover::after {
   width: 100%;
-}
-
-.recommendationsLink {
-  text-align: center;
-  animation-name: floating;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes floating {
-  0% { transform: translate(0, 0); }
-  50% { transform: translate(0, 7px); }
-  100% { transform: translate(0, -0); }
 }
 
 .a {
