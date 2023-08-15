@@ -15,11 +15,15 @@ const Testimonial = () => {
   const filterTestimonial = testimonials.slice(firstNumber, lastNumber);
 
   const prev = () => {
-    setNumber((prevNumber) => (prevNumber === 1 ? testimonials.length : prevNumber - 1));
+    if (number > 1) {
+      setNumber(number - 1);
+    }
   };
 
   const next = () => {
-    setNumber((prevNumber) => (prevNumber === testimonials.length ? 1 : prevNumber + 1));
+    if (number < 2) {
+      setNumber(number + 1);
+    }
   };
 
   useEffect(() => {
@@ -50,10 +54,9 @@ const Testimonial = () => {
       <motion.p variants={fadeIn('', '', 0.15, 1)} className={style.subtitle}>What my coding partners say about me -</motion.p>
       <div className={style.card_container}>
         <button
-          className="btn prev-btn"
+          className={number < 2 ? 'opacity-0' : 'opacity-100'}
           type="button"
           onClick={prev}
-          disabled={false}
         >
           <BsArrowLeft />
         </button>
@@ -61,16 +64,11 @@ const Testimonial = () => {
         {filterTestimonial.map((testimonial) => (
           <motion.div
             key={testimonial.id}
-            // variants={fadeIn('right', 'tween', index * 0.8, 0.5)}
+            // variants={fadeIn('', 'tween', 0, 0.5)}
             className={style.card_shadow}
           >
             <div
               className={style.card}
-              options={{
-                max: 45,
-                scale: 1,
-                speed: 450,
-              }}
             >
               <div className={style.header}>
                 <FaQuoteLeft className={style.openquote} />
@@ -103,10 +101,9 @@ const Testimonial = () => {
           </motion.div>
         ))}
         <button
-          className="btn next-btn"
+          className={number > 1 ? 'opacity-0' : 'opacity-100'}
           type="button"
           onClick={next}
-          disabled={false}
         >
           <BsArrowRight />
         </button>
