@@ -14,13 +14,21 @@ const Testimonial = () => {
   const firstNumber = lastNumber - showPerPage;
   const filterTestimonial = testimonials.slice(firstNumber, lastNumber);
 
-  const prev = () => {
+  const prev1 = () => {
+    setNumber((prevNumber) => (prevNumber === 1 ? testimonials.length : prevNumber - 1));
+  };
+
+  const next1 = () => {
+    setNumber((prevNumber) => (prevNumber === testimonials.length ? 1 : prevNumber + 1));
+  };
+
+  const prev2 = () => {
     if (number > 1) {
       setNumber(number - 1);
     }
   };
 
-  const next = () => {
+  const next2 = () => {
     if (number < 2) {
       setNumber(number + 1);
     }
@@ -52,19 +60,18 @@ const Testimonial = () => {
         Testimonials
       </motion.h1>
       <motion.p variants={fadeIn('', '', 0.15, 1)} className={style.subtitle}>What my coding partners say about me -</motion.p>
-      <div className={style.card_container}>
+      <motion.div variants={fadeIn('', '', 0.5, 1)} className={style.card_container}>
         <button
-          className={number < 2 ? 'opacity-0' : 'opacity-100'}
+          // className={number <= filterTestimonial.length ? 'opacity-0' : 'opacity-100'}
           type="button"
-          onClick={prev}
+          onClick={showPerPage === 1 ? prev1 : prev2}
         >
           <BsArrowLeft />
         </button>
         {/* Testimonials card */}
         {filterTestimonial.map((testimonial) => (
-          <motion.div
+          <div
             key={testimonial.id}
-            // variants={fadeIn('', 'tween', 0, 0.5)}
             className={style.card_shadow}
           >
             <div
@@ -98,16 +105,16 @@ const Testimonial = () => {
                 </abbr>
               </div>
             </div>
-          </motion.div>
+          </div>
         ))}
         <button
-          className={number > 1 ? 'opacity-0' : 'opacity-100'}
+          // className={number > 1 ? 'opacity-0' : 'opacity-100'}
           type="button"
-          onClick={next}
+          onClick={showPerPage === 1 ? next1 : next2}
         >
           <BsArrowRight />
         </button>
-      </div>
+      </motion.div>
       <motion.div variants={fadeIn('', '', 0.15, 1)} className={style.recommendationsLink}>
         <a href="https://www.linkedin.com/in/kaungmyatkyaw/details/recommendations/?detailScreenTabIndex=0" target="_blank" className={style.a} rel="noreferrer">More recommendations here</a>
       </motion.div>
