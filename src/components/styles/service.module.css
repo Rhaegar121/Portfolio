@@ -137,6 +137,20 @@
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .card_container {
+    gap: 60px;
+  }
+
+  .tilt {
+    width: 285px;
+  }
+
+  .text {
+    padding: 0;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .title {
     font-size: 2.3rem;
