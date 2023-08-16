@@ -106,14 +106,14 @@ const Testimonial = () => {
         </motion.div>
         <div className={style.btn_container}>
           <button
-            className={desktop && number === 2 ? 'hidden' : `${style.button} ${style.prev}`}
+            className={desktop && number === 1 ? 'hidden' : `${style.button} ${style.prev}`}
             type="button"
             onClick={prev}
           >
             <BsArrowLeft />
           </button>
           <button
-            className={`${style.button} ${style.next}`}
+            className={desktop && number === 2 ? 'hidden' : `${style.button} ${style.next}`}
             type="button"
             onClick={next}
           >
@@ -121,9 +121,6 @@ const Testimonial = () => {
           </button>
         </div>
       </div>
-      {/* <motion.div variants={fadeIn('', '', 0.15, 1)} className={style.recommendationsLink}>
-        <a href="https://www.linkedin.com/in/kaungmyatkyaw/details/recommendations/?detailScreenTabIndex=0" target="_blank" className={style.a} rel="noreferrer">More recommendations here</a>
-      </motion.div> */}
     </div>
   );
 };
