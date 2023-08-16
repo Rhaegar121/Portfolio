@@ -83,6 +83,7 @@
   background: "#00cea8";
   background: linear-gradient(90.13deg, #b1bcdc 1.9%, #0086ce 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #b1bcdc 1.9%, #0086ce 97.5%);
+
   /* background: linear-gradient(90.13deg, #ec008c 1.9%, #0086ce 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #ec008c 1.9%, #0086ce 97.5%); */
   padding: 1px;
@@ -118,6 +119,7 @@
 .openquote {
   margin: 15px 0 25px 0;
   font-size: 2rem;
+
   /* color: var(--light-blue); */
   color: var(--cyan);
 }
@@ -146,6 +148,7 @@
 .country {
   font-size: 0.8rem;
   color: var(--cyan);
+
   /* color: var(--light-blue); */
 }
 
@@ -154,6 +157,7 @@
   padding-bottom: 2px;
   position: relative;
   color: var(--cyan);
+
   /* color: var(--light-blue); */
 }
 
@@ -251,7 +255,7 @@
   .prev {
     left: 10%;
   }
-  
+
   .next {
     right: 10%;
   }
@@ -273,7 +277,7 @@
   .prev {
     left: -2%;
   }
-  
+
   .next {
     right: -2%;
   }

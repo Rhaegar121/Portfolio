@@ -121,7 +121,7 @@
   .tech:hover .tech_img {
     mix-blend-mode: normal;
     filter: none;
-  } 
+  }
 }
 
 @media screen and (min-width: 1200px) {
