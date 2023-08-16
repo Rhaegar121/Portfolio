@@ -251,25 +251,33 @@
     width: 80px;
   }
 
+  .button {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  .prev {
+    left: -2%;
+  }
+  
+  .next {
+    right: -2%;
+  }
+
   .card_container {
     flex-direction: row;
-    padding-bottom: 60px;
+    gap: 25px;
+    padding: 50px 35px;
   }
 
   .header {
     margin-bottom: 15px;
   }
 
-  .name {
-    font-size: 1rem;
-  }
-
-  .country {
-    font-size: 0.85rem;
-  }
-
   .para {
-    height: 180px;
+    font-size: 0.7rem;
+    height: 95px;
   }
 
   .label {
