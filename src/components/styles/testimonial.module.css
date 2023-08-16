@@ -132,7 +132,7 @@
 .label {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 15px;
 }
 
@@ -227,8 +227,12 @@
     font-size: 1.9rem;
   }
 
+  .button {
+    font-size: 1.8rem;
+  }
+
   .card_shadow {
-    width: 400px;
+    width: 370px;
   }
 }
 
