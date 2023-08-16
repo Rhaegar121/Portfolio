@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaLinkedinIn, FaQuoteLeft } from 'react-icons/fa';
-import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
+// import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
+import { PiArrowFatLinesLeftBold, PiArrowFatLinesRightBold } from 'react-icons/pi';
 import { fadeIn, textVariant, slideIn } from '../utils/motion';
 import SectionWrapper from '../hoc';
 import { testimonials } from '../constants';
@@ -110,14 +111,14 @@ const Testimonial = () => {
             type="button"
             onClick={prev}
           >
-            <BsArrowLeft />
+            <PiArrowFatLinesLeftBold />
           </button>
           <button
             className={desktop && number === 2 ? 'hidden' : `${style.button} ${style.next}`}
             type="button"
             onClick={next}
           >
-            <BsArrowRight />
+            <PiArrowFatLinesRightBold />
           </button>
         </div>
       </div>

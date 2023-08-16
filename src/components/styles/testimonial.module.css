@@ -241,6 +241,20 @@
   .title {
     font-size: 2rem;
   }
+
+  .button {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  .prev {
+    left: 10%;
+  }
+  
+  .next {
+    right: 10%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -253,9 +267,7 @@
   }
 
   .button {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+    top: 46%;
   }
 
   .prev {
@@ -283,6 +295,7 @@
 
   .label {
     margin-top: 10px;
+    align-items: flex-end;
   }
 
   .icon {
@@ -291,12 +304,33 @@
 }
 
 @media screen and (min-width: 1400px) {
+  .button {
+    font-size: 2rem;
+  }
+
+  .prev {
+    left: -1%;
+  }
+
+  .next {
+    right: -1%;
+  }
+
   .card_container {
     gap: 40px;
   }
 
   .para {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    height: 115px;
+  }
+
+  .name {
+    font-size: 0.95rem;
+  }
+
+  .country {
+    font-size: 0.85rem;
   }
 
   .icon {
