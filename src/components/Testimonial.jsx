@@ -10,27 +10,24 @@ import style from './styles/testimonial.module.css';
 const Testimonial = () => {
   const [number, setNumber] = useState(1);
   const [showPerPage, setShowPerPage] = useState(1);
+  const [desktop, setDesktop] = useState(false);
   const lastNumber = number * showPerPage;
   const firstNumber = lastNumber - showPerPage;
   const filterTestimonial = testimonials.slice(firstNumber, lastNumber);
 
-  const prev1 = () => {
-    setNumber((prevNumber) => (prevNumber === 1 ? testimonials.length : prevNumber - 1));
-  };
-
-  const next1 = () => {
-    setNumber((prevNumber) => (prevNumber === testimonials.length ? 1 : prevNumber + 1));
-  };
-
-  const prev2 = () => {
-    if (number > 1) {
-      setNumber(number - 1);
+  const prev = () => {
+    if (desktop) {
+      setNumber((prevNumber) => (prevNumber === 2 ? prevNumber - 1 : 1));
+    } else {
+      setNumber((prevNumber) => (prevNumber === 1 ? testimonials.length : prevNumber - 1));
     }
   };
 
-  const next2 = () => {
-    if (number < 2) {
-      setNumber(number + 1);
+  const next = () => {
+    if (desktop) {
+      setNumber((prevNumber) => (prevNumber === 1 ? prevNumber + 1 : 2));
+    } else {
+      setNumber((prevNumber) => (prevNumber === testimonials.length ? 1 : prevNumber + 1));
     }
   };
 
@@ -40,8 +37,10 @@ const Testimonial = () => {
     const handleMediaQueryChange = (event) => {
       if (event.matches) {
         setShowPerPage(3);
+        setDesktop(true);
       } else {
         setShowPerPage(1);
+        setDesktop(false);
       }
     };
 
@@ -107,16 +106,16 @@ const Testimonial = () => {
         </motion.div>
         <div className={style.btn_container}>
           <button
-            className={`${style.button} ${style.prev}`}
+            className={desktop && number === 2 ? 'hidden' : `${style.button} ${style.prev}`}
             type="button"
-            onClick={showPerPage === 1 ? prev1 : prev2}
+            onClick={prev}
           >
             <BsArrowLeft />
           </button>
           <button
             className={`${style.button} ${style.next}`}
             type="button"
-            onClick={showPerPage === 1 ? next1 : next2}
+            onClick={next}
           >
             <BsArrowRight />
           </button>
