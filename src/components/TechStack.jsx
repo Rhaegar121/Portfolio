@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import SectionWrapper from '../hoc';
 import { technologies } from '../constants';
-import { fadeIn } from '../utils/motion';
+import { fadeIn, textVariant } from '../utils/motion';
 import style from './styles/techstack.module.css';
 
 const TechStack = () => {
@@ -17,8 +17,8 @@ const TechStack = () => {
 
   return (
     <>
-      <motion.p variants={fadeIn('', '', 0.75, 1)} className={style.title}>Here are a few technologies I`ve been working with recently:</motion.p>
-      <motion.div variants={fadeIn('', '', 1.5, 1)} className={style.btn_container}>
+      <motion.p variants={fadeIn('', '', 0.5, 1)} className={style.title}>Here are a few technologies I`ve been working with recently:</motion.p>
+      <motion.div variants={textVariant()} className={style.btn_container}>
         {stacks.map((currentStack) => (
           <button
             key={currentStack.name}
@@ -30,21 +30,21 @@ const TechStack = () => {
           </button>
         ))}
       </motion.div>
-      <motion.div variants={fadeIn('', '', 1.75, 1)} className={style.tech_container}>
+      <div className={style.tech_container}>
         {stack === 'all' ? (
-          technologies.map(({ name, icon }) => (
-            <abbr title={name} key={name} className={style.tech}>
-              <img className={style.tech_img} src={icon} alt={name} />
-            </abbr>
+          technologies.map((tech, index) => (
+            <motion.abbr initial="hidden" animate="show" variants={fadeIn('up', '', index * 0.2, 0.5)} title={tech.name} key={tech.name} className={style.tech}>
+              <img className={style.tech_img} src={tech.icon} alt={tech.name} />
+            </motion.abbr>
           ))
         ) : (
-          filteredTechnologies.map(({ name, icon }) => (
-            <abbr title={name} key={name} className={style.tech}>
-              <img className={style.tech_img} src={icon} alt={name} />
-            </abbr>
+          filteredTechnologies.map((tech, index) => (
+            <motion.abbr initial="hidden" animate="show" variants={fadeIn('up', '', index * 0.2, 0.5)} title={tech.name} key={tech.name} className={style.tech}>
+              <img className={style.tech_img} src={tech.icon} alt={tech.name} />
+            </motion.abbr>
           ))
         )}
-      </motion.div>
+      </div>
     </>
   );
 };

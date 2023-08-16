@@ -42,48 +42,13 @@
   width: 85px;
   height: 90px;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background-color: var(--cyan);
+  background-color: var(--white);
   position: relative;
   transition: background-color 0.3s ease-out;
-
-  /* -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
-
-  /* overflow: hidden; */
-
-  /* border: 2px solid var(--cyan); */
 }
-
-.tech:hover {
-  cursor: pointer;
-  background-color: var(--white);
-}
-
-/* .tech::before {
-  content: "";
-  position: absolute;
-  top: 2.6px;
-  left: -10%;
-  width: 120%;
-  height: 93%;
-  border: 2px solid var(--cyan);
-  transform: rotate(26.5deg);
-}
-
-.tech::after {
-  content: "";
-  position: absolute;
-  top: 0.3%;
-  left: -10%;
-  width: 130%;
-  height: 95.3%;
-  border: 3px solid var(--cyan);
-  transform: rotate(-26.5deg);
-} */
 
 .tech_img {
   position: absolute;
-  mix-blend-mode: multiply;
-  filter: grayscale(100%) contrast(1);
   width: 60%;
   height: 60%;
   top: 50%;
@@ -91,11 +56,6 @@
   transform: translate(-50%, -50%);
   object-fit: cover;
   object-position: center;
-}
-
-.tech:hover .tech_img {
-  mix-blend-mode: normal;
-  filter: none;
 }
 
 @media screen and (min-width: 480px) {
@@ -145,6 +105,22 @@
   .tech {
     width: 80px;
     height: 83px;
+    background-color: var(--cyan);
+  }
+
+  .tech:hover {
+    cursor: pointer;
+    background-color: var(--white);
+  }
+
+  .tech_img {
+    mix-blend-mode: multiply;
+    filter: grayscale(100%) contrast(1);
+  }
+
+  .tech:hover .tech_img {
+    mix-blend-mode: normal;
+    filter: none;
   }
 }
 
