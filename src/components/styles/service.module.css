@@ -121,18 +121,19 @@
   .card_container {
     display: grid;
     grid-template-columns: auto auto;
+    gap: 50px;
   }
 
   .tilt {
-    width: 325px;
+    width: 260px;
   }
 
   .name {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
   .text {
-    font-size: 0.8rem;
+    padding: 0 5px;
   }
 }
 
