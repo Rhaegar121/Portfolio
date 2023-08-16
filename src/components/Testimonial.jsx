@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaLinkedinIn, FaQuoteLeft } from 'react-icons/fa';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
-import { fadeIn, textVariant } from '../utils/motion';
+import { fadeIn, textVariant, slideIn } from '../utils/motion';
 import SectionWrapper from '../hoc';
 import { testimonials } from '../constants';
 import style from './styles/testimonial.module.css';
@@ -64,7 +64,10 @@ const Testimonial = () => {
         {/* Testimonials card */}
         <motion.div variants={fadeIn('', '', 0.5, 1)} className={style.card_container}>
           {filterTestimonial.map((testimonial) => (
-            <div
+            <motion.div
+              initial="hidden"
+              animate="show"
+              variants={fadeIn('', '', 0.15, 1)}
               key={testimonial.id}
               className={style.card_shadow}
             >
@@ -72,12 +75,12 @@ const Testimonial = () => {
                 className={style.card}
               >
                 <div className={style.header}>
-                  <FaQuoteLeft className={style.openquote} />
+                  <motion.div variants={textVariant()}><FaQuoteLeft className={style.openquote} /></motion.div>
                   <img className={style.img} src={testimonial.image} alt="profile" />
                 </div>
                 <p className={style.para}>{testimonial.text}</p>
                 <div className={`${style.label} ${style.firstlabel}`}>
-                  <p className={style.name}>
+                  <motion.p variants={slideIn('left', '', 0.3, 0.75)} className={style.name}>
                     {testimonial.name}
                     {' '}
                     <span className={style.country}>
@@ -85,8 +88,8 @@ const Testimonial = () => {
                       {testimonial.country}
                       )
                     </span>
-                  </p>
-                  <abbr title="LinkedIn Profile">
+                  </motion.p>
+                  <motion.abbr variants={slideIn('right', '', 0.3, 0.75)} title="LinkedIn Profile">
                     <a
                       href={testimonial.linkedIn}
                       target="_blank"
@@ -96,10 +99,10 @@ const Testimonial = () => {
                     >
                       <FaLinkedinIn />
                     </a>
-                  </abbr>
+                  </motion.abbr>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </motion.div>
         <div className={style.btn_container}>

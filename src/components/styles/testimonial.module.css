@@ -39,7 +39,7 @@
 
 .button {
   font-size: 1.5rem;
-  color: var(--white);
+  color: var(--cyan);
 }
 
 .prev {
@@ -78,7 +78,7 @@
 }
 
 .card_shadow {
-  width: 94%;
+  width: 92%;
   background: "#00cea8";
   background: linear-gradient(90.13deg, #b1bcdc 1.9%, #0086ce 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #b1bcdc 1.9%, #0086ce 97.5%);
@@ -96,7 +96,7 @@
 
 .card {
   background-color: var(--dark-blue);
-  padding: 25px 28px 25px 20px;
+  padding: 25px;
   border-radius: 60px 10px;
 }
 
@@ -122,7 +122,7 @@
 }
 
 .para {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 500;
   font-family: 'Montserrat Alternates', sans-serif;
   color: var(--white);
@@ -137,7 +137,7 @@
 }
 
 .name {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   color: var(--white);
 }
