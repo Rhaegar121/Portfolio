@@ -3,6 +3,17 @@
   height: 86px;
 }
 
+.progress_bar {
+  position: fixed;
+  top: 68px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--cyan);
+  transform-origin: 0%;
+  z-index: 2;
+}
+
 .navbar {
   padding: 14px 30px 14px 15px;
   display: flex;
@@ -11,10 +22,10 @@
   top: 0;
   justify-content: space-between;
   align-items: center;
-  background-color: #030b25ce;
-  backdrop-filter: blur(10px);
+  background-color: var(--navy);
+  /* backdrop-filter: blur(10px); */
   box-shadow: 0 1px 3px #000311;
-  z-index: 2;
+  z-index: 3;
 }
 
 .fixed {
@@ -180,6 +191,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .progress_bar {
+    top: 86px;
+  }
+
   .navbar {
     padding: 18px 45px 18px 30px;
   }

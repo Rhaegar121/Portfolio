@@ -13,7 +13,7 @@ import StarsCanvas from './components/Stars';
 function App() {
   return (
     <BrowserRouter>
-      <div className="relative w-screen h-screen">
+      <div className="relative w-screen h-screen z-10">
         <Home />
         <StarsCanvas />
       </div>

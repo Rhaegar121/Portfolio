@@ -1,11 +1,18 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { BsChevronDoubleUp } from 'react-icons/bs';
+import { fadeIn } from '../utils/motion';
 import { social } from '../constants';
 import style from './styles/footer.module.css';
 
 const Footer = () => (
-  <div id={style.footer}>
-    <div className={style.up_icon_container}>
+  <motion.section
+    id={style.footer}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: false, amount: 0.25 }}
+  >
+    <motion.div variants={fadeIn('', '', 1, 1)} className={style.up_icon_container}>
       <abbr title="back to home page">
         <button
           type="button"
@@ -18,7 +25,7 @@ const Footer = () => (
           <BsChevronDoubleUp className={`${style.icon} ${style.up_icon}`} />
         </button>
       </abbr>
-    </div>
+    </motion.div>
     <p className={style.title}>
       <span className={style.text}>My Social Networks</span>
     </p>
@@ -39,7 +46,7 @@ const Footer = () => (
         Kaung Myat Kyaw
       </a>
     </abbr>
-  </div>
+  </motion.section>
 );
 
 export default Footer;
