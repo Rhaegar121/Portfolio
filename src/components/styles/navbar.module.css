@@ -10,7 +10,7 @@
   right: 0;
   height: 3px;
   background: var(--cyan);
-  box-shadow: 0 0 10px var(--cyan); 
+  box-shadow: 0 0 10px var(--cyan);
   transform-origin: 0%;
   z-index: 2;
 }
