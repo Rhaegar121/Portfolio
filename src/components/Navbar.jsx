@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, useScroll } from 'framer-motion';
 import { fadeIn, staggerContainer } from '../utils/motion';
 import { logo } from '../assets';
 import { navLinks } from '../constants';
 import style from './styles/navbar.module.css';
 
 const Navbar = () => {
+  const { scrollYProgress } = useScroll();
   const [active, setActive] = useState('');
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setOpen] = useState(false);
@@ -34,14 +35,16 @@ const Navbar = () => {
   return (
     <div className={style.navbar_container}>
       <nav className={`${style.navbar} ${scrolled ? 'fixed' : ''}`}>
-        <button
+        <motion.button
           type="button"
           onClick={() => {
             window.scrollTo(0, 0);
           }}
+          whileHover={{ scale: 1.12, backgroundColor: '#020716', transition: { type: 'spring', damping: 20, stiffness: 300 } }}
+          className={style.logo_btn}
         >
           <img src={logo} alt="My logo" className={style.logo} />
-        </button>
+        </motion.button>
 
         {/* desktop navlink */}
         <ul className={style.navlink}>
@@ -133,6 +136,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
+      <motion.div className={style.progress_bar} style={{ scaleX: scrollYProgress }} />
     </div>
   );
 };

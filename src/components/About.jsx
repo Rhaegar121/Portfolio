@@ -17,8 +17,8 @@ const About = () => (
           {' '}
           and I am a passionate software engineer specializing in delivering state-of-the-art software solutions in React and Ruby on Rails. I love Math, Coding, Movies, and all kinds of Music.
         </p>
-        <p className={style.text}>I&apos;m a proud graduate of Microverse, where I&apos;ve been working on a full-stack Airline booking website using Next.js. My journey from Maritime University to software development wasn&apos;t straightforward - the challenges of COVID-19 and our political landscape redirected me toward my true passion.</p>
-        <p className={style.text}>A top performer in math with the highest GPA in my matriculation, I transitioned this analytical prowess to coding, completing my boot camp without hitches. My commitment to the tech community is reflected in my 2000+ contributions to open-source projects on GitHub. Additionally, my roles in the Students&apos; Union honed my problem-solving and communication abilities.</p>
+        <p className={style.text}>I&apos;m a proud graduate of Microverse, where I&apos;ve been working on a full-stack travel agency website using Next.js. My journey from Maritime University to software development wasn&apos;t straightforward - the challenges of COVID-19 and our political landscape redirected me toward my true passion.</p>
+        <p className={style.text}>A top performer in math with the highest GPA in my matriculation, I transitioned this analytical prowess to coding, completing my boot camp without hitches. My commitment to the tech community is reflected in my 2500+ contributions on GitHub within a single year. Additionally, my roles in the Students&apos; Union honed my problem-solving and communication abilities.</p>
       </motion.div>
       <motion.div variants={slideIn('right', '', 0, 1)} className={style.img_container}>
         <div className={style.overlay} />

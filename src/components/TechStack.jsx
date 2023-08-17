@@ -30,21 +30,25 @@ const TechStack = () => {
           </button>
         ))}
       </motion.div>
-      <div className={style.tech_container}>
+      <motion.div
+        className={style.tech_container}
+        initial="hidden"
+        animate="show"
+      >
         {stack === 'all' ? (
           technologies.map((tech, index) => (
-            <motion.abbr initial="hidden" animate="show" variants={fadeIn('up', '', index * 0.2, 0.5)} title={tech.name} key={tech.name} className={style.tech}>
+            <motion.abbr variants={fadeIn('up', '', index * 0.2, 0.5)} title={tech.name} key={tech.name} className={style.tech}>
               <img className={style.tech_img} src={tech.icon} alt={tech.name} />
             </motion.abbr>
           ))
         ) : (
           filteredTechnologies.map((tech, index) => (
-            <motion.abbr initial="hidden" animate="show" variants={fadeIn('up', '', index * 0.2, 0.5)} title={tech.name} key={tech.name} className={style.tech}>
+            <motion.abbr variants={fadeIn('up', '', index * 0.2, 0.5)} title={tech.name} key={tech.name} className={style.tech}>
               <img className={style.tech_img} src={tech.icon} alt={tech.name} />
             </motion.abbr>
           ))
         )}
-      </div>
+      </motion.div>
     </>
   );
 };

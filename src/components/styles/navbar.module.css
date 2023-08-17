@@ -3,6 +3,18 @@
   height: 86px;
 }
 
+.progress_bar {
+  position: fixed;
+  top: 74.2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--cyan);
+  box-shadow: 0 0 10px var(--cyan);
+  transform-origin: 0%;
+  z-index: 2;
+}
+
 .navbar {
   padding: 14px 30px 14px 15px;
   display: flex;
@@ -11,18 +23,22 @@
   top: 0;
   justify-content: space-between;
   align-items: center;
-  background-color: #030b25ce;
-  backdrop-filter: blur(10px);
+  background-color: var(--navy);
   box-shadow: 0 1px 3px #000311;
-  z-index: 2;
+  z-index: 3;
 }
 
 .fixed {
   position: fixed;
 }
 
-.logo {
+.logo_btn {
   width: 40px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.logo {
+  width: 100%;
   height: auto;
 }
 
@@ -41,6 +57,7 @@
 
 .font:hover {
   color: var(--cyan);
+  text-shadow: 0 0 8px var(--cyan);
 }
 
 .resume_container {
@@ -69,6 +86,8 @@
 .resume_container:focus {
   color: var(--cyan);
   border-color: var(--cyan);
+  box-shadow: 0 0 8px var(--cyan);
+  text-shadow: 0 0 8px var(--cyan);
 }
 
 .resume_container:hover .resume,
@@ -180,11 +199,15 @@
 }
 
 @media screen and (min-width: 768px) {
+  .progress_bar {
+    top: 93.76px;
+  }
+
   .navbar {
     padding: 18px 45px 18px 30px;
   }
 
-  .logo {
+  .logo_btn {
     width: 50px;
   }
 
@@ -212,7 +235,7 @@
   }
 
   .resume_hover {
-    top: 9px;
+    top: 8px;
     left: 14px;
   }
 }
