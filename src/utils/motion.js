@@ -51,6 +51,11 @@ export const fadeIn = (direction, type, delay, duration) => {
         ease: 'easeOut',
       },
     },
+    exit: {
+      x: 0,
+      y: 10,
+      opacity: 0,
+    },
   };
 };
 
