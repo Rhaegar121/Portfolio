@@ -32,8 +32,13 @@
   position: fixed;
 }
 
-.logo {
+.logo_btn {
   width: 40px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.logo {
+  width: 100%;
   height: auto;
 }
 
@@ -199,7 +204,7 @@
     padding: 18px 45px 18px 30px;
   }
 
-  .logo {
+  .logo_btn {
     width: 50px;
   }
 
