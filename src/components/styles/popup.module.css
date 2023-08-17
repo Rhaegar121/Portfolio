@@ -137,6 +137,8 @@
 .btn_container:focus {
   color: var(--cyan);
   border-color: var(--cyan);
+  box-shadow: 0 0 6px var(--cyan);
+  text-shadow: 0 0 8px var(--cyan);
 }
 
 .btn_container:hover .btn,
