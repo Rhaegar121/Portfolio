@@ -57,6 +57,7 @@
 
 .font:hover {
   color: var(--cyan);
+  text-shadow: 0 0 8px var(--cyan);
 }
 
 .resume_container {
@@ -85,6 +86,8 @@
 .resume_container:focus {
   color: var(--cyan);
   border-color: var(--cyan);
+  box-shadow: 0 0 8px var(--cyan);
+  text-shadow: 0 0 8px var(--cyan);
 }
 
 .resume_container:hover .resume,
@@ -232,7 +235,7 @@
   }
 
   .resume_hover {
-    top: 9px;
+    top: 8px;
     left: 14px;
   }
 }
