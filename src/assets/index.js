@@ -40,7 +40,7 @@ import metricswebapp1 from './carousels/metrics webapp screenshot 1.png';
 import metricswebapp2 from './carousels/metrics webapp screenshot 2.png';
 import recipeapp3 from './carousels/recipe app screenshot 3.png';
 import recipeapp4 from './carousels/recipe app screenshot 4.png';
-import recipeapp5 from './carousels/recipe app screenshot 5.png';
+import recipeapp6 from './carousels/recipe app screenshot 6.png';
 import trackbuget1 from './carousels/track budget screenshot 1.png';
 import trackbuget2 from './carousels/track budget screenshot 2.png';
 import trackbuget5 from './carousels/track budget screenshot 5.png';
@@ -54,5 +54,5 @@ import react from './services/react.gif';
 import fullstack from './services/fullstack.gif';
 
 export {
-  logo, facebook, instagram, github, linkedin, twitter, facebook1, instagram1, github1, twitter1, linkedin1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp3, recipeapp4, recipeapp5, trackbuget1, trackbuget2, trackbuget5, carrental3, carrental4, carrental6, responsive, react, fullstack,
+  logo, facebook, instagram, github, linkedin, twitter, facebook1, instagram1, github1, twitter1, linkedin1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp3, recipeapp4, recipeapp6, trackbuget1, trackbuget2, trackbuget5, carrental3, carrental4, carrental6, responsive, react, fullstack,
 };
