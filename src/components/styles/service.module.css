@@ -51,8 +51,9 @@
 
 .card_shadow:hover {
   background: "#00cea8";
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #0086ce 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #0086ce 97.5%);
+  background: linear-gradient(90.13deg, #0086ce 1.9%, #b1bcdc 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #0086ce 1.9%, #b1bcdc 97.5%);
+  box-shadow: 0 0 8px var(--cyan);
 }
 
 .card {
