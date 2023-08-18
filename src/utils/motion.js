@@ -74,6 +74,16 @@ export const zoomIn = (delay, duration) => ({
       ease: 'easeOut',
     },
   },
+  exit: {
+    scale: 0,
+    opacity: 0,
+    transition: {
+      type: 'tween',
+      delay: 0.5,
+      duration: 0.5,
+      ease: 'easeOut',
+    },
+  },
 });
 
 export const slideIn = (direction, type, delay, duration) => {
