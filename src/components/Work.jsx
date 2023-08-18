@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import style from './styles/work.module.css';
 import SectionWrapper from '../hoc';
 import { projects } from '../constants';
@@ -55,11 +55,11 @@ const Work = () => {
         ))}
       </div>
       {/* Popup Window */}
-      {isOpen && (
-        <div className={style.popup}>
+      <AnimatePresence>
+        {isOpen && (
           <Popup handleClose={handlePopupClose} project={selectedProject} />
-        </div>
-      )}
+        )}
+      </AnimatePresence>
     </div>
   );
 };
