@@ -1,5 +1,5 @@
 import {
-  facebook, linkedin, instagram, twitter, github, facebook1, linkedin1, instagram1, twitter1, github1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5, carrental1, carrental2, carrental3, carrental4, carrental5, carrental6, carrental7, responsive, react, fullstack,
+  facebook, linkedin, instagram, twitter, github, facebook1, linkedin1, instagram1, twitter1, github1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp3, recipeapp4, recipeapp6, trackbuget1, trackbuget2, trackbuget5, carrental3, carrental4, carrental6, responsive, react, fullstack,
 } from '../assets';
 
 const social = [
@@ -135,7 +135,7 @@ const projects = [
     desc: 'The Car Rental App is a full-stack app we built using React as Front-end and Ruby on Rails as the Back-end API with custom authentication. The users can see a list of cars to rent and add to their favorites. The users can also add a car to the list and delete a car from the list.',
     tech: ['React', 'Redux', 'Ruby on Rails', 'PostgreSQL'],
     img: carrental,
-    carousel: [carrental1, carrental2, carrental3, carrental4, carrental5, carrental6, carrental7],
+    carousel: [carrental3, carrental4, carrental6],
     source_link: 'https://github.com/Rhaegar121/Car-Rental-front-end',
     live_link: 'https://car-rental-capstone.netlify.app/',
   },
@@ -145,7 +145,7 @@ const projects = [
     desc: 'The Recipe app keeps track of all your foods, recipes, and ingredients. It allows you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Since sharing recipes is an important part, it allows you to make them public so anyone can access them.',
     tech: ['Ruby', 'Ruby on Rails', 'PostgreSQL'],
     img: recipeapp,
-    carousel: [recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6],
+    carousel: [recipeapp3, recipeapp4, recipeapp6],
     source_link: 'https://github.com/Rhaegar121/Recipe-App',
     live_link: 'https://recipe-app121-b8888e20687b.herokuapp.com/',
   },
@@ -175,7 +175,7 @@ const projects = [
     desc: 'Track Budget is a mobile web application where you can manage your budget: you have a list of purchases associated with a category, so that you can see how much money you spent and on what category.',
     tech: ['Ruby', 'Ruby on Rails', 'PostgreSQL'],
     img: trackbudget,
-    carousel: [trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5],
+    carousel: [trackbuget1, trackbuget2, trackbuget5],
     source_link: 'https://github.com/Rhaegar121/Track-Budget',
     live_link: 'https://track-budget121-70a570d4e3e1.herokuapp.com/',
   },

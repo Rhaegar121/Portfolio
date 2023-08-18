@@ -38,24 +38,15 @@ import tvshow2 from './carousels/tvshow screenshot 2.png';
 import tvshow3 from './carousels/tvshow screenshot 3.png';
 import metricswebapp1 from './carousels/metrics webapp screenshot 1.png';
 import metricswebapp2 from './carousels/metrics webapp screenshot 2.png';
-import recipeapp1 from './carousels/recipe app screenshot 1.png';
-import recipeapp2 from './carousels/recipe app screenshot 2.png';
 import recipeapp3 from './carousels/recipe app screenshot 3.png';
 import recipeapp4 from './carousels/recipe app screenshot 4.png';
-import recipeapp5 from './carousels/recipe app screenshot 5.png';
 import recipeapp6 from './carousels/recipe app screenshot 6.png';
 import trackbuget1 from './carousels/track budget screenshot 1.png';
 import trackbuget2 from './carousels/track budget screenshot 2.png';
-import trackbuget3 from './carousels/track budget screenshot 3.png';
-import trackbuget4 from './carousels/track budget screenshot 4.png';
 import trackbuget5 from './carousels/track budget screenshot 5.png';
-import carrental1 from './carousels/car rental screenshot 1.png';
-import carrental2 from './carousels/car rental screenshot 2.png';
 import carrental3 from './carousels/car rental screenshot 3.png';
 import carrental4 from './carousels/car rental screenshot 4.png';
-import carrental5 from './carousels/car rental screenshot 5.png';
 import carrental6 from './carousels/car rental screenshot 6.png';
-import carrental7 from './carousels/car rental screenshot 7.png';
 
 // services
 import responsive from './services/responsive.gif';
@@ -63,5 +54,5 @@ import react from './services/react.gif';
 import fullstack from './services/fullstack.gif';
 
 export {
-  logo, facebook, instagram, github, linkedin, twitter, facebook1, instagram1, github1, twitter1, linkedin1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp1, recipeapp2, recipeapp3, recipeapp4, recipeapp5, recipeapp6, trackbuget1, trackbuget2, trackbuget3, trackbuget4, trackbuget5, carrental1, carrental2, carrental3, carrental4, carrental5, carrental6, carrental7, responsive, react, fullstack,
+  logo, facebook, instagram, github, linkedin, twitter, facebook1, instagram1, github1, twitter1, linkedin1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp3, recipeapp4, recipeapp6, trackbuget1, trackbuget2, trackbuget5, carrental3, carrental4, carrental6, responsive, react, fullstack,
 };

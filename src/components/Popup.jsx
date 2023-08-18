@@ -1,11 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { TfiClose } from 'react-icons/tfi';
+import { motion } from 'framer-motion';
+import { zoomIn } from '../utils/motion';
 import style from './styles/popup.module.css';
 import Carousel from './Carousel';
 
 const Popup = ({ handleClose, project }) => (
-  <div className={style.overlay}>
+  <motion.div
+    className={style.overlay}
+    initial="hidden"
+    animate="show"
+    exit={{ opacity: 0, scale: 0, transition: { type: 'tween', duration: 0.5 } }}
+    variants={zoomIn(0, 0.5)}
+  >
     <div className={style.container}>
       <TfiClose className={style.close_btn} onClick={handleClose} />
       <Carousel carousel={project.carousel} />
@@ -29,7 +37,7 @@ const Popup = ({ handleClose, project }) => (
         </div>
       </div>
     </div>
-  </div>
+  </motion.div>
 );
 
 Popup.propTypes = {
