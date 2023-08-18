@@ -83,6 +83,7 @@
 
   .tech_container {
     width: 89%;
+    height: 305px;
     gap: 13px;
   }
 
@@ -99,6 +100,7 @@
 
   .tech_container {
     width: 830px;
+    height: 166px;
     gap: 0 13px;
   }
 
@@ -139,6 +141,7 @@
 
   .tech_container {
     width: 970px;
+    height: 185px;
     gap: 0 20px;
   }
 
@@ -156,6 +159,7 @@
 @media screen and (min-width: 1400px) {
   .tech_container {
     width: 1062px;
+    height: 208px;
   }
 
   .tech {

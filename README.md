@@ -34,7 +34,7 @@
 
 </div>
 
-> This is my personal portfolio mainly built with ReactJS, ThreeJS, and TailwindCSS. This is a responsive website with mobile-first approach. The website is hosted on Vercel and Netlify.
+> Welcome to my dynamic portfolio, where the fusion of ReactJS, ThreeJS, and TailwindCSS, embellished with captivating animations from Framer Motion, creates an immersive experience. With a mobile-first approach, this responsive masterpiece ensures seamless viewing across devices. Hosted on the powerful platforms of Vercel and Netlify, my portfolio elegantly presents a showcase of creative ventures and professional accomplishments, inviting you to explore and be inspired.
 
 ## 🛠 Built With <a name="built-with"></a>
 

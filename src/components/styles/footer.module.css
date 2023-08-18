@@ -81,7 +81,7 @@
   width: 42px;
   height: 42px;
   border-radius: 10px;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .up_icon,
@@ -94,7 +94,6 @@
   top: 0;
   left: 0;
   opacity: 0;
-  transform: translate(-100%, 0);
 }
 
 .up_icon_hover {
@@ -103,7 +102,6 @@
 
 .overlay:hover .icon {
   opacity: 0;
-  transform: translate(100%, 0);
 }
 
 .overlay:hover .up_icon {
