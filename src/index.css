@@ -11,6 +11,7 @@
   font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
+  cursor: grab;
 }
 
 ::-webkit-scrollbar {

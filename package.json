@@ -25,6 +25,7 @@
     "react-icons": "^4.10.1",
     "react-leaflet": "^4.2.1",
     "react-parallax-tilt": "^1.7.121",
+    "react-responsive": "^9.0.2",
     "react-router-dom": "^6.10.0",
     "react-slick": "^0.29.0",
     "react-tilt": "^1.0.2",

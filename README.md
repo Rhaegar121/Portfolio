@@ -40,7 +40,7 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> ReactJS, ThreeJS, TailwindCSS
+> ReactJS, ThreeJS, TailwindCSS, Framer-motion
 
 <details>
   <summary>Client</summary>
@@ -86,7 +86,7 @@
 
 - **[Light_theme_Dark_theme]**
 - **[Experience_Section]**
-- **[Carousel_Testimonials]**
+- **[Footer_motion]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
