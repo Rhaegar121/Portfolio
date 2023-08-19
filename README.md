@@ -86,7 +86,7 @@
 
 - **[Light_theme_Dark_theme]**
 - **[Experience_Section]**
-- **[Carousel_Testimonials]**
+- **[Footer_motion]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

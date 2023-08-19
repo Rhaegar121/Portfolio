@@ -7,7 +7,7 @@ const SectionWrapper = (Component, idName, margin) => function HOC() {
       variants={staggerContainer()}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
+      viewport={{ once: false, amount: 0.25 }}
       className={`max-w-[90%] mx-auto ${margin}`}
     >
       <span id={idName}>
