@@ -40,7 +40,7 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> ReactJS, ThreeJS, TailwindCSS
+> ReactJS, ThreeJS, TailwindCSS, Framer-motion
 
 <details>
   <summary>Client</summary>
