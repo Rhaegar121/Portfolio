@@ -13,7 +13,6 @@ const TechStack = () => {
   };
 
   const stacks = ['all', 'languages', 'frameworks', 'tools'];
-  const filteredTechnologies = technologies.filter((technology) => technology.stack === stack);
 
   return (
     <>
@@ -31,19 +30,11 @@ const TechStack = () => {
         ))}
       </motion.div>
       <div className={style.tech_container}>
-        {stack === 'all' ? (
-          technologies.map((tech, index) => (
-            <motion.abbr initial="hidden" animate="show" variants={fadeIn('up', '', index * 0.15, 0.5)} title={tech.name} key={tech.name} className={style.tech}>
-              <img className={style.tech_img} src={tech.icon} alt={tech.name} />
-            </motion.abbr>
-          ))
-        ) : (
-          filteredTechnologies.map((tech, index) => (
-            <motion.abbr initial="hidden" animate="show" variants={fadeIn('up', '', index * 0.15, 0.5)} title={tech.name} key={tech.name} className={style.tech}>
-              <img className={style.tech_img} src={tech.icon} alt={tech.name} />
-            </motion.abbr>
-          ))
-        )}
+        {technologies.filter((technology) => technology.stack.includes(stack)).map((tech, index) => (
+          <motion.abbr initial="hidden" animate="show" variants={fadeIn('up', '', index * 0.15, 0.5)} title={tech.name} key={tech.name} className={style.tech}>
+            <img className={style.tech_img} src={tech.icon} alt={tech.name} />
+          </motion.abbr>
+        ))}
       </div>
     </>
   );
