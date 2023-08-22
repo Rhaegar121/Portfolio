@@ -31,7 +31,14 @@ const TechStack = () => {
       </motion.div>
       <div className={style.tech_container}>
         {technologies.filter((technology) => technology.stack.includes(stack)).map((tech, index) => (
-          <motion.abbr initial="hidden" animate="show" variants={fadeIn('up', '', index * 0.15, 0.5)} title={tech.name} key={tech.name} className={style.tech}>
+          <motion.abbr
+            initial="hidden"
+            whileInView="show"
+            variants={fadeIn('up', '', index * 0.15, 0.5)}
+            title={tech.name}
+            key={tech.name}
+            className={style.tech}
+          >
             <img className={style.tech_img} src={tech.icon} alt={tech.name} />
           </motion.abbr>
         ))}
