@@ -31,6 +31,7 @@
   flex-direction: column;
   width: 90%;
   margin: 40px auto;
+  padding: 30px 0 50px 0;
   gap: 40px;
   overflow: hidden;
 }
@@ -40,8 +41,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 4px;
-  background-color: var(--grey);
+  border-radius: 10px;
+  background-color: var(--dark-blue);
 }
 
 .form {
@@ -50,14 +51,14 @@
   align-content: center;
   align-items: flex-end;
   gap: 12px;
-  padding: 0 30px;
+  padding: 30px;
 }
 
 .form_title {
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--dark-blue);
   align-self: flex-start;
+  color: var(--light-blue);
 }
 
 .input {
@@ -67,14 +68,14 @@
   outline: none;
   font-size: 0.85rem;
   font-weight: 300;
-  color: var(--dark-blue);
+  color: var(--grey);
   background-color: transparent;
-  border: 1px solid var(--dark-blue);
+  border: 1px solid var(--light-blue);
   border-radius: 4px;
 }
 
 .input::placeholder {
-  color: var(--dark-blue);
+  color: var(--light-blue);
 }
 
 .textarea {
@@ -82,8 +83,8 @@
 }
 
 .btn_container {
-  color: var(--white);
-  background-color: var(--dark-blue);
+  color: var(--dark-blue);
+  background-color: var(--light-blue);
   padding: 12px 18px;
   border-radius: 4px;
   margin-top: 3px;
@@ -112,6 +113,7 @@
 .btn_container:focus {
   color: var(--cyan);
   border-color: var(--cyan);
+  background-color: var(--dark-blue);
   box-shadow: 0 0 8px var(--cyan);
   text-shadow: 0 0 8px var(--cyan);
 }
@@ -132,33 +134,18 @@
   display: none;
 }
 
-.mapContainer {
+.img_container {
   width: 100%;
   height: 352.6px;
   border-radius: 4px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
-.info {
-  position: absolute;
-  top: 56.5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 6px 8px;
-  border-radius: 3px;
-  color: var(--white);
-  background-color: var(--dark-blue);
-  z-index: 999;
-}
-
-.info p {
-  font-size: 0.7rem;
-}
-
-.info p:first-child {
-  font-size: 0.75rem;
-  font-weight: 500;
+.img {
+  transform: translateY(40px);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 @media screen and (min-width: 768px) {
@@ -186,8 +173,8 @@
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1010px;
-    gap: 60px;
+    width: 950px;
+    gap: 40px;
   }
 
   .form {
@@ -211,7 +198,7 @@
     font-size: 1rem;
   }
 
-  .mapContainer {
-    height: 420px;
+  .img_container {
+    height: 400px;
   }
 }

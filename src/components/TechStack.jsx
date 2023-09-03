@@ -39,7 +39,7 @@ const TechStack = () => {
             key={tech.name}
             className={style.tech}
           >
-            <img className={style.tech_img} src={tech.icon} alt={tech.name} />
+            <img className={style.tech_img} src={tech.icon} alt={tech.name} loading="lazy" />
           </motion.abbr>
         ))}
       </div>

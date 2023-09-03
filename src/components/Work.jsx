@@ -34,7 +34,7 @@ const Work = () => {
             index={index}
             className={style.card}
           >
-            <img className={style.img} src={project.img} alt="project sample" />
+            <img className={style.img} src={project.img} alt="project sample" loading="lazy" />
             <div className={style.card_overlay}>
               <div className={style.card_text}>
                 <div className={style.text}>
