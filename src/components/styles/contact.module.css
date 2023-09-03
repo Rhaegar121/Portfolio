@@ -35,49 +35,62 @@
   overflow: hidden;
 }
 
-.form {
+.form_container {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 4px;
+  background-color: var(--grey);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   align-items: flex-end;
-  gap: 10px;
-  padding: 3px;
+  gap: 12px;
+  padding: 0 30px;
+}
+
+.form_title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--dark-blue);
+  align-self: flex-start;
 }
 
 .input {
   width: 100%;
-  height: 45px;
+  height: 40px;
   padding: 8px 12px;
   outline: none;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 300;
-  color: var(--cyan);
-  background-color: var(--dark-blue);
-  border: 1px solid var(--white);
-  border-radius: 3px;
+  color: var(--dark-blue);
+  background-color: transparent;
+  border: 1px solid var(--dark-blue);
+  border-radius: 4px;
 }
 
 .input::placeholder {
-  color: var(--white);
-}
-
-.input:focus {
-  border-color: var(--cyan);
-  box-shadow: 0 0 6px var(--cyan);
-  text-shadow: 0 0 8px var(--cyan);
+  color: var(--dark-blue);
 }
 
 .textarea {
-  height: 180px;
+  height: 90px;
 }
 
 .btn_container {
   color: var(--white);
-  border: 1.5px solid var(--white);
-  padding: 12px 14px;
+  background-color: var(--dark-blue);
+  padding: 12px 18px;
+  border-radius: 4px;
   margin-top: 3px;
   transition: 0.2s;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: capitalize;
   position: relative;
   overflow: hidden;
 }
@@ -90,7 +103,7 @@
 .btn_hover {
   position: absolute;
   top: 12px;
-  left: 14px;
+  left: 18px;
   opacity: 0;
   transform: translate(0, -100%);
 }
@@ -122,11 +135,9 @@
 .mapContainer {
   width: 100%;
   height: 352.6px;
+  border-radius: 4px;
   margin: 0 auto;
   overflow: hidden;
-  border-radius: 3px;
-  border: 2px solid var(--white);
-  background-color: var(--dark-blue);
 }
 
 .info {
@@ -166,10 +177,26 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .container {
     flex-direction: row;
     width: 850px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1010px;
+    gap: 60px;
+  }
+
+  .form {
+    gap: 20px;
+    padding: 0 45px;
+  }
+
+  .form_title {
+    font-size: 1.3rem;
   }
 
   .title {
@@ -178,5 +205,13 @@
 
   .title::after {
     width: 80px;
+  }
+
+  .btn_container {
+    font-size: 1rem;
+  }
+
+  .mapContainer {
+    height: 420px;
   }
 }
