@@ -30,7 +30,7 @@
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin: 40px auto;
+  margin: 40px auto 60px auto;
   gap: 40px;
   overflow: hidden;
 }
@@ -41,6 +41,7 @@
   flex-direction: column;
   justify-content: center;
   border-radius: 4px;
+  color: var(--dark-blue);
   background-color: var(--grey);
 }
 
@@ -50,13 +51,12 @@
   align-content: center;
   align-items: flex-end;
   gap: 12px;
-  padding: 0 30px;
+  padding: 30px;
 }
 
 .form_title {
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--dark-blue);
   align-self: flex-start;
 }
 
@@ -67,7 +67,6 @@
   outline: none;
   font-size: 0.85rem;
   font-weight: 300;
-  color: var(--dark-blue);
   background-color: transparent;
   border: 1px solid var(--dark-blue);
   border-radius: 4px;
@@ -132,33 +131,17 @@
   display: none;
 }
 
-.mapContainer {
+.img_container {
   width: 100%;
   height: 352.6px;
   border-radius: 4px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
-.info {
-  position: absolute;
-  top: 56.5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 6px 8px;
-  border-radius: 3px;
-  color: var(--white);
-  background-color: var(--dark-blue);
-  z-index: 999;
-}
-
-.info p {
-  font-size: 0.7rem;
-}
-
-.info p:first-child {
-  font-size: 0.75rem;
-  font-weight: 500;
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 @media screen and (min-width: 768px) {
@@ -211,7 +194,7 @@
     font-size: 1rem;
   }
 
-  .mapContainer {
+  .img_container {
     height: 420px;
   }
 }
