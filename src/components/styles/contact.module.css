@@ -31,7 +31,7 @@
   flex-direction: column;
   width: 90%;
   margin: 40px auto;
-  padding-bottom: 50px;
+  padding: 30px 0 50px 0;
   gap: 40px;
   overflow: hidden;
 }
@@ -41,8 +41,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 8px;
-  background-color: var(--light-blue);
+  border-radius: 10px;
+  background-color: var(--dark-blue);
 }
 
 .form {
@@ -58,7 +58,7 @@
   font-size: 1.2rem;
   font-weight: 500;
   align-self: flex-start;
-  color: var(--white);
+  color: var(--light-blue);
 }
 
 .input {
@@ -70,12 +70,12 @@
   font-weight: 300;
   color: var(--grey);
   background-color: transparent;
-  border: 1px solid var(--grey);
+  border: 1px solid var(--light-blue);
   border-radius: 4px;
 }
 
 .input::placeholder {
-  color: var(--grey);
+  color: var(--light-blue);
 }
 
 .textarea {
@@ -83,8 +83,8 @@
 }
 
 .btn_container {
-  color: var(--white);
-  background-color: var(--dark-blue);
+  color: var(--dark-blue);
+  background-color: var(--light-blue);
   padding: 12px 18px;
   border-radius: 4px;
   margin-top: 3px;
@@ -113,6 +113,7 @@
 .btn_container:focus {
   color: var(--cyan);
   border-color: var(--cyan);
+  background-color: var(--dark-blue);
   box-shadow: 0 0 8px var(--cyan);
   text-shadow: 0 0 8px var(--cyan);
 }
