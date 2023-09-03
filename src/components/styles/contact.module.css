@@ -30,7 +30,8 @@
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin: 40px auto 60px auto;
+  margin: 40px auto;
+  padding-bottom: 50px;
   gap: 40px;
   overflow: hidden;
 }
@@ -40,9 +41,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 4px;
-  color: var(--dark-blue);
-  background-color: var(--grey);
+  border-radius: 8px;
+  background-color: var(--light-blue);
 }
 
 .form {
@@ -58,6 +58,7 @@
   font-size: 1.2rem;
   font-weight: 500;
   align-self: flex-start;
+  color: var(--white);
 }
 
 .input {
@@ -67,13 +68,14 @@
   outline: none;
   font-size: 0.85rem;
   font-weight: 300;
+  color: var(--grey);
   background-color: transparent;
-  border: 1px solid var(--dark-blue);
+  border: 1px solid var(--grey);
   border-radius: 4px;
 }
 
 .input::placeholder {
-  color: var(--dark-blue);
+  color: var(--grey);
 }
 
 .textarea {
@@ -139,6 +141,7 @@
 }
 
 .img {
+  transform: translateY(40px);
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -169,8 +172,8 @@
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1010px;
-    gap: 60px;
+    width: 950px;
+    gap: 40px;
   }
 
   .form {
@@ -195,6 +198,6 @@
   }
 
   .img_container {
-    height: 420px;
+    height: 400px;
   }
 }
