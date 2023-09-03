@@ -72,6 +72,7 @@ const Contact = () => {
           method="post"
           className={style.form}
         >
+          <h4 className={style.form_title}>Contact Me</h4>
           <input
             type="text"
             placeholder="Name"
@@ -94,7 +95,7 @@ const Contact = () => {
           <textarea
             cols="30"
             rows="10"
-            placeholder="Say something"
+            placeholder="Your message"
             required
             maxLength="500"
             name="message"

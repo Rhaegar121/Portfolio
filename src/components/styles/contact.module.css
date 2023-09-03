@@ -41,25 +41,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  gap: 10px;
-  padding: 3px;
+  gap: 15px;
+  padding: 30px;
+  background-color: var(--grey);
+  border-radius: 4px;
+}
+
+.form_title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--dark-blue);
+  align-self: flex-start;
 }
 
 .input {
   width: 100%;
-  height: 45px;
+  height: 40px;
   padding: 8px 12px;
   outline: none;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 300;
   color: var(--cyan);
-  background-color: var(--dark-blue);
-  border: 1px solid var(--white);
-  border-radius: 3px;
+  background-color: transparent;
+  border: 1px solid var(--dark-blue);
+  border-radius: 4px;
 }
 
 .input::placeholder {
-  color: var(--white);
+  color: var(--dark-blue);
 }
 
 .input:focus {
@@ -69,15 +78,19 @@
 }
 
 .textarea {
-  height: 180px;
+  height: 90px;
 }
 
 .btn_container {
   color: var(--white);
-  border: 1.5px solid var(--white);
-  padding: 12px 14px;
+  background-color: var(--dark-blue);
+  padding: 12px 18px;
+  border-radius: 4px;
   margin-top: 3px;
   transition: 0.2s;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: capitalize;
   position: relative;
   overflow: hidden;
 }
@@ -90,7 +103,7 @@
 .btn_hover {
   position: absolute;
   top: 12px;
-  left: 14px;
+  left: 18px;
   opacity: 0;
   transform: translate(0, -100%);
 }
@@ -122,11 +135,9 @@
 .mapContainer {
   width: 100%;
   height: 352.6px;
+  border-radius: 4px;
   margin: 0 auto;
   overflow: hidden;
-  /* border-radius: 3px; */
-  /* border: 2px solid var(--white); */
-  /* background-color: var(--dark-blue); */
 }
 
 .info {
