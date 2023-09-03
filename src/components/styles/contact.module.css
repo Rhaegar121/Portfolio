@@ -124,9 +124,9 @@
   height: 352.6px;
   margin: 0 auto;
   overflow: hidden;
-  border-radius: 3px;
-  border: 2px solid var(--white);
-  background-color: var(--dark-blue);
+  /* border-radius: 3px; */
+  /* border: 2px solid var(--white); */
+  /* background-color: var(--dark-blue); */
 }
 
 .info {

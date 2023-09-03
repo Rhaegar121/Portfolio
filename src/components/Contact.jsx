@@ -110,7 +110,7 @@ const Contact = () => {
         <motion.div variants={slideIn('right', '', 0, 1)} className={style.mapContainer}>
           <MapContainer center={[16.799355, 96.154826]} zoom={13} scrollWheelZoom={false}>
             <TileLayer
-              url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner-background/{z}/{x}/{y}{r}.png"
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               attribution="© OpenStreetMap contributors"
             />
             <Marker position={[16.799355, 96.154826]} icon={customIcon}>
