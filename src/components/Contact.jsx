@@ -70,43 +70,45 @@ const Contact = () => {
           onSubmit={handleSubmit}
           action="https://formspree.io/f/mgeqgkdd"
           method="post"
-          className={style.form}
+          className={style.form_container}
         >
-          <h4 className={style.form_title}>Contact Me</h4>
-          <input
-            type="text"
-            placeholder="Name"
-            required
-            maxLength="30"
-            name="name"
-            value={form.name}
-            onChange={handleChange}
-            className={style.input}
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            required
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-            className={style.input}
-          />
-          <textarea
-            cols="30"
-            rows="10"
-            placeholder="Your message"
-            required
-            maxLength="500"
-            name="message"
-            value={form.message}
-            onChange={handleChange}
-            className={`${style.input} ${style.textarea}`}
-          />
-          <button type="submit" className={style.btn_container}>
-            <span className={style.btn_hover}>Get in touch</span>
-            <span className={style.btn}>Get in touch</span>
-          </button>
+          <div className={style.form}>
+            <h4 className={style.form_title}>Contact Me</h4>
+            <input
+              type="text"
+              placeholder="Name"
+              required
+              maxLength="30"
+              name="name"
+              value={form.name}
+              onChange={handleChange}
+              className={style.input}
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              required
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+              className={style.input}
+            />
+            <textarea
+              cols="30"
+              rows="10"
+              placeholder="Your message"
+              required
+              maxLength="500"
+              name="message"
+              value={form.message}
+              onChange={handleChange}
+              className={`${style.input} ${style.textarea}`}
+            />
+            <button type="submit" className={style.btn_container}>
+              <span className={style.btn_hover}>Get in touch</span>
+              <span className={style.btn}>Get in touch</span>
+            </button>
+          </div>
         </motion.form>
         <motion.div variants={slideIn('right', '', 0, 1)} className={style.mapContainer}>
           <MapContainer center={[16.799355, 96.154826]} zoom={13} scrollWheelZoom={false}>
