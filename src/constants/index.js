@@ -132,7 +132,7 @@ const projects = [
   {
     id: 1,
     name: 'Car Rental App',
-    desc: 'The Car Rental App is a full-stack app we built using React as Front-end and Ruby on Rails as the Back-end API with custom authentication. The users can see a list of cars to rent and add to their favorites. The users can also add a car to the list and delete a car from the list.',
+    desc: 'The Car Rental App is a comprehensive full-stack application where you can seamlessly explore an array of cars, search by name, delve into comprehensive car details, make reservations when logged in, manage reservations, add or delete cars in the database, and personalize your profile with ease.',
     tech: ['React', 'Redux', 'Ruby on Rails', 'PostgreSQL'],
     img: carrental,
     carousel: [carrental1, carrental2, carrental3],
