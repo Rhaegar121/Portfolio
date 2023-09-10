@@ -137,7 +137,7 @@ const projects = [
     img: carrental,
     carousel: [carrental3, carrental4, carrental6],
     source_link: 'https://github.com/Rhaegar121/Car-Rental-front-end',
-    live_link: 'https://car-rental-capstone.netlify.app/',
+    live_link: 'https://car-rental121.netlify.app/',
   },
   {
     id: 2,
