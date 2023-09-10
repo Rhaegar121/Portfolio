@@ -1,5 +1,5 @@
 import {
-  facebook, linkedin, instagram, twitter, github, facebook1, linkedin1, instagram1, twitter1, github1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp3, recipeapp4, recipeapp6, trackbuget1, trackbuget2, trackbuget5, carrental3, carrental4, carrental6, responsive, react, fullstack,
+  facebook, linkedin, instagram, twitter, github, facebook1, linkedin1, instagram1, twitter1, github1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp3, recipeapp4, recipeapp6, trackbuget1, trackbuget2, trackbuget5, carrental1, carrental2, carrental3, responsive, react, fullstack,
 } from '../assets';
 
 const social = [
@@ -132,10 +132,10 @@ const projects = [
   {
     id: 1,
     name: 'Car Rental App',
-    desc: 'The Car Rental App is a full-stack app we built using React as Front-end and Ruby on Rails as the Back-end API with custom authentication. The users can see a list of cars to rent and add to their favorites. The users can also add a car to the list and delete a car from the list.',
+    desc: 'The Car Rental App is a comprehensive full-stack application where you can seamlessly explore an array of cars, search by name, delve into comprehensive car details, make reservations when logged in, manage reservations, add or delete cars in the database, and personalize your profile with ease.',
     tech: ['React', 'Redux', 'Ruby on Rails', 'PostgreSQL'],
     img: carrental,
-    carousel: [carrental3, carrental4, carrental6],
+    carousel: [carrental1, carrental2, carrental3],
     source_link: 'https://github.com/Rhaegar121/Car-Rental-front-end',
     live_link: 'https://car-rental121.netlify.app/',
   },
