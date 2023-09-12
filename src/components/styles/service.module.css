@@ -197,27 +197,12 @@
   }
 
   .card_container {
-    display: flex;
-    flex-direction: row;
-    padding: 50px 30px;
-    gap: 25px;
-  }
-
-  .tilt {
-    width: 325px;
+    width: 970px;
+    gap: 40px;
   }
 
   .card {
-    padding: 20px 17px;
-    gap: 5px;
-    height: 252px;
-  }
-
-  .img_container {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-    align-items: flex-start;
+    height: 320px;
   }
 
   .name {
@@ -232,21 +217,15 @@
   }
 
   .card_container {
-    gap: 40px;
+    width: 1062px;
   }
 
   .card {
-    height: 270px;
-    padding: 20px;
+    height: 330px;
     gap: 10px;
   }
 
   .name {
     font-size: 0.9rem;
-  }
-
-  .text {
-    text-align: center;
-    font-size: 0.75rem;
   }
 }
