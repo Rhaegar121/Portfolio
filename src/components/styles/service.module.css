@@ -34,7 +34,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 70px;
+  gap: 40px;
   padding: 50px 0;
 }
 
@@ -70,7 +70,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0px;
   opacity: 1;
   transform: scale(1);
 }
@@ -116,13 +115,14 @@
     font-size: 1.9rem;
   }
 
-  .tilt {
-    width: 300px;
+  .card {
+    height: 360px;
+    gap: 5px;
   }
 
-  .card {
-    padding: 20px 25px;
-    gap: 10px;
+  .img_container {
+    width: 150px;
+    height: 150px;
   }
 
   .name {
