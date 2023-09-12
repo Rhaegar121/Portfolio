@@ -149,7 +149,6 @@
 
   .card {
     height: 320px;
-    gap: 5px;
   }
 
   .img_container {
@@ -160,27 +159,31 @@
   .name {
     font-size: 1rem;
   }
-
-  .text {
-    padding: 0 5px;
-  }
 }
 
 @media screen and (min-width: 1024px) {
   .card_container {
-    gap: 60px;
+    width: 830px;
+    padding: 50px 0;
+    flex-wrap: nowrap;
+    gap: 20px;
   }
 
   .tilt {
-    width: 285px;
+    width: 32%;
+  }
+
+  .card {
+    height: 300px;
   }
 
   .img_container {
-    align-items: flex-end;
+    width: 110px;
+    height: 110px;
   }
 
-  .text {
-    padding: 0;
+  .name {
+    font-size: 0.8rem;
   }
 }
 
