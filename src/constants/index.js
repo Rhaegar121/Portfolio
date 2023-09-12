@@ -277,25 +277,19 @@ const services = [
     id: 1,
     icon: responsive,
     title: 'Responsive Design',
-    text: 'Enhancing user engagement through fluid and adaptable designs that seamlessly transition across devices and screen sizes.',
+    text: 'I specialize in creating websites that are not just visually stunning but also highly adaptable. My responsive designs ensure that your site looks and works perfectly on any device, providing an exceptional user experience regardless of screen size.',
   },
   {
     id: 2,
     icon: react,
     title: 'Front-end Development',
-    text: 'Crafting captivating interfaces with cutting-edge technologies to ensure dynamic and user-friendly web experiences.',
+    text: 'I breathe life into your creative ideas by translating them into captivating web interfaces. Using the latest frontend technologies and best practices, I build engaging, user-friendly websites that leave a lasting impression.',
   },
   {
     id: 3,
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain.svg',
-    title: 'Back-end Development',
-    text: 'Building the engine behind your applications, enabling robust functionality, and efficient data management.',
-  },
-  {
-    id: 4,
     icon: fullstack,
-    title: 'Full-stack Development',
-    text: 'From pixel to database, I create holistic solutions that harmonize frontend finesse with backend power.',
+    title: 'Back-end Development',
+    text: 'My backend development expertise forms the backbone of your web application. I design and build robust, efficient, and secure server-side solutions that handle data management and business logic seamlessly, ensuring your website functions flawlessly.',
   },
 ];
 
