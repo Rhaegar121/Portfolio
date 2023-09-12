@@ -136,17 +136,29 @@
   }
 
   .card_container {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 50px;
+    width: 100%;
+    padding: 50px 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 
   .tilt {
-    width: 260px;
+    width: 47%;
+  }
+
+  .card {
+    height: 320px;
+    gap: 5px;
+  }
+
+  .img_container {
+    width: 120px;
+    height: 120px;
   }
 
   .name {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .text {
