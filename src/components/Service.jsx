@@ -21,12 +21,15 @@ const Service = () => (
                 variants={fadeIn('right', 'tween', index * 0.8, 0.5)}
                 className={style.card_shadow}
             >
+                <div className={style.card_overlay}>
+                  <p className={style.text}>{service.text}</p>
+                </div>
                 <div className={style.card}>
                     <div className={style.img_container}>
                       <img className={`${style.img} ${index === 2 ? 'w-28 h-28 lg:w-24 lg:h-24 lg:mb-4 xl:w-[5.5rem] xl:h-[5.5rem] xl:mb-4 xl:mt-4' : ''}`} src={service.icon} alt={service.title} loading="lazy" />
                     </div>
                     <p className={style.name}>{service.title}</p>
-                    <p className={style.text}>{service.text}</p>
+                    {/* <p className={style.text}>{service.text}</p> */}
                 </div>
             </motion.div>
           </Tilt>
