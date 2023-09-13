@@ -40,12 +40,13 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> ReactJS, ThreeJS, TailwindCSS, Framer-motion
-
 <details>
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://threejs.org/">Three.js</a></li>
+    <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
+    <li><a href="https://www.framer.com/motion/">Framer Motion</a></li>
   </ul>
 </details>
 
