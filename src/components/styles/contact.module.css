@@ -173,8 +173,13 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .title {
+    margin: 80px 0 40px 0;
+  }
+
   .container {
     width: 950px;
+    padding: 53px 0 50px 0;
     gap: 40px;
   }
 
