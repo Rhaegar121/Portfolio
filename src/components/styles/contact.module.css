@@ -116,7 +116,6 @@
   border-color: var(--cyan);
   background-color: var(--dark-blue);
   box-shadow: 0 0 8px var(--cyan);
-  text-shadow: 0 0 8px var(--cyan);
 }
 
 .btn_container:hover .btn,

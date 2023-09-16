@@ -24,7 +24,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--navy);
-  box-shadow: 0 1px 3px #000311;
+  box-shadow: 0 1px 3px var(--dark-blue);
   z-index: 3;
 }
 
@@ -51,13 +51,17 @@
   color: var(--grey);
 }
 
+.active {
+  color: var(--cyan);
+  position: relative;
+}
+
 .font {
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .font:hover {
   color: var(--cyan);
-  text-shadow: 0 0 8px var(--cyan);
 }
 
 .resume_container {
@@ -87,7 +91,6 @@
   color: var(--cyan);
   border-color: var(--cyan);
   box-shadow: 0 0 8px var(--cyan);
-  text-shadow: 0 0 8px var(--cyan);
 }
 
 .resume_container:hover .resume,
@@ -116,6 +119,7 @@
   transition: height 0.3s ease-out;
   width: 100%;
   z-index: 1;
+  color: var(--grey);
   background-color: var(--dark-blue);
 }
 
@@ -129,11 +133,6 @@
   padding: 10px 14px;
   text-transform: uppercase;
   font-size: 1.3rem;
-}
-
-.mobile_active {
-  color: var(--cyan);
-  position: relative;
 }
 
 .mobile_active::before {
