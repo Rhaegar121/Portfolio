@@ -10,7 +10,7 @@
 }
 
 .container {
-  background-color: var(--light-grey);
+  background-color: var(--light-blue);
   width: 90%;
   margin: 0 auto;
   position: relative;
@@ -23,7 +23,7 @@
   padding: 7px;
   z-index: 9;
   color: #fff;
-  background-color: #1b243fd5;
+  background-color: #26517dcf;
   font-size: 1.8rem;
 }
 
