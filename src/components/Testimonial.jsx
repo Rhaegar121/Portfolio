@@ -69,38 +69,34 @@ const Testimonial = () => {
               animate="show"
               variants={fadeIn('', '', 0.15, 1)}
               key={testimonial.id}
-              className={style.card_shadow}
+              className={style.card}
             >
-              <div
-                className={style.card}
-              >
-                <div className={style.header}>
-                  <motion.div variants={textVariant()}><FaQuoteLeft className={style.openquote} /></motion.div>
-                  <img className={style.img} src={testimonial.image} alt="profile" />
-                </div>
-                <p className={style.para}>{testimonial.text}</p>
-                <div className={`${style.label} ${style.firstlabel}`}>
-                  <motion.p variants={slideIn('left', '', 0.3, 0.75)} className={style.name}>
-                    {testimonial.name}
-                    {' '}
-                    <span className={style.country}>
-                      (
-                      {testimonial.country}
-                      )
-                    </span>
-                  </motion.p>
-                  <motion.abbr variants={slideIn('right', '', 0.3, 0.75)} title="LinkedIn Profile">
-                    <a
-                      href={testimonial.linkedIn}
-                      target="_blank"
-                      className={style.icon}
-                      rel="noreferrer"
-                      aria-label="LinkedIn Profile"
-                    >
-                      <FaLinkedinIn />
-                    </a>
-                  </motion.abbr>
-                </div>
+              <div className={style.header}>
+                <motion.div variants={textVariant()}><FaQuoteLeft className={style.openquote} /></motion.div>
+                <img className={style.img} src={testimonial.image} alt="profile" />
+              </div>
+              <motion.p variants={fadeIn('', '', 0.15, 1)} className={style.para}>{testimonial.text}</motion.p>
+              <div className={`${style.label} ${style.firstlabel}`}>
+                <motion.p variants={slideIn('left', '', 0.3, 0.75)} className={style.name}>
+                  {testimonial.name}
+                  {' '}
+                  <span className={style.country}>
+                    (
+                    {testimonial.country}
+                    )
+                  </span>
+                </motion.p>
+                <motion.abbr variants={slideIn('right', '', 0.3, 0.75)} title="LinkedIn Profile">
+                  <a
+                    href={testimonial.linkedIn}
+                    target="_blank"
+                    className={style.icon}
+                    rel="noreferrer"
+                    aria-label="LinkedIn Profile"
+                  >
+                    <FaLinkedinIn />
+                  </a>
+                </motion.abbr>
               </div>
             </motion.div>
           ))}
