@@ -24,6 +24,16 @@
   border-radius: 8px;
 }
 
+/* :root {
+  --navy: #fff;
+  --cyan: #22abfa;
+  --white: #020716;
+  --grey: #030b25;
+  --light-grey: #b1bcdc;
+  --light-blue: #26517d;
+  --dark-blue: #dfe7f3;
+} */
+
 :root {
   --navy: #030b25;
   --cyan: #22abfa;
@@ -32,6 +42,10 @@
   --light-grey: #1b243f;
   --light-blue: #26517d;
   --dark-blue: #020716;
+}
+
+.body {
+  background-color: var(--navy);
 }
 
 .green-pink-gradient {

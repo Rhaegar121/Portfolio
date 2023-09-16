@@ -70,9 +70,9 @@
   gap: 40px;
 }
 
-.card:hover .card_text {
+/* .card:hover .card_text {
   animation: fade-in 0.3s ease-in-out;
-}
+} */
 
 @keyframes fade-in {
   0% {

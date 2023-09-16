@@ -17,7 +17,7 @@ function App() {
         <Home />
         <StarsCanvas />
       </div>
-      <div className="relative z-0 bg-navy">
+      <div className="relative z-0 body">
         <Navbar />
         <About />
         <TechStack />
