@@ -51,7 +51,7 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <li
               key={link.id}
-              className={active === link.name ? 'text-cyan' : 'text-grey'}
+              className={active === link.name ? `${style.active}` : null}
             >
               <a
                 href={link.url}
@@ -102,7 +102,7 @@ const Navbar = () => {
           {navLinks.map((link, index) => (
             <li
               key={link.id}
-              className={`${active === link.name ? style.mobile_active : 'text-grey'} ${index === 0 ? 'mt-32' : ''}`}
+              className={`${active === link.name ? style.active : null} ${index === 0 ? 'mt-32' : ''}`}
             >
               <motion.a
                 href={link.url}

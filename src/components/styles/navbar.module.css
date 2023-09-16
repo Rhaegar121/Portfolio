@@ -48,7 +48,12 @@
   display: none;
   align-items: center;
   gap: 30px;
-  color: var(--white);
+  color: var(--grey);
+}
+
+.active {
+  color: var(--cyan);
+  position: relative;
 }
 
 .font {
@@ -114,6 +119,7 @@
   transition: height 0.3s ease-out;
   width: 100%;
   z-index: 1;
+  color: var(--grey);
   background-color: var(--dark-blue);
 }
 
@@ -127,11 +133,6 @@
   padding: 10px 14px;
   text-transform: uppercase;
   font-size: 1.3rem;
-}
-
-.mobile_active {
-  color: var(--cyan);
-  position: relative;
 }
 
 .mobile_active::before {
