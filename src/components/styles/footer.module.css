@@ -128,7 +128,7 @@
 
 .a {
   font-size: 0.75rem;
-  color: var(--white);
+  color: #dfe7f3;
   font-family: 'Montserrat Alternates', sans-serif;
   position: relative;
   padding-bottom: 1.8px;
@@ -142,7 +142,7 @@
   display: inline-block;
   left: 50%;
   bottom: 0;
-  background-color: var(--grey);
+  background-color: #b1bcdc;
   transition: 0.3s;
 }
 
@@ -154,7 +154,7 @@
   display: inline-block;
   right: 50%;
   bottom: 0;
-  background-color: var(--grey);
+  background-color: #b1bcdc;
   transition: 0.3s;
 }
 
