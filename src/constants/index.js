@@ -242,7 +242,7 @@ const testimonials = [
     id: 3,
     name: 'Muhammad Talha Hanif',
     image: 'https://media.licdn.com/dms/image/D4D03AQF6A-cET7akGQ/profile-displayphoto-shrink_100_100/0/1687861229792?e=1695254400&v=beta&t=-7YBiGiJ8f5uaSE8G3qq0UuojrTJveVznlSub3lAOR4',
-    text: "One of Barry's greatest strengths is his impressive technical expertise. He possesses a deep understanding of the latest technologies and trends in his field, allowing him to tackle complex challenges with ease.",
+    text: 'He possesses a deep understanding of the latest technologies and trends in his field, allowing him to tackle complex challenges with ease.',
     country: 'Pakistan',
     linkedIn: 'https://www.linkedin.com/in/muhammad-talha-hanif/',
   },
@@ -267,7 +267,7 @@ const testimonials = [
     name: 'Marko Kermichiev',
     image: 'https://avatars.githubusercontent.com/u/112749658?v=4',
     text: 'I learned too much from you and I can say that you are fantastic developer. Working with you is always a pleasure, hope that we can work on some project asap.',
-    country: 'North Macedonia',
+    country: 'Macedonia',
     linkedIn: 'https://www.linkedin.com/in/marko-kermichiev/',
   },
 ];

@@ -79,15 +79,11 @@
   padding: 50px 0 20px 0;
 }
 
-.card_shadow {
-  width: 92%;
-  border-radius: 60px 10px;
-}
-
 .card {
+  width: 92%;
   background-color: var(--dark-blue);
-  padding: 25px;
-  border-radius: 60px 10px;
+  padding: 50px 40px;
+  overflow: hidden;
 }
 
 .header {
@@ -102,16 +98,17 @@
   height: 45px;
   object-fit: cover;
   border-radius: 50%;
+  transform: translateY(6px);
 }
 
 .openquote {
   margin: 15px 0 25px 0;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: var(--cyan);
 }
 
 .para {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: var(--white);
   padding-bottom: 15px;
@@ -120,30 +117,27 @@
 .label {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 15px;
 }
 
 .name {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: var(--white);
 }
 
 .country {
-  font-size: 0.8rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 0.75rem;
   color: var(--cyan);
-
-  /* color: var(--light-blue); */
 }
 
 .icon {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding-bottom: 2px;
   position: relative;
   color: var(--cyan);
-
-  /* color: var(--light-blue); */
 }
 
 .icon::after {
@@ -166,52 +160,6 @@
   width: 100%;
 }
 
-.a {
-  font-size: 0.9rem;
-  font-weight: 300;
-  text-transform: capitalize;
-  color: var(--white);
-  font-family: 'Montserrat Alternates', sans-serif;
-  position: relative;
-  padding-bottom: 1.8px;
-}
-
-.a::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 1px;
-  display: inline-block;
-  left: 50%;
-  bottom: 0;
-  background-color: var(--white);
-  transition: 0.3s;
-}
-
-.a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 1px;
-  display: inline-block;
-  right: 50%;
-  bottom: 0;
-  background-color: var(--white);
-  transition: 0.3s;
-}
-
-.a:hover::after {
-  width: 50%;
-}
-
-.a:hover::before {
-  width: 50%;
-}
-
-.a:active {
-  color: var(--cyan);
-}
-
 @media screen and (min-width: 480px) {
   .title {
     font-size: 1.9rem;
@@ -221,7 +169,7 @@
     font-size: 1.8rem;
   }
 
-  .card_shadow {
+  .card {
     width: 370px;
   }
 }
@@ -273,13 +221,14 @@
     padding: 50px 35px;
   }
 
-  .header {
-    margin-bottom: 15px;
+  .card {
+    padding: 45px 35px;
   }
 
   .para {
-    font-size: 0.7rem;
-    height: 95px;
+    font-size: 0.83rem;
+    line-height: 1.15rem;
+    height: 100px;
   }
 
   .label {
@@ -310,19 +259,19 @@
   }
 
   .para {
-    font-size: 0.85rem;
-    height: 115px;
+    font-size: 0.88rem;
+    height: 110px;
   }
 
   .name {
-    font-size: 0.95rem;
-  }
-
-  .country {
     font-size: 0.85rem;
   }
 
+  .country {
+    font-size: 0.8rem;
+  }
+
   .icon {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
