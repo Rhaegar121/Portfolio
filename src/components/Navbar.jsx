@@ -40,7 +40,7 @@ const Navbar = () => {
           onClick={() => {
             window.scrollTo(0, 0);
           }}
-          whileHover={{ scale: 1.12, backgroundColor: '#020716', transition: { type: 'spring', damping: 20, stiffness: 300 } }}
+          whileHover={{ scale: 1.12, backgroundColor: 'var(--dark-blue)', transition: { type: 'spring', damping: 20, stiffness: 300 } }}
           className={style.logo_btn}
         >
           <img src={logo} alt="My logo" className={style.logo} />
