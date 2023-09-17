@@ -4,11 +4,14 @@ import {
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial, Preload } from '@react-three/drei';
 import * as random from 'maath/random/dist/maath-random.esm';
+import { useTheme } from '../ThemeContext';
 import Loader from './Loader';
 
 const Stars = (props) => {
   const ref = useRef();
   const [sphere] = useState(() => random.inSphere(new Float32Array(5200), { radius: 1.2 }));
+  const { theme } = useTheme();
+  const starColor = theme === 'dark' ? '#ffffff' : '#000000';
 
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10;
@@ -20,7 +23,7 @@ const Stars = (props) => {
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
-          color="#ffffff"
+          color={starColor}
           size={0.002}
           sizeAttenuation
           depthWrite={false}
@@ -51,7 +54,7 @@ const StarsCanvas = () => {
         style={{ width: '100vw', height: '100vh' }}
         pixelratio={window.devicePixelRatio}
         aspectratio={aspectRatio}
-        className="bg-dark_blue"
+        className="star-canvas"
       >
         <Suspense fallback={<Loader />}>
           <Stars />

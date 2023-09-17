@@ -15,19 +15,17 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  font-family: 'Bungee Outline', cursive;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-size: 0.75rem;
   letter-spacing: 0.1rem;
   line-height: 1.7rem;
-  color: #22abfacb;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: var(--white);
 }
 
 .name {
-  font-size: 1.3rem;
+  color: var(--cyan);
   font-family: 'Bungee', cursive;
-  color: var(--white);
+  font-size: 1.5rem;
 }
 
 .desc {
@@ -40,7 +38,6 @@
 }
 
 .btn_container {
-  font-family: 'Montserrat Alternates', sans-serif;
   font-size: 0.9rem;
   position: relative;
   overflow: hidden;
@@ -52,6 +49,7 @@
 
 .btn_hover,
 .btn {
+  font-family: 'Montserrat Alternates', sans-serif;
   transition: all 0.2s ease-out;
 }
 
@@ -102,10 +100,11 @@
   }
 
   .intro {
+    font-family: 'Bungee', cursive;
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 2rem;
   }
 
@@ -130,12 +129,12 @@
 
 @media screen and (min-width: 768px) {
   .intro {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 2.1rem;
   }
 
   .name {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   .desc {
@@ -153,13 +152,13 @@
 
 @media screen and (min-width: 1200px) {
   .intro {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     letter-spacing: 0.2rem;
     line-height: 2.4rem;
   }
 
   .name {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
   }
 
   .desc {
@@ -180,5 +179,17 @@
   .arrow {
     margin-left: 8px;
     font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .intro {
+    font-size: 2.1rem;
+    letter-spacing: 0.2rem;
+    line-height: 2.4rem;
+  }
+
+  .name {
+    font-size: 2.1rem;
   }
 }

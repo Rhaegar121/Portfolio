@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+// import { useTheme } from '../ThemeContext';
 import { fadeIn, staggerContainer } from '../utils/motion';
 import { logo } from '../assets';
 import { navLinks } from '../constants';
 import style from './styles/navbar.module.css';
 
 const Navbar = () => {
-  // const { scrollYProgress } = useScroll();
+  // const { theme, toggleTheme } = useTheme();
   const [active, setActive] = useState('');
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setOpen] = useState(false);
@@ -136,7 +137,6 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      {/* <motion.div className={style.progress_bar} style={{ scaleX: scrollYProgress }} /> */}
     </div>
   );
 };
