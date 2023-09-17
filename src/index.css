@@ -25,13 +25,14 @@
 }
 
 /* :root {
-  --navy: #fff;
+  --navy: #dfe7f3;
   --cyan: #22abfa;
   --white: #020716;
   --grey: #030b25;
-  --light-grey: #b1bcdc;
+  --dark-blue: #fff;
+  --light-grey: #dfe7f3;
   --light-blue: #26517d;
-  --dark-blue: #dfe7f3;
+  --low-opacity: #ffffffcd;
 } */
 
 :root {
@@ -42,6 +43,7 @@
   --light-grey: #1b243f;
   --light-blue: #26517d;
   --dark-blue: #020716;
+  --low-opacity: #000000cd;
 }
 
 .body {
@@ -113,7 +115,8 @@
   opacity: 1 !important;
   padding: 8px 10px 12px 10px;
   top: -36px !important;
-  background-color: #26517dcf;
+  color: var(--white);
+  background-color: var(--low-opacity);
 }
 
 .slick-prev::before {
@@ -135,12 +138,6 @@
     linear-gradient(155deg, var(--dark-blue) 23px, transparent 23px);
   background-size: 58px 58px;
   background-position: 0 2px, 4px 35px, 29px 31px, 34px 6px;
-}
-
-.leaflet-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
 }
 
 @media screen and (min-width: 768px) {

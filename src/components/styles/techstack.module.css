@@ -42,7 +42,7 @@
   width: 85px;
   height: 90px;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background-color: var(--white);
+  background-color: #dfe7f3;
   position: relative;
   transition: background-color 0.3s ease-out;
 }
@@ -112,7 +112,7 @@
 
   .tech:hover {
     cursor: pointer;
-    background-color: var(--white);
+    background-color: var(--navy);
   }
 
   .tech_img {
