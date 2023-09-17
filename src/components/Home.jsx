@@ -20,7 +20,7 @@ const Home = () => (
         </motion.span>
       </p>
       <p className={style.intro}>
-        But you can call me
+        You can call me
         {' '}
         <motion.span variants={fadeIn('', '', 0.3, 1)} className={style.name}>
           Barry
