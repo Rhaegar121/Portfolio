@@ -24,18 +24,7 @@
   border-radius: 8px;
 }
 
-/* :root {
-  --navy: #dfe7f3;
-  --cyan: #22abfa;
-  --white: #020716;
-  --grey: #030b25;
-  --dark-blue: #fff;
-  --light-grey: #dfe7f3;
-  --light-blue: #26517d;
-  --low-opacity: #ffffffcd;
-} */
-
-:root {
+.App {
   --navy: #030b25;
   --cyan: #22abfa;
   --white: #dfe7f3;
@@ -44,6 +33,17 @@
   --light-blue: #26517d;
   --dark-blue: #020716;
   --low-opacity: #000000cd;
+}
+
+.App.light {
+  --navy: #dfe7f3;
+  --cyan: #22abfa;
+  --white: #020716;
+  --grey: #030b25;
+  --dark-blue: #fff;
+  --light-grey: #dfe7f3;
+  --light-blue: #26517d;
+  --low-opacity: #ffffffcd;
 }
 
 .body {

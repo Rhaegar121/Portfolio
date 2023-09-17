@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom';
+import { ThemeProvider } from './ThemeContext';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
@@ -12,7 +12,7 @@ import StarsCanvas from './components/Stars';
 
 function App() {
   return (
-    <BrowserRouter>
+    <ThemeProvider>
       <div className="relative w-screen h-screen z-10">
         <Home />
         <StarsCanvas />
@@ -27,7 +27,7 @@ function App() {
         <div className="contact mb-80"><Contact /></div>
       </div>
       <Footer />
-    </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
