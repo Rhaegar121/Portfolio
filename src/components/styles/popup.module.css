@@ -10,7 +10,7 @@
 }
 
 .container {
-  background-color: var(--light-blue);
+  background-color: var(--dark-blue);
   width: 90%;
   margin: 0 auto;
   position: relative;
@@ -22,8 +22,8 @@
   top: 0;
   padding: 7px;
   z-index: 9;
-  color: #fff;
-  background-color: #26517dcf;
+  color: var(--white);
+  background-color: var(--low-opacity);
   font-size: 1.8rem;
 }
 
@@ -42,6 +42,7 @@
 .content {
   width: 90%;
   margin: 20px auto 0 auto;
+  color: var(--white);
 }
 
 .name {
