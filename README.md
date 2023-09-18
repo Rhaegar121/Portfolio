@@ -27,7 +27,8 @@
 # 📖 [Portfolio] <a name="about-project"></a>
 
 <div align="center">
-  <img src="src/assets/portfolio.png" alt="project sample" width="700"  height="auto" />
+  <img src="src/assets/portfolio1.png" alt="project sample" width="700"  height="auto" />
+  <img src="src/assets/portfolio2.png" alt="project sample" width="700"  height="auto" />
   <br/>
 
   <h3><b>Portfolio</b></h3>
