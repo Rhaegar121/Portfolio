@@ -1,4 +1,6 @@
 import logo from './logo.png';
+import light from './light.png';
+import dark from './dark.png';
 
 // socials
 import facebook from './socials/facebook.png';
@@ -54,5 +56,5 @@ import react from './services/react.gif';
 import fullstack from './services/fullstack.gif';
 
 export {
-  logo, facebook, instagram, github, linkedin, twitter, facebook1, instagram1, github1, twitter1, linkedin1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp3, recipeapp4, recipeapp6, trackbuget1, trackbuget2, trackbuget5, carrental1, carrental2, carrental3, responsive, react, fullstack,
+  logo, light, dark, facebook, instagram, github, linkedin, twitter, facebook1, instagram1, github1, twitter1, linkedin1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp3, recipeapp4, recipeapp6, trackbuget1, trackbuget2, trackbuget5, carrental1, carrental2, carrental3, responsive, react, fullstack,
 };
