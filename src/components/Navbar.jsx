@@ -113,10 +113,24 @@ const Navbar = () => {
           viewport={{ once: true, amount: 0.25 }}
           className={`${style.mobilemenu} ${isOpen ? 'h-screen opacity-100' : 'h-0'}`}
         >
+          <li>
+            <button
+              type="button"
+              className={`${style.theme_btn} mt-[130px]`}
+              onClick={toggleTheme}
+            >
+              {theme === 'light' ? (
+                <img src={light} className={style.theme_img} alt="light theme" />
+              ) : (
+                <img src={dark} className={style.theme_img} alt="dark theme" />
+              )}
+            </button>
+          </li>
           {navLinks.map((link, index) => (
             <li
               key={link.id}
-              className={`${active === link.name ? style.active : null} ${index === 0 ? 'mt-32' : ''}`}
+              className={active === link.name ? style.active : null}
+              // className={`${active === link.name ? style.active : null} ${index === 0 ? 'mt-32' : ''}`}
             >
               <motion.a
                 href={link.url}

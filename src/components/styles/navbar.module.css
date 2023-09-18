@@ -122,9 +122,9 @@
   opacity: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   gap: 30px;
-  padding-left: 25px;
+  padding-right: 35px;
   overflow: hidden;
   transition: height 0.3s ease-out;
   width: 100%;
