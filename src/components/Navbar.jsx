@@ -44,7 +44,7 @@ const Navbar = () => {
           whileHover={{ scale: 1.12, backgroundColor: 'var(--dark-blue)', transition: { type: 'spring', damping: 20, stiffness: 300 } }}
           className={style.logo_btn}
         >
-          <img src={logo} alt="My logo" className={style.logo} />
+          <img src={logo} alt="My logo" className={style.logo} loading="lazy" />
         </motion.button>
 
         {/* desktop navlink */}
@@ -80,9 +80,9 @@ const Navbar = () => {
               onClick={toggleTheme}
             >
               {theme === 'light' ? (
-                <img src={light} className={style.theme_img} alt="light theme" />
+                <img src={light} className={style.theme_img} alt="light theme" loading="lazy" />
               ) : (
-                <img src={dark} className={style.theme_img} alt="dark theme" />
+                <img src={dark} className={style.theme_img} alt="dark theme" loading="lazy" />
               )}
             </button>
           </li>
@@ -120,9 +120,9 @@ const Navbar = () => {
               onClick={toggleTheme}
             >
               {theme === 'light' ? (
-                <img src={light} className={style.theme_img} alt="light theme" />
+                <img src={light} className={style.theme_img} alt="light theme" loading="lazy" />
               ) : (
-                <img src={dark} className={style.theme_img} alt="dark theme" />
+                <img src={dark} className={style.theme_img} alt="dark theme" loading="lazy" />
               )}
             </button>
           </li>
