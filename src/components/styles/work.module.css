@@ -153,10 +153,12 @@
 
 .btn_container {
   font-size: 0.9rem;
-  color: var(--white);
-  border: 2px solid var(--grey);
-  padding: 8px 12px;
-  text-transform: uppercase;
+  font-weight: 600;
+  color: #dfe7f3;
+  background-color: var(--light-blue) !important;
+  border-radius: 4px;
+  padding: 12px 18px;
+  text-transform: capitalize;
   transition: 0.2s;
   position: relative;
   overflow: hidden;
@@ -169,8 +171,8 @@
 
 .btn_hover {
   position: absolute;
-  top: 10px;
-  left: 14px;
+  top: 12px;
+  left: 18px;
   opacity: 0;
   transform: translate(0, -100%);
 }
@@ -178,7 +180,7 @@
 .btn_container:hover,
 .btn_container:focus {
   color: var(--cyan);
-  border-color: var(--cyan);
+  background-color: var(--dark-blue) !important;
   box-shadow: 0 0 8px var(--cyan);
 }
 
@@ -238,12 +240,11 @@
 
   .btn_container {
     font-size: 1rem;
-    padding: 11px 16px;
+    padding: 12px 20px;
   }
 
   .btn_hover {
-    top: 11px;
-    left: 16px;
+    left: 20px;
   }
 }
 
@@ -262,13 +263,11 @@
   }
 
   .btn_container {
-    font-size: 0.9rem;
-    padding: 10px 14px;
+    padding: 12px 18px;
   }
 
   .btn_hover {
-    top: 10px;
-    left: 14px;
+    left: 18px;
   }
 }
 
@@ -298,11 +297,6 @@
   .name {
     font-size: 1.3rem;
   }
-
-  .btn_hover {
-    top: 11px;
-    left: 16px;
-  }
 }
 
 @media screen and (min-width: 1400px) {
@@ -320,5 +314,13 @@
 
   .tech_list {
     font-size: 0.8rem;
+  }
+
+  .btn_container {
+    padding: 12px 20px;
+  }
+
+  .btn_hover {
+    left: 20px;
   }
 }
