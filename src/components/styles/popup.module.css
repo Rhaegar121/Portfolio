@@ -113,9 +113,12 @@
 }
 
 .btn_container {
-  padding: 8px 10px;
-  border: 2px solid var(--grey);
+  padding: 8px 14px;
+  color: var(--dark-blue);
+  background-color: var(--cyan);
+  border-radius: 4px;
   font-size: 0.9rem;
+  font-weight: 600;
   transition: 0.2s;
   position: relative;
   overflow: hidden;
@@ -128,7 +131,7 @@
 
 .btn_hover {
   position: absolute;
-  top: 12px;
+  top: 8px;
   left: 14px;
   opacity: 0;
   transform: translate(0, -100%);
@@ -137,7 +140,7 @@
 .btn_container:hover,
 .btn_container:focus {
   color: var(--cyan);
-  border-color: var(--cyan);
+  background-color: var(--dark-blue);
   box-shadow: 0 0 6px var(--cyan);
 }
 
@@ -189,12 +192,12 @@
 
   .btn_container {
     font-size: 1.1rem;
-    padding: 10px 14px;
+    padding: 10px 16px;
   }
 
   .btn_hover {
     top: 10px;
-    left: 14px;
+    left: 16px;
   }
 }
 
@@ -236,11 +239,5 @@
 
   .btn_container {
     font-size: 1rem;
-    padding: 8px 14px;
-  }
-
-  .btn_hover {
-    top: 8px;
-    left: 14px;
   }
 }

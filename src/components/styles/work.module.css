@@ -154,8 +154,8 @@
 .btn_container {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #dfe7f3;
-  background-color: var(--light-blue) !important;
+  color: var(--dark-blue);
+  background-color: var(--cyan) !important;
   border-radius: 4px;
   padding: 12px 18px;
   text-transform: capitalize;
