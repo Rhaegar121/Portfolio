@@ -54,6 +54,20 @@ const About = () => (
         within a single year. Additionally, my roles in the Students&apos;
         Union honed my problem-solving and communication abilities.
       </motion.p>
+      <motion.p variants={fadeIn('', '', 1.25, 1)} className={style.text}>
+        If you&apos;re inspired by what you see and have a project that&apos;s ready to come to life, don&apos;t hesitate to reach out. I&apos;m just a message away, eager to collaborate on your next big endeavor.
+        {' '}
+        <a
+          href="https://drive.google.com/file/d/1gienfnTWEgMC_R2P7t-JVSQC9L_4lLxv/view?usp=sharing"
+          target="_blank"
+          className={style.link}
+          rel="noreferrer"
+        >
+          Access my resume
+        </a>
+        {' '}
+        to explore my journey, qualifications, and the knowledge I bring to the table.
+      </motion.p>
     </div>
   </>
 );

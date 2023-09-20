@@ -43,6 +43,7 @@
   overflow: hidden;
   padding: 10px 13px;
   transition: 0.2s;
+  /* border-radius: 4px; */
   color: var(--white);
   border: 2px solid var(--grey);
 }
@@ -71,6 +72,7 @@
 .btn_container:hover,
 .btn_container:focus {
   color: var(--cyan);
+  background-color: var(--dark-blue);
   border-color: var(--cyan);
   box-shadow: 0 0 8px var(--cyan);
   text-shadow: 0 0 8px var(--cyan);
