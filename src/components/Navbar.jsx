@@ -64,16 +64,6 @@ const Navbar = () => {
             </li>
           ))}
           <li>
-            <a
-              href="https://drive.google.com/file/d/1gienfnTWEgMC_R2P7t-JVSQC9L_4lLxv/view?usp=sharing"
-              target=" blank"
-              className={style.resume_container}
-            >
-              <span className={style.resume_hover}>Resume</span>
-              <span className={style.resume}>Resume</span>
-            </a>
-          </li>
-          <li>
             <button
               type="button"
               className={style.theme_btn}
@@ -130,7 +120,6 @@ const Navbar = () => {
             <li
               key={link.id}
               className={active === link.name ? style.active : null}
-              // className={`${active === link.name ? style.active : null} ${index === 0 ? 'mt-32' : ''}`}
             >
               <motion.a
                 href={link.url}
@@ -147,21 +136,6 @@ const Navbar = () => {
               </motion.a>
             </li>
           ))}
-          <li>
-            <motion.a
-              variants={fadeIn('right', '', 1, 1)}
-              initial="hidden"
-              whileInView="show"
-              href="https://drive.google.com/file/d/1gienfnTWEgMC_R2P7t-JVSQC9L_4lLxv/view?usp=sharing"
-              target=" blank"
-              className={`${style.resume_container} ${style.mobile_resume_container}`}
-            >
-              <span className={`${style.resume_hover} ${style.font}`}>
-                Resume
-              </span>
-              <span className={`${style.resume} ${style.font}`}>Resume</span>
-            </motion.a>
-          </li>
         </ul>
       </nav>
     </div>
