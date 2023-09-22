@@ -46,7 +46,6 @@
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
     <li><a href="https://threejs.org/">Three.js</a></li>
-    <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
     <li><a href="https://www.framer.com/motion/">Framer Motion</a></li>
   </ul>
 </details>
@@ -86,7 +85,6 @@
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **[Light_theme_Dark_theme]**
 - **[Experience_Section]**
 - **[Footer_motion]**
 
