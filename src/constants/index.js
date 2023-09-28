@@ -225,7 +225,7 @@ const testimonials = [
   {
     id: 1,
     name: 'Wai Yan Phyo',
-    image: 'https://media.licdn.com/dms/image/D5603AQHIGm84tR1dug/profile-displayphoto-shrink_800_800/0/1678261183344?e=1695254400&v=beta&t=oFLOl48sTPZ1JBs1anOQfAaGDGNuSIHQc97x66bbzbI',
+    image: 'https://media.licdn.com/dms/image/D5603AQHIGm84tR1dug/profile-displayphoto-shrink_400_400/0/1678261183344?e=1701302400&v=beta&t=DKlyEmDC-PhSsv_xZlaPgvTbTkfLeMqtHSIA_2V0xwU',
     text: 'I highly recommend Barry for any software development role. During our recent collaboration, he consistently demonstrated exceptional coding skills and a strong work ethic.',
     country: 'Myanmar',
     linkedIn: 'https://www.linkedin.com/in/oyhpnayiaw/',
@@ -233,7 +233,7 @@ const testimonials = [
   {
     id: 2,
     name: 'Rachel Isaac',
-    image: 'https://media.licdn.com/dms/image/D4D03AQHNmKfMktAzZg/profile-displayphoto-shrink_100_100/0/1665541121272?e=1695254400&v=beta&t=uPQxD-T0QdZDM5QZbt2vMDT8HgpdPJXaILTE4T_d5UM',
+    image: 'https://media.licdn.com/dms/image/D4D35AQHOKsZ2nSaTjg/profile-framedphoto-shrink_400_400/0/1665541123511?e=1696485600&v=beta&t=6MQUPIvoL-2FEkEqV1svBlkqq1SvYkoP2HzeJROizJ0',
     text: "Throughout our collaboration, I was consistently impressed by Barry's professionalism, attention to detail, and ability to adapt to changing requirements.",
     country: 'United Arab Emirates',
     linkedIn: 'https://www.linkedin.com/in/racheleno/',
@@ -241,7 +241,7 @@ const testimonials = [
   {
     id: 3,
     name: 'Muhammad Talha Hanif',
-    image: 'https://media.licdn.com/dms/image/D4D03AQF6A-cET7akGQ/profile-displayphoto-shrink_100_100/0/1687861229792?e=1695254400&v=beta&t=-7YBiGiJ8f5uaSE8G3qq0UuojrTJveVznlSub3lAOR4',
+    image: 'https://media.licdn.com/dms/image/D4D35AQFAyNEYRXzHgg/profile-framedphoto-shrink_800_800/0/1687861232238?e=1696485600&v=beta&t=rizKasCSSAnTaD7a9yOqLfOKbEm3pN7UCJvF6QLfNtw',
     text: 'He possesses a deep understanding of the latest technologies and trends in his field, allowing him to tackle complex challenges with ease.',
     country: 'Pakistan',
     linkedIn: 'https://www.linkedin.com/in/muhammad-talha-hanif/',
