@@ -54,9 +54,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Single_Page_Application]**
 - **[3D_star_canvas]**
-- **[Popup_window]**
+- **[Light/Dark_theme]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
