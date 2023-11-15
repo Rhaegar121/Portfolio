@@ -257,7 +257,7 @@ const testimonials = [
   {
     id: 5,
     name: 'Innocent N.',
-    image: 'https://media.licdn.com/dms/image/D5603AQE1qYMUswBOAw/profile-displayphoto-shrink_400_400/0/1688151357954?e=1697068800&v=beta&t=gt456pj65ufvNW4tdFBjqpPXpqPPZbFxaFBCI-H3XGk',
+    image: 'https://media.licdn.com/dms/image/D5603AQE1qYMUswBOAw/profile-displayphoto-shrink_400_400/0/1688151359384?e=1705536000&v=beta&t=b6QNQZaBEBBfH0g7fvcZdS0L9jXgScAvXANDsOE6548',
     text: 'Communication was another strength that Barry brought to the table. He actively listened, communicated ideas clearly, and collaborated effectively with team members.',
     country: 'Rwanda',
     linkedIn: 'https://www.linkedin.com/in/innocent-n/',
