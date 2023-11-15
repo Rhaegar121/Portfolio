@@ -241,7 +241,7 @@ const testimonials = [
   {
     id: 3,
     name: 'Muhammad Talha Hanif',
-    image: 'https://media.licdn.com/dms/image/D4D35AQFAyNEYRXzHgg/profile-framedphoto-shrink_800_800/0/1687861232238?e=1696485600&v=beta&t=rizKasCSSAnTaD7a9yOqLfOKbEm3pN7UCJvF6QLfNtw',
+    image: 'https://media.licdn.com/dms/image/D4D35AQFAyNEYRXzHgg/profile-framedphoto-shrink_400_400/0/1687861232819?e=1700654400&v=beta&t=38lkPifUcRqwCvIIBBYpwHj-AB6Yj9xxZOLYf2f-bx0',
     text: 'He possesses a deep understanding of the latest technologies and trends in his field, allowing him to tackle complex challenges with ease.',
     country: 'Pakistan',
     linkedIn: 'https://www.linkedin.com/in/muhammad-talha-hanif/',
