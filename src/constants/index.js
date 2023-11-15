@@ -233,7 +233,7 @@ const testimonials = [
   {
     id: 2,
     name: 'Rachel Isaac',
-    image: 'https://media.licdn.com/dms/image/D4D35AQHOKsZ2nSaTjg/profile-framedphoto-shrink_400_400/0/1665541123511?e=1696485600&v=beta&t=6MQUPIvoL-2FEkEqV1svBlkqq1SvYkoP2HzeJROizJ0',
+    image: 'https://media.licdn.com/dms/image/D4D35AQHOKsZ2nSaTjg/profile-framedphoto-shrink_400_400/0/1665541124692?e=1700654400&v=beta&t=3YJfPiJYydIsrXBIEpH__qmDhuzOCbTXJeEt9slssac',
     text: "Throughout our collaboration, I was consistently impressed by Barry's professionalism, attention to detail, and ability to adapt to changing requirements.",
     country: 'United Arab Emirates',
     linkedIn: 'https://www.linkedin.com/in/racheleno/',
