@@ -225,7 +225,7 @@ const testimonials = [
   {
     id: 1,
     name: 'Wai Yan Phyo',
-    image: 'https://media.licdn.com/dms/image/D5603AQHIGm84tR1dug/profile-displayphoto-shrink_400_400/0/1678261183344?e=1701302400&v=beta&t=DKlyEmDC-PhSsv_xZlaPgvTbTkfLeMqtHSIA_2V0xwU',
+    image: 'https://media.licdn.com/dms/image/D5603AQHIGm84tR1dug/profile-displayphoto-shrink_400_400/0/1678261187815?e=1706745600&v=beta&t=7As3hxEEoIbLqqYAtqRYFq8_skjlRpFqzR4Je98nEg8',
     text: 'I highly recommend Barry for any software development role. During our recent collaboration, he consistently demonstrated exceptional coding skills and a strong work ethic.',
     country: 'Myanmar',
     linkedIn: 'https://www.linkedin.com/in/oyhpnayiaw/',
