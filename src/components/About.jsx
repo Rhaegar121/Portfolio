@@ -58,7 +58,7 @@ const About = () => (
         If you&apos;re inspired by what you see and have a project that&apos;s ready to come to life, don&apos;t hesitate to reach out. I&apos;m just a message away, eager to collaborate on your next big endeavor.
         {' '}
         <a
-          href="https://drive.google.com/file/d/1gienfnTWEgMC_R2P7t-JVSQC9L_4lLxv/view?usp=sharing"
+          href="https://drive.google.com/file/d/1tciorak3ZNmMrPPnG_b9eSMnv94fY61_/view?usp=sharing"
           target="_blank"
           className={style.link}
           rel="noreferrer"
