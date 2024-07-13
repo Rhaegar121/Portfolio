@@ -11,7 +11,7 @@ const About = () => (
     </motion.h1>
     <div className={style.para}>
       <motion.p variants={fadeIn('', '', 0.5, 1)} className={style.text}>
-        My name is
+        Hey there! I&apos;m
         {' '}
         <a
           href="https://www.linkedin.com/in/kaungmyatkyaw/"
@@ -19,27 +19,13 @@ const About = () => (
           className={style.link}
           rel="noreferrer"
         >
-          Kaung Myat Kyaw (Barry)
+          Kaung Myat Kyaw (Barry),
         </a>
         {' '}
-        and I am a passionate software engineer specializing in delivering
-        state-of-the-art software solutions in React and Ruby on Rails. I love
-        Math, Coding, Movies, and all kinds of Music.
-      </motion.p>
-      <motion.p variants={fadeIn('', '', 0.75, 1)} className={style.text}>
-        My journey into the world of software development has been both unique
-        and transformative. Before transitioning to this career, I was a
-        third-year student at Maritime University. However, due to the
-        COVID-19 outbreak and the political situation in my country, I decided
-        to drop out and explore my true passion.
+        a passionate software engineer specializing in React and Ruby on Rails. I thrive on delivering state-of-the-art software solutions. When I&apos;m not coding, you&apos;ll find me exploring the fascinating worlds of Math, Movies, and Music.
       </motion.p>
       <motion.p variants={fadeIn('', '', 1, 1)} className={style.text}>
-        What truly set my path apart was my decision to join Microverse, a
-        remote software development school. There, I immersed myself in pair
-        programming and real-world projects, mastering the skills required to
-        thrive in this dynamic field. I completed the boot camp without a
-        hitch, showcasing my dedication and determination to succeed. My
-        commitment to the tech community is reflected in my
+        My journey into software development was anything but ordinary. As a former third-year student at Maritime University, I made a bold decision to drop out and pursue my true passion. That led me to Microverse, a remote software development school, where I honed my skills through pair programming and real-world projects. I completed the boot camp with unwavering dedication, amassing over
         {' '}
         <a
           href="https://github.com/Rhaegar121"
@@ -51,11 +37,10 @@ const About = () => (
           2500+ contributions on GitHub
         </a>
         {' '}
-        within a single year. Additionally, my roles in the Students&apos;
-        Union honed my problem-solving and communication abilities.
+        in just one year. My experience in the Students&apos; Union further sharpened my problem-solving and communication abilities.
       </motion.p>
       <motion.p variants={fadeIn('', '', 1.25, 1)} className={style.text}>
-        If you&apos;re inspired by what you see and have a project that&apos;s ready to come to life, don&apos;t hesitate to reach out. I&apos;m just a message away, eager to collaborate on your next big endeavor.
+        Ready to bring your project to life? Reach out—I&apos;m excited to collaborate!
         {' '}
         <a
           href="https://drive.google.com/file/d/1tciorak3ZNmMrPPnG_b9eSMnv94fY61_/view?usp=sharing"
@@ -63,10 +48,10 @@ const About = () => (
           className={style.link}
           rel="noreferrer"
         >
-          Access my resume
+          Check out my resume
         </a>
         {' '}
-        to explore my journey, qualifications, and the knowledge I bring to the table.
+        for more insights into my journey and qualifications.
       </motion.p>
     </div>
   </>
