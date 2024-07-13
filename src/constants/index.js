@@ -84,7 +84,7 @@ const technologies = [
   {
     stack: ['frameworks', 'all'],
     name: 'Tailwind CSS',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
+    icon: 'https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000',
   },
   {
     stack: ['frameworks', 'all'],
