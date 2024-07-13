@@ -62,6 +62,11 @@ const technologies = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain.svg',
   },
   {
+    stack: ['languages', 'all'],
+    name: 'Python',
+    icon: 'https://img.icons8.com/?size=100&id=13441&format=png&color=000000',
+  },
+  {
     stack: ['frameworks', 'all'],
     name: 'React JS',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
@@ -113,19 +118,19 @@ const technologies = [
   },
   {
     stack: ['tools', 'all'],
-    name: 'Webpack',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-plain.svg',
+    name: 'Docker',
+    icon: 'https://img.icons8.com/?size=100&id=cdYUlRaag9G9&format=png&color=000000',
   },
   {
     stack: ['tools', 'all'],
     name: 'Figma',
     icon: 'https://www.vectorlogo.zone/logos/figma/figma-icon.svg',
   },
-  {
-    stack: ['tools', 'all'],
-    name: 'Postman',
-    icon: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg',
-  },
+  // {
+  //   stack: ['tools', 'all'],
+  //   name: 'Postman',
+  //   icon: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg',
+  // },
 ];
 
 const projects = [
