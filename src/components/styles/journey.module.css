@@ -1,0 +1,242 @@
+.title {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  padding: 8px 0;
+  margin-bottom: 16px;
+}
+
+.title::after {
+  content: "";
+  background-color: var(--white);
+  width: 50px;
+  height: 2.5px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: var(--grey);
+  max-width: 520px;
+  margin: 28px auto 48px;
+  line-height: 1.6;
+  padding: 0 16px;
+}
+
+.timeline {
+  list-style: none;
+  width: 89%;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    var(--light-blue) 8%,
+    var(--cyan) 50%,
+    var(--light-blue) 92%,
+    transparent 100%
+  );
+  opacity: 0.55;
+}
+
+.milestone {
+  position: relative;
+  padding-left: 36px;
+  padding-bottom: 32px;
+}
+
+.milestone:last-child {
+  padding-bottom: 0;
+}
+
+.marker {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--navy);
+  border: 2px solid var(--cyan);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--cyan) 15%, transparent);
+  z-index: 1;
+}
+
+.card {
+  background-color: color-mix(in srgb, var(--light-grey) 65%, transparent);
+  border: 1px solid color-mix(in srgb, var(--light-blue) 45%, transparent);
+  border-radius: 10px;
+  padding: 18px 20px;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.card:hover {
+  border-color: color-mix(in srgb, var(--cyan) 55%, transparent);
+  transform: translateY(-2px);
+}
+
+.period {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-bottom: 8px;
+}
+
+.heading {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 8px;
+  line-height: 1.35;
+}
+
+.description {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--grey);
+  margin-bottom: 12px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  font-size: 0.7rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background-color: color-mix(in srgb, var(--cyan) 12%, transparent);
+  color: var(--cyan);
+  border: 1px solid color-mix(in srgb, var(--cyan) 25%, transparent);
+}
+
+@media screen and (min-width: 480px) {
+  .title {
+    font-size: 1.9rem;
+  }
+
+  .heading {
+    font-size: 1.1rem;
+  }
+
+  .description {
+    font-size: 0.92rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 56px;
+  }
+
+  .timeline {
+    width: 78%;
+    max-width: 720px;
+  }
+
+  .timeline::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .milestone {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 48px;
+    padding-left: 0;
+    padding-bottom: 48px;
+    align-items: start;
+  }
+
+  .marker {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+  }
+
+  .milestone:nth-child(odd) .card {
+    grid-column: 1;
+    text-align: right;
+  }
+
+  .milestone:nth-child(odd) .tags {
+    justify-content: flex-end;
+  }
+
+  .milestone:nth-child(even) .card {
+    grid-column: 2;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .timeline {
+    max-width: 800px;
+  }
+
+  .card {
+    padding: 22px 24px;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 2.3rem;
+  }
+
+  .title::after {
+    width: 80px;
+  }
+
+  .subtitle {
+    max-width: 580px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+}

@@ -25,7 +25,11 @@
   text-align: center;
   font-size: 0.9rem;
   font-family: 'Montserrat Alternates', sans-serif;
-  color: var(--white);
+  color: var(--grey);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.6;
+  padding: 0 16px;
 }
 
 .card_container {
@@ -67,6 +71,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 12px;
   opacity: 1;
 }
 
@@ -95,14 +100,17 @@
 .name {
   font-size: 0.9rem;
   font-weight: 600;
-  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.35;
+  padding: 0 14px;
   color: var(--white);
 }
 
 .text {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
+  line-height: 1.6;
   text-align: center;
-  color: var(--white);
+  color: var(--grey);
 }
 
 @media screen and (min-width: 480px) {
@@ -112,7 +120,6 @@
 
   .card {
     height: 360px;
-    gap: 5px;
   }
 
   .img_container {
@@ -152,7 +159,7 @@
   }
 
   .name {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 }
 
@@ -178,7 +185,7 @@
   }
 
   .name {
-    font-size: 0.8rem;
+    font-size: 0.82rem;
   }
 }
 
@@ -201,7 +208,7 @@
   }
 
   .name {
-    font-size: 0.85rem;
+    font-size: 0.88rem;
   }
 }
 
@@ -217,10 +224,15 @@
 
   .card {
     height: 330px;
-    gap: 10px;
   }
 
   .name {
-    font-size: 0.9rem;
+    font-size: 0.92rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card_overlay {
+    transition: none;
   }
 }

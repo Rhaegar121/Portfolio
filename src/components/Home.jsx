@@ -27,7 +27,7 @@ const Home = () => (
         </motion.span>
       </p>
       <motion.p variants={fadeIn('', '', 0.5, 1)} className={style.desc}>
-        I am a full-stack web developer
+        I am a full-stack software engineer
       </motion.p>
       <motion.button
         variants={fadeIn('', '', 0.6, 1)}

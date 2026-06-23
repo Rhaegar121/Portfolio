@@ -11,47 +11,32 @@ const About = () => (
     </motion.h1>
     <div className={style.para}>
       <motion.p variants={fadeIn('', '', 0.5, 1)} className={style.text}>
-        Hey there! I&apos;m
+        Hey there — I&apos;m
         {' '}
-        <a
-          href="https://www.linkedin.com/in/kaungmyatkyaw/"
-          target="_blank"
-          className={style.link}
-          rel="noreferrer"
-        >
-          Kaung Myat Kyaw (Barry),
-        </a>
-        {' '}
-        a passionate software engineer specializing in React and Ruby on Rails. I thrive on delivering state-of-the-art software solutions. When I&apos;m not coding, you&apos;ll find me exploring the fascinating worlds of Math, Movies, and Music.
+        <strong>Kaung Myat Kyaw (Barry)</strong>
+        , a software engineer who enjoys building reliable products, solving messy technical problems, and making systems faster, cleaner, and easier to maintain.
       </motion.p>
       <motion.p variants={fadeIn('', '', 1, 1)} className={style.text}>
-        My journey into software development was anything but ordinary. As a former third-year student at Maritime University, I made a bold decision to drop out and pursue my true passion. That led me to Microverse, a remote software development school, where I honed my skills through pair programming and real-world projects. I completed the boot camp with unwavering dedication, amassing over
+        I currently work across
         {' '}
-        <a
-          href="https://github.com/Rhaegar121"
-          target="_blank"
-          className={style.link}
-          rel="noreferrer"
-        >
-          {' '}
-          2500+ contributions on GitHub
-        </a>
+        <strong>backend systems, cloud workflows, data pipelines, and product features</strong>
         {' '}
-        in just one year. My experience in the Students&apos; Union further sharpened my problem-solving and communication abilities.
+        in a fully remote startup environment. Over the past few years, I&apos;ve worked with technologies like
+        {' '}
+        <strong>Ruby on Rails, PostgreSQL, React/Nuxt.js, Android, AWS Step Functions, and AWS Glue</strong>
+        , contributing to production systems that support reporting, workflow automation, integrations, and mobile applications. A big part of what I enjoy is performance and reliability work—whether that means optimizing slow SQL queries, improving backend APIs, migrating workflows to AWS-native services, or reducing repeated manual processes through better system design.
       </motion.p>
       <motion.p variants={fadeIn('', '', 1.25, 1)} className={style.text}>
-        Ready to bring your project to life? Reach out—I&apos;m excited to collaborate!
+        What I bring most is a mix of
         {' '}
-        <a
-          href="https://drive.google.com/file/d/1tciorak3ZNmMrPPnG_b9eSMnv94fY61_/view?usp=sharing"
-          target="_blank"
-          className={style.link}
-          rel="noreferrer"
-        >
-          Check out my resume
-        </a>
+        <strong>adaptability, curiosity, and persistence</strong>
+        . I like understanding how systems work end-to-end, learning unfamiliar tools when needed, and turning unclear or inefficient processes into something more robust and scalable. My non-traditional background has shaped how I approach engineering: stay resourceful, keep learning, and focus on solving real problems in practical ways.
+      </motion.p>
+      <motion.p variants={fadeIn('', '', 1.5, 1)} className={style.text}>
+        Outside of tech, I&apos;m also interested in
         {' '}
-        for more insights into my journey and qualifications.
+        <strong>math, movies, music, and thoughtful product design</strong>
+        —the kinds of things that keep me curious and often inspire how I think about software too.
       </motion.p>
     </div>
   </>

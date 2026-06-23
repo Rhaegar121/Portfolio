@@ -51,10 +51,10 @@ import carrental2 from './carousels/car rental screenshot 2.png';
 import carrental3 from './carousels/car rental screenshot 3.png';
 
 // services
-import responsive from './services/responsive.gif';
-import react from './services/react.gif';
+import optimization from './services/optimize.gif';
 import fullstack from './services/fullstack.gif';
+import cloud from './services/cloud.gif';
 
 export {
-  logo, light, dark, facebook, instagram, github, linkedin, twitter, facebook1, instagram1, github1, twitter1, linkedin1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp3, recipeapp4, recipeapp6, trackbuget1, trackbuget2, trackbuget5, carrental1, carrental2, carrental3, responsive, react, fullstack,
+  logo, light, dark, facebook, instagram, github, linkedin, twitter, facebook1, instagram1, github1, twitter1, linkedin1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp3, recipeapp4, recipeapp6, trackbuget1, trackbuget2, trackbuget5, carrental1, carrental2, carrental3, optimization, fullstack, cloud,
 };

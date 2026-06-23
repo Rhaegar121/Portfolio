@@ -1,5 +1,5 @@
 import {
-  facebook, linkedin, instagram, twitter, github, facebook1, linkedin1, instagram1, twitter1, github1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp3, recipeapp4, recipeapp6, trackbuget1, trackbuget2, trackbuget5, carrental1, carrental2, carrental3, responsive, react, fullstack,
+  facebook, linkedin, instagram, twitter, github, facebook1, linkedin1, instagram1, twitter1, github1, tvshowbox, guesstheword, tictactoe, mathmagician, metricwebapp, spacetravelers, recipeapp, trackbudget, carrental, guesstheword1, guesstheword2, guesstheword3, spacetravelers1, spacetravelers2, spacetravelers3, tictactoe1, tictactoe2, tictactoe3, tvshow1, tvshow2, tvshow3, metricswebapp1, metricswebapp2, recipeapp3, recipeapp4, recipeapp6, trackbuget1, trackbuget2, trackbuget5, carrental1, carrental2, carrental3, optimization, fullstack, cloud,
 } from '../assets';
 
 const social = [
@@ -277,24 +277,81 @@ const testimonials = [
   },
 ];
 
-const services = [
+const focusAreas = [
   {
     id: 1,
-    icon: responsive,
-    title: 'Responsive Design',
-    text: 'I specialize in creating websites that are not just visually stunning but also highly adaptable. My responsive designs ensure that your site looks and works perfectly on any device, providing an exceptional user experience regardless of screen size.',
+    icon: fullstack,
+    title: 'Backend & API Systems',
+    text: 'I build and maintain backend services, APIs, and internal product systems that support real business workflows. My work includes Ruby on Rails applications, integrations, and data-heavy features where reliability, maintainability, and clean business logic matter.',
   },
   {
     id: 2,
-    icon: react,
-    title: 'Front-end Development',
-    text: 'I breathe life into your creative ideas by translating them into captivating web interfaces. Using the latest frontend technologies and best practices, I build engaging, user-friendly websites that leave a lasting impression.',
+    icon: cloud,
+    title: 'Data Workflows & Cloud Automation',
+    text: 'I work on workflow orchestration, cloud-based data pipelines, and system migrations using AWS services such as Step Functions and Glue. I enjoy turning manual or fragile processes into maintainable workflows that are easier to monitor, scale, and evolve.',
   },
   {
     id: 3,
-    icon: fullstack,
-    title: 'Back-end Development',
-    text: 'My backend development expertise forms the backbone of your web application. I design and build robust, efficient, and secure server-side solutions that handle data management and business logic seamlessly, ensuring your website functions flawlessly.',
+    icon: optimization,
+    title: 'Performance Optimization',
+    text: 'I enjoy identifying bottlenecks and improving system performance across reports, queries, APIs, and product flows. From reducing report runtimes from minutes to seconds to simplifying inefficient backend requests, I focus on making systems faster, more efficient, and easier to operate.',
+  },
+];
+
+const journeyMilestones = [
+  {
+    id: 1,
+    period: '2018 – 2021',
+    dateTime: '2018/2021',
+    title: 'Maritime University',
+    description:
+      'Studied Nautical Science at Maritime University — a structured path, but not the direction I wanted to build a career in.',
+    tags: ['learning', 'career'],
+  },
+  {
+    id: 2,
+    period: '2021',
+    dateTime: '2021',
+    title: 'A Deliberate Change of Direction',
+    description:
+      'Left during my third year after deciding software engineering was where I wanted to focus my time and energy.',
+    tags: ['turning point', 'growth'],
+  },
+  {
+    id: 3,
+    period: '2022 – 2023',
+    dateTime: '2022/2023',
+    title: 'Microverse',
+    description:
+      'Joined a fully remote software development program built around pair programming, collaboration, and shipping real projects.',
+    tags: ['learning', 'growth'],
+  },
+  {
+    id: 4,
+    period: 'Oct 2023',
+    dateTime: '2023-10',
+    title: 'Intern at TwoDotSeven',
+    description:
+      'Joined TwoDotSeven as an intern — my first step into production-focused engineering in a remote startup environment.',
+    tags: ['work', 'career'],
+  },
+  {
+    id: 5,
+    period: 'Apr 2024',
+    dateTime: '2024-04',
+    title: 'Software Engineer',
+    description:
+      'Moved into a permanent role and began taking on broader ownership across backend systems, data workflows, and product features.',
+    tags: ['work', 'career', 'growth'],
+  },
+  {
+    id: 6,
+    period: 'Present',
+    dateTime: '2024',
+    title: 'Production Systems & Performance',
+    description:
+      'Working across backend systems, cloud workflows, and data-intensive pipelines — migrating Prefect flows to AWS Step Functions, improving report and query performance from minutes to seconds, and contributing across Rails, PostgreSQL, React/Nuxt, Android, and AWS.',
+    tags: ['work', 'growth'],
   },
 ];
 
@@ -306,13 +363,13 @@ const navLinks = [
   },
   {
     id: 2,
-    name: 'Service',
-    url: '/#service',
+    name: 'Journey',
+    url: '/#journey',
   },
   {
     id: 3,
-    name: 'Work',
-    url: '/#work',
+    name: 'Focus',
+    url: '/#focus',
   },
   {
     id: 4,
@@ -327,5 +384,5 @@ const navLinks = [
 ];
 
 export {
-  technologies, projects, testimonials, social, services, navLinks,
+  technologies, projects, testimonials, social, focusAreas, navLinks, journeyMilestones,
 };
