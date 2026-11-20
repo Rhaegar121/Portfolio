@@ -42,95 +42,77 @@ const social = [
 
 const technologies = [
   {
-    stack: ['languages', 'all'],
-    name: 'HTML 5',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg',
+    name: 'Python',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
   },
   {
-    stack: ['languages', 'all'],
-    name: 'CSS 3',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg',
+    name: 'TypeScript',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
   },
   {
-    stack: ['languages', 'all'],
-    name: 'JavaScript',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg',
-  },
-  {
-    stack: ['languages', 'all'],
     name: 'Ruby',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain.svg',
   },
   {
-    stack: ['languages', 'all'],
-    name: 'Python',
-    icon: 'https://img.icons8.com/?size=100&id=13441&format=png&color=000000',
+    name: 'Data Engineering',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachespark/apachespark-original.svg',
   },
   {
-    stack: ['frameworks', 'all'],
-    name: 'React JS',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+    name: 'Mobile App',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg',
   },
   {
-    stack: ['frameworks', 'all'],
-    name: 'Ruby on Rails',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain.svg',
+    name: 'AI Automation',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg',
   },
   {
-    stack: ['frameworks', 'all'],
-    name: 'Redux Toolkit',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg',
+    name: 'Software Architecture & Design',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg',
   },
   {
-    stack: ['frameworks', 'all'],
-    name: 'Bootstrap',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg',
+    name: 'SAP Implementation',
+    icon: 'https://www.vectorlogo.zone/logos/sap/sap-icon.svg',
   },
   {
-    stack: ['frameworks', 'all'],
-    name: 'Tailwind CSS',
-    icon: 'https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000',
+    name: 'User Interface Design',
+    icon: 'https://www.vectorlogo.zone/logos/figma/figma-icon.svg',
   },
   {
-    stack: ['frameworks', 'all'],
-    name: 'Jest',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg',
+    name: 'Automated Workflow',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg',
   },
   {
-    stack: ['frameworks', 'all'],
-    name: 'RSpec',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rspec/rspec-original.svg',
+    name: 'ETL Pipeline',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg',
   },
   {
-    stack: ['tools', 'all'],
-    name: 'PostgreSQL',
+    name: 'Amazon Web Services',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
+  },
+  {
+    name: 'CI/CD',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg',
+  },
+  {
+    name: 'Database Management',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg',
   },
   {
-    stack: ['tools', 'all'],
-    name: 'Git',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg',
+    name: 'Query Optimization',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
   },
   {
-    stack: ['tools', 'all'],
-    name: 'GitHub',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+    name: 'QA Testing',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg',
   },
   {
-    stack: ['tools', 'all'],
-    name: 'Docker',
-    icon: 'https://img.icons8.com/?size=100&id=cdYUlRaag9G9&format=png&color=000000',
+    name: 'Jupyter Notebook',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg',
   },
   {
-    stack: ['tools', 'all'],
-    name: 'Figma',
-    icon: 'https://www.vectorlogo.zone/logos/figma/figma-icon.svg',
+    name: 'Security Patch Installation',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
   },
-  // {
-  //   stack: ['tools', 'all'],
-  //   name: 'Postman',
-  //   icon: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg',
-  // },
 ];
 
 const projects = [

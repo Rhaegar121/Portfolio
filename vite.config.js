@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'; // eslint-disable-line
 
 export default defineConfig({
   base: '/',
+  assetsInclude: ['**/*.glb'],
   plugins: [react()],
   build: {
     rollupOptions: {

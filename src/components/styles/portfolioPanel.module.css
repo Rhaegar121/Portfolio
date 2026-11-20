@@ -1,0 +1,397 @@
+.panel {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  bottom: 188px;
+  width: min(440px, calc(100vw - 32px));
+  display: flex;
+  flex-direction: column;
+  pointer-events: auto;
+  color: #ffffff;
+  /* background: rgba(8, 12, 22, 0.94); */
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(46, 233, 255, 0.32);
+  border-radius: 18px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.38);
+  z-index: 3;
+  /* background: rgba(8, 12, 22, 0.97); */
+}
+
+.panel,
+.panel * {
+  font-family: "Montserrat Alternates", "Avenir Next", system-ui, sans-serif;
+  user-select: text;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 18px 18px 8px;
+}
+
+.kicker {
+  margin: 0 0 4px;
+  color: var(--accent, #2ee9ff);
+  font-size: 0.875rem;
+  letter-spacing: 0.08em;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.45rem;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.summary {
+  margin: 6px 0 0;
+  color: #2ee9ff;
+  font-size: 0.95rem;
+}
+
+.close {
+  flex: 0 0 auto;
+  min-height: 44px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(183, 196, 216, 0.45);
+  background: transparent;
+  color: #2ee9ff;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.close:focus-visible,
+.body button:focus-visible,
+.body a:focus-visible,
+.body input:focus-visible,
+.body textarea:focus-visible {
+  outline: 2px solid #2ee9ff;
+  outline-offset: 2px;
+}
+
+.body {
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 8px 20px 24px;
+}
+
+.intro {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+
+.alias,
+.role,
+.lead,
+.copy,
+.quote,
+.description,
+.focus p,
+.milestone p {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.alias,
+.role,
+.lead {
+  margin: 0 0 10px;
+}
+
+.copy {
+  margin: 0 0 14px;
+}
+
+.sectionTitle {
+  margin: 22px 0 10px;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.person {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 10px;
+  margin: 0 0 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(183, 196, 216, 0.18);
+}
+
+.personPlain {
+  display: grid;
+  gap: 8px;
+  margin: 0 0 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(183, 196, 216, 0.18);
+}
+
+.person img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.person h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.meta,
+.tech,
+.links,
+.filters,
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.meta,
+.country {
+  color: #2ee9ff;
+  font-size: 0.875rem;
+}
+
+.quote {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.person a,
+.links a,
+.mail {
+  color: #2ee9ff;
+  font-size: 1rem;
+}
+
+.project {
+  margin: 0 0 18px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(183, 196, 216, 0.18);
+}
+
+.media {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  background: #0c121f;
+  overflow: hidden;
+}
+
+.media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project h3,
+.focus h3,
+.milestone h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.textButton {
+  min-height: 44px;
+  margin-top: 4px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #2ee9ff;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.chip,
+.tag {
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(46, 233, 255, 0.08);
+  color: #2ee9ff;
+  font-size: 0.875rem;
+}
+
+.filter {
+  min-height: 44px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(183, 196, 216, 0.35);
+  background: transparent;
+  color: #2ee9ff;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.filter[aria-pressed="true"] {
+  background: rgba(46, 233, 255, 0.16);
+  border-color: #2ee9ff;
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.techItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 6px 8px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.techItem img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.focus {
+  margin-top: 14px;
+}
+
+.focus img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.timeline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.milestone {
+  margin: 0 0 16px;
+  padding-left: 14px;
+  border-left: 2px solid rgba(255, 176, 32, 0.7);
+}
+
+.period {
+  color: #ffd089;
+  font-size: 0.875rem;
+}
+
+.socials {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 18px;
+  padding: 0;
+  list-style: none;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(183, 196, 216, 0.28);
+  color: #2ee9ff;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  border-color: #2ee9ff;
+}
+
+.placeholder {
+  margin: 12px 0;
+  padding: 12px;
+  border: 1px dashed rgba(255, 176, 32, 0.7);
+  border-radius: 12px;
+}
+
+.placeholder strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #ffd089;
+  font-size: 0.875rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.placeholder p,
+.placeholder code {
+  color: #2ee9ff;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.form {
+  display: grid;
+  gap: 10px;
+}
+
+.form label {
+  font-size: 0.95rem;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  margin-top: 4px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(183, 196, 216, 0.4);
+  background: #101828;
+  color: #2ee9ff;
+  font-size: 1rem;
+}
+
+.form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.submit {
+  min-height: 48px;
+  border: 0;
+  border-radius: 999px;
+  background: #2ee9ff;
+  color: #041018;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .panel {
+    top: 172px;
+    right: 10px;
+    left: 10px;
+    bottom: calc(150px + env(safe-area-inset-bottom));
+    width: auto;
+    backdrop-filter: none;
+  }
+}
+
+@media (pointer: coarse) {
+  /* .panel { background: rgba(8, 12, 22, 0.97); } */
+  .panel { background: transparent }
+}

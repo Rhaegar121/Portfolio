@@ -1,0 +1,65 @@
+.fixed {
+  position: fixed;
+  right: 16px;
+  bottom: calc(16px + env(safe-area-inset-bottom));
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.inline {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.group {
+  display: inline-flex;
+  padding: 4px;
+  border-radius: 999px;
+  background: #0c1220;
+  border: 1px solid rgba(46, 233, 255, 0.4);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+}
+
+.option {
+  min-height: 44px;
+  min-width: 76px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #e7eef8;
+  font-family: "Montserrat Alternates", "Avenir Next", system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.option[aria-checked="true"] {
+  background: #2ee9ff;
+  color: #041018;
+}
+
+.option:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.option:focus-visible {
+  outline: 2px solid #2ee9ff;
+  outline-offset: 2px;
+}
+
+.note {
+  max-width: 240px;
+  margin: 0;
+  color: #d5deec;
+  font-family: "Montserrat Alternates", "Avenir Next", system-ui, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  text-align: right;
+}

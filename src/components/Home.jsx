@@ -1,8 +1,9 @@
 import React from 'react';
 import { MdOutlineArrowForwardIos } from 'react-icons/md';
 import { motion } from 'framer-motion';
-import style from './styles/home.module.css';
+import { profileIntro } from '../constants/about';
 import { fadeIn, staggerContainer } from '../utils/motion';
+import style from './styles/home.module.css';
 
 const Home = () => (
   <motion.section
@@ -16,18 +17,18 @@ const Home = () => (
         Hi, I&apos;m
         {' '}
         <motion.span variants={fadeIn('', '', 0.1, 1)} className={style.name}>
-          Kaung Myat Kyaw
+          {profileIntro.name}
         </motion.span>
       </p>
       <p className={style.intro}>
         Also known as
         {' '}
         <motion.span variants={fadeIn('', '', 0.3, 1)} className={style.name}>
-          Barry
+          {profileIntro.alias}
         </motion.span>
       </p>
       <motion.p variants={fadeIn('', '', 0.5, 1)} className={style.desc}>
-        I am a full-stack software engineer
+        {profileIntro.role}
       </motion.p>
       <motion.button
         variants={fadeIn('', '', 0.6, 1)}
