@@ -8,7 +8,6 @@ import * as THREE from 'three';
 import { clone as cloneSkinned } from 'three/examples/jsm/utils/SkeletonUtils';
 import helicopterModel from '../assets/3Dmodels/helicopter.glb';
 import profileReel1 from '../assets/video/neon4.mp4';
-import profileReel2 from '../assets/video/neon3.mp4';
 import projectReel from '../assets/video/neon1.mp4';
 import experienceReel from '../assets/video/neon5.mp4';
 import CityBuilding from './CityBuilding';
@@ -101,14 +100,6 @@ function ProfileTower({
             src={profileReel1}
             position={[0, 12.98, 1.93]}
             width={3.3}
-            height={1.77}
-            accent={accent}
-            reducedMotion={reducedMotion}
-          />
-          <FacadeVideo
-            src={profileReel2}
-            position={[0, 9.2, 1.93]}
-            width={3.55}
             height={1.77}
             accent={accent}
             reducedMotion={reducedMotion}
